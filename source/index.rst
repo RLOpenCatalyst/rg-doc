@@ -5,7 +5,6 @@
 
 Welcome to Research Gateway's documentation!
 ============================================
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
@@ -18,3 +17,25 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
+.. _user-docs:
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: User Documentation
+
+   Introduction
+   WhatIsRG
+   GettingStarted
+   Features
+   Appendices 
+
+
+
+
+
+
+
+
+
