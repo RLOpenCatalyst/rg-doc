@@ -4,7 +4,7 @@ RLCatalyst Research Gateway is a solution built on AWS, and provides a self-serv
 
 This is a cost-effective pre-built solution and packaged service offerings built on AWS
 
-*It supports both self hosting(Enterprise) and managed hosting(SaaS) options
-*It is easy to deploy, consume, manage and extend.  
-*It provides easy budget and cost governance
-*It provides in-built security, based on AWS Best Practices
+  * It supports both self hosting(Enterprise) and managed hosting(SaaS) options
+  * It is easy to deploy, consume, manage and extend.  
+  * It provides easy budget and cost governance
+  * It provides in-built security, based on AWS Best Practices
