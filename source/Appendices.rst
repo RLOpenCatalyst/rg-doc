@@ -1,3 +1,5 @@
+.. _`Appendix A`:
+
 Appendix A
 ==========
 

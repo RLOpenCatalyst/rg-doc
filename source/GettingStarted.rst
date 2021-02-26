@@ -1,71 +1,74 @@
 Getting Started
 ===============
-You will be provided the following pieces of information in your starter kit:
-URL:______Application URL:__________
-
-**Portal Admin**
-
-
-Organization name:_________
-
-Username: __________
-
-Password:___________
-
-**Principal**  
-
-
-Organization name: ___________
-
-Username: ____________________
-
-Password: ____________________
-
-**Researcher**
-Organization name:___________
-
-Username: _______________
-
-Password: _______________
-
-
-Keep this information handy as you go through this guide and configure your system.
-
-
-**Planning your deployment**
 
 Research Gateway is a cloud-based solution that makes it possible for researchers and other consumers of High Performance Computing to easily access resources in the AWS cloud.
+RLCatalyst Research Gateway is designed for simplicity and you can get started very quickly. 
+You can access this product either as a `hosted SaaS product`_ or as an Enterprise product.
 
-PortalAdmin
-------------
+.. _hosted SaaS product: https://relevancelab.com/2021/02/11/8-steps-to-set-up-rlcatalyst-research-gateway/
 
-The Admin can create new organizations within the portal.Each such organization shall be associated with a single AWS Organization which shall be accessed via credentials provided by the Administrator. He will perform all administrative tasks.He will be able to create Researchers (alias for a user) with the Researcher role under an organization. A Researcher shall be associated with a user record in the Active Directory. A user can be a Researcher in more than one organization with a Researcher alias created in each organization but mapped to the same AD record for login purposes.
+If you are using the hosted version, you will be provided a public URL to which you can navigate using your browser. 
+You will also be provided with the credentials for the Administrator user.
+
+If you are using the Enterprise version, your IT department will provide you a URL to access the product. You can set up an Administrator user by following the steps below.
+
+Planning your set up
+--------------------
+
+Setting up your RLCatalyst Research Gateway for use involves the following steps.
+
+Users with the Administrator role can perform the steps below.
+
+  * `Adding Users`_ - Users can have Administrator, Principal Investigator or Researcher roles.
+  * `Adding AWS Accounts`_
+  * `Adding Organizational Units`_
+
+Users with the Principal Investigator role can perform the steps below.
+  
+  * Adding Projects
+  * Assigning Researchers to projects
+
+Create an Admin user
+--------------------
+
+Get started by first creating an Admin user account for your instance of RLCatalyst Research Gateway.
+
+.. _`Adding Users`:
 
 Sign-Up process
 ----------------
-Use details from Appendix A for Company Name, User Name ,Email  & set the  Password as per Password policy. Click on the “Sign-up for  a new  account “ button.
+
+To sign-up as a new user, click on the “Sign-up for  a new  account “ button on the Sign-in page.
 
 .. image:: images/SigninPage.png
 
 
 Fill the following details:
 
-  Organization name : <Organization name>
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
 
-  Username       :   <Username>
+   * - Field
+     - Details
+   * - Organization Name
+     -  <Name of the Organization>
+   * - Username
+     - <Username that is used for login>
+   * - E-mail address
+     - <Registered Email ID>
+   * - Password
+     - <Password> - Choose a password that conforms to the password policy.
 
-  Email          :   <Email address>
+.. figure:: images/Registeraccountpage.png
+   :scale: 100 %
+   :alt: Sign-up page
 
-  Password       :   <Password>
+Image  - Sign-up page
 
-    Click on the  “Sign Up” button.
+Click on the  “Sign Up” button.
 
-
-.. image:: images/Registeraccountpage.png
-
-Image  - Register Account page
-
-You will see a  successful  toaster message and verification email has been sent to the email address registered
+You will see a  success  message and verification email has been sent to the email address registered
 
 .. image:: images/thankyou.png
 
@@ -73,64 +76,88 @@ Check the verification email delivered to the registered email address & click o
 
 .. image:: images/verificationemail2.png
 
-On successful validation, users  will be allowed to login into the Research Gateway.
+On successful validation, users  will be allowed to login into the Research Gateway. By default the user will be assigned a *Researcher* role.
+To assign an *Administrator* or *Principal Investigator* role, please contact rlc.support@relevancelab.com
 
 Forgot Password
 ---------------
 
- A user sees a Forgot Password link on the login screen.  
+In case a user would like to reset his password, the reset password screen can be accessed from the sign in page. Choose the *Forgot Password* link.
 
 .. image:: images/forgotpassword.png
 
-On clicking the link the user is navigated to reset password screen and fill the following details
+On clicking the link the user is navigated to the reset password screen.  
 
-<Organization>  : <Name of the Organization>
+.. figure:: images/resetpassword.png
+   :scale: 100 %
+   :alt: Reset password
 
-<Username>      : <Name of the user>
+Fill the following details
 
-<Email ID>      : <Registered Email ID>
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
 
-If a user is valid he will get a verification link that has been sent to his email to reset the password.
+   * - Field
+     - Details
+   * - Organization Name
+     -  <Name of the Organization>
+   * - Username
+     - <Username that is used for login>
+   * - E-mail address
+     - <Registered Email ID>
+    
 
-.. image:: images/resetpassword.png
-
-
+If the details provided are valid, he will get a verification link that has been sent to his email to reset the password.
 On clicking the link in the email, the user is prompted to enter (and confirm) a new password.  The password change is either successful or unsuccessful (this will be like verification success and error screens).  The user is then redirected back to the login screen.
 
-.. image:: images/verificationlink.png
+.. figure:: images/verificationlink.png
+   :scale: 100 %
+   :alt: Verification Link sent in email.
 
-.. image:: images/reset.png
+.. figure:: images/reset.png
+   :scale: 100 %
+   :alt: Password reset message
 
 **Note:** If a user tries to reset password more than 10 times it should throw the above message **“Attempt limit exceeded. Please try again”**
 
 
-How to add New Organization
----------------------------
+.. _`Adding Organizational Units`:
 
-To plan the creation of a new Organization, use the planning sheet in *Appendix A* to collect all the information required upfront.Login into the Research Gateway..
+Adding Organizational Units
+--------------------------------
+
+To plan the creation of a new Organization, use the planning sheet in *`Appendix A`__* to collect all the information required upfront.Login into the Research Gateway..
         
 Login to the Research Gateway.User landed to the  main dashboard.
 
 .. image:: images/OrganizationPage.png
 
-Image  - Organization Page
+Image  - Administrator Landing page lists the Organizational Units
 
 Click the “+” icon  which is at the top right corner.Organization form is opened.
 
-Fill the following details:
-**Organization Name**        :<Name of the Organization>
-**Organization Description** :<Description>
-**Account ID**               :<Select ID>
-[Multiple AWS accounts to be  linked.Here we have a list]
-**Principal**                :<Select Principal ID >
-[Select Principal Investigator who has signed up being linked to the Organization]
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
 
-Click on the **“Add Organization”**                                button.New organization was added successfully.
+   * - Field
+     - Details
+   * - Organization Name
+     - <Name of the Organization>
+   * - Organization Description
+     - <Description>
+   * - Account ID
+     - <Select ID> [Multiple AWS accounts to be  linked.Here we have a list]
+   * - Principal
+     - <Select Principal ID > [Select from the list one or more users with the Principal Investigator role]
 
-**NOTE**:We are selecting principal accounts when adding new organization.Through this we are linking  to organizations. The organization form allows multiple Account IDs and multi-select on the Principal Investigators list.
+Click on the **“Add Organization”** button. The new organizational unit should be added successfully.
+
+**NOTE**:We are selecting a specific AWS account when adding new organization. This links the account to organizations. The organization form allows multiple Account IDs and multi-select on the Principal Investigators list.
 
 
-The Organizations page of the Research Gateway shall list all the existing organizations created along with other details. Clicking on a specific organization shall lead to “View Organization Details” window .
+The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. Clicking on a specific organization shall lead to “View Organization Details” window .
 
 
 
@@ -139,8 +166,9 @@ The Organizations page of the Research Gateway shall list all the existing organ
 
 Image  - View Organization Details Page
 
+.. _`Adding AWS Accounts`:
 
-How to add an AWS account to use in a project
+Adding an AWS account to use in a project
 ---------------------------------------------
 
 Login into the Research Gateway.
@@ -149,12 +177,18 @@ Choose the  “Settings” option
 
 
 .. image:: images/Providersettings.png 
+   :name: Provider Settings menu item
 
 Click on  the  “Add New” button. Provider settings page is opened.
 
 .. image:: images/Provider2.png 
+   :name: Provider Settings Page
+
+Image  - Provider Settings Page
+
 
 .. image:: images/AddProvider.png 
+   :name: Add Provider Settings screen
 
 Image  - Add Provider Settings Page
 
@@ -178,40 +212,54 @@ Fill in the following details
      - <AWS Account Number>
 
 
-Click on the “Add” button. AWS account is linked successfully.
+Click on the “Add” button. AWS account should be added successfully and will show in the table of providers in the Provider Settings page.
+
+On each line item there is a contextual menu. Through this we can edit, update or sync the account.
+
+.. image:: images/Project.png
+
+Image - Context menu for Provider Setting
 
 
-
-We can  see a 3-dotted action button in the project. Through this we can edit,update  the project.
-
-Image 
-
-.. image:: images/Project.png 
-
-
-1. Click on the “Edit” button.Provider settings page is opened.
-
-Image
+1. Click on the “Edit” button. Provider settings page is opened.
 
 .. image:: images/Editprovider.png 
-  
-2. Update the fields and click on “Add”.Provider setting is updated successfully.
+
+Image  - Editing an Account
+
+2. Update the fields and click on “Add”. Provider setting is updated successfully.
 
 .. image:: images/editprovider2.png
 
 Image  - Edit Provider Settings Page
 
 
-Click on the “Delete” option.. Confirmation dialog box is opened. Once confirm that we can delete the setting successfully.
+Click on the “Delete” option. A confirmation dialog box is opened. On confirmation the account will be deleted. You can only delete provider settings that are not linked to any project.
 
 
-.. image:: images/deleteprovider.png 
+.. image:: images/deleteprovider.png
 
+Image  - Deleting an account
 
+Research Gateway works in conjunction with AWS Service Catalog. To synchronize the Service Catalog to your project, select the Product Sync option.
+Click on “Sync Now” button. Once the synchronization is complete you should see the “Sync completed” message.
 
-Click on “Sync Now” button. We can message like “Sync completed”
+.. image:: images/sync1.png
 
-.. image:: images/sync1.png 
+Image  - Sync Now menu item
 
-.. image:: images/sync2.png 
+.. image:: images/sync2.png
 
+Image  - Successful synchronization
+
+Sign-out process
+----------------
+
+Click on the dropdown bar which is at the top
+Select “Sign out”option. Through this user logged out from the portal
+
+.. figure:: images/signout3.png 
+   :scale: 100 %
+   :alt: Signing out
+
+Image - Signing out
