@@ -17,23 +17,25 @@ An Administrator user can perform the following actions.
 
 Budget Management
 -----------------
-We have brought in a budget management screen for the Administrator  to view budget consumption across projects.
+You have brought in a budget management screen for the Administrator  to view budget consumption across organizational units with drill-down to the project, researcher and product level.
 
-Navigation to Budget management 
+Navigation to Budget management
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Login as a PortalAdmin account.
-Click on “ ≣ “ option which is available on left side header. We can see the  following details:
+Login as the Administrator user.
+Click on “ ≣ “ option which is available on the top-left side. You can see the  following details:
 
-  * a. **My Organizations** : Through this we can navigate to the **All Organizations** page
-  * b. **Budget Management** : Through this we can navigate to the **Budget Details** page 
+  * a. **My Organizations** : Through this you can navigate to the **All Organizations** page
+  * b. **Budget Management** : Through this you can navigate to the **Budget Details** page 
 
 
 .. image:: images/Image1.png
 
+Budget KPIs
+^^^^^^^^^^^
 
-
-At the top of this view we can see the summary of budgets across all organizational units in the KPI cards.
-We can see the following KPI cards:
+At the top of this view you can see the summary of budgets across all organizational units in the KPI cards.
+You can see the following KPI cards:
 
   * **Total Budget Allotted**: This is the sum total of budget allocated for all projects in the Organization.
   * **Total Budget Consumed**: This is the budget consumed by all Organizations.
@@ -41,6 +43,8 @@ We can see the following KPI cards:
 
 .. image:: images/Image2.png
 
+Organization-wise budget view
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Administrator user can view organization-specific budget details by clicking on one of the lines above. 
 The following details are visible in a table format:
@@ -56,8 +60,10 @@ The Administrator user can download the Budget details through the “Export CSV
 
 .. image:: images/Image3.png
 
+Researcher-wise budget view
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We can  also see researcher-wise budget details which are linked to a particular project and  we can see configured product  details in product-wise budget details page.
+You can  also see researcher-wise budget details which are linked to a particular project and  you can see configured product  details in product-wise budget details page.
  
 
 .. image:: images/Image4.png
@@ -94,7 +100,7 @@ Resume :The project status changed  to “Active”. In the Active state, team-m
 
 .. image:: images/resume.png
 
-Stopped : The project status changed to “Stopped”. In a Stopped state all underlying resources will be stopped and the user will not be able to perform actions on them but we are able to terminate the product. We need to manually start the resources except the s3 product.
+Stopped : The project status changed to “Stopped”. In a Stopped state all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except the s3 product.
 
 .. image:: images/stop.png
 
@@ -104,35 +110,35 @@ Stopped : The project status changed to “Stopped”. In a Stopped state all un
 .. image:: images/stop3.png
 
 
-**Note**: If any failed provisioned product in my products panel we can't do actions on the project. Initially we need to terminate that product.
+**Note**: If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
 
 
 Budget Management for PI
 ------------------------
 
-We have brought in a budget management screen for the Principal Investigator to view budget consumption across projects.
+You have brought in a budget management screen for the Principal Investigator to view budget consumption across projects.
 
-Navigation to Budget Management
+Navigation to Budget screen
 
- Logged as Principal Account. Click on “☰” Symbol which is available  on left side header. We can see menu like 
+ Logged as Principal Account. Click on “☰” Symbol which is available  on left side header. You can see menu like 
 
-**My projects** : Through this we can navigated to All Projects page
+**My projects** : Through this you can navigate to All Projects page
 
-**Budget Management**  : Through this we can navigated to Budget Details page 
+**Budget**  : Through this you can navigate to the Budget Details page 
 
 .. image:: images/budget.png 
 
 .. image:: images/budget2.png
 
-We can see budget details  with different KPI cards. We can see the following KPI cards:
+You can see budget details  with different KPI cards. You can see the following KPI cards:
 
-**Total Budget Allotted:** This is the budget allocated for the project during the creation of the project.
+  * **Total Budget Allotted:** This is the budget allocated for the project during the creation of the project.
 
-**Total Budget Consumed:** This is the budget consumed by all the researchers in the project.
+  * **Total Budget Consumed:** This is the budget consumed by all the researchers in the project.
 
-**Total Budget Available:** This is available budget for the project
+  * **Total Budget Available:** This is available budget for the project
 
-We can see Project-wise Budget details in the table format:
+You can see Project-wise Budget details in the table format:
 
 
 +-------------+----------------------+---------------+----------------+---------------------------------+
@@ -140,8 +146,8 @@ We can see Project-wise Budget details in the table format:
 +-------------+----------------------+---------------+----------------+---------------------------------+
 
 
-We can download the budget details through the “Export CSV”  option 
-We can see researcher budget details which are linked to particular products and we can see configured products information in Researcher-wise Budget details page
+You can download the budget details through the “Export CSV”  option 
+You can see researcher budget details which are linked to particular products and you can see configured products information in Researcher-wise Budget details page
 
 
 .. image:: images/budget3.png
@@ -168,25 +174,27 @@ Researcher can view the projects in the all projects panel.
 Image Researcher account 
 
 
-Researcher can view service catalog products available for the project. Click on the project like “Chiron” . We can see KPI cards, available products and active products information in the project details page.
+Researcher can view service catalog products available for the project. Click on the project like “Chiron” . You can see KPI cards, available products and active products information in the project details page.
 
 
 KPI Cards
 ---------
 
-We can see the following KPI cards:
-**Available Project Budget:**
-**Consumed Project Budget**
-**My Consumed Budget**
+You can see the following KPI cards:
+* Available Project Budget
+* Consumed Project Budget
+* My Consumed Budget
 
-**Available Project Budget:**
-
+Available Project Budget
+^^^^^^^^^^^^^^^^^^^^^^^^
 This is the budget allocated for the project during the creation of the project.
 
-**Consumed Project Budget:**
+Consumed Project Budget
+^^^^^^^^^^^^^^^^^^^^^^^^
 This is the budget consumed by all the researchers in the project.
 
-**My Consumed Budget:**
+My Consumed Budget
+^^^^^^^^^^^^^^^^^^^^^^^^
 This budget is consumed by the researcher who is logged in for that project.
 
 
@@ -198,21 +206,21 @@ Image  - KPI cards
 Available Products
 ------------------
 
-We can view the service catalog of products available for the project. These items shall be organized into Portfolios. Clicking on a portfolio shall display all the Products available in it.
+You can view the service catalog of products available for the project. These items shall be organized into Portfolios. Clicking on a portfolio shall display all the Products available in it.
 
 .. image:: images/avaiable.png
 
 Image - available Products 
 
-We can see product information in the card. We can know more information about  the product through the “Know More” link.
+You can see product information in the card. You can know more information about  the product through the “Know More” link.
 
-Through the “View Details” link we can see following 
+Through the “View Details” link you can see following 
 
-Budget Details List view-We can see the budget details in list view
+Budget Details List view - You can see the budget details in list view
 
-Budget Details grid view- We can see the budget details in grid view
+Budget Details grid view - You can see the budget details in grid view
 
-Keyword search- We can search products based on product type
+Keyword search - You can search products based on product type
 
 
 .. image:: images/avaiableproduct.png
@@ -234,14 +242,14 @@ Product order form is opened. Input parameters associated with the selected prod
 Image  - Product Order Page
 
 
-Note: We are displaying VPC,Subnets and security groups,Subnets and keypair names in the listbox. Through this user can easily select the keypair and while provisioning the product and use the compute resources.
+Note: You are displaying VPC,Subnets and security groups,Subnets and keypair names in the listbox. Through this user can easily select the keypair and while provisioning the product and use the compute resources.
 
 .. image:: images/product2.png 
 
 
 Each product conveyed the expected amount of time it takes to provision through this user knows how much time that provision will take.
-We should display listed keypairs under Key name Field in the form.
-If we ordered an EC2 product we can see the  Toaster message like “Amazon EC2 ordered Successfully” and it will display an information message.
+You should display listed keypairs under Key name Field in the form.
+If you ordered an EC2 product you can see the  Toaster message like “Amazon EC2 ordered Successfully” and it will display an information message.
 
 
 .. image:: images/allprojects.png
@@ -250,22 +258,22 @@ If we ordered an EC2 product we can see the  Toaster message like “Amazon EC2 
 My products
 -----------
 
-We can see the provisioned products details in the My Products Panel.
+You can see the provisioned products details in the My Products Panel.
 
-We can provisioned product details like product name,Product type and state in the card.
-We can see provisioned product details through “ViewAll” option. We can  see
+You can view provisioned product details like product name, product type and state in the card.
+You can see provisioned product details through “View All” option. You can  see
 all product details
 
 .. image:: images/myproducts.png
 
 
-Through the “View Details” link we can see following 
+Through the “View Details” link you can see following 
 
-**Budget Details List view**- We can see the budget details in list view
+   * Budget Details List view - You can see the budget details in list view
 
-**Budget Details grid view**- We can see the budget details in grid view
+   * Budget Details grid view - You can see the budget details in grid view
 
-**Keyword search**- We can search products based on product name,product type and description
+   * Keyword search - You can search products based on product name,product type and description
 
 
 .. image:: images/myproduct2.png
@@ -273,83 +281,125 @@ Through the “View Details” link we can see following
 .. image:: images/myproducts3.png 
 
 
-While product in creating state we are displaying a time limit that provision will take through the “Live in 5/1//15 mins” tag.
- When we click any action(start/stop/terminate) in a provisioned product , state should be changed automatically using server side events.
+While product is in the *Creating* state we are displaying a time limit that provision will take through the “Live in 5/10/15 mins” tag.
+
+When you click any action(start/stop/terminate) in a provisioned product , state should be changed automatically using server side events.
 
 
 
 Actions available for products
 ------------------------------
 
- **EC2  Product**
- 
+EC2  Product
+^^^^^^^^^^^^ 
 
 Researchers can login to the portal and quickly order  EC2 products.
 Find the Provisioned EC2 product i.e. Ayush Medicine in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
-We can see product related actions in the  Actions menu.
-Choose options like “SSH/RDP”. Through this we can connect to the Jump server.
+You can see product related actions in the  Actions menu.
 
-   Fill the following Details
-   Username                :<Jump server user name>
+SSH/RDP action
+______________
 
-   Authentication Type     :<Choose password/Pem file>
+Choose options like “SSH/RDP”. Through this we can connect to the server.
 
-   Upload Pem file         :<Upload the pem file>
+Fill the following Details
 
-   Click on the “Submit” button. Now we can connect to SSH Terminal 
-   in a new window
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Jump server user name>
+   * - Authentication Type
+     - <Choose password/Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+
+Click on the “Submit” button. Now you can connect to SSH Terminal 
+in a new window
 
 
- .. image:: images/E2E.png
+.. image:: images/E2E.png
+
+Image - SSH/RDP action
+
+.. image:: images/E2E2.png
+
+Image - SSH dialog box
 
 
- .. image:: images/E2E2.png
+Start/Stop action
+_________________
 
+You can start or stop the instance through “Start/Stop”.
 
-We can start the instance through “Start”.
+Reboot action
+_____________
 
-We can reboot instances through  “Reboot”.
+You can reboot instances through  “Reboot”.
 
-We can stop the instance through “Stop” action.
+Terminate action
+________________
 
-We can terminate the product through “Terminate” action.
+You can terminate the product through “Terminate” action.
 
 
 
 S3  Product
------------
+^^^^^^^^^^^
 
 Researcher can login to the portal and quickly order S3 Product.
 Find the S3 in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
-We can see product related actions in the  Actions menu.
-Choose an option like “Upload”. Upload file(File should not contain more than 10MB). Through this we can Upload a file in S3 bucket.
-Choose the option like “Share”. Through this we can  share the details to other team members.
-**NOTE:**
-If there are no researchers in the list it will show a message like **“No researchers are available. Please add a new researcher to share the s3 bucket “**
+You can see product related actions in the  Actions menu.
 
+Upload action
+_____________
 
- .. image:: images/testingevent1.png
+Choose an option like “Upload”. Upload file(File should not contain more than 10MB). Through this you can Upload a file in S3 bucket.
 
- .. image:: images/testingevent2.png
+.. image:: images/testingevent2.png
+
+Image - Upload action
+
+Share action
+____________
+
+Choose the option like “Share”. Through this you can  share the details to other team members.
+
+**NOTE:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket “**
+
+.. image:: images/testingevent1.png
+
+Image - Share action
 
 .. image:: images/testingevent3.png
 
+Image - Share dialog
+
 .. image:: images/testingevent4.png
 
+Image - Share error
 
+Terminate action
+________________
 
-Choose an option like “Terminate”. through this we can terminate the product
-We implemented a check to find out if a file exists in the bucket or not . If exists it will throw an error message accordingly. i.e. ”The bucket is not empty. Please delete all contents from the bucket and try again.”
+Choose an option like “Terminate”. Through this you can terminate the product
+You implemented a check to find out if a file exists in the bucket or not . If exists it will throw an error message accordingly. i.e. ”The bucket is not empty. Please delete all contents from the bucket and try again.”
 
 
 .. image:: images/action.png
 
+Image - Terminate action
 
-Explore Action: 
-Through this action we can show all the files and folders in the S3 bucket with actions (download, delete) against each item.
+Explore Action
+______________
+
+Through this action you can show all the files and folders in the S3 bucket with actions (download, delete) against each item.
 For folders the user shall be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
 For any deeper level, the user shall be able to navigate back to an upper level.
-We can upload the different files (File should not contain more than 10MB)
+You can upload the different files (File should not contain more than 10MB)
 
 
 .. image:: images/exploreaction.png
@@ -359,10 +409,10 @@ We can upload the different files (File should not contain more than 10MB)
 
 
 Linking S3 with Sagemaker 
--------------------------
+_________________________
 
-We have to link Sagemaker from the S3 product details page using the provisioned product ID.
-For a S3 Provisioned Product, we should have a new action item called “Link”
+You have to link Sagemaker from the S3 product details page using the provisioned product ID.
+For a S3 Provisioned Product, you should have a new action item called “Link”
 
 
 .. image:: images/linking.png 
@@ -372,8 +422,8 @@ This action item should be a pop up which will have the list (dropdown) of activ
 
 .. image:: images/linking2.png
 
-We should have an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-We should also provide an “Unlink action” to unlink sagemakers from s3 bucket side. We are providing “Copy bucket name” action from sagemaker product side.
+You should have an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
+You should also see an “Unlink action” to unlink sagemakers from s3 bucket side. You are providing “Copy bucket name” action from sagemaker product side.
 
 
 .. image:: images/event.png
@@ -381,40 +431,54 @@ We should also provide an “Unlink action” to unlink sagemakers from s3 bucke
 .. image:: images/event2.png
 
 
-If there are no active sagemaker products we are showing the following message to the user “There is no provisioned Sagemaker product.Please Launch a sagemaker product from the available products page first,before linking to an s3 bucket”.
+If there are no active sagemaker products we are showing the following message to the user “There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first,before linking to an s3 bucket”.
 
 .. image:: images/computerresource.png 
 
-
-
 SageMaker  Product
-------------------
+^^^^^^^^^^^^^^^^^^
 
-Researcher can login to the portal and quickly order SageMaker products..
+Researcher can login to the portal and quickly order SageMaker products.
 Find the Sagemaker product in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
-We can see product related actions in the  Actions menu.
-We can navigate to notebook through “Link “ action
-We can stop the instance through “Stop” action.
-We can terminate the product through “Terminate” action.
+You can see product related actions in the  Actions menu.
 
+Open Notebook
+_____________
 
+You can navigate to notebook through “Open Notebook“ action
+
+Start/Stop action
+_________________
+
+You can stop the instance through “Start/Stop” action. Based on the instance state, you will see either the Start or the Stop action.
+
+Terminate
+_________
+
+You can terminate the product through “Terminate” action.
 
 .. image:: images/sagemaker.png
 
 HPC Product
------------
+^^^^^^^^^^^
 
-AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. AWS delivers an integrated suite of services that provides everything needed to quickly and easily build and manage HPC clusters in the cloud to run the most compute intensive workloads across various industry verticals. These workloads span the traditional HPC applications, weather prediction, and seismic imaging, as well as emerging applications, like machine learning, deep learning, and autonomous driving. This product has a master node and cluster nodes with a auto scaling group which will enable the cluster nodes required to be completed. It has many job schedulers like Slurm, AWS jobs. We have used a CFT to make this product provisioned.
+AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. AWS delivers an integrated suite of services that provides everything needed to quickly and easily build and manage HPC clusters in the cloud to run the most compute intensive workloads across various industry verticals. These workloads span the traditional HPC applications, weather prediction, and seismic imaging, as well as emerging applications, like machine learning, deep learning, and autonomous driving. This product has a master node and cluster nodes with a auto scaling group which will enable the cluster nodes required to be completed. It has many job schedulers like Slurm, AWS jobs. You have used a CFT to make this product provisioned.
 
 .. image:: images/hpc.png
 
 .. image:: images/hpc2.png
 
+Instance-wide Features
+----------------------
 
 SAML 2.0
+^^^^^^^^
+
 SAML is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. SAML is an XML-based markup language for security assertions
 
 Security Assertion Markup Language (SAML) is a standard for logging users into applications based on their sessions in another context. This single sign-on (SSO) login standard has significant advantages over logging in using a username/password
 
 
 .. image:: images/saml.png
+
+RLCatalyst Research Gateway supports integration with Identity Providers that support SAML 2.0. If you need your instance of the gateway integrated with your IdP please contact us.
