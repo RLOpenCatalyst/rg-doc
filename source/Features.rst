@@ -1,6 +1,8 @@
 Features
 ========
 
+.. contents::
+
 Budget Management
 -----------------
 We have brought in a budget management screen for the Administrator  to view budget consumption across projects.
@@ -123,7 +125,7 @@ Select “Sign out”option.Through this user logged out from the portal.
 .. image:: images/signout.png
 
 
-Principal Account:
+Principal Account
 ------------------
 As a Principal Investigator, I will be able to create Projects within my Organization. A project shall be associated with a Budget with an associated dollar amount that is funded from a specific Grant to the organization. A Project can use Resources only if there is an associated budget that can meet the forecasted needs.
 

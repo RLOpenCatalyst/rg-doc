@@ -3,5 +3,5 @@ Appendix A
 
 .. csv-table::
    :file: AppendixA.CSV
-   :widths: 100,100
+   :widths: 40, 60
    :header-rows: 1
