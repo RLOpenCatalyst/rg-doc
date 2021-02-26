@@ -3,6 +3,18 @@ Features
 
 .. contents::
 
+---------------------------------
+
+Administrator Features
+++++++++++++++++++++++
+
+An Administrator user can perform the following actions.
+
+  * :ref:`Add an Organizational Unit<Adding Organizational Units>`
+  * :ref:`Add AWS Accounts for projects<Adding AWS Accounts>`
+  * Monitor overall budget via Budget Management screen
+  * Inspect Audit Trail records
+
 Budget Management
 -----------------
 We have brought in a budget management screen for the Administrator  to view budget consumption across projects.
@@ -50,9 +62,11 @@ We can  also see researcher-wise budget details which are linked to a particular
 
 .. image:: images/Image4.png
 
+-----------------------------------
 
-Principal Account
-------------------
+Principal Investigator Features
++++++++++++++++++++++++++++++++
+
 
 As a Principal Investigator, I will be able to create Projects within my Organization. A project shall be associated with a Budget with an associated dollar amount that is funded from a specific Grant to the organization. A Project can use Resources only if there is an associated budget that can meet the forecasted needs.
 
@@ -93,8 +107,9 @@ Stopped : The project status changed to “Stopped”. In a Stopped state all un
 **Note**: If any failed provisioned product in my products panel we can't do actions on the project. Initially we need to terminate that product.
 
 
-Budget Management
------------------
+Budget Management for PI
+------------------------
+
 We have brought in a budget management screen for the Principal Investigator to view budget consumption across projects.
 
 Navigation to Budget Management
@@ -139,8 +154,11 @@ We can see researcher budget details which are linked to particular products and
 
 
 
+-----------------------------------------
 
-Researcher Account
+Researcher Features
++++++++++++++++++++
+
 Researchers  can view a Service Catalog of Products available for the project. These items shall be organized into Portfolios. Clicking on a portfolio shall display all the Products available in it. Selecting a Product shall show all the associated details of that product.
 Log into the Research Gateway(As a Researcher)
 Researcher can view the projects in the all projects panel.

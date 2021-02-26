@@ -32,7 +32,11 @@ release = '1.4.1'
 # ones.
 extensions = [
   "sphinx_rtd_theme",
+  "sphinx.ext.autosectionlabel"
 ]
+
+# Make sure the target is unique
+autosectionlabel_prefix_document = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

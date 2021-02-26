@@ -84,7 +84,7 @@ To assign an *Administrator* or *Principal Investigator* role, please contact rl
 .. _`Adding Organizational Units`:
 
 Adding Organizational Units
---------------------------------
+---------------------------
 
 To plan the creation of a new Organization, use the planning sheet in *`Appendix A`__* to collect all the information required upfront.Login into the Research Gateway..
         
