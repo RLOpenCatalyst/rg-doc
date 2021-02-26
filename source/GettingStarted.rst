@@ -148,11 +148,11 @@ Click on dropdown bar which is above the header
 Choose the  “Settings” option
 
 
-.. image:: images/providersettings.png 
+.. image:: images/Providersettings.png 
 
 Click on  the  “Add New” button. Provider settings page is opened.
 
-.. image:: images/provider2.png 
+.. image:: images/Provider2.png 
 
 .. image:: images/AddProvider.png 
 
