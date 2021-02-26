@@ -138,3 +138,80 @@ The Organizations page of the Research Gateway shall list all the existing organ
 
 
 Image  - View Organization Details Page
+
+
+How to add an AWS account to use in a project
+---------------------------------------------
+
+Login into the Research Gateway.
+Click on dropdown bar which is above the header
+Choose the  “Settings” option
+
+
+.. image:: images/providersettings.png 
+
+Click on  the  “Add New” button. Provider settings page is opened.
+
+.. image:: images/provider2.png 
+
+.. image:: images/AddProvider.png 
+
+Image  - Add Provider Settings Page
+
+Fill in the following details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Account Name
+     - <Account Name>
+   * - Account Key
+     - <Account Key>
+   * - Secret Key
+     - <Secret Key>
+   * - Region
+     - <Region>
+   * - Account Number
+     - <AWS Account Number>
+
+
+Click on the “Add” button. AWS account is linked successfully.
+
+
+
+We can  see a 3-dotted action button in the project. Through this we can edit,update  the project.
+
+Image 
+
+.. image:: images/Project.png 
+
+
+1. Click on the “Edit” button.Provider settings page is opened.
+
+Image
+
+.. image:: images/Editprovider.png 
+  
+2. Update the fields and click on “Add”.Provider setting is updated successfully.
+
+.. image:: images/editprovider2.png
+
+Image  - Edit Provider Settings Page
+
+
+Click on the “Delete” option.. Confirmation dialog box is opened. Once confirm that we can delete the setting successfully.
+
+
+.. image:: images/deleteprovider.png 
+
+
+
+Click on “Sync Now” button. We can message like “Sync completed”
+
+.. image:: images/sync1.png 
+
+.. image:: images/sync2.png 
+

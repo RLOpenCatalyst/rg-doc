@@ -10,26 +10,28 @@ We have brought in a budget management screen for the Administrator  to view bud
 Navigation to Budget management 
 
 Login as a PortalAdmin account.
-Click on “ ≣ “ option which is available on left side header.We can see the  following details
-a. **My Organizations** : Through this we can navigated to All Organizations page
-b. **Budget Management** : Through this we can navigated to Budget Details page 
+Click on “ ≣ “ option which is available on left side header. We can see the  following details:
+
+  * a. **My Organizations** : Through this we can navigate to the **All Organizations** page
+  * b. **Budget Management** : Through this we can navigate to the **Budget Details** page 
 
 
 .. image:: images/Image1.png
 
 
 
-We can see budget details  with different KPI cards.We can see the following KPI cards:
-**Total Budget Allotted**: This is the budget allocated for the Organization during the creation.
-**Total Budget Consumed**: This is the budget consumed by all Organizations.
-**Total Budget Available**: This is the available budget for Organization
+At the top of this view we can see the summary of budgets across all organizational units in the KPI cards.
+We can see the following KPI cards:
+
+  * **Total Budget Allotted**: This is the sum total of budget allocated for all projects in the Organization.
+  * **Total Budget Consumed**: This is the budget consumed by all Organizations.
+  * **Total Budget Available**: This is the portion of the alloted budget which is not yet consumed.
 
 .. image:: images/Image2.png
 
 
-We can see Organization-wise Budget Details in the table format:
-
-
+The Administrator user can view organization-specific budget details by clicking on one of the lines above. 
+The following details are visible in a table format:
 
 
 .. csv-table::
@@ -38,89 +40,21 @@ We can see Organization-wise Budget Details in the table format:
    :header-rows: 1
 
 
-We can download the Budget details through the “Export CSV”  option
-We can see Project-wise Budget details which are linked to particular Organization
+The Administrator user can download the Budget details through the “Export CSV”  option. By clicking on a specific line item, the user can see project-wise budget details which are linked to a particular Organizational Unit.
 
-      .. image:: images/Image3.png
+.. image:: images/Image3.png
 
 
-We can  also see Researcher-wise Budget details which are linked to particular Project and  We can see configured Product  details in Product-wise Budget details page.
+We can  also see researcher-wise budget details which are linked to a particular project and  we can see configured product  details in product-wise budget details page.
  
 
 .. image:: images/Image4.png
 
 
-How to add AWS account
-Login into the Research Gateway.
-Click on dropdown bar which is above the header
-Choose the  “Settings” option
-
-
-.. image:: images/providersettings.png 
-
-Click on  the  “Add New” button.Provider settings page is opened.
-
-.. image:: images/provider2.png 
-
-.. image:: images/AddProvider.png 
-
-Image  - Add Provider Settings Page
-
-Fill the following details:
-**Account Name**      :<Account Name>
-
-**Access Key**        :<Access Key>
-
-**Secret Key**        :<Secret Key>
-
-**Region**            :<Region>
-
-**Account Number**    :<AWS Account Number>
-
-
-Click on the “Add” button.AWS account is linked successfully.
-
-
-
-We can  see a 3-dotted action button in the project.Through this we can edit,update  the project.
-
-Image 
-
-.. image:: images/Project.png 
-
-
-1. Click on the “Edit” button.Provider settings page is opened.
-
-Image
-
-.. image:: images/Editprovider.png 
-  
-2. Update the fields and click on “Add”.Provider setting is updated successfully.
-
-.. image:: images/editprovider2.png
-
-Image  - Edit Provider Settings Page
-
-
-Click on the “Delete” option..Confirmation dialog box is opened.Once confirm that we can delete the setting successfully.
-
-
-.. image:: images/deleteprovider.png 
-
-
-
-Click on “Sync Now” button.We can message like “Sync completed”
-
-.. image:: images/sync1.png 
-
-.. image:: images/sync2.png 
-
-
 Sign-out process
 -----------------
-Login in to Research Gateway
-Click on the dropdown bar which is at the top
-Select “Sign out”option.Through this user logged out from the portal.
+Click on the dropdown bar which is at the top right.
+Select “Sign out”option. The user will be logged out from the portal.
 
 .. image:: images/signout.png
 
@@ -154,10 +88,10 @@ Budget Available    :<Cost of the Budget>
 
 Click on the “Add Project” button. Added a new project successfully.
 
-NOTE:When adding a project we are  passing researcher information.Through this we are linking researchers to the project.The project form allows multi-select addition of researchers while creating a project.
+NOTE:When adding a project we are  passing researcher information. Through this we are linking researchers to the project. The project form allows multi-select addition of researchers while creating a project.
 
 
-**Note:  The project is independent of the researcher.We should create empty project and add researchers later**
+**Note:  The project is independent of the researcher. We should create empty project and add researchers later**
 
 My Projects page of the Research Gateway shall list all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
@@ -174,17 +108,17 @@ Actions on Projects
 .. image:: images/actionon.png
 
 
-Paused: The project status changed to “Paused”.All the researchers under this project would be affected.In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before.All the available products would be visible  but “LaunchNow “ button would be hidden
+Paused: The project status changed to “Paused”. All the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible  but “LaunchNow “ button would be hidden
 
 .. image:: images/pause.png
 
 .. image:: images/pause2.png
 
-Resume :The project status changed  to “Active”.In the Active state, team-members can launch new products from the catalog of Available Products.
+Resume :The project status changed  to “Active”. In the Active state, team-members can launch new products from the catalog of Available Products.
 
 .. image:: images/resume.png
 
-Stopped : The project status changed to “Stopped”.In a Stopped state all underlying resources will be stopped and the user will not be able to perform actions on them but we are able to terminate the product. We need to manually start the resources except the s3 product.
+Stopped : The project status changed to “Stopped”. In a Stopped state all underlying resources will be stopped and the user will not be able to perform actions on them but we are able to terminate the product. We need to manually start the resources except the s3 product.
 
 .. image:: images/stop.png
 
@@ -194,7 +128,7 @@ Stopped : The project status changed to “Stopped”.In a Stopped state all und
 .. image:: images/stop3.png
 
 
-**Note**: If any failed provisioned product in my products panel we can't do actions on the project.Initially we need to terminate that product.
+**Note**: If any failed provisioned product in my products panel we can't do actions on the project. Initially we need to terminate that product.
 
 
 Budget Management
@@ -203,7 +137,7 @@ We have brought in a budget management screen for the Principal Investigator to 
 
 Navigation to Budget Management
 
- Logged as Principal Account.Click on “☰” Symbol which is available  on left side header.We can see menu like 
+ Logged as Principal Account. Click on “☰” Symbol which is available  on left side header. We can see menu like 
 
 **My projects** : Through this we can navigated to All Projects page
 
@@ -245,7 +179,7 @@ Sign-out process
 
 Login in to Research Gateway
 Click on the dropdown bar which is at the top
-Select “Sign out”option.Through this user logged out from the portal
+Select “Sign out”option. Through this user logged out from the portal
 
 .. image:: images/signout3.png 
 
@@ -261,7 +195,7 @@ Researcher can view the projects in the all projects panel.
 Image Researcher account 
 
 
-Researcher can view service catalog products available for the project.Click on the project like “Chiron” .We can see KPI cards, available products and active products information in the project details page.
+Researcher can view service catalog products available for the project. Click on the project like “Chiron” . We can see KPI cards, available products and active products information in the project details page.
 
 
 KPI Cards
@@ -297,7 +231,7 @@ We can view the service catalog of products available for the project. These ite
 
 Image - available Products 
 
-We can see product information in the card.We can know more information about  the product through the “Know More” link.
+We can see product information in the card. We can know more information about  the product through the “Know More” link.
 
 Through the “View Details” link we can see following 
 
@@ -318,16 +252,16 @@ Product Order
 
 Log into the Research Gateway.
 
-Researchers can see the projects in All projects page.Click on the Project.
-Navigate to Available products panel.Choose the product in the list
-Product order form is opened.Input parameters associated with the selected product shall be displayed as a form at this point. Once all parameters are filled the user shall be able to “Launch Now” the form and the item would then be added to the shopping cart.
+Researchers can see the projects in All projects page. Click on the Project.
+Navigate to Available products panel. Choose the product in the list
+Product order form is opened. Input parameters associated with the selected product shall be displayed as a form at this point. Once all parameters are filled the user shall be able to “Launch Now” the form and the item would then be added to the shopping cart.
 
 .. image:: images/product.png 
 
 Image  - Product Order Page
 
 
-Note: We are displaying VPC,Subnets and security groups,Subnets and keypair names in the listbox.Through this user can easily select the keypair and while provisioning the product and use the compute resources.
+Note: We are displaying VPC,Subnets and security groups,Subnets and keypair names in the listbox. Through this user can easily select the keypair and while provisioning the product and use the compute resources.
 
 .. image:: images/product2.png 
 
@@ -346,7 +280,7 @@ My products
 We can see the provisioned products details in the My Products Panel.
 
 We can provisioned product details like product name,Product type and state in the card.
-We can see provisioned product details through “ViewAll” option.We can  see
+We can see provisioned product details through “ViewAll” option. We can  see
 all product details
 
 .. image:: images/myproducts.png
@@ -378,9 +312,9 @@ Actions available for products
  
 
 Researchers can login to the portal and quickly order  EC2 products.
-Find the Provisioned EC2 product i.e., Ayush Medicine in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
+Find the Provisioned EC2 product i.e. Ayush Medicine in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
 We can see product related actions in the  Actions menu.
-Choose options like “SSH/RDP”.Through this we can connect to the Jump server.
+Choose options like “SSH/RDP”. Through this we can connect to the Jump server.
 
    Fill the following Details
    Username                :<Jump server user name>
@@ -389,7 +323,7 @@ Choose options like “SSH/RDP”.Through this we can connect to the Jump server
 
    Upload Pem file         :<Upload the pem file>
 
-   Click on the “Submit” button.Now we can connect to SSH Terminal 
+   Click on the “Submit” button. Now we can connect to SSH Terminal 
    in a new window
 
 
@@ -415,8 +349,8 @@ S3  Product
 Researcher can login to the portal and quickly order S3 Product.
 Find the S3 in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
 We can see product related actions in the  Actions menu.
-Choose an option like “Upload”.Upload file(File should not contain more than 10MB).Through this we can Upload a file in S3 bucket.
-Choose the option like “Share”.Through this we can  share the details to other team members.
+Choose an option like “Upload”. Upload file(File should not contain more than 10MB). Through this we can Upload a file in S3 bucket.
+Choose the option like “Share”. Through this we can  share the details to other team members.
 **NOTE:**
 If there are no researchers in the list it will show a message like **“No researchers are available. Please add a new researcher to share the s3 bucket “**
 
@@ -431,8 +365,8 @@ If there are no researchers in the list it will show a message like **“No rese
 
 
 
-Choose an option like “Terminate”.through this we can terminate the product
-We implemented a check to find out if a file exists in the bucket or not .If exists it will throw an error message accordingly. i.e.,”The bucket is not empty. Please delete all contents from the bucket and try again.”
+Choose an option like “Terminate”. through this we can terminate the product
+We implemented a check to find out if a file exists in the bucket or not . If exists it will throw an error message accordingly. i.e. ”The bucket is not empty. Please delete all contents from the bucket and try again.”
 
 
 .. image:: images/action.png
@@ -466,7 +400,7 @@ This action item should be a pop up which will have the list (dropdown) of activ
 .. image:: images/linking2.png
 
 We should have an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-We should also provide an “Unlink action” to unlink sagemakers from s3 bucket side.We are providing “Copy bucket name” action from sagemaker product side.
+We should also provide an “Unlink action” to unlink sagemakers from s3 bucket side. We are providing “Copy bucket name” action from sagemaker product side.
 
 
 .. image:: images/event.png
@@ -497,7 +431,7 @@ We can terminate the product through “Terminate” action.
 HPC Product
 -----------
 
-AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. AWS delivers an integrated suite of services that provides everything needed to quickly and easily build and manage HPC clusters in the cloud to run the most compute intensive workloads across various industry verticals. These workloads span the traditional HPC applications, weather prediction, and seismic imaging, as well as emerging applications, like machine learning, deep learning, and autonomous driving.This product has a master node and cluster nodes with a auto scaling group which will enable the cluster nodes required to be completed. It has many job schedulers like Slurm, AWS jobs. We have used a CFT to make this product provisioned.
+AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. AWS delivers an integrated suite of services that provides everything needed to quickly and easily build and manage HPC clusters in the cloud to run the most compute intensive workloads across various industry verticals. These workloads span the traditional HPC applications, weather prediction, and seismic imaging, as well as emerging applications, like machine learning, deep learning, and autonomous driving. This product has a master node and cluster nodes with a auto scaling group which will enable the cluster nodes required to be completed. It has many job schedulers like Slurm, AWS jobs. We have used a CFT to make this product provisioned.
 
 .. image:: images/hpc.png
 
