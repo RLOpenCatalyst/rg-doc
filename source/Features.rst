@@ -15,7 +15,7 @@ a. **My Organizations** : Through this we can navigated to All Organizations pag
 b. **Budget Management** : Through this we can navigated to Budget Details page 
 
 
-.. image:: images/image1.png
+.. image:: images/Image1.png
 
 
 
