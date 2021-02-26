@@ -27,6 +27,7 @@ Indices and tables
    Introduction
    WhatIsRG
    GettingStarted
+   AccessingRG
    Features
    Appendices 
 

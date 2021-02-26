@@ -51,52 +51,14 @@ We can  also see researcher-wise budget details which are linked to a particular
 .. image:: images/Image4.png
 
 
-Sign-out process
------------------
-Click on the dropdown bar which is at the top right.
-Select “Sign out”option. The user will be logged out from the portal.
-
-.. image:: images/signout.png
-
-
 Principal Account
 ------------------
+
 As a Principal Investigator, I will be able to create Projects within my Organization. A project shall be associated with a Budget with an associated dollar amount that is funded from a specific Grant to the organization. A Project can use Resources only if there is an associated budget that can meet the forecasted needs.
-
-How to add new project 
-
-Login to the Research Gateway
-Click on the  “+Add New” button.Project application form is opened.
-
-.. image:: images/principalaccount.png
-
-.. image:: images/addproject.png
-
-Image  - Add Project Page
-
-Fill the following Details
-Project Name        :<Project Name>
-
-Project Description  :<Description about the project>
-
-Account ID        :<Account ID>
-
-Researcher ID    :<Researcher ID>
-
-Budget Available    :<Cost of the Budget>
-
-
-Click on the “Add Project” button. Added a new project successfully.
-
-NOTE:When adding a project we are  passing researcher information. Through this we are linking researchers to the project. The project form allows multi-select addition of researchers while creating a project.
-
-
-**Note:  The project is independent of the researcher. We should create empty project and add researchers later**
 
 My Projects page of the Research Gateway shall list all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
 .. image:: images/projectdetails.png 
-
 
 Image 1 - Project Details
 
@@ -174,14 +136,7 @@ We can see researcher budget details which are linked to particular products and
 
 
 
-Sign-out process
 
-
-Login in to Research Gateway
-Click on the dropdown bar which is at the top
-Select “Sign out”option. Through this user logged out from the portal
-
-.. image:: images/signout3.png 
 
 
 
