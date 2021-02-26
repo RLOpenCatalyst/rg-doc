@@ -469,10 +469,10 @@ AWS provides the most elastic and scalable cloud infrastructure to run your HPC 
 .. image:: images/hpc2.png
 
 Instance-wide Features
-----------------------
+++++++++++++++++++++++
 
 SAML 2.0
-^^^^^^^^
+--------
 
 SAML is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. SAML is an XML-based markup language for security assertions
 
