@@ -249,7 +249,7 @@ Select “Sign out”option.Through this user logged out from the portal
 
 
 
-Researcher Account:
+Researcher Account
 Researchers  can view a Service Catalog of Products available for the project. These items shall be organized into Portfolios. Clicking on a portfolio shall display all the Products available in it. Selecting a Product shall show all the associated details of that product.
 Log into the Research Gateway(As a Researcher)
 Researcher can view the projects in the all projects panel.

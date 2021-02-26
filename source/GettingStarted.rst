@@ -1,5 +1,5 @@
 Getting Started
----------------
+===============
 You will be provided the following pieces of information in your starter kit:
 URL:______Application URL:__________
 
@@ -41,7 +41,7 @@ PortalAdmin
 
 The Admin can create new organizations within the portal.Each such organization shall be associated with a single AWS Organization which shall be accessed via credentials provided by the Administrator. He will perform all administrative tasks.He will be able to create Researchers (alias for a user) with the Researcher role under an organization. A Researcher shall be associated with a user record in the Active Directory. A user can be a Researcher in more than one organization with a Researcher alias created in each organization but mapped to the same AD record for login purposes.
 
-Sign-Up process:
+Sign-Up process
 ----------------
 Use details from Appendix A for Company Name, User Name ,Email  & set the  Password as per Password policy. Click on the “Sign-up for  a new  account “ button.
 
