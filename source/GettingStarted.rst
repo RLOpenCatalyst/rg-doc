@@ -27,8 +27,8 @@ Users with the Administrator role can perform the steps below.
 
 Users with the Principal Investigator role can perform the steps below.
   
-  * `Adding a new project`_
-  * Assigning Researchers to projects
+  * `Adding a New Project`_
+  * `Assigning Researchers to projects`_
 
 Create an Admin user
 --------------------
@@ -37,8 +37,63 @@ Get started by first creating an Admin user account for your instance of RLCatal
 
 .. _`Adding Users`:
 
+Sign-In Process
+---------------
+Use details from *`Appendix A`__* for  User Name, Password as per password policy.
+
+Fill the following details 
+
+.. list-table:: 
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Username
+     - <Username that is used for login>
+   * - Password
+     - <Password for this user>
+	 
+Click on the “Sign-In“ button. We can log in successfully.
+
+.. image:: images/login.png
+
+	
+Forgot Password
+---------------
+A user sees a “Forgot Password” link on the login screen which is under the "Sign In" button.
+
+.. image:: images/login.png
+
+On clicking the link the user is navigated to the reset password screen.  
+
+.. image:: images/forgot.png
+
+Fill the following details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Username
+     - <Username that is used for login>
+   * - E-mail address
+     - <Registered Email ID>
+   
+Click on "Send Resend link" button. If the provided details are valid, he will get a verification link that has been sent to his email to reset the password. On clicking the link in the email, the user is prompted to change password screen.  
+
+.. image:: images/verificationemail.png
+
+The password change is either successful or unsuccessful (this will be like verification success and error screens).  The user is then redirected back to the login screen.
+
+.. image:: images/password.png
+
+.. image:: images/success.png
+
 Sign-Up process
-----------------
+---------------
 
 To sign-up as a new user, click on the “Sign-up for  a new  account “ button on the Sign-in page.
 
@@ -66,35 +121,23 @@ Fill the following details:
    :scale: 100 %
    :alt: Sign-up page
 
-Image  - Sign-up page
-
-Click on the  “Sign Up” button.
-
-You will see a  success  message and verification email has been sent to the email address registered
-
-.. image:: images/thankyou.png
-
-Check the verification email delivered to the registered email address & click on the verification link to activate the account. 
+Click on the  “Sign Up” button. You will see a  success  message and verification email has been sent to the email address registered. Check the verification email delivered to the registered email address & click on the verification link to activate the account. 
 
 .. image:: images/verificationemail2.png
 
-On successful validation, users  will be allowed to login into the Research Gateway. By default the user will be assigned a *Researcher* role.
-To assign an *Administrator* or *Principal Investigator* role, please contact rlc.support@relevancelab.com
+On successful validation, users  will be allowed to login into the Research Gateway. 
 
 .. _`Adding Organizational Units`:
 
 Adding Organizational Units
 ---------------------------
 
-To plan the creation of a new Organization, use the planning sheet in *`Appendix A`__* to collect all the information required upfront.Login into the Research Gateway..
-        
-Login to the Research Gateway.User landed to the  main dashboard.
+To plan the creation of a new Organization, use the planning sheet in *`Appendix A`__* to collect all the information required upfront. Login into the Research Gateway. User landed to the  main dashboard.
 
 .. image:: images/OrganizationPage.png
 
-Image  - Administrator Landing page lists the Organizational Units
 
-Click the “+” icon  which is at the top right corner.Organization form is opened.
+Click on the “+Add New” icon  which is at the top right corner. Organization form is opened.
 
 .. list-table:: 
    :widths: 50, 50
@@ -118,40 +161,29 @@ Click on the **“Add Organization”** button. The new organizational unit shou
 
 The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. Clicking on a specific organization shall lead to “View Organization Details” window .
 
-
-
 .. image:: images/ViewOrganizationDetailsPage.png
 
-
-Image  - View Organization Details Page
 
 .. _`Adding AWS Accounts`:
 
 Adding an AWS account to use in a project
 ---------------------------------------------
 
-Login into the Research Gateway.
-Click on dropdown bar which is above the header
-Choose the  “Settings” option
+Login into the Research Gateway. Click on dropdown bar which is above the header. Choose the  “Settings” option
 
 
 .. image:: images/Providersettings.png 
    :name: Provider Settings menu item
 
-Click on  the  “Add New” button. Provider settings page is opened.
+Click on  the  “+Add New” button. Provider settings page is opened.
 
 .. image:: images/Provider2.png 
    :name: Provider Settings Page
 
-Image  - Provider Settings Page
-
-
 .. image:: images/AddProvider.png 
    :name: Add Provider Settings screen
 
-Image  - Add Provider Settings Page
-
-Fill in the following details
+Fill the following details
 
 .. list-table:: 
    :widths: 50, 50
@@ -171,60 +203,43 @@ Fill in the following details
      - <AWS Account Number>
 
 
-Click on the “Add” button. AWS account should be added successfully and will show in the table of providers in the Provider Settings page.
+Click on the “Add” button. AWS account was added successfully and will show in the table of providers in the Provider Settings page.
 
-On each line item there is a contextual menu. Through this we can edit, update or sync the account.
+On each line item there is a contextual menu. Through this we can edit, delete or sync the account.
 
 .. image:: images/Project.png
 
-Image - Context menu for Provider Setting
-
-
-1. Click on the “Edit” button. Provider settings page is opened.
+Click on the 3-dotted icon which is available at the right side of the account details page and select “Edit” option. Provider settings page is opened.
+Update the fields and click on “Add”. Provider setting is updated successfully.
 
 .. image:: images/Editprovider.png 
-
-Image  - Editing an Account
-
-2. Update the fields and click on “Add”. Provider setting is updated successfully.
-
 .. image:: images/editprovider2.png
 
-Image  - Edit Provider Settings Page
 
-
-Click on the “Delete” option. A confirmation dialog box is opened. On confirmation the account will be deleted. You can only delete provider settings that are not linked to any project.
+Click on the 3-dotted icon which is available at the right side of the account details page and choose “Delete” option. A confirmation dialog box is opened. On confirmation the account will be deleted. You can only delete provider settings that are not linked to any project or Organization.
 
 
 .. image:: images/deleteprovider.png
 
-Image  - Deleting an account
 
 Research Gateway works in conjunction with AWS Service Catalog. To synchronize the Service Catalog to your project, select the Product Sync option.
-Click on “Sync Now” button. Once the synchronization is complete you should see the “Sync completed” message.
+Click on the “Sync Now” button. Once the synchronization is complete you should see the “Sync completed” message.
 
 .. image:: images/sync1.png
 
-Image  - Sync Now menu item
-
 .. image:: images/sync2.png
-
-Image  - Successful synchronization
 
 .. _`Adding a new project`:
 
 Adding a new project
 -------------------- 
 
-Login to the Research Gateway as a Principal Investigator.
-
-Click on the  “+Add New” button. Project application form is opened.
+Login to the Research Gateway as a Principal Investigator. Click on the  “+Add New” button. Project application form is opened.
 
 .. image:: images/principalaccount.png
 
 .. image:: images/addproject.png
 
-Image  - Add Project Page
 
 Fill in the following details
 
@@ -236,14 +251,14 @@ Fill in the following details
      - Details
    * - Project Name
      - <Project Name>
-   * - Project Description
-     - <Description about the project>
-   * - Account ID 
-     - <Account ID>
-   * - Researcher ID
-     - <Researcher ID>
    * - Budget Available
      - <Budget to allocate to this project (cumulative)>
+   * - Account ID 
+     - <Account ID>
+   * - Project Description
+     - <Description about the project> 
+   * - Add Researchers
+     - <Select researchers from the list>
 
 
 Click on the “Add Project” button. Added a new project successfully.
@@ -255,6 +270,3 @@ Click on the “Add Project” button. Added a new project successfully.
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
 .. image:: images/projectdetails.png 
-
-
-Image 1 - Project Details
