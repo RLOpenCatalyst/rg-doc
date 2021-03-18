@@ -184,7 +184,7 @@ You can see the following details in the table view :
    :widths: 70, 70, 100, 70, 90
    :header-rows: 1
 
-If we try to search the non-existent word it will display a message like “No matching organizations found". You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
+If you try to search the non-existent word it will display a message like “No matching organizations found". You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
 
 .. image:: images/search2.png
 
@@ -336,6 +336,7 @@ The project status changed to “Stopped”. In a Stopped state all underlying r
 
 If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
 
+If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
 
 Budgets (for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -385,7 +386,23 @@ You can see researcher budget details which are linked to particular products an
 .. image:: images/budget4.png
 
 
+Catalog
+^^^^^^^
+We have brought in a “Catalog” screen for the Administrator to view all catalog products across RG. Click on the “ ≣ “ option which is available on the left side header. We can see the  following details: 
+   
+     a. **My Organizations** : Through this, we can navigate to the My Organizations page
+     b. **Budgets** : Through this, we can navigate to the Budget Details page 
+     c. **Key Pairs**: Through this, we can navigate to the Key Pairs page.
+     d. **Users**: Through this, we can navigate to the Users page.
+     e. **Catalog**: Through this, we can navigate to the Catalog page.
 
+.. image:: images/cat1.png
+
+.. image:: images/cat2.png
+
+We can see the standard catalog products on the listing page and we can enable the checkbox which is at the right side of the product and assign to a particular  O.U through the “Assign selected to O.U” button.
+
+.. image:: images/assign2.png
 
 Catalog (for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
