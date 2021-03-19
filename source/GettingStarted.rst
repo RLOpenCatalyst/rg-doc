@@ -19,6 +19,8 @@ Planning your set up
 
 Setting up your RLCatalyst Research Gateway for use involves the following steps.
 
+.. image:: images/FirstSetupTask.png 
+
 Users with the Administrator role can perform the steps below.
 
   * :ref:`Adding Users<Adding Users>` - Users can have Administrator, Principal Investigator or Researcher roles.
@@ -33,7 +35,8 @@ Users with the Principal Investigator role can perform the steps below.
 Create an Admin user
 --------------------
 
-Get started by first creating an Admin user account for your instance of RLCatalyst Research Gateway.
+If you have subscribed to the hosted version of the Research Gateway application, you would have created the Admin user during registration.
+You would have subsequently received an email with a link to confirm the Administrator user's email. Use this username to login to Research Gateway.
 
 Sign-In Process
 ---------------
@@ -59,11 +62,9 @@ Click on the “Sign-In“ button. We can log in successfully.
 	
 Forgot Password
 ---------------
-A user sees a “Forgot Password” link on the login screen which is under the "Sign In" button.
+In case you have forgotten your password, you can use the “Forgot Password” link on the login screen which is under the "Sign In" button.
 
-.. image:: images/login.png
-
-On clicking the link the user is navigated to the reset password screen.  
+click the link to navigate to the reset password screen.  
 
 .. image:: images/forgot.png
 
@@ -80,7 +81,7 @@ Fill the following details
    * - E-mail address
      - <Registered Email ID>
    
-Click on "Send Resend link" button. If the provided details are valid, he will get a verification link that has been sent to his email to reset the password. On clicking the link in the email, the user is prompted to change password screen.  
+Click on "Send Resend link" button. If the provided details are valid, you will get a verification link on the registered email address to reset the password. On clicking the link in the email, the user is lead to the change password screen.  
 
 .. image:: images/verificationemail.png
 
@@ -215,7 +216,7 @@ Login to the Research Gateway as a Principal Investigator. Click on the  “+Add
 
 .. image:: images/principalaccount.png
 
-.. image:: images/addproject.png
+.. image:: images/AddProjectNew.png
 
 
 Fill in the following details
