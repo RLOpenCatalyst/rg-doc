@@ -848,7 +848,7 @@ Click on the "+Create New" button which is available at right side of the page. 
 You can see key Pairs details in table format:
 
 .. csv-table::
-   :file: Keypair.csv
+   :file: keypair.csv
    :widths: 20, 20, 20, 20, 20
    :header-rows: 1
 
