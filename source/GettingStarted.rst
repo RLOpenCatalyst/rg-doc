@@ -35,8 +35,6 @@ Create an Admin user
 
 Get started by first creating an Admin user account for your instance of RLCatalyst Research Gateway.
 
-.. _`Adding Users`:
-
 Sign-In Process
 ---------------
 Use details from *`Appendix A`__* for  User Name, Password as per password policy.

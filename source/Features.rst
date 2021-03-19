@@ -109,6 +109,8 @@ We have an active filter: enable and disable option. You can toggle between acti
 
 .. image:: images/toggle.png
 
+.. _`Adding Users`:
+
 You can add a new user through the “+Add New” button which is on the right side of the screen. 
 
 Fill the following details 
