@@ -55,7 +55,7 @@ The following details are visible in a table format:
 
 
 .. csv-table::
-   :file: BudgetTable.CSV
+   :file: BudgetTable.csv
    :widths: 10, 15, 10, 10, 55
    :header-rows: 1
 
@@ -182,7 +182,7 @@ Click on the **Audit Trail** menu item to navigate to the Audit Trail page.
 You can see the following details in the table view : 
 
 .. csv-table::
-   :file: AuditTable.CSV
+   :file: AuditTable.csv
    :widths: 10, 10, 20, 10, 50
    :header-rows: 1
 
@@ -368,7 +368,7 @@ You can see budget details  with different KPI cards. You can see the following 
 You can see Project-wise Budget details in the table format:
 
 .. csv-table::
-   :file: BudgetTable2.CSV
+   :file: BudgetTable2.csv
    :widths: 10, 15, 10, 10, 55
    :header-rows: 1
  
@@ -713,7 +713,7 @@ You can see budget details with different KPI cards. You can see the following K
 You can see Project-wise Budget details in the table format:
 
 .. csv-table::
-   :file: BudgetTable2.CSV
+   :file: BudgetTable2.csv
    :widths: 10, 15, 20, 20, 35
    :header-rows: 1
 
@@ -848,7 +848,7 @@ Click on the "+Create New" button which is available at right side of the page. 
 You can see key Pairs details in table format:
 
 .. csv-table::
-   :file: Keypair.CSV
+   :file: Keypair.csv
    :widths: 10, 10, 10, 10, 10
    :header-rows: 1
 
