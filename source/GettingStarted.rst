@@ -28,7 +28,7 @@ Users with the Administrator role can perform the steps below.
 Users with the Principal Investigator role can perform the steps below.
   
   * `Adding a New Project`_
-  * `Assigning Researchers to projects`_
+  *  Assigning Researchers to projects
 
 Create an Admin user
 --------------------
