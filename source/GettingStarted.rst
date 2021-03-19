@@ -21,7 +21,7 @@ Setting up your RLCatalyst Research Gateway for use involves the following steps
 
 Users with the Administrator role can perform the steps below.
 
-  * `Adding Users`_ - Users can have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Adding Users<Adding Users>` - Users can have Administrator, Principal Investigator or Researcher roles.
   * `Adding AWS Accounts`_
   * `Adding Organizational Units`_
 

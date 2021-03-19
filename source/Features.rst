@@ -56,7 +56,7 @@ The following details are visible in a table format:
 
 .. csv-table::
    :file: BudgetTable.CSV
-   :widths: 70, 100, 70, 70, 300
+   :widths: 10, 15, 10, 10, 55
    :header-rows: 1
 
 
@@ -183,7 +183,7 @@ You can see the following details in the table view :
 
 .. csv-table::
    :file: AuditTable.CSV
-   :widths: 70, 70, 100, 70, 90
+   :widths: 10, 10, 20, 10, 50
    :header-rows: 1
 
 If you try to search the non-existent word it will display a message like “No matching organizations found". You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
@@ -369,7 +369,7 @@ You can see Project-wise Budget details in the table format:
 
 .. csv-table::
    :file: BudgetTable2.CSV
-   :widths: 70, 90, 70, 70, 150
+   :widths: 10, 15, 10, 10, 55
    :header-rows: 1
  
 You can download the budget details through the “Export CSV”  option.
@@ -714,7 +714,7 @@ You can see Project-wise Budget details in the table format:
 
 .. csv-table::
    :file: BudgetTable2.CSV
-   :widths: 70, 90, 100, 100, 150
+   :widths: 10, 15, 20, 20, 35
    :header-rows: 1
 
 You can see configured product-wise budget details which are linked to a particular project.
@@ -849,7 +849,7 @@ You can see key Pairs details in table format:
 
 .. csv-table::
    :file: Keypair.CSV
-   :widths: 70, 70, 70, 70, 70
+   :widths: 10, 10, 10, 10, 10
    :header-rows: 1
 
 The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
