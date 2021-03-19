@@ -25,15 +25,9 @@ As an Administrator, you can view the organization-wide budgets from the **Budge
 
 **Navigation to the Budget**
 
-Login as the Administrator user. Click on “ ≣ “ option which is available on the top-left side. You can see the  following details:
+Login as the Administrator user. Click on “☰” option which is available on the top-left side. Click on the **Budgets** menu item to navigate to the Budgets page.
 
-   a. **My Organizations** : Through this, you can navigate to the My Organizations page
-   b. **Budget Management** : Through this, you can navigate to the Budget Details page
-   c. **Users** : Through this, you can navigate to the User Management page
-   d. **Audit Trail** : Through this, you can navigate to the Audit Trail page
-   e. **Catalog** : Through this, you can navigate to the Catalog Management page
-
-
+ 
 .. image:: images/AdminMenu.png
 
 **Budget KPIs**
@@ -50,7 +44,7 @@ You can see the following KPI cards:
 **Organization-wise budget view**
 
 The Administrator user can view organization-specific budget details by clicking on a specific organization in the available list. 
-line
+
 The following details are visible in a table format:
 
 
@@ -70,14 +64,14 @@ When Consumed Budget exceeds a threshold (say 80%), the budget management screen
 
 **Researcher-wise budget view**
 
-You can  also see researcher-wise budget details which are linked to a particular project and  you can see configured product  details in product-wise budget details page.
+You can  also see researcher-wise budget details which are linked to a particular project and  you can see configured product details in product-wise budget details page.
  
 
 .. image:: images/Image4.png
 
 Users
 ^^^^^
-As an Administrator you can use the "Users" screen to view all users across Research Gateway. Click on the “ ≣ “ option which is available on the left side header. You can see the  following details:
+As an Administrator you can see the "Users" screen to view all users across Research Gateway. Click on the “☰” option which is available on the left side header.
    
 Click on the **Users** menu item to navigate to the Users page.
 
@@ -105,7 +99,7 @@ You can filter by O.U, Filter by role(Admin/Researcher/Principal Investigator), 
 .. image:: images/filter.png
 .. image:: images/sort.png
 
-We have an active filter: enable and disable option. You can toggle between active or all users.
+The user can see an active filter with enable and disable option. You can toggle between active or all users.
 
 .. image:: images/toggle.png
 
@@ -171,11 +165,11 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 Audit Trail
 ^^^^^^^^^^^
 
-We have brought in an  Audit Trail screen for the Administrator to view security-related audits. Click on the “ ≣ “ option which is available on the left side header. You can see the  following details:
+As an Administrator you can use the **Audit Trail** screen to view security-related audits. Click on the “☰” option which is available on the left side header.
    
 .. image:: images/Audit1.png
 
-Click on the **Audit Trail** menu item to navigate to the Audit Trail page.
+Click on the **Audit Trail** menu item. Through this, you can navigate to the Budget details page.
 
 .. image:: images/Audit2.png
 
@@ -202,15 +196,11 @@ You can filter the logs by admin, Principal Investigator, researcher, Organizati
 
 Catalog
 ^^^^^^^
-We have brought in a “Catalog” screen for the Administrator to view all catalog products across RG. Click on the “ ≣ “ option which is available on the left side header. You can see the  following details: 
+As an Administrator you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. 
    
-     a. **My Organizations** : Through this, you can navigate to the My Organizations page
-     b. **Budgets** : Through this, you can navigate to the Budget Details page 
-     c. **Key Pairs**: Through this, you can navigate to the Key Pairs page.
-     d. **Users**: Through this, you can navigate to the Users page.
-     e. **Catalog**: Through this, you can navigate to the Catalog page.
-
 .. image:: images/catalog.png
+
+Click on the "Catalog" menu item. Through this, you can navigate to the Catalog details page.
 
 .. image:: images/catalog1.png
 
@@ -244,7 +234,7 @@ If we could not find any products related to the filter you can see the message 
 Principal Investigator Features
 +++++++++++++++++++++++++++++++
 
-As a Principal Investigator, I will be able to create Projects within my Organization. A project will be associated with a Budget with an associated dollar amount that is funded from a specific Grant to the organization. A Project can use Resources only if there is an associated budget that can meet the forecasted needs.
+As a Principal Investigator,the user can create Projects within the Organization. A project will be associated with a Budget with an associated dollar amount that is funded from a specific Grant to the organization. A Project can use Resources only if there is an associated budget that can meet the forecasted needs.
 
 My Projects page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will leads to a project details page.
 
@@ -277,7 +267,7 @@ Fill in the following details
    
 Click on the “Add Project” button. Added a new project successfully.
 
-.. image:: images/add.png 
+.. image:: images/Add.png 
 
 **NOTE**: 
 
@@ -288,9 +278,9 @@ Click on the “Add Project” button. Added a new project successfully.
 
 How to add researchers to existing project 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-We implemented the Edit functionality for the project entity. The project is independent of the researcher. We should create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
+There is an edit functionality for the project entity. The project is independent of the researcher. An user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
 
-.. image:: images/add.png 
+.. image:: images/Add.png 
 
 Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI. You can't unselect the researchers who have associated products. 
  
@@ -338,20 +328,15 @@ The project status changed to “Stopped”. In a Stopped state all underlying r
 
 If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
 
-If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
 
 Budgets (for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We have brought in a budget  screen for the Principal Investigator to view budget consumption across projects.
+As a Principal Investigator, you can view the organization-wide budgets from the **Budgets** screen with drill-down to the project, researcher and product level.
 
 **Navigation to Budget screen**
 
-Logged as Principal Account. Click on “☰” Symbol which is available  on left side header. You can see menu like: 
-
-  a. **My projects** : Through this, you can navigate to My Projects page.
-
-  b. **Budget**  : Through this, you can navigate to the Budget Details page. 
+Logged as Principal Account. Click on “☰” Symbol which is available on left side header. Click on the "Budgets" menu item through this, you can navigate to the Budget Details page.  
 
 .. image:: images/budget.png 
 
@@ -391,7 +376,7 @@ You can see researcher budget details which are linked to particular products an
 Catalog (for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-We have brought in a “Catalog” screen for the Principal Investigator to view all catalog products across RG. Click on the “ ≣ “ option which is available on the left side header. You can see the  following details: 
+As a Principal Investigator, you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. You can see the  following details: 
    
 .. image:: images/cat1.png
 
@@ -487,7 +472,7 @@ c. **Keyword search** - You can search products based on product type and produc
 Product Order
 ^^^^^^^^^^^^^
 
-Log into the Research Gateway. Researchers can see the projects in All projects page. Click on a Project. Navigate to the **Available products** panel. Choose the product in the list by clicking the **Launch** button on the card.
+Log into the Research Gateway. Researchers can see the projects in All projects page. Click on a Project. Navigate to the **Available products** panel. Choose the product in the list by clicking the **Launch Now** button on the card.
 
 Product order form is opened. Input parameters associated with the selected product will be displayed as a form at this point. Once all parameters are filled the user will be able to “Launch Now” the form and the item would then be added to the shopping cart.
 
@@ -694,11 +679,8 @@ As a researcher you can use the **Budgets** screen to view your individual budge
 
 **Navigation to Budget screen**
 
-Logged as Researcher Account. Click on “☰” Symbol which is available  on left side header. You can see menu like :
+Login as the Researcher. Click on “☰” Symbol which is available on the left side header. By clicking on the "Budgets" menu item, the user will be navigated to the Budget details page.
 
-  a. **My projects** : Through this, you can navigate to My Projects page.
-  b. **Budget**  : Through this, you can navigate to the Budget Details page. 
-  
  .. image:: images/bud1.png 
   
 You can see budget details with different KPI cards. You can see the following KPI cards :
@@ -756,8 +738,9 @@ A researcher may have his own data or a Principal may create a data-store that i
 
 The “Study details” tab will show all the details of the study available in the collection. The actions associated with the study will be shown in an actions bar on the right side of the page. The “Product details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
 
- .. image:: images/personal.PNG
- .. image:: images/sc4.PNG
+ .. image:: images/personal.png
+ 
+ .. image:: images/sc4.png
 
 **Explore Action**
  
@@ -799,7 +782,7 @@ You can terminate the study through the “Terminate” option.
 
 Public Study
 ------------
-A principal may create a data-store. The “Study” details page will show a tabbed area with the following tabs:
+As a principal Invetigator you can create a data-store. The “Study” details page will show a tabbed area with the following tabs:
 
 	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
 	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
@@ -832,9 +815,9 @@ You can see the files/folders which are  related to the datastore.
 
 Key Pairs
 ^^^^^^^^^
-The Key Pairs screen can be used by the Researcher to view keypair details across projects.
- 
-.. image:: images/key1.png
+The Key Pairs screen can be used by the Researcher to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
+
+ .. image:: images/key1.png
 
 .. image:: images/key2.png
 
@@ -892,13 +875,13 @@ The below steps that will be done for publishing our product as Saas in the AWS 
 When our product has been listed for consumption in the AWS marketplace, customers can subscribe to our product.
 
 1. Log in to AWS account with valid credentials. Navigate to AWS Marketplace.
-2. Type “RLCatalyst” in the search bar. You can see the result as **RLCatalyst Research Gateway(Saas)** 
+2. Type “RLCatalyst” in the search bar. You can see the result as **RLCatalyst Research Gateway(Saas)**. 
 
-  a. Show the pricing information(Small/Medium/Large). 
+    a. Show the pricing information(Small/Medium/Large). 
 	b. Show option of Monthly or Annual. 
 	c. Show option of Auto-renewal (Yes/No).
 	
- Click on the “Continue on Subscribe” button which is available at the top right side of the page. Fill the required parameters like contract options and renewal settings. Now click on the “Create contract” button. Click on “Pay Now” button. After completion of payment options, the user will be redirected to the RG registration website.
+ Click on the **Continue on Subscribe** button which is available at the top right side of the page. Fill the required parameters like contract options and renewal settings. Now click on the “Create contract” button. Click on “Pay Now” button. After completion of payment options, the user will be redirected to the RG registration website.
  
 **b. Registration page**
 
@@ -923,7 +906,7 @@ is created, we will seed admin credentials to the database and the same will be 
    **Note**: You need to select the researcher from the list.
 8. Navigate to the catalog through the left navigation menu and choose the  “View-O.U catalog” in the filter and enable the checkboxes which are at the right side of the products and click on “Assign to a project” button and on Successful completion of assign you can see green color toaster message.
 9. Login as Researcher <<Navigate to the project details page--you can see the assigned catalog products in the available products panel. 
-   Choose the product and click on the “Launch Now” button. Fill the required parameters in the form and launch it. 
+   Choose the product and click on the **Launch Now** button. Fill the required parameters in the form and launch it. 
    **Note**: While creating the EC2 we need to enter the key pair name.  Navigate to the keypairs through the left navigation menu. Click on the “+Create New” button. Fill the required parameters and click on the “Create key pair” button. New key pair was created. Now navigate to the available products panel. Choose EC2 product and fill the params and click on the “Launch Now” button. The product was launched successfully.
 
 **d. Tracking usage**
