@@ -849,7 +849,7 @@ You can see key Pairs details in table format:
 
 .. csv-table::
    :file: Keypair.csv
-   :widths: 10, 10, 10, 10, 10
+   :widths: 20, 20, 20, 20, 20
    :header-rows: 1
 
 The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
