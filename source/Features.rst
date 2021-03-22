@@ -71,7 +71,7 @@ You can  also see researcher-wise budget details which are linked to a particula
 
 Users
 ^^^^^
-As an Administrator you can see the "Users" screen to view all users across Research Gateway. Click on the “☰” option which is available on the left side header.
+As an Administrator you can use the "Users" screen to view all users across Research Gateway. Click on the “☰” option which is available on the left side header.
    
 Click on the **Users** menu item to navigate to the Users page.
 
@@ -99,7 +99,7 @@ You can filter by O.U, Filter by role(Admin/Researcher/Principal Investigator), 
 .. image:: images/filter.png
 .. image:: images/sort.png
 
-The user can see an active filter with enable and disable option. You can toggle between active or all users.
+The user can see an active filter with enable and disable options. You can toggle the view between active or all users.
 
 .. image:: images/toggle.png
 
@@ -144,7 +144,7 @@ You can perform the following user actions :
 
 **Assign**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one.  Choose the organizational unit in the drop-down list and click on the “Assign” button. You can see a successful toaster message also. Once assigned you can see O.U name under the Email id. 
+There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Choose the organizational unit in the drop-down list and click on the “Assign” button. You can see a successful toaster message also. Once assigned you can see O.U name under the Email id. 
 
 .. image:: images/assign.png 
 
@@ -169,7 +169,7 @@ As an Administrator you can use the **Audit Trail** screen to view security-rela
    
 .. image:: images/Audit1.png
 
-Click on the **Audit Trail** menu item. Through this, you can navigate to the Budget details page.
+Click on the **Audit Trail** menu item. Through this, you can navigate to the Audit Trail page.
 
 .. image:: images/Audit2.png
 
@@ -336,7 +336,7 @@ As a Principal Investigator, you can view the organization-wide budgets from the
 
 **Navigation to Budget screen**
 
-Logged as Principal Account. Click on “☰” Symbol which is available on left side header. Click on the "Budgets" menu item through this, you can navigate to the Budget Details page.  
+Sign in as the Principal Investigator. Click on the “☰” Symbol which is available on left side header. Click on the "Budgets" menu item through this, you can navigate to the Budget Details page.  
 
 .. image:: images/budget.png 
 
@@ -768,7 +768,7 @@ Through this action, you can see all the files and folders in the S3 bucket with
  
 **Share Action**
  
- Choose the option like “Share”. Through this, you can share the details with other team members. If there are no researchers in the list it will show a message like “No researchers are available. Please add a new researcher to share the s3 bucket “
+Choose the option like “Share”. Through this, you can share the details with other team members. If there are no researchers in the list it will show a message like “No researchers are available. Please add a new researcher to share the s3 bucket “
 
  .. image:: images/share1.png
  
@@ -782,7 +782,7 @@ You can terminate the study through the “Terminate” option.
 
 Public Study
 ------------
-As a principal Invetigator you can create a data-store. The “Study” details page will show a tabbed area with the following tabs:
+You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
 
 	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
 	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
@@ -832,7 +832,7 @@ You can see key Pairs details in table format:
 
 .. csv-table::
    :file: Keypair.csv
-   :widths: 10, 10, 10, 10, 10
+   :widths: 20, 20, 20, 20, 20
    :header-rows: 1
 
 The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
