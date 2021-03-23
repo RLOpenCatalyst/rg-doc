@@ -30,7 +30,7 @@ Users with the Administrator role can perform the steps below.
 Users with the Principal Investigator role can perform the steps below.
   
   * `Adding a New Project`_
-  *  Assigning Researchers to projects
+  * `Assigning Researchers to projects`_
 
 Create an Admin user
 --------------------
@@ -248,3 +248,17 @@ Click on the “Add Project” button. Added a new project successfully.
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
 .. image:: images/projectdetails.png 
+
+Assigning Researchers to projects
+---------------------------------
+
+There is an edit functionality for the project entity. The project is independent of the researcher. An user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
+
+.. image:: images/Add.png 
+
+Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI. You can't unselect the researchers who have associated products. 
+ 
+ .. image:: images/view.png 
+ .. image:: images/view1.png
+ .. image:: images/update1.png
+ 
