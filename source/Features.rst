@@ -762,9 +762,9 @@ Through this action, you can see all the files and folders in the S3 bucket with
 
  .. image:: images/link1.png  
  
- .. image:: images/unlink.PNG
+ .. image:: images/unlink.png
 
- .. image:: images/unlink2.PNG
+ .. image:: images/unlink2.png
  
 **Share Action**
  
