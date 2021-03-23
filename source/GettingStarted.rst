@@ -19,6 +19,8 @@ Planning your set up
 
 Setting up your RLCatalyst Research Gateway for use involves the following steps.
 
+.. image:: images/FirstSetupTask.png 
+
 Users with the Administrator role can perform the steps below.
 
   * :ref:`Adding Users<Adding Users>` - Users can have Administrator, Principal Investigator or Researcher roles.
@@ -33,7 +35,8 @@ Users with the Principal Investigator role can perform the steps below.
 Create an Admin user
 --------------------
 
-Get started by first creating an Admin user account for your instance of RLCatalyst Research Gateway.
+If you have subscribed to the hosted version of the Research Gateway application, you would have created the Admin user during registration.
+You would have subsequently received an email with a link to confirm the Administrator user's email. Use this username to login to Research Gateway.
 
 Sign-In Process
 ---------------
@@ -59,11 +62,9 @@ Click on the “Sign-In“ button. We can log in successfully.
 	
 Forgot Password
 ---------------
-A user sees a “Forgot Password” link on the login screen which is under the "Sign In" button.
+In case you have forgotten your password, you can use the “Forgot Password” link on the login screen which is under the "Sign In" button.
 
-.. image:: images/login.png
-
-On clicking the link the user is navigated to the reset password screen.  
+click the link to navigate to the reset password screen.  
 
 .. image:: images/forgot.png
 
@@ -80,7 +81,7 @@ Fill the following details
    * - E-mail address
      - <Registered Email ID>
    
-Click on "Send Resend link" button. If the provided details are valid, he will get a verification link that has been sent to his email to reset the password. On clicking the link in the email, the user is prompted to change password screen.  
+Click on "Send Resend link" button. If the provided details are valid, you will get a verification link on the registered email address to reset the password. On clicking the link in the email, the user is lead to the change password screen.  
 
 .. image:: images/verificationemail.png
 
@@ -93,33 +94,10 @@ The password change is either successful or unsuccessful (this will be like veri
 Sign-Up process
 ---------------
 
-To sign-up as a new user, click on the “Sign-up for  a new  account “ button on the Sign-in page.
+An Administrator can add a new user to the system. See the :ref:`Adding Users<Adding Users>` section for details.
+When an Administrator adds a user to the systen, the user will receive a verification email with a link. When the user clicks on the link he is led to a page where he should change his password.
 
-.. image:: images/SigninPage.png
-
-
-Fill the following details:
-
-.. list-table:: 
-   :widths: 50, 50
-   :header-rows: 1
-
-   * - Field
-     - Details
-   * - Organization Name
-     -  <Name of the Organization>
-   * - Username
-     - <Username that is used for login>
-   * - E-mail address
-     - <Registered Email ID>
-   * - Password
-     - <Password> - Choose a password that conforms to the password policy.
-
-.. figure:: images/Registeraccountpage.png
-   :scale: 100 %
-   :alt: Sign-up page
-
-Click on the  “Sign Up” button. You will see a  success  message and verification email has been sent to the email address registered. Check the verification email delivered to the registered email address & click on the verification link to activate the account. 
+The password needs to conform to the password policy. 
 
 .. image:: images/verificationemail2.png
 
@@ -173,12 +151,14 @@ Login into the Research Gateway. Click on dropdown bar which is above the header
 .. image:: images/Providersettings.png 
    :name: Provider Settings menu item
 
-Click on  the  “+Add New” button. Provider settings page is opened.
+Click on  the  “Settings” menu item. Provider settings page is opened.
 
 .. image:: images/Provider2.png 
    :name: Provider Settings Page
 
-.. image:: images/AddProvider.png 
+Click on  the  “+Add New” button. The Add Provider Setting dialog-box is opened.
+
+.. image:: images/AddProviderNew.png 
    :name: Add Provider Settings screen
 
 Fill the following details
@@ -236,7 +216,7 @@ Login to the Research Gateway as a Principal Investigator. Click on the  “+Add
 
 .. image:: images/principalaccount.png
 
-.. image:: images/addproject.png
+.. image:: images/AddProjectNew.png
 
 
 Fill in the following details
