@@ -173,13 +173,13 @@ Click on the **Audit Trail** menu item. Through this, you can navigate to the Au
 
 .. image:: images/Audit2.png
 
-You can see the following details in the table view : 
+You can see the following audit event deatils in the table view : 
 
 .. csv-table::
    :file: AuditTable.csv
-   :widths: 10, 10, 20, 10, 50
+   :widths: 70, 70, 70, 70, 70
    :header-rows: 1
-
+   
 If you try to search the non-existent word it will display a message like “No matching organizations found". You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
 
 .. image:: images/search2.png
@@ -191,6 +191,7 @@ You can filter the logs by admin, Principal Investigator, researcher, Organizati
 .. image:: images/Audit3.png
 
 .. image:: images/Audit4.png
+
 
 .. _Catalog:
 
@@ -417,6 +418,20 @@ If we could not find any products related to the filter you can see the message 
 
 .. image:: images/search3.png
 
+Switch Role (for Principal Investigator)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As a Principal Investigator, you can switch the roles from the UI. You can see the switch role dropdown which is available on the right side of the header. You can see the options like Researcher and Principal Investigator. 
+
+.. image:: images/roleswitch.png
+
+.. image:: images/roleswitch1.png
+
+Whenever you flip the role you can navigate to the landing page of the target role. If you click on the "Researcher" role it will navigate to the researcher landing page. If you flip the role like "Principal Investigator" you will navigate to the principal Investigator landing page.
+
+.. image:: images/pi.png
+
+.. image:: images/researcher.png
 
 Researcher Features
 +++++++++++++++++++
@@ -494,7 +509,7 @@ My Products
 
 You can see the provisioned products details in the My Products Panel.
 
-You can view provisioned product details like product name, product type and state in the card.
+You can view provisioned product details like product name, product type, Consumed Budget and state in the card.
 You can see provisioned product details through “View All” option. You can  see all product details.
 
 .. image:: images/myproducts.png
@@ -527,7 +542,7 @@ EC2 Product
 ----------- 
 
 Researchers can login to the portal and quickly order  EC2 products.
-Find the Provisioned EC2 product i.e. Ayush Medicine in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
+Find the Provisioned EC2 product i.e. EnvironmentalProtectionAgency in the My Products panel. Or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
@@ -564,7 +579,7 @@ Click on the “Submit” button. Now You can connect to the SSH Terminal in a n
 S3 Product
 -----------
 
-Researcher can login to the portal and quickly order S3 Product.
+As a Researcher,You can login to the Research Gateway and quickly order S3 Product.
 Find the S3 in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
@@ -589,8 +604,19 @@ Choose the option like “Share”. Through this you can  share the details to o
 
 .. image:: images/testingevent4.png
 
+**3. Unshare Action**
 
-**3. Terminate Action**
+Choose the option like "Unshare". Through this you can unshare the details from the earlier shared team member.  
+
+.. image:: images/unshare.png
+
+.. image:: images/unshare1.png
+
+**Note:** The "Unshare" option is available only when the bucket is shared with other researchers. The owner(i.e.,person who provisioned product) can do the share and unshare. 
+
+**Note:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket.“**
+
+**4. Terminate Action**
 
 Choose an option like “Terminate”. Through this you can terminate the product
 You implemented a check to find out if a file exists in the bucket or not . If exists it will throw an error message accordingly. i.e. ”The bucket is not empty. Please delete all contents from the bucket and try again.”
@@ -599,7 +625,7 @@ You implemented a check to find out if a file exists in the bucket or not . If e
 .. image:: images/action.png
 
 
-**4. Explore Action**
+**5. Explore Action**
 
 a. Through this action you can show all the files and folders in the S3 bucket with actions (download, delete) against each item.
 b. For folders the user will be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
@@ -613,7 +639,7 @@ d. You can upload the different files (File should not contain more than 10MB)
 .. image:: images/exploreaction2.png
 
 
-**5. Link Action**
+**6. Link Action**
 
 You have to link Sagemaker from the S3 product details page using the provisioned product ID.
 For a S3 Provisioned Product, you should have a new action item called “Link”
@@ -638,6 +664,7 @@ You should also see an “Unlink action” to unlink sagemakers from s3 bucket s
 If there are no active sagemaker products we are showing the following message to the user “There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first,before linking to an s3 bucket”.
 
 .. image:: images/computerresource.png 
+
 
 SageMaker Product
 -----------------
