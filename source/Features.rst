@@ -177,7 +177,7 @@ You can see the following audit event details in the table view :
 
 .. csv-table::
    :file: AuditTable.csv
-   :widths: 100, 100, 100, 100, 100
+   :widths: 20, 20, 20, 20, 20
    :header-rows: 1
    
 If you try to search the non-existent word it will display a message like “No matching organizations found". You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
