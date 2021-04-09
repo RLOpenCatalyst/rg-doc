@@ -40,7 +40,7 @@ You would have subsequently received an email with a link to confirm the Adminis
 
 Sign-In Process
 ---------------
-Use details from *`Appendix A`__* for  User Name, Password as per password policy.
+Use details from :ref:`Appendix A<Appendix A>` for  User Name, Password as per password policy.
 
 Fill the following details 
 
@@ -108,7 +108,7 @@ On successful validation, users  will be allowed to login into the Research Gate
 Adding Organizational Units
 ---------------------------
 
-To plan the creation of a new Organization, use the planning sheet in *`Appendix A`__* to collect all the information required upfront. Login into the Research Gateway. User landed to the  main dashboard.
+To plan the creation of a new Organization, use the planning sheet in :ref:`Appendix A<Appendix A>` to collect all the information required upfront. Login into the Research Gateway. User landed to the  main dashboard.
 
 .. image:: images/OrganizationPage.png
 
@@ -155,12 +155,79 @@ Click on  the  “Settings” menu item. Provider settings page is opened.
 
 .. image:: images/Provider2.png 
    :name: Provider Settings Page
+   
+**Note:** You need to follow the below steps before adding the settings.
+ 
+1. Login to the AWS console and navigate to the IAM service. 
+2. Click on the "Add User" button and give the username exactly as "RG-PortalUser". 
+3. Select Access type as Programmatic access this will create secret key and access key and AWS Management console access. You need to use these credentials while creating the settings.
+4. Select “Attach existing policies directly” and select the AWS Managed Policies which is mentioned below
 
-Click on  the  “+Add New” button. The Add Provider Setting dialog-box is opened.
+	* arn:aws:iam::aws:policy/AmazonEC2FullAccess
+	* arn:aws:iam::aws:policy/SecretsManagerReadWrite
+	* arn:aws:iam::aws:policy/service-role/AWSConfigRole
+	* arn:aws:iam::aws:policy/AmazonSSMFullAccess
+	* arn:aws:iam::aws:policy/AWSServiceCatalogAdminFullAccess
+	* arn:aws:iam::aws:policy/AmazonSageMakerFullAccess
+	* arn:aws:iam::aws:policy/AWSBudgetsActionsWithAWSResourceControlAccess
+	* arn:aws:iam::aws:policy/AmazonEventBridgeFullAccess
+	* arn:aws:iam::aws:policy/AWSCloudTrail_FullAccess
+	* arn:aws:iam::aws:policy/AWSCloudFormationFullAccess
 
-.. image:: images/AddProviderNew.png 
+5. Click on the "Next" button. It will create a user.
+6. Click on the “Add Inline Policy” and copy the JSON with the inline policy name which is mentioned below. 
+
+*Note:* You have to add all the below mentioned policies.
+
+AWSConfigFullAccess
+
+.. literalinclude:: AWSConfigFullAccess.json
+  :language: JSON
+  :linenos:
+  
+CostExplorerReadOnlyAccess
+
+.. literalinclude:: CostExplorerReadOnlyAccess.json
+  :language: JSON
+  :linenos:
+
+IAMFullAccess
+
+.. literalinclude:: IAMFullAccess.json
+  :language: JSON
+  :linenos:
+  
+S3FullAccess
+
+.. literalinclude:: S3FullAccess.json
+  :language: JSON
+  :linenos:
+  
+SESFullAccess
+
+.. literalinclude:: SESFullAccess.json
+  :language: JSON
+  :linenos:
+  
+SNSFullAccess
+
+.. literalinclude:: SNSFullAccess.json
+  :language: JSON
+  :linenos:
+
+STSFullAccess
+
+.. literalinclude:: STSFullAccess.json
+  :language: JSON
+  :linenos:
+
+-------------------------------------------------------------------------------------
+
+Click on  the  “+Add New” button in the provider setting page . The Add Provider setting dialog-box is opened.
+
+.. image:: images/AddProviderNew.png
    :name: Add Provider Settings screen
-
+   
 Fill the following details
 
 .. list-table:: 
@@ -183,7 +250,7 @@ Fill the following details
 
 Click on the “Add” button. AWS account was added successfully and will show in the table of providers in the Provider Settings page.
 
-On each line item there is a contextual menu. Through this we can edit, delete or sync the account.
+On each line item there is a contextual menu. Through this we can edit, delete, Assign O.U. and sync the account.
 
 .. image:: images/Project.png
 
@@ -194,18 +261,30 @@ Update the fields and click on “Add”. Provider setting is updated successful
 .. image:: images/editprovider2.png
 
 
-Click on the 3-dotted icon which is available at the right side of the account details page and choose “Delete” option. A confirmation dialog box is opened. On confirmation the account will be deleted. You can only delete provider settings that are not linked to any project or Organization.
+Click on the 3-dotted icon which is available at the right side of the account details page and choose “Delete” option. A confirmation dialog box is opened. On confirmation the account will be deleted. You can only delete provider settings that are not linked to any project or organization.
 
 
 .. image:: images/deleteprovider.png
 
+Click on the contextual menu which is available at the right side of the account name and choose the "Assign O.U" option. 
 
+.. image:: images/Assign-OU.png
+
+One window is opened and all organizational units are listed there. Choose one organization from the list and click on the "Assign" button. On successful completion you can see the green color toaster message.
+
+.. image:: images/Assign123.png
+
+.. image:: images/Assign4.png
+
+**Note** : When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
+ 
 Research Gateway works in conjunction with AWS Service Catalog. To synchronize the Service Catalog to your project, select the Product Sync option.
 Click on the “Sync Now” button. Once the synchronization is complete you should see the “Sync completed” message.
 
 .. image:: images/sync1.png
 
 .. image:: images/sync2.png
+
 
 .. _`Adding a new project`:
 

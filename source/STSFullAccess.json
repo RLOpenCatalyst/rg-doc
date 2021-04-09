@@ -1,0 +1,20 @@
+	
+		{
+		"Version": "2012-10-17",
+		"Statement": [
+			{
+				"Sid": "Stmt1609331022000",
+				"Effect": "Allow",
+				"Action": [
+					"sts:AssumeRole",
+					"sts:GetFederationToken",
+					"sts:GetSessionToken"
+				],
+				"Resource": [
+					"*"
+				]
+			}
+		]
+	}
+
+	

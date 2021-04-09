@@ -1,0 +1,17 @@
+	
+	{ 
+		"Version": "2012-10-17",
+		"Statement": [
+			{
+				"Sid": "Stmt1609262373000",
+				"Effect": "Allow",
+				"Action": [
+					"config:*"
+				],
+				"Resource": [
+					"*"
+				]
+			}
+		]
+	}
+	
