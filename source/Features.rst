@@ -173,11 +173,11 @@ Click on the **Audit Trail** menu item. Through this, you can navigate to the Au
 
 .. image:: images/Audit2.png
 
-You can see the following audit event deatils in the table view : 
+You can see the following audit event details in the table view : 
 
 .. csv-table::
    :file: AuditTable.csv
-   :widths: 70, 70, 70, 70, 70
+   :widths: 100, 100, 100, 100, 100
    :header-rows: 1
    
 If you try to search the non-existent word it will display a message like “No matching organizations found". You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
@@ -427,7 +427,7 @@ As a Principal Investigator, you can switch the roles from the UI. You can see t
 
 .. image:: images/roleswitch1.png
 
-Whenever you flip the role you can navigate to the landing page of the target role. If you click on the "Researcher" role it will navigate to the researcher landing page. If you flip the role like "Principal Investigator" you will navigate to the principal Investigator landing page.
+Whenever you flip the role you can navigate to the landing page of the target role. If you click on the "Researcher" role it will navigate to the researcher landing page. If you flip the role like "Principal Investigator" you will navigate to the Principal Investigator landing page.
 
 .. image:: images/pi.png
 
@@ -579,13 +579,15 @@ Click on the “Submit” button. Now You can connect to the SSH Terminal in a n
 S3 Product
 -----------
 
-As a Researcher,You can login to the Research Gateway and quickly order S3 Product.
+As a Researcher, you can login to the Research Gateway and quickly order S3 Product.
 Find the S3 in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
 **1. Upload Action**
 
-Choose an option like “Upload”. Upload file(File should not contain more than 10MB). Through this you can Upload a file in S3 bucket.
+Choose the “Upload” option. Through this you can upload a file to the S3 bucket.
+
+*Note:* When you try to upload more than 10MB file you will see a message like **"The size of this file is larger than the maximum(10MB) size allowed on this system. Please contact your administrator."**
 
 .. image:: images/testingevent2.png
 
@@ -593,9 +595,9 @@ Choose an option like “Upload”. Upload file(File should not contain more tha
 **2. Share Action**
 
 
-Choose the option like “Share”. Through this you can  share the details to other team members.
+Choose the “Share” option. Through this you can  share the details to other team members.
 
-**NOTE:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket “**
+**NOTE:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket"**
 
 .. image:: images/testingevent1.png
 
@@ -606,7 +608,7 @@ Choose the option like “Share”. Through this you can  share the details to o
 
 **3. Unshare Action**
 
-Choose the option like "Unshare". Through this you can unshare the details from the earlier shared team member.  
+Choose the "Unshare" option. Through this you can unshare the details from the earlier shared team member.  
 
 .. image:: images/unshare.png
 
@@ -618,8 +620,9 @@ Choose the option like "Unshare". Through this you can unshare the details from 
 
 **4. Terminate Action**
 
-Choose an option like “Terminate”. Through this you can terminate the product
-You implemented a check to find out if a file exists in the bucket or not . If exists it will throw an error message accordingly. i.e. ”The bucket is not empty. Please delete all contents from the bucket and try again.”
+Choose the "Terminate" option to de-provision the product.
+
+There is a check to find out whether the file exists in the bucket or not. If exists it will throw an error message **”The bucket is not empty. Please delete all contents from the bucket and try again.”**
 
 
 .. image:: images/action.png

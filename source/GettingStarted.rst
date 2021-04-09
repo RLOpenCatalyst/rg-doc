@@ -40,7 +40,7 @@ You would have subsequently received an email with a link to confirm the Adminis
 
 Sign-In Process
 ---------------
-Use details from *Appendix A* for  User Name, Password as per password policy.
+Use details from :ref:`Appendix A<Appendix A>` for  User Name, Password as per password policy.
 
 Fill the following details 
 
@@ -108,7 +108,7 @@ On successful validation, users  will be allowed to login into the Research Gate
 Adding Organizational Units
 ---------------------------
 
-To plan the creation of a new Organization, use the planning sheet in "Appendix A" to collect all the information required upfront. Login into the Research Gateway. User landed to the  main dashboard.
+To plan the creation of a new Organization, use the planning sheet in :ref:`Appendix A<Appendix A>` to collect all the information required upfront. Login into the Research Gateway. User landed to the  main dashboard.
 
 .. image:: images/OrganizationPage.png
 
@@ -176,6 +176,7 @@ Click on  the  “Settings” menu item. Provider settings page is opened.
 
 5. Click on the "Next" button. It will create a user.
 6. Click on the “Add Inline Policy” and copy the JSON with the inline policy name which is mentioned below. 
+
 *Note:* You have to add all the below mentioned policies.
 
 AWSConfigFullAccess
