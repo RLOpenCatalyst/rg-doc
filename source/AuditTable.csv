@@ -2,13 +2,13 @@ User,Logical ID,Timestamp,Status,Status Reason
 <User Name>,AUTHENTICATION ,<IST time zone>,LOGIN_SUCCESSFUL,You can see the login success information .
 <User Name>,AUTHENTICATION ,<IST time zone>,LOGIN_FAILED,You can see the reason for login failure. 
 <User Name>,AUTHENTICATION ,<IST time zone>,LOGOUT_SUCCESSFUL,You can see the logout success information.
-<User Name>,DATA_SECURITY,<IST time zone>,SHARE_S3 BUCKET_COMPLETED,You can see the shared product information.
-<User Name>,DATA_SECURITY,<IST time zone>,UNSHARE_S3 BUCKET_COMPLETED,You can see the unshared product information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_STARTED,You can see the assignd project information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_COMPLETED,You can see the assignd project completion information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_FAILED, You can see the Assign prodcuts  failed information which related to the project.
-<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_STARTED,You can see the updated project started information.
-<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_COMPLETED,You can see the updated project completion information.
-<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_FAILED,You can see the failed  project updation information.
-<User Name>,CATALOG,<IST time zone>,UPDATE_TO_OU_COMPLETED,You can see the updated ou completion information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_OU_COMPLETED,You can see the assignd ou completion information.
+<User Name>,DATA_SECURITY,<IST time zone>,SHARE_S3 BUCKET_COMPLETED,You can see the shared products information.
+<User Name>,DATA_SECURITY,<IST time zone>,UNSHARE_S3 BUCKET_COMPLETED,You can see the unshared products information.
+<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project information.
+<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_COMPLETED,You can see the assigned products to the related project completion information.
+<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_FAILED,You can see the Assign products  failed information which related to the project.
+<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_STARTED,You can see the updated products started information which is related to the project.
+<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_COMPLETED,You can see the updated products to the related project completion information.
+<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_FAILED,You can see the updated produts to the related project failed information.
+<User Name>,CATALOG,<IST time zone>,UPDATE_TO_OU_COMPLETED,You can see the updated products to the related oragnizataional unit  updation information.
+<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_OU_COMPLETED,You can see the assigned products to the related organizational unit  completion information.
