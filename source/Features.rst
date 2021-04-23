@@ -136,6 +136,8 @@ The verification email has been sent. Check the verification email delivered to 
 
 .. image:: images/Verificationmail-1.png
 
+**NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
+
 Users can choose a password and click on the “Submit” button. On successful validation, users will be allowed to login into the Research Gateway. 
 
 .. image:: images/password1.png 
@@ -886,9 +888,6 @@ SAML 2.0
 SAML is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. SAML is an XML-based markup language for security assertions
 
 Security Assertion Markup Language (SAML) is a standard for logging users into applications based on their sessions in another context. This single sign-on (SSO) login standard has significant advantages over logging in using a username/password
-
-
-.. image:: images/saml.png
 
 RLCatalyst Research Gateway supports integration with Identity Providers that support SAML 2.0. If you need your instance of the gateway integrated with your IdP please contact us.
 
