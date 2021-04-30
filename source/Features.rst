@@ -473,7 +473,7 @@ Available Products
 
 You can view the service catalog of products available for the project. These items will be organized into Portfolios. Clicking on a portfolio will display all the Products available in it.
 
-.. image:: images/avaiable.png
+.. image:: images/avaiableproduct.png
 
 You can see the product information in the card. You can know more information about  the product through the “Know More” link. Through the “View Details” link you can see following :
 
@@ -481,10 +481,14 @@ a. **Available Products List view** - You can see the product details in list vi
 
 b. **Available Products Card view** - You can see the product details in card view.
 
-c. **Keyword search** - You can search products based on product type and product description.
+c. **Keyword search** - You can search products based on product type, product name and product description.
+
+d. **Filter** -  Choose the"All" option. Through this you can see the all products here.
 
 
-.. image:: images/avaiableproduct.png
+.. image:: images/available.png
+
+**NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog.
 
 Product Order
 ^^^^^^^^^^^^^
@@ -495,7 +499,7 @@ Product order form is opened. Input parameters associated with the selected prod
 
 .. image:: images/product.png 
 
-Note: You are displaying VPC,Subnets and security groups,Subnets and keypair names in the listbox. Through this user can easily select the keypair and while provisioning the product and use the compute resources.
+Note: You can see VPC, subnets, security groups and keypair names are displaying in the listbox according to related field. Through this user can easily select the keypair and while provisioning the product and use the compute resources.
 
 .. image:: images/product2.png 
 
@@ -511,7 +515,19 @@ My Products
 
 You can see the provisioned products details in the My Products Panel.
 
-You can view provisioned product details like product name, product type, Consumed Budget and state in the card.
+You can view provisioned product details like product name, product type, consumed budget and product status in the card. Choose one product in the panel and click on the card.
+
+.. image:: images/myproducts.png
+
+The Product details page will show a tabbed area with the following tabs:
+   1. Product Details
+   2. Events
+   3. Outputs
+
+The “Product details” tab will show all the details of the product available in the collection. The actions associated with the product will be shown in an actions bar on the right side of the page. The “Events” tab will show the event details of the associated product while creation. The "Outputs" tab will show the CFT output details.
+
+.. image:: images/E2E.png
+
 You can see provisioned product details through “View All” option. You can  see all product details.
 
 .. image:: images/myproducts.png
@@ -523,28 +539,35 @@ Through the “View All” button in the panel header, you can see following:
 
    * My Products Card view - You can see the details of your provisioned products in card view
 
-   * Keyword search - You can search provisioned products based on product name, product type and description
+   * Keyword search - You can search provisioned products based on product name, product type and description.
+   
+   * Filter - We have following filter options:
+      
+	  a. **All** - You can see the all(i.e., active,terminated,stopped and failed) products here.
+	  b. **Active** - You can see all the active products here.
+	  c. **Terminated** - You can see all terminated products here.
 
 
 .. image:: images/myproduct2.png
 
-.. image:: images/myproducts3.png 
-
+**NOTE** : When you on click on "View All" option you can see active products defaultly. 
 
 While product is in the *Creating* state the details page displays a time limit that provision will take through the “Live in 5/10/15 mins” tag.
 
-When you click any action(Start/Stop/Terminate) in a provisioned product , state should be changed automatically using server side events.
+When you click any action(Start/Stop/Terminate) in a provisioned product, state should be changed automatically using server side events.
 
+**NOTE**: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**No Instances Specified**".
 
+.. image:: images/instance.png
 
 Actions available for products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-EC2 Product
------------ 
+EC2-Linux Product
+----------------- 
 
 Researchers can login to the portal and quickly order  EC2 products.
-Find the Provisioned EC2 product i.e. EnvironmentalProtectionAgency in the My Products panel. Or click on the “View All” button to get a list of all provisioned products.
+Find the Provisioned EC2 product i.e. EnvironmentalProtectionAgency in the My Products panel or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
@@ -553,9 +576,9 @@ You can see product related actions in the  Actions menu.
 
 3. Terminate action : You can terminate the product through “Terminate” action.
 
-4. SSH/RDP action : Choose options like “SSH/RDP”. Through this you can connect to the server.
+4. SSH/RDP action : You can connect to the instance in a new window through "SSH" action.
 
-Fill the following Details
+Fill the following details
 
 .. list-table:: 
    :widths: 50, 50
@@ -570,13 +593,60 @@ Fill the following Details
    * - Upload Pem file
      - <Upload the pem file>
 
-Click on the “Submit” button. Now You can connect to the SSH Terminal in a new window
+Click on the “Submit” button.
+
+**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
 
 
 .. image:: images/E2E.png
 
 .. image:: images/E2E2.png
 
+
+EC2-Windows Product
+-------------------
+
+Researchers can login to the Research Gateway and quickly order Amazon EC2-Windows products.
+Find the Provisioned Amazon EC2-Windows product in the My Products panel and click on it.
+You can see the product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+4. SSH/RDP action : Choose the “RDP” action. Through this you can connect to the Remote Desktop in a new window.
+
+Fill the following Details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Username>
+   * - Authentication Type
+     - <Choose Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+	 
+Click on the “Submit” button. 
+
+.. image:: images/RDP.png
+
+**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+ 
+It will navigated to the password generation page. Before the downloading the RDP file you should copy/save the password and unhide it and click on the “Download RDP file" button. 
+
+.. image:: images/RDP1.png
+
+Once completed the download right-click on the file and choose the “Connect” option. Enter the username and password in a remote desktop connection window. 
+Due to the nature of self-signed certificates, you might get a warning that the security certificate could not be authenticated. To verify that simply choose [Yes] in the Remote Desktop Connection window. You can connect to the remote desktop successfully.
+
+**NOTE**: When we launch a new instance, password generation and encryption may take few minutes. We need to wait for 5-10 mins after the instance is created, if you upload any pem file before 10 mins, you can see a message like “**Password not available yet. Please wait at least 4 minutes after launching an instance before trying to retrieve the password**”
 
 S3 Product
 -----------
@@ -764,7 +834,7 @@ The studies landing page has a search bar that allows users to search the collec
 
 Personal Study
 --------------
-A researcher may have his own data or a Principal may create a data-store that is shared across researchers in the same project through the “Share” option.  The “Study” details page will show a tabbed area with the following tabs:
+A researcher may have his own data or a Principal may create a data-store that is shared across researchers in the same project through the “Share” option. The “Study” details page will show a tabbed area with the following tabs:
    1. Study details
    2. Product details
 
