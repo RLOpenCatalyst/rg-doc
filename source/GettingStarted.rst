@@ -156,8 +156,10 @@ Click on  the  “Settings” menu item. Provider settings page is opened.
 .. image:: images/Provider2.png 
    :name: Provider Settings Page
    
-**Note:** You need to follow the below steps before adding the settings.
+**Note:** You need to follow the below steps before adding the settings. These steps are used to create the IAM user in the target account which has the following policies attached. We perform all the operations using this user.
  
+Method-1:
+
 1. Login to the AWS console and navigate to the IAM service. 
 2. Click on the "Add User" button and give the username exactly as "RG-PortalUser". 
 3. Select Access type as Programmatic access this will create secret key and access key and AWS Management console access. You need to use these credentials while creating the settings.
@@ -223,7 +225,30 @@ STSFullAccess
 
 -------------------------------------------------------------------------------------
 
-Click on  the  “+Add New” button in the provider setting page . The Add Provider setting dialog-box is opened.
+Method-2
+
+This method will make the use of script to create the user. Please follow the below mentioned steps:
+
+1. Download the RG-PortalUserScriptFolder from the following link 
+    https://rlcatalyst-researchportal.s3.us-east-2.amazonaws.com/RG-PortalUserScriptFolder.zip
+2. After extracting the zipped folder you will find the following documents
+	a. Access-policy.json
+	b. RGPortalUserScript.sh
+3. Please make sure you have AWS CLI installed and configured with user credentials which have IAMFullAccess. You can do this  using `aws configure` command before executing the script. Refer the following link for help
+	a. https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
+	b. https://docs.aws.amazon.com/cli/latest/reference/configure/
+4. Set the execute permission on your script using the below chmod command. 
+     chmod +x RGPortalUserScript.sh
+5. You can run the script using any of the following commands. Please save the *AccessKeyId* and *SecretAccessKey* from the output of the script to use them during the settings creation of Research Gateway.
+	a. ./RGPortalUserScript.sh 
+	b. sh RGPortalUserScript.sh 
+	c. bash RGPortalUserScript.sh
+
+
+-------------------------------------------------------------------------------------------------
+
+
+Click on  the  “+Add New” button in the provider setting page. The Add Provider setting dialog-box is opened.
 
 .. image:: images/AddProviderNew.png
    :name: Add Provider Settings screen

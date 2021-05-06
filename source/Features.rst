@@ -952,14 +952,43 @@ Ex: Type “Chiron” in the search area it should display the keypairs which ar
 Instance-wide Features
 ++++++++++++++++++++++
 
-SAML 2.0
-^^^^^^^^
+SAML Integration using OKTA as an example
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SAML stands for Security Assertion Markup Language, an open standard that passes authorization credentials from identity providers (IdPs) to service providers (SPs). SAML is the link between the authentication of a user’s identity and the authorization to use a service. It’s the language that helps IdPs and SPs communicate. 
 
-SAML is an open standard for exchanging authentication and authorization data between parties, in particular, between an identity provider and a service provider. SAML is an XML-based markup language for security assertions
+Within the SAML workflow, OKTA can act as both the IdP and SP. When a user requests access to a third-party application registered with OKTA, they are redirected to the OKTA dashboard. SAML is most frequently used to enable single sign-on (SSO), which authenticates accredited users between an identity provider and a service provider.
 
-Security Assertion Markup Language (SAML) is a standard for logging users into applications based on their sessions in another context. This single sign-on (SSO) login standard has significant advantages over logging in using a username/password
+As an example, We can do it with OKTA. You can follow the below SAML integration steps with OKTA.
 
-RLCatalyst Research Gateway supports integration with Identity Providers that support SAML 2.0. If you need your instance of the gateway integrated with your IdP please contact us.
+Configuration steps for Research Gateway application in OKTA
+------------------------------------------------------------
+
+1. Sign in to your OKTA tenant as an administrator.
+2. In the Admin Console, navigate to **Applications-->Applications**.
+3. Click on the “**Add Application**” button.
+4. Click on the “**Create New App**”  button.
+5. In the Create a New Application dialog
+	a. Select platform as “Web”.
+	b. Select SAML 2.0 in the Sign-on method section.
+	c. Click on the “**Create**” button.
+6. On the General Settings tab, enter an application name for your integration and upload a logo and click on the “**Next**” button. 
+7. On the Configure SAML tab, configure the following things.
+    a. In the Single Sign-on URL, enter the Assertion Consumer Service (ACS) URL
+	b. Enter the Audience URI into the Audience URI (SP Entity ID) field.
+	c. Choose the Name ID format and application username that must be sent to your application in the SAML response.
+	d. In the **Attribute Statements** section, enter the SAML attributes to be shared with your application. 
+	
+       .. image:: images/statement1.png	
+
+   e. For Group Attribute Statement follow the below things. 
+   
+       .. image:: images/statement2.png
+
+8. Click the “**Next**” button.
+9. Fill the Feedback form and click on the “**Finish**” button.
+
+
+Research Gateway supports integration with Identity Providers that support SAML 2.0. If you need your instance of the gateway integrated with your IdP please contact us.	
 
 Research Gateway as SaaS solution on AWS Marketplace
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
