@@ -28,12 +28,20 @@ Click on the "Sign In" button. We can login successfully.
 Sign Out Process
 ----------------
 
-Click on the dropdown bar which is at the top
-Select “Sign out”option. Through this user logged out from the portal
+Login to the Research Gateway. Use details from :ref:`Appendix A<Appendix A>` for  User Name, Password as per password policy. Click on the dropdown bar which is at the top
+Select “Sign out” option. Through this user logged out from the portal.
 
 .. figure:: images/signout3.png 
    :scale: 100 %
    :alt: Signing out
+   
+If sign out is successful you can navigate to the logout page. Through the "Click here to login" button you can navigate to the login page.
+
+.. image:: images/logout.png
+
+If sign out is unsuccessful you can see a message like "**Something went wrong while logging you out, we are working on this**".
+
+.. image:: images/logout1.png
 
 Forgot Password
 ---------------
