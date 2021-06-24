@@ -85,11 +85,21 @@ Click on "Send Resend link" button. If the provided details are valid, you will 
 
 .. image:: images/verificationemail.png
 
-The password change is either successful or unsuccessful (this will be like verification success and error screens).  The user is then redirected back to the login screen.
+**Note**: The password policy should meet the following requirement
+   a. The minimum password length of 8 characters and a maximum of 16 characters.
+   b. It should have atleast one lower case character(a-z).
+   c. It should have atleast one upper case character(A-Z).
+   d. It should have atleast one number(0-9).
+   e. It should have atleast one special character (= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~).
+
+If the password change is successful you can navigate to the verification successful page. Through the "Click here to login button" you can navigate to the login screen.
+ 
+If the password change is unsuccessful you can see the verification error screen. 
 
 .. image:: images/password.png
 
 .. image:: images/success.png
+
 
 Sign-Up process
 ---------------
@@ -97,7 +107,7 @@ Sign-Up process
 An Administrator can add a new user to the system. See the :ref:`Adding Users<Adding Users>` section for details.
 When an Administrator adds a user to the systen, the user will receive a verification email with a link. When the user clicks on the link he is led to a page where he should change his password.
 
-The password needs to conform to the password policy. 
+The password needs to confirm to the password policy. 
 
 .. image:: images/verificationemail2.png
 
@@ -112,7 +122,6 @@ To plan the creation of a new Organization, use the planning sheet in :ref:`Appe
 
 .. image:: images/OrganizationPage.png
 
-
 Click on the “+Add New” icon  which is at the top right corner. Organization form is opened.
 
 .. list-table:: 
@@ -122,18 +131,22 @@ Click on the “+Add New” icon  which is at the top right corner. Organization
    * - Field
      - Details
    * - Organization Name
-     - <Name of the Organization>
+     - <Name of the Organization> [Enter a unique O.U. name made of the alphanumeric, hyphen and underscore characters]
    * - Organization Description
      - <Description>
    * - Account ID
-     - <Select ID> [Multiple AWS accounts to be  linked.Here we have a list]
-   * - Principal
-     - <Select Principal ID > [Select from the list one or more users with the Principal Investigator role]
+     - <Select ID>
+   * - Principal Investigator ID
+     - <Select Principal ID > [Optional]
+	 
+Click on the **“Add Organization”** button. The new organizational unit is added successfully.
 
-Click on the **“Add Organization”** button. The new organizational unit should be added successfully.
+.. image:: images/addnew.png
 
-**NOTE**:We are selecting a specific AWS account when adding new organization. This links the account to organizations. The organization form allows multiple Account IDs and multi-select on the Principal Investigators list.
+**NOTE**: 
 
+a. Through the "Click here to add an account" button you can navigate to the add provider settings page and add an account. 
+b. You can create an organization without Principal Investigator. Through the "Assign O.U." option in user management, you can assign later.
 
 The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. Clicking on a specific organization shall lead to “View Organization Details” window .
 
@@ -156,97 +169,7 @@ Click on  the  “Settings” menu item. Provider settings page is opened.
 .. image:: images/Provider2.png 
    :name: Provider Settings Page
    
-**Note:** You need to follow the below steps before adding the settings. These steps are used to create the IAM user in the target account which has the following policies attached. We perform all the operations using this user.
- 
-Method-1:
-
-1. Login to the AWS console and navigate to the IAM service. 
-2. Click on the "Add User" button and give the username exactly as "RG-PortalUser". 
-3. Select Access type as Programmatic access this will create secret key and access key and AWS Management console access. You need to use these credentials while creating the settings.
-4. Select “Attach existing policies directly” and select the AWS Managed Policies which is mentioned below
-
-	* arn:aws:iam::aws:policy/AmazonEC2FullAccess
-	* arn:aws:iam::aws:policy/SecretsManagerReadWrite
-	* arn:aws:iam::aws:policy/service-role/AWSConfigRole
-	* arn:aws:iam::aws:policy/AmazonSSMFullAccess
-	* arn:aws:iam::aws:policy/AWSServiceCatalogAdminFullAccess
-	* arn:aws:iam::aws:policy/AmazonSageMakerFullAccess
-	* arn:aws:iam::aws:policy/AWSBudgetsActionsWithAWSResourceControlAccess
-	* arn:aws:iam::aws:policy/AmazonEventBridgeFullAccess
-	* arn:aws:iam::aws:policy/AWSCloudTrail_FullAccess
-	* arn:aws:iam::aws:policy/AWSCloudFormationFullAccess
-
-5. Click on the "Next" button. It will create a user.
-6. Click on the “Add Inline Policy” and copy the JSON with the inline policy name which is mentioned below. 
-
-*Note:* You have to add all the below mentioned policies.
-
-AWSConfigFullAccess
-
-.. literalinclude:: AWSConfigFullAccess.json
-  :language: JSON
-  :linenos:
-  
-CostExplorerReadOnlyAccess
-
-.. literalinclude:: CostExplorerReadOnlyAccess.json
-  :language: JSON
-  :linenos:
-
-IAMFullAccess
-
-.. literalinclude:: IAMFullAccess.json
-  :language: JSON
-  :linenos:
-  
-S3FullAccess
-
-.. literalinclude:: S3FullAccess.json
-  :language: JSON
-  :linenos:
-  
-SESFullAccess
-
-.. literalinclude:: SESFullAccess.json
-  :language: JSON
-  :linenos:
-  
-SNSFullAccess
-
-.. literalinclude:: SNSFullAccess.json
-  :language: JSON
-  :linenos:
-
-STSFullAccess
-
-.. literalinclude:: STSFullAccess.json
-  :language: JSON
-  :linenos:
-
--------------------------------------------------------------------------------------
-
-Method-2
-
-This method will make the use of script to create the user. Please follow the below mentioned steps:
-
-1. Download the RG-PortalUserScriptFolder from the following link 
-    https://rlcatalyst-researchportal.s3.us-east-2.amazonaws.com/RG-PortalUserScriptFolder.zip
-2. After extracting the zipped folder you will find the following documents
-	a. Access-policy.json
-	b. RGPortalUserScript.sh
-3. Please make sure you have AWS CLI installed and configured with user credentials which have IAMFullAccess. You can do this  using `aws configure` command before executing the script. Refer the following link for help
-	a. https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html
-	b. https://docs.aws.amazon.com/cli/latest/reference/configure/
-4. Set the execute permission on your script using the below chmod command. 
-     chmod +x RGPortalUserScript.sh
-5. You can run the script using any of the following commands. Please save the *AccessKeyId* and *SecretAccessKey* from the output of the script to use them during the settings creation of Research Gateway.
-	a. ./RGPortalUserScript.sh 
-	b. sh RGPortalUserScript.sh 
-	c. bash RGPortalUserScript.sh
-
-
--------------------------------------------------------------------------------------------------
-
+**Note:**  When we add the settings please make sure the user credentials has the IAMFullAccess.
 
 Click on  the  “+Add New” button in the provider setting page. The Add Provider setting dialog-box is opened.
 
@@ -262,25 +185,27 @@ Fill the following details
    * - Attribute
      - Details
    * - Account Name
-     - <Account Name>
+     - <Account Name> [The Account name should be unique and only alphanumeric characters, hyphen and underscores are allowed]
    * - Account Key
-     - <Account Key>
+     - <Account Key> [It should be a minimum of 16 characters and a maximum of 128 characters]
    * - Secret Key
-     - <Secret Key>
+     - <Secret Key> [It should be a minimum of 40 characters and a maximum of 128 characters]
    * - Region
-     - <Region>
+     - <Region> 
    * - Account Number
-     - <AWS Account Number>
+     - <AWS Account Number> [It should be a 12-digit number]
 
 
-Click on the “Add” button. AWS account was added successfully and will show in the table of providers in the Provider Settings page.
+Click on the “Add” button. An AWS account was added successfully. You can see all the account details in a table format.
+
+**NOTE**: Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly.
 
 On each line item there is a contextual menu. Through this we can edit, delete, Assign O.U. and sync the account.
 
 .. image:: images/Project.png
 
-Click on the 3-dotted icon which is available at the right side of the account details page and select “Edit” option. Provider settings page is opened.
-Update the fields and click on “Add”. Provider setting is updated successfully.
+Click on the 3-dotted icon which is available at the right side of the account details page and select “Edit” option and Edit provider settings page is opened.
+Update the  access key  and secret key fields and click on “Add” button. The provider setting got updated successfully.
 
 .. image:: images/Editprovider.png 
 .. image:: images/editprovider2.png
@@ -304,12 +229,13 @@ One window is opened and all organizational units are listed there. Choose one o
 **Note** : When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
  
 Research Gateway works in conjunction with AWS Service Catalog. To synchronize the Service Catalog to your project, select the Product Sync option.
-Click on the “Sync Now” button. Once the synchronization is complete you should see the “Sync completed” message.
+Click on the “Sync Now” button. Once the synchronization is started you should see the “Sync Started” message.
 
 .. image:: images/sync1.png
 
 .. image:: images/sync2.png
 
+**Note**: The "Sync Now" option can get the products from the shared, local, account and organization level portfolio.
 
 .. _`Adding a new project`:
 
@@ -332,22 +258,24 @@ Fill in the following details
    * - Attribute
      - Details
    * - Project Name
-     - <Project Name>
+     - <Project Name> [Enter a unique project name made of alphanumeric, hyphen and underscore characters]
    * - Budget Available
-     - <Budget to allocate to this project (cumulative)>
+     - <Budget to allocate to this project (cumulative)> 
    * - Account ID 
      - <Account ID>
    * - Project Description
      - <Description about the project> 
    * - Add Researchers
-     - <Select researchers from the list>
+     - <Select researchers from the list> [optional]
 
 
 Click on the “Add Project” button. Added a new project successfully.
 
-**Note**:When adding a project we are  passing researcher information. Through this we are linking researchers to the project. The project form allows multi-select addition of researchers while creating a project.
+**Note**:
 
-**Note:  The project is independent of the researcher. We can create an empty project and add researchers later**
+a. When adding a project we are passing researcher information. Through this, we are linking researchers to the project. 
+b. The project is independent of the researcher. We can create an empty project and add researchers later. Through the "Manage" option in the view project details screen.
+c. If an AWS account is not available under an account ID field you can see a message like **"No AWS accounts available. Please contact your administrator to add AWS accounts to your organization"**.
 
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 

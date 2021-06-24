@@ -138,7 +138,16 @@ The verification email has been sent. Check the verification email delivered to 
 
 **NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
-Users can choose a password and click on the “Submit” button. On successful validation, users will be allowed to login into the Research Gateway. 
+Users can choose a password and click on the “Submit” button. 
+
+**Note**: The password policy should meet the following requirement :
+   a. The minimum password length of 8 characters and a maximum of 16 characters.
+   b. It should have atleast one lower case character(a-z).
+   c. It should have atleast one upper case character(A-Z).
+   d. It should have atleast one number(0-9).
+   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ `)
+   
+On successful validation, users will be allowed to login into the Research Gateway. 
 
 .. image:: images/password1.png 
 
@@ -154,7 +163,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 **Enable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the disable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
+There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
 
 .. image:: images/enable.png 
 
@@ -163,6 +172,14 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
 
 .. image:: images/disable.png 
+
+**Resend verification mail**
+
+There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
+
+.. image:: images/resend.png
+
+**NOTE**: If the user is inactive state then only you can see the "Resend verification mail" option.
 
 Audit Trail
 ^^^^^^^^^^^
@@ -234,6 +251,8 @@ If we could not find any products related to the filter you can see the message 
 
 .. image:: images/search3.png
 
+**NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog products.
+
 Principal Investigator Features
 +++++++++++++++++++++++++++++++
 
@@ -266,7 +285,7 @@ Fill in the following details
    * - Project Description
      - <Description about the project> 
    * - Add Researchers
-     - <Select researchers from the list>
+     - <Select researchers from the list> [optional]
    
 Click on the “Add Project” button. Added a new project successfully.
 
@@ -274,9 +293,10 @@ Click on the “Add Project” button. Added a new project successfully.
 
 **NOTE**: 
 
-1. When adding a project we are passing researcher information. Through this, we are linking researchers to the project. The project form allows multi-select 
-   addition of researchers while creating a project.
-2. My Projects page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
+a. When adding a project we are passing researcher information. Through this, we are linking researchers to the project. 
+b. The project is independent of the researcher. We can create an empty project and add researchers later. Through the "Manage" option in the view project details screen.
+c. If an AWS account is not available under an account ID field you can see a message like **"No AWS accounts available. Please contact your administrator to add AWS accounts to your organization"**. 
+d. *My Projects* page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
    to a project details page. Click on the specific project you can navigate to the project details page.
 
 How to add researchers to existing project 
@@ -483,12 +503,16 @@ b. **Available Products Card view** - You can see the product details in card vi
 
 c. **Keyword search** - You can search products based on product type, product name and product description.
 
-d. **Filter** -  Choose the"All" option. Through this you can see the all products here.
-
+d. **Filter** - We have following filter options:
+      
+	  a. **All** - You can see the all products here.
+	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
+	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon S3
 
 .. image:: images/available.png
 
-**NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog.
+**NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog Products.
+
 
 Product Order
 ^^^^^^^^^^^^^
@@ -556,7 +580,7 @@ While product is in the *Creating* state the details page displays a time limit 
 
 When you click any action(Start/Stop/Terminate) in a provisioned product, state should be changed automatically using server side events.
 
-**NOTE**: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**No Instances Specified**".
+**NOTE**: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**The instance-id of the product is not available. Please try after some time**".
 
 .. image:: images/instance.png
 
@@ -576,7 +600,7 @@ You can see product related actions in the  Actions menu.
 
 3. Terminate action : You can terminate the product through “Terminate” action.
 
-4. SSH/RDP action : You can connect to the instance in a new window through "SSH" action.
+4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
 
 Fill the following details
 

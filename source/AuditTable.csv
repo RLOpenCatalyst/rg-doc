@@ -6,9 +6,14 @@ User,Logical ID,Timestamp,Status,Status Reason
 <User Name>,DATA_SECURITY,<IST time zone>,UNSHARE_S3 BUCKET_COMPLETED,You can see the unshared products information.
 <User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project information.
 <User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_COMPLETED,You can see the assigned products to the related project completion information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_FAILED,You can see the Assign products  failed information which related to the project.
+<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_FAILED,You can see the assigned products  failed information which related to the project.
 <User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_STARTED,You can see the updated products started information which is related to the project.
 <User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_COMPLETED,You can see the updated products to the related project completion information.
 <User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_FAILED,You can see the updated produts to the related project failed information.
 <User Name>,CATALOG,<IST time zone>,UPDATE_TO_OU_COMPLETED,You can see the updated products to the related oragnizataional unit  updation information.
 <User Name>,CATALOG,<IST time zone>,ASSIGN_TO_OU_COMPLETED,You can see the assigned products to the related organizational unit  completion information.
+<User Name>,CATALOG,<IST time zone>,ROLLBACK_COMPLETE,You can see the  assigned products failed information  which related to the project.
+<User Name>,CATALOG,<IST time zone>,SYNC_STARTED,"You can see the  sync started information (i.e, which  user  started and related account name)"
+<User Name>,CATALOG,<IST time zone>,SYNC_COMPLETED,"You can see the  sync completed  information (i.e.. which user  started, related account name with  product count information)."
+<User Name>,CATALOG,<IST time zone>,SYNC_FAILED,"You can see the sync failed information(i.e., which user started, related account name and error information).
+"

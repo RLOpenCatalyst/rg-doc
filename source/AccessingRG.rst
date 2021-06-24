@@ -67,11 +67,18 @@ Fill the following details
    * - E-mail address
      - <Registered Email ID>
    
-Click on "Send Resend link" button. If the provided details are valid, he will get a verification link that has been sent to his email to reset the password. On clicking the link in the email, the user is prompted to change password screen.  
+Click on "Send Resend link" button. If the provided details are valid, the verification link that has been sent to registered email to reset the password. On clicking the link in the email, the user is prompted to change password screen.  
 
 .. image:: images/verificationemail.png
 
-The password change is either successful or unsuccessful (this will be like verification success and error screens).  The user is then redirected back to the login screen.
+**Note**: The password policy should meet the following requirement
+   a. The minimum password length of 8 characters and a maximum of 16 characters.
+   b. It should have atleast one lower case character(a-z).
+   c. It should have atleast one upper case character(A-Z).
+   d. It should have atleast one number(0-9).
+   e. It should have atleast one special character (= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~).
+
+If the password change is successful you can navigate to the verification successful page. Through the "Click here to login button" you can navigate to the login screen. If the password change is unsuccessful you can see the verification error screen.
 
 .. image:: images/password.png
 
