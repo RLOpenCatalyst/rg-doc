@@ -1066,5 +1066,25 @@ is created, we will seed admin credentials to the database and the same will be 
 When the product is live for the customer to use, we have to track the usage of the customer based on the pricing model they chose while subscribing to our product and the dimension they are consuming. For software as a service (SaaS) subscriptions, we meter for all usage, and then customers are billed by AWS based on the metering records that we provide. For SaaS contracts, we only make sure that the customer is not using the product beyond the contract’s entitlements.
 
 
+Securely managing multiple AWS accounts with Cross-Account IAM-Roles
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can use AWS Identity and Access Management (IAM) roles to grant access to resources in your AWS account, another AWS account you own, or a third-party account. We are taking your credentials and creating the roles that’s why we want your IAMFull access/Administrator Access. 
+
+Role Creation Process in Research Gateway
+-----------------------------------------
+
+1. While adding the settings once you provide the credentials, we will verify the credentials and give the required access.
+2. Later we created the role and attached the required policy and this was created by Research Gateway.
+3. We shouldn’t use your credentials in any other place.
+
+Role usage
+----------
+Whenever the call is made to your AWS account we assume the created role and get the temporary credentials and proceed with the action.
+
+
+
+
+
 
 
