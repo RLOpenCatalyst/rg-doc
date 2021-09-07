@@ -1,15 +1,23 @@
 Registration Information, 
-Organization Information,This will be used to fill the Organization Name field in the registration form
-User Name,This will be the username with which the user will login
-Password,This will be the initial password allocated to the User
-Email Address,This will be the email ID which will be verified by the system during registration. Ensure you have access to this e-mail ID during registration
-**Provider Settings**, 
-Will an Amazon Web Services account be configured for this tenant?,
-AWS Access Key, 
+Email,This will be the email ID which will be verified by the system during registration. Ensure you have access to this e-mail ID during registration.
+First Name,This will be  the first name of the user.
+Last Name,This will be  the last name of the user.
+Phone number,This will be the phone number of the user.
+Password,This will be used for the login
+**Create Organization**,
+Organization Name,
+Organization Description,This will be used to fill the 'Organization Name' field in the  form.
+Account  Details ,This is the description of the project.
+Add Users,"Choose the account ID from the list or create a new account from the ""Add Accounts"" button."
+**Provider Settings**,"Choose the users from the list or create a new user from the ""Add users"" button"
+Will an Amazon Web Services account be configured for this email?, 
+Account Name ,
+AWS Access Key,This will be used to fill the 'Account Name' field in the  form.
 AWS Secret Key, 
-AWS Region for this account,e.g. us-east-1
-AWS Account Number, 
+AWS Region for this account, 
+AWS Account Number,e.g. us-east-1
 Will connect to Jump Server?, 
 User Name, 
-Authentication type(Pem File),Upload Pem file for connect Jump server
-Authentication Type(Password),Password to Connect Jump server
+Authentication type(Pem File), 
+Authentication Type(Password),Upload Pem file for connect Jump server
+,Password to Connect Jump server

@@ -17,6 +17,10 @@ An Administrator user can perform the following actions.
   * Add or Assign `Users`_
   * Assign `Catalog`_ Items
 
+If administrator logs as a first time, you can see the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Organization" screen.
+
+
+
 .. _Budgets:
 
 Budgets
@@ -115,18 +119,14 @@ Fill the following details
 
    * - Field
      - Details
+   * - Email 
+     - <Enter an Email ID>
+   * - Role
+     - <Select a role in the drop-down list>
    * - First Name
      - <Please enter firstname of the user>
    * - Last Name
-     - <Please enter last name of the user>
-   * - E-mail 
-     - <Registered Email ID>
-   * - Username
-     - <Give the user a name to identify on this platform>
-   * - Role
-     - <Select a role>
-   * - Organizational Unit
-     - <Select organizational unit>
+     - <Please enter last name of the user> 
 
 Click on the “Add User” button. On successsful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
@@ -145,15 +145,15 @@ Users can choose a password and click on the “Submit” button.
    b. It should have atleast one lower case character(a-z).
    c. It should have atleast one upper case character(A-Z).
    d. It should have atleast one number(0-9).
-   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ `)
+   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ `).
    
-On successful validation, users will be allowed to login into the Research Gateway. 
+On successful validation, users will be allowed to login to the Research Gateway. 
 
 .. image:: images/password1.png 
 
-You can perform the following user actions :  
+You can perform the following user actions 
 
-**Assign**
+**Assign O.U.**
 
 There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Choose the organizational unit in the drop-down list and click on the “Assign” button. You can see a successful toaster message also. Once assigned you can see O.U name under the Email id. 
 
@@ -238,7 +238,7 @@ You can view and update the products for the particular organization. Enable the
 
 You can search  product name and description of the product. We have following filter options:
  
-  a. **ALL** : You can see all products here.
+  a. **All** : You can see all products here.
   b. **Compute** :  You can see compute related products here.
   c. **Storage**  : You can see storage related products here.
   d. **Application** : You can see application related products here.
@@ -256,17 +256,29 @@ If we could not find any products related to the filter you can see the message 
 Principal Investigator Features
 +++++++++++++++++++++++++++++++
 
-As a Principal Investigator,the user can create Projects within the Organization. A project will be associated with a Budget with an associated dollar amount that is funded from a specific Grant to the organization. A Project can use Resources only if there is an associated budget that can meet the forecasted needs.
+As a Principal Investigator, you can create an account and project also. A project will be associated with a Budget with an associated dollar amount that is funded from a specific Grant to the organization. A Project can use Resources only if there is an associated budget that can meet the forecasted needs.
 
-My Projects page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will leads to a project details page.
+If Principal Investigator logs as a first time, he can view the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. 
+
+.. image:: images/welcome.png
+
+Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen.
+
+.. image:: images/projectcreation.png 
+
+My Projects page of the Research Gateway will list all the existing projects created along with other details.
+
+.. image:: images/myprojects.png
+
+Clicking on a specific project will leads to a project details page.
 
 .. image:: images/projectdetails.png 
 
 How to add a new Project 
 ^^^^^^^^^^^^^^^^^^^^^^^^
-Login to the Research Gateway. Click on the  “+Add New” button. The project application form is opened. 
+Login to the Research Gateway. Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
-.. image:: images/add1.png 
+.. image:: images/projectcreation.png 
  
 Fill in the following details
 
@@ -278,49 +290,99 @@ Fill in the following details
      - Details
    * - Project Name
      - <Project Name>
-   * - Budget Available
-     - <Budget to allocate to this project (cumulative)>
-   * - Account ID 
-     - <Account ID>
    * - Project Description
      - <Description about the project> 
-   * - Add Researchers
-     - <Select researchers from the list> [optional]
+   * - Budget Available
+     - <Budget to allocate to this project (cumulative)>
+   * - Account Details 
+     - <Select an Account ID in the list or create a new account form the **"Add Accounts"** button>
+   * - Add Users
+     - <Select collaborators from the list or create a new user from the **"Add Users"** button> [optional]
+   * - Add products
+     - <Select catalog type from the list>
    
-Click on the “Add Project” button. Added a new project successfully.
+Click on the “Create Project” button. Added a new project successfully.
 
-.. image:: images/Add.png 
+**Note**: While creation of project, if you select "Standard catalog" option it will create 6 products(Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
+
+Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in "My Projects" list.
+
+.. image:: images/myprojects.png 
+
+Once you click on the project, you can see the budget in the cards and remaining details will show a tabbed area with the following tabs:
+
+   1. Project Details
+   2. Events
+   3. Available Products
+   4. My Products
+
+**Project Details**
+
+1. You can view the project details here. 
+2. If the project was a failed state, you can repair the project through the “Repair” option.
+3. Click on the “Pause” action which is available on the right side. When you click on "Pause" action,  all the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible but the “Launch Now “ button would be hidden.
+4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
+5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
+6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
+7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher emails and click on the “Update List” button. It should add collaborators to the project.
+
+.. image:: images/projectdetails.png 
+
+**Events**
+
+1. You can see the project-related events here.
+
+.. image:: images/events.png
+
+**Available Products**
+
+1. You can view the Available Products information here and you can see products in a table view also.
+2. You can search based on product name and description. You can filter the products. We have following filter options:
+      
+	  a. **All** - You can see the all products here.
+	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
+	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon S3
+
+.. image:: images/availableproducts.png	 
+
+**My Products**
+
+1. You can view the provisioned products details here and You can see products in a table view also.
+2. You can search the product name and description of the product.
+3. You can filter the products. We have following filter options:
+      
+	  a. **All** - You can see the all(i.e., active,terminated,stopped and failed) products here.
+	  b. **Active** - You can see all the active products here.
+	  c. **Terminated** - You can see all terminated products here.
+
+	 
+.. image:: images/myproducts.png
 
 **NOTE**: 
 
-a. When adding a project we are passing researcher information. Through this, we are linking researchers to the project. 
-b. The project is independent of the researcher. We can create an empty project and add researchers later. Through the "Manage" option in the view project details screen.
-c. If an AWS account is not available under an account ID field you can see a message like **"No AWS accounts available. Please contact your administrator to add AWS accounts to your organization"**. 
-d. *My Projects* page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
+a. When adding a project we are passing collaborator information. Through this, we are linking researchers to the project. 
+b. The project is independent of the researcher. We can create an empty project and add collaborators later. We can add collaborators through the "Manage" option which is at the project details screen.
+c. **My Projects** page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
    to a project details page. Click on the specific project you can navigate to the project details page.
 
 How to add researchers to existing project 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 There is an edit functionality for the project entity. The project is independent of the researcher. An user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
 
-.. image:: images/Add.png 
+.. image:: images/projectdetails1.png 
 
 Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI. You can't unselect the researchers who have associated products. 
  
- .. image:: images/view.png 
- .. image:: images/view1.png
- .. image:: images/update1.png
+.. image:: images/researchers.png 
  
-*Note*: Earlier Researchers can be added to a project only at Project creation time(i.e, PI logs into the Organization and creates Projects. In the Add Project screen, the PI associates one or more Researchers to the project).
-
-
+.. image:: images/update.png
+ 
 Actions on Projects
 ^^^^^^^^^^^^^^^^^^^
 
-The Principal can do Pause/Resume/Stop actions on  a project.
+Once project is active, we can do Pause/Resume/Stop actions on  a project.
 
-.. image:: images/actionon.png
-
+.. image:: images/projectdetails.png 
 
 **Pause Action**
 
@@ -349,7 +411,9 @@ The project status changed to “Stopped”. In a Stopped state all underlying r
 
 **Note**: 
 
-If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
+1. If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
+2. Once project is failed, We can do repair on a project. Click on the "Repair" button which is at the project details page. We can see related events in events page.
+3. Once project is failed we can do catalog sync on a project. Click on the "Sync" button which is at the project details page. We can see related events in events page.
 
 
 Budgets (for Principal Investigator)
@@ -361,27 +425,26 @@ As a Principal Investigator, you can view the organization-wide budgets from the
 
 Sign in as the Principal Investigator. Click on the “☰” Symbol which is available on left side header. Click on the "Budgets" menu item through this, you can navigate to the Budget Details page.  
 
-.. image:: images/budget.png 
+.. image:: images/budgets.png 
 
 .. image:: images/budget2.png
 
 You can see budget details  with different KPI cards. You can see the following KPI cards:
 
-  a. **Total Budget Allotted** : This is the budget allocated for the project during the creation of the project.
+  a. **Project Budget** : This is the budget allocated for the project during the creation of the project.
 
-  b. **Total Budget Consumed** : This is the budget consumed by all the researchers in the project.
+  b. **Consumed Budget** : This is the budget consumed by all the researchers in the project.
 
-  c. **Total Budget Available** : This is available budget for the project
+  c. **Available Budget** : This is available budget for the project
 
 You can see Project-wise Budget details in the table format:
 
 .. csv-table::
    :file: BudgetTable2.csv
-   :widths: 10, 15, 10, 10, 55
+   :widths: 10, 15, 10, 10, 15
    :header-rows: 1
  
 You can download the budget details through the “Export CSV”  option.
-
 
 Note: When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification.
 
@@ -389,9 +452,7 @@ Note: When Consumed Budget exceeds a threshold (say 80%), the budget management 
  
 You can see researcher budget details which are linked to particular products and you can see configured products information in Researcher-wise Budget details page
 
-
 .. image:: images/budget3.png
-
 
 .. image:: images/budget4.png
 
@@ -403,7 +464,7 @@ As a Principal Investigator, you can use the “Catalog” screen to view all ca
    
 .. image:: images/cat1.png
 
-Click on the **Catalog** menu item to navigate to the Catalog management screen.
+Click on the **Catalog** menu item to navigate to the Catalog screen.
 
 .. image:: images/cat2.png
 
@@ -419,16 +480,13 @@ You can view and update the products for the particular organization. Enable the
 
 .. image:: images/update1.png
 
-You can use the search field to search for a term in the product name and description of the product. 
-You can also use the filter options as below :
+You can use the search field to search for a term in the product name and description of the product. You can also use the filter options as below :
   
- a. **ALL** : You can see all products here.
+ a. **All** : You can see all products here.
  
- b. **Compute** :  You can see compute related products here.
+ b. **Research** :  You can see the products realted to compute and analytics here. Eg: Amazon EC2
  
- c. **Storage**  : You can see storage related products here.
- 
- d. **Application** : You can see application related products here.
+ c. **IT Application** : You can see application related products here.
  
   .. image:: images/filter1.png
   
@@ -440,20 +498,96 @@ If we could not find any products related to the filter you can see the message 
 
 .. image:: images/search3.png
 
-Switch Role (for Principal Investigator)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Key Pairs(for Principal Investigator)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The Key Pairs screen can be used by the Principal Investigator to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
 
-As a Principal Investigator, you can switch the roles from the UI. You can see the switch role dropdown which is available on the right side of the header. You can see the options like Researcher and Principal Investigator. 
+ .. image:: images/key1.png
 
-.. image:: images/roleswitch.png
+.. image:: images/key2.png
 
-.. image:: images/roleswitch1.png
+You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
+  
+Click on the "+Create New" button which is available at right side of the page. Fill the deatils in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
 
-Whenever you flip the role you can navigate to the landing page of the target role. If you click on the "Researcher" role it will navigate to the researcher landing page. If you flip the role like "Principal Investigator" you will navigate to the Principal Investigator landing page.
+.. image:: images/key3.png
 
-.. image:: images/pi.png
 
-.. image:: images/researcher.png
+You can see key Pairs details in table format:
+
+.. csv-table::
+   :file: keypair.csv
+   :widths: 20, 20, 20, 20, 20
+   :header-rows: 1
+
+The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
+
+.. image:: images/delete.png
+
+You can search the keypair through Keypair name and Project name.
+
+Ex: Type “Chiron” in the search area it should display the keypairs which are attached to the Chiron project.
+
+.. image:: images/se1.png
+
+
+Studies(for Principal Investigator)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+As a Principal Investigator, You can view the studies in the Research Gateway. Click on “☰” Symbol which is available on the left side header. By clicking on the "Studies" menu item, the user will be navigated to the studies details page.
+
+The “Studies” landing page lists the datasets as cards. 
+
+Each card shows the following data:
+
+1. Name
+2. Description
+3. Tags
+4. Bookmark this study.
+5. View Details link(Clicking on the “View details” call-to-action on a study card will lead to a Study details page).
+
+.. image:: images/studies1.png
+
+The studies landing page should have a “Filter” feature that allows the user to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies.
+
+.. image:: images/fil1.png
+
+The studies landing page has a search bar that allows users to search the studies based on name and description.
+
+.. image:: images/sea1.png
+
+Public Study(for Principal Investigator)
+----------------------------------------
+You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
+
+	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
+	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
+											
+ .. image:: images/sc3.png
+ 
+ .. image:: images/public.png
+  
+**Explore Action**
+
+You can see the files/folders which are  related to the datastore.
+
+.. image:: images/ex1.png
+
+**Link/Unlink Action**
+
+1. A user will be able to link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a pop-up that will have the list (dropdown) of active sagemakers for that user.
+2. You can see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
+3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
+4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
+ 
+ .. image:: images/link2.png
+ 
+ .. image:: images/unlink.png
+ 
+ .. image:: images/unlink2.png
+  
+ .. image:: images/link1.png  
+ 
+
 
 Researcher Features
 +++++++++++++++++++
@@ -583,6 +717,7 @@ When you click any action(Start/Stop/Terminate) in a provisioned product, state 
 **NOTE**: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**The instance-id of the product is not available. Please try after some time**".
 
 .. image:: images/instance.png
+
 
 Actions available for products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -768,7 +903,7 @@ If there are no active sagemaker products we are showing the following message t
 SageMaker Product
 -----------------
 
-Researcher can login to the portal and quickly order SageMaker products.
+Researcher can login to the portal and quickly order SageMaker product.
 Find the Sagemaker product in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
@@ -779,6 +914,70 @@ You can see product related actions in the  Actions menu.
 3. Terminate Action: You can terminate the product through “Terminate” action.
 
 .. image:: images/sagemaker.png
+
+RStudio
+-------
+Researcher can login to the portal and quickly order RStudio product. Find the RStudio product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
+
+3. Reboot action : You can reboot instances through  “Reboot” action.
+
+4. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+5. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+Fill the following Details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Username>
+   * - Authentication Type
+     - <Choose Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+	 
+Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+
+
+Nextflow-Advanced
+-----------------
+Researcher can login to the portal and quickly order Nextflow-Advanced product. Find the Nextflow-Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+4. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+Fill the following Details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Username>
+   * - Authentication Type
+     - <Choose Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+	 
+Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+
 
 HPC Product
 -----------
@@ -812,8 +1011,8 @@ Login as the Researcher. Click on “☰” Symbol which is available on the lef
 You can see budget details with different KPI cards. You can see the following KPI cards :
 
 1. **Total Budget Allotted** : This is the budget allocated for the project during the creation of the project.
-2. **Total Budget Consumed** : This is the budget consumed by all the researchers in the project.
-3. **Total Budget Available** : This is the available budget for the project.
+2. **Consumed Budget** : This is the budget consumed by all the researchers in the project.
+3. **Available Budget** : This is the available budget for the project.
 
  
  .. image:: images/bud2.png 
@@ -822,16 +1021,16 @@ You can see Project-wise Budget details in the table format:
 
 .. csv-table::
    :file: BudgetTable2.csv
-   :widths: 10, 15, 20, 20, 35
+   :widths: 20, 20, 20, 20, 20
    :header-rows: 1
 
 You can see configured product-wise budget details which are linked to a particular project.
 
- .. image:: images/prod1.png
+ .. image:: images/Researcherbudget.png
 
 
-Studies
-^^^^^^^
+Studies (For Researcher)
+^^^^^^^^^^^^^^^^^^^^^^^^
 In the research field, the ability to use data stores or "Studies" is key. A researcher may have his own data ("My Study"), or a Principal may create a data-store that is shared across researchers in the same project (Project Studies) or the researcher may connect to Open Data like the AWS registry of open data.
 
 .. image:: images/studies.png
@@ -939,8 +1138,8 @@ You can see the files/folders which are  related to the datastore.
  .. image:: images/link1.png  
  
 
-Key Pairs
-^^^^^^^^^
+Key Pairs (For Researcher)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 The Key Pairs screen can be used by the Researcher to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
 
  .. image:: images/key1.png
@@ -1064,6 +1263,26 @@ is created, we will seed admin credentials to the database and the same will be 
 **d. Tracking usage**
 
 When the product is live for the customer to use, we have to track the usage of the customer based on the pricing model they chose while subscribing to our product and the dimension they are consuming. For software as a service (SaaS) subscriptions, we meter for all usage, and then customers are billed by AWS based on the metering records that we provide. For SaaS contracts, we only make sure that the customer is not using the product beyond the contract’s entitlements.
+
+
+Securely managing multiple AWS accounts with Cross-Account IAM-Roles
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can use AWS Identity and Access Management (IAM) roles to grant access to resources in your AWS account, another AWS account you own, or a third-party account. We are taking your credentials and creating the roles that’s why we want your IAMFull access/Administrator Access. 
+
+Role Creation Process in Research Gateway
+-----------------------------------------
+
+1. While adding the settings once you provide the credentials, we will verify the credentials and give the required access.
+2. Later we created the role and attached the required policy and this was created by Research Gateway.
+3. We shouldn’t use your credentials in any other place.
+
+Role usage
+----------
+Whenever the call is made to your AWS account we assume the created role and get the temporary credentials and proceed with the action.
+
+
+
 
 
 

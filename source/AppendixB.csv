@@ -1,48 +1,42 @@
 Standard Catalog Information,,
 Product Type,Required Parameters,Details
-Amazon EC2 Linux,Product Name,Specify a name for the product that you want to create
+Amazon EC2 Linux,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud.
-,Key Name,"Name of an existing EC2 KeyPair to enable SSH access to the instance. Please contact your Administrator if they are not available in the dropdown. NOTE: If you want new keyPair, create new one through KeyPairs listing Page."
-,SSH Location,The IP address range that can be used to SSH to the EC2 instances
-,Latest AMI ID,Please enter an  AMI of the EC2 instance.
-,Instance Type,WebServer EC2 instance type. Choose instance type from the listbox. Eg: t2.small
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
+,AllowedSSH Location,The IP address range that can be used to SSH to the EC2 instances
+,LatestAmiId,Please enter an  AMI of the EC2 instance.
+,Instance Type,Choose the instance type for this instance. Eg: t2.small
 ,Expected time to provision,5 minutes
-Amazon EC2 Windows,,
-,Product Name,Specify a name for the product that you want to create.
+Amazon EC2 Windows,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed"
 ,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud.
-,Key Name,"Name of an existing EC2 KeyPair to enable SSH access to the instance. Please contact your Administrator if they are not available in the dropdown. NOTE: If you want new keyPair, create new one through KeyPairs listing Page."
-,SSH Location,The IP address range that can be used to SSH to the EC2 instances
-,Latest AMI ID,Please enter an AMI of the EC2 instance
-,Instance Type,WebServer EC2 instance type. Choose instance type from the listbox. Eg: t2.small
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
+,AllowedSSHLocation,The IP address range that can be used to SSH to the EC2 instances
+,LatestAmiID,Please enter an AMI of the EC2 instance
+,Instance Type,Choose the instance type for this instance. Eg: t2.small
 ,Expected time to provision,5 minutes
-Amazon S3,,
-,Product Name,Specify a name for the product that you want to create
+Amazon S3,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed"
 ,Description,"Amazon Simple Storage Service (Amazon S3) is an object storage service that offers scalability, data availability, security and performance."
 ,Expected time to provision,2 minutes
-Amazon DynamoDB,,
-,Product Name,Specify a name for the product that you want to create
+Amazon DynamoDB,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,Amazon DynamoDB is a fully managed proprietary NoSQL database of the Amazon Web Services.
 ,Write Capacity Units,Provisioned write throughput
 ,HashKey Element Type,Enter HashType PrimaryKey Type
 ,HashKey Element Name,Enter HashType PrimaryKey Name
 ,Read Capacity Units,Provisioned read throughput
 ,Expected time to provision,30 minutes
-Amazon SageMaker,,
-,Product Name,Specify a name for the product that you want to create
+Amazon SageMaker,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,"Amazon SageMaker is a fully managed service that provides the ability to build, train and deploy ML models."
 ,Instance Type,Select Instance type for the SageMaker Notebook. Eg: ml.t2.medium
 ,Expected time to provision,15 minutes
-Amazon RDS,,
-,Product Name,Specify a name for the product that you want to create
+Amazon RDS,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,Amazon Relational Database Service is a distributed relational database service by AWS.
 ,DB Password,The database admin account password.
 ,DB Name,The database name. It must begin with a letter and contain only alphanumeric characters.
 ,DB User,The database admin account username. It must begin with a letter and contain only alphanumeric characters.
 ,Expected time to provision,30 minutes
-Amazon EMR,,
-,Product Name,Specify a name for the product that you want to create
+Amazon EMR,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,Amazon Elastic MapReduce (EMR) is an AWS tool for big data processing and analysis.
-,Key Name,Must be an existing Keyname. Please contact your Administrator if they are not available in the dropdown.
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,VPC ID,Vpc Id of your existing Virtual Private Cloud (VPC). Please select VPC ID before selecting Subnet ID and SecurityGroup.
 ,Log Uri,Enter a valid S3 URL.
 ,Applications,"Please select which application will be installed on the cluster. This would be either Ganglia and spark, or Ganglia and s3 backed Hbase"
@@ -55,20 +49,18 @@ Amazon EMR,,
 ,Security Group,Select the security group for EMR Cluster. Please contact your Administrator if they are not available in the dropdown.
 ,Release Label,Enter a valid EMR release version
 ,Expected time to provision,10 Minutes
-AppStream,,
-,Product Name,Specify a name for the product that you want to create
+AppStream,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,Amazon AppStream is a fully managed non-persistent application and desktop streaming service
 ,PrivateSubnet1,The SSM parameter containing the subnet to be used
-,FleetName,The name of the AppStream Fleet.Max Length should be within 20 characters.Example - ChrisFleet
+,FleetName,The name of the AppStream Fleet.Max Length should be within 20 characters. Example - ChrisFleet
 ,PrivateSubnet2,The SSM parameter containing the subnet to be used
 ,AppStreamSecurityGroup,The SSM parameter containing the subnet to be used
 ,SourceImageName,The name of the AppStream ImageBuilder
 ,MyEmail,Enter an Email ID for notifications
-,Stack Name,The name of the AppStream Stack.Max Length should be within 20 characters.Example - ChrisStack
+,Stack Name,The name of the AppStream Stack.Max Length should be within 20 characters. Example - ChrisStack
 ,Fleet Instance Type,Enter Fleet Instance Type.
 ,Expected time to provision,30 Minutes
-Moodle,,
-,Product Name,Specify a name for the product that you want to create
+Moodle,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,Moodle is a Learning Platform or course management system (CMS) - a free Open Source software package designed to help educators
 ,Efs Growth,Amount of dummy data (GiB) to add to the file system (max 6144 GiB). Amazon EFS storage  charges apply
 ,DataSubnet3Cidr,CIDR block for data subnet 3 located in Availability Zone 3
@@ -120,10 +112,9 @@ Moodle,,
 ,WebSubnet0Cidr,CIDR block for Web subnet 0 located in Availability Zone 0
 ,PublicSubnet5Cidr,CIDR block for Public subnet 5 located in Availability Zone 5
 ,Expected time to provision,30 Minutes
-WordPress,,
-,Product Name,Specify a name for the product that you want to create
+WordPress,Product Name,Specify a name for the product that you want to create
 ,Description,WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database.
-,Key Name,Name of an existing EC2 KeyPair to enable SSH access to the instances. Please contact administrator if they are not available in dropdown.
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,DB Class,Database instance class
 ,Subnets,The SSM parameter containing the subnet to be used
 ,SSH Location,The IP address range that can be used to SSH to the EC2 instances
@@ -136,8 +127,7 @@ WordPress,,
 ,MultiAZDatabase,Create a Multi-AZ MySQL Amazon RDS database instance
 ,Instance Type,WebServer EC2 instance type
 ,Expected time to provision,30 Minutes
-Amazon HPC,,
-,Product Name,Specify a name for the product that you want to create
+Amazon HPC,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,"AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. With virtually unlimited capacity, engineers, researchers, and HPC system owners can innovate beyond the limitations of on-premises HPC infrastructure."
 ,CfnClusterInitialQueueSize,"Initial number of EC2 instances to launch as compute nodes within the cluster. MinValue=0,  MaxValue=32"
 ,CfnClusterMasterInstacneType,MasterServer EC2 instance type
@@ -150,22 +140,16 @@ Amazon HPC,,
 ,CfnClusterScheduler,Cluster scheduler
 ,DomainAdminPassword,"Password for the domain admin user. Must be at least 8 characters with at least three of these attributes: lowercase, uppercase, number and symbols"
 ,Expected time to provision,40 minutes
-RStudio,,
-,Product Name,Specify a name for the product that you want to create
+RStudio,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,"RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management."
 ,Initial user,User Name for Rstudio
 ,Initial Password,Password for RStudio. Please keep in your records as this will not be echoed in the CloudFormation Console
-,KeyPair,Amazon EC2 Key Pair. Please contact your Administrator if they are not available in the dropdown.
-,VPC ID,VPC this server will reside in
-,RStatsS3 Bucket,Name of the S3 bucket
-,Image ID,Amazon Linux Image ID. Default is for 2017.03.01 (HVM). N.B. If you want more storage then you should update your image
-,Subnet ID,Subnet ID your instance will launch in. Should be Internet accessible for the purposes of this demo.
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,Instance Type,Instance type for RStudio. Choose instance type from the dropdown.  Eg: Default is t2.micro.
 ,Expected time to provision,10 Minutes
-Nextflow-Basic,,
-,Product Name,Specify a name for the product that you want to create
+Nextflow-Basic,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,Use an Amazon EC2 instance to run Nextflow workflows locally. This is ideal for small workloads like testing configurations or small amounts of data.
-,KeyName,Name of an existing EC2 KeyPair to enable SSH access to the instance. Please contact your Administrator if they are not available in the dropdown.
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,Nextflow Project Name,Use an Amazon EC2 instance to run Nextflow workflows locally. This is ideal for small workloads like testing configurations or small a.
 ,SSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,Latest AMI ID,Please enter an AMI of the EC2 instance
@@ -176,10 +160,44 @@ Nextflow-Basic,,
 ,Existing S3 Bucket Name,"A S3 bucket name for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens)."
 ,Instance Type,WebServer EC2 instance type. Choose instance type from the dropdown.
 ,Expected time to provision,10 minutes
-Geos-Chem,,
-,Product Name,Specify a name for the product that you want to create
+Geos-Chem,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,The GEOS-Chem model is a global 3-D model of atmospheric composition driven by assimilated meteorological observations.
-,Key Name,"Name of an existing EC2 KeyPair to enable SSH access to the instance. Please contact your Administrator if they are not available in the dropdown. NOTE: If you want new keyPair, create new one through KeyPairs listing Page."
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,SSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,Latest AMI ID,AMI ID of the EC2 instance.
 ,Instance Type,GEOS-CHEM EC2 instance type. Choose instance type from the dropdown.
+,Expected time to provision,15 Minutes
+Nextflow-Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
+Eg: MedicalResearch
+"
+,Namespace,Namespace (e.g. project name) to use to label resources.
+,"PipelineName
+",URL to the git repository containing the pipeline code. The repo should contain nextflow.config file which specifies the name of the docker container image. Eg: https://github.com/seqeralabs/nextflow-tutorial.git
+,PipelineContainer,Docker container image to the pipeline to be executed in the worker node. Eg: nextflow/rnaseq-nf:latest
+,InputDataLocation,Name of existing S3 Bucket in that region
+,OutputDataLocation,Name of existing S3 Bucket in that region
+,WorkDataLocation,Name of existing S3 Bucket in that region
+,InstanceType,"Head Node EC2 instance type
+Eg: t2.small"
+,HeadNodeEBSVolumeSize,"Amount of storage the Head Node will use.
+Eg: 16 "
+,KeyPair,"Choose the KeyPair in the list.
+Note: If keyPair is not available in the drop-down, click on the “+” button. A keypair creation form is opened. Fill the details in the form and click on the “Create KeyPair” button. Now that keypair is available in the list.
+
+Remember to save the private key file securely for future use. Do not share this file with others for the security of your account."
+,AllowedSSHLocation,"This identifies the IP locations from where connections to this instance should be allowed. For the security of your instance, we recommend you allow connections only from your own location. 
+You can find your IP using https://whatismyipaddress.com/
+Eg: 0.0.0.0/0
+"
+,VPCId,Choose VPC Id in the drop-down list.
+,WorkerNodeSubnetId,Subnet you want your Batch Worker Node to launch in
+,ComputeEnvMinvCpus,The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. Eg: 0
+,ComputeEnvMaxvCpus,"The maximum number of CPUs for the default Batch Compute Environment
+Eg: 100"
+,SpotBidPercentage,"The maximum percentage of On-Demand pricing you want to pay for Spot resource
+Eg: 100"
+,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation
+Eg: Optimal "
+,WorkerNodeEBSVolumeSize,"The initial size of the volume 
+Eg: 100"
+,Expected time to provision,15 Minutes

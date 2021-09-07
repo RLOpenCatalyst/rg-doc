@@ -36,11 +36,11 @@ Create an Admin user
 --------------------
 
 If you have subscribed to the hosted version of the Research Gateway application, you would have created the Admin user during registration.
-You would have subsequently received an email with a link to confirm the Administrator user's email. Use this username to login to Research Gateway.
+You would have subsequently received an email with a link to confirm the Administrator user's email. Use this details to login into Research Gateway.
 
 Sign-In Process
 ---------------
-Use details from :ref:`Appendix A<Appendix A>` for  User Name, Password as per password policy.
+Use details from :ref:`Appendix A<Appendix A>` for  Email, Password as per password policy.
 
 Fill the following details 
 
@@ -50,8 +50,8 @@ Fill the following details
 
    * - Field
      - Details
-   * - Username
-     - <Username that is used for login>
+   * - Email
+     - <Email ID that is used for login>
    * - Password
      - <Password for this user>
 	 
@@ -76,8 +76,6 @@ Fill the following details
 
    * - Field
      - Details
-   * - Username
-     - <Username that is used for login>
    * - E-mail address
      - <Registered Email ID>
    
@@ -101,17 +99,52 @@ If the password change is unsuccessful you can see the verification error screen
 .. image:: images/success.png
 
 
-Sign-Up process
----------------
+Sign up process
+----------------
+Follow the below instructions to create a new user.
 
-An Administrator can add a new user to the system. See the :ref:`Adding Users<Adding Users>` section for details.
-When an Administrator adds a user to the systen, the user will receive a verification email with a link. When the user clicks on the link he is led to a page where he should change his password.
+Method-1: Sign up with a Google ID
+
+1. In a browser window, open the Research Gateway URL
+2. Click on the “Sign up with Google” button.
+3. If you are already signed in to your Google account, you will be prompted to choose the Google account to use. Select an account.
+4. If you are not signed in to your Google account, you will be prompted for your credentials. Enter your Google account email address and password. 
+5. Once logged in to your account, you will land on the Welcome page in Research Gateway.
+
+.. image:: images/registerform.png
+
+Method-2: Sign up with an Email address
+
+1. In a browser window, open the Research Gateway URL
+2. Click on the "Sign up for new account" link which is below the sign-in button. 
+3. A registration form will be opened. 
+
+.. image:: images/registerform.png
+
+Fill the following details 
+
+.. list-table:: 
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Email
+     - <Enter an Email ID>[Mandatory]
+   * - First Name
+     - <Enter first name> [Optional]
+   * - Last Name
+     - <Enter Last name> [Optional]
+   * - Phone number
+     - <Enter phone number of the user> [Optional]
+	 
+Click on the “Sign Up“ button. If the provided details are valid, you will receive a verification link on the registered email address to reset the password. On clicking the link in the email, you will be led to the change password screen.
 
 The password needs to confirm to the password policy. 
 
 .. image:: images/verificationemail2.png
 
-On successful validation, users  will be allowed to login into the Research Gateway. 
+If the password change is successful you will be navigated to the verification successful page. Through the “Click here to login button” you will be navigated to the Research Gateway login screen.
 
 .. _`Adding Organizational Units`:
 
@@ -131,22 +164,21 @@ Click on the “+Add New” icon  which is at the top right corner. Organization
    * - Field
      - Details
    * - Organization Name
-     - <Name of the Organization> [Enter a unique O.U. name made of the alphanumeric, hyphen and underscore characters]
+     - <Name of the Organization> 
    * - Organization Description
      - <Description>
-   * - Account ID
-     - <Select ID>
-   * - Principal Investigator ID
-     - <Select Principal ID > [Optional]
+   * - Account Details
+     - <Select account ID from the list or create new account through **"Add Accounts"** button >
+   * - Add Users
+     - <Select Principal Investigator ID from the list or create new one through **"Add users"** button > [Optional]
 	 
-Click on the **“Add Organization”** button. The new organizational unit is added successfully.
+Click on the **“Create Organization”** button. The new organizational unit is added successfully.
 
 .. image:: images/addnew.png
 
 **NOTE**: 
 
-a. Through the "Click here to add an account" button you can navigate to the add provider settings page and add an account. 
-b. You can create an organization without Principal Investigator. Through the "Assign O.U." option in user management, you can assign later.
+ You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
 
 The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. Clicking on a specific organization shall lead to “View Organization Details” window .
 
@@ -169,12 +201,11 @@ Click on  the  “Settings” menu item. Provider settings page is opened.
 .. image:: images/Provider2.png 
    :name: Provider Settings Page
    
-**Note:**  When we add the settings please make sure the user credentials has the IAMFullAccess.
+**Note:**  When we add the settings please make sure the user credentials has the IAMFullAccess/AdministratorAccess Permissions.
 
 Click on  the  “+Add New” button in the provider setting page. The Add Provider setting dialog-box is opened.
 
-.. image:: images/AddProviderNew.png
-   :name: Add Provider Settings screen
+.. image:: images/AddAccount.png
    
 Fill the following details
 
@@ -185,36 +216,44 @@ Fill the following details
    * - Attribute
      - Details
    * - Account Name
-     - <Account Name> [The Account name should be unique and only alphanumeric characters, hyphen and underscores are allowed]
+     - <Account Name>
    * - Account Key
      - <Account Key> [It should be a minimum of 16 characters and a maximum of 128 characters]
    * - Secret Key
      - <Secret Key> [It should be a minimum of 40 characters and a maximum of 128 characters]
    * - Region
-     - <Region> 
+     - <Select region from the drop-down list> 
    * - Account Number
-     - <AWS Account Number> [It should be a 12-digit number]
+     - <Enter an AWS Account Number> [It should be a 12-digit number]
+   * - Network Configuration
+     - <If you enable this option, Research Gateway will check if a default VPC exists and will create one if it does not exist. If you disable this option, provisioning resources from Standard Catalog may fail.)
+
+Click on the "Verify" button, it will check the provided details are valid or not. If details are valid, it will show verified account message with green color tick mark below the header otherwise it will throw an error message accordingly.
 
 
-Click on the “Add” button. An AWS account was added successfully. You can see all the account details in a table format.
+Click on the “Add Account” button. An AWS account is added successfully. You can see all the account details in a table format.
 
-**NOTE**: Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly.
+**NOTE**: 
 
-On each line item there is a contextual menu. Through this we can edit, delete, Assign O.U. and sync the account.
+1. The "Add Account" button was disabled until the details are verified.
+2. Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly.
+
+On each line item there is a contextual menu. Through this we can delete and sync the account.
 
 .. image:: images/Project.png
 
-Click on the 3-dotted icon which is available at the right side of the account details page and select “Edit” option and Edit provider settings page is opened.
-Update the  access key  and secret key fields and click on “Add” button. The provider setting got updated successfully.
+Click on the 3-dotted icon which is available at the right side of the account details page and choose “Delete” option. A confirmation dialog box is opened and enable the check box and click on the "Delink" button, the account will be deleted. You can only delete provider settings that are not linked to any project or organization.
 
-.. image:: images/Editprovider.png 
-.. image:: images/editprovider2.png
+.. image:: images/delete.png
 
+Research Gateway works in conjunction with AWS Service Catalog. To synchronize the Service Catalog to your project, select the Product Sync option.
+Click on the “Sync Now” button. Once the synchronization is started you should see the “Sync Started” message.
 
-Click on the 3-dotted icon which is available at the right side of the account details page and choose “Delete” option. A confirmation dialog box is opened. On confirmation the account will be deleted. You can only delete provider settings that are not linked to any project or organization.
+.. image:: images/sync1.png
 
+.. image:: images/sync2.png
 
-.. image:: images/deleteprovider.png
+**Note**: The "Sync Now" option can get the products from the shared, local, account and organization level portfolio.
 
 Click on the contextual menu which is available at the right side of the account name and choose the "Assign O.U" option. 
 
@@ -227,27 +266,21 @@ One window is opened and all organizational units are listed there. Choose one o
 .. image:: images/Assign4.png
 
 **Note** : When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
- 
-Research Gateway works in conjunction with AWS Service Catalog. To synchronize the Service Catalog to your project, select the Product Sync option.
-Click on the “Sync Now” button. Once the synchronization is started you should see the “Sync Started” message.
-
-.. image:: images/sync1.png
-
-.. image:: images/sync2.png
-
-**Note**: The "Sync Now" option can get the products from the shared, local, account and organization level portfolio.
 
 .. _`Adding a new project`:
 
 Adding a new project
 -------------------- 
 
-Login to the Research Gateway as a Principal Investigator. Click on the  “+Add New” button. Project application form is opened.
+Login to the Research Gateway as a Principal Investigator. 
 
-.. image:: images/principalaccount.png
+If Principal Investigator logs as a first time, you can view the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. 
 
-.. image:: images/AddProjectNew.png
+.. image:: images/welcome.png
 
+Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
+
+.. image:: images/projectcreation.png
 
 Fill in the following details
 
@@ -258,24 +291,78 @@ Fill in the following details
    * - Attribute
      - Details
    * - Project Name
-     - <Project Name> [Enter a unique project name made of alphanumeric, hyphen and underscore characters]
-   * - Budget Available
-     - <Budget to allocate to this project (cumulative)> 
-   * - Account ID 
-     - <Account ID>
+     - <Project Name>
    * - Project Description
      - <Description about the project> 
-   * - Add Researchers
-     - <Select researchers from the list> [optional]
+   * - Budget Available
+     - <Budget to allocate to this project (cumulative)> 
+   * - Account Details
+     - <Select an Account ID from the list. If accounts are not listed create a new account through "Add Accounts" button.> 
+   * - Add Users
+     - <Select users from the list or create new collaborators through "Add Users" button.> [optional]
+   * - Add Products
+     - <Select any one of the catalog type from the list>
 
 
-Click on the “Add Project” button. Added a new project successfully.
+Click on the “Create Project” button. Added a new project successfully.
+
+**Note**: While creation of project,if you select "Standard catalog" option it will create 6 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
+
+Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in **"My Projects"** list. 
+
+.. image:: images/myprojects.png 
+
+Once you click on the project, you can see the budget in the cards and remaining details will show a tabbed area with the following tabs:
+   1. Project Details
+   2. Events
+   3. Available Products
+   4. My Products
+
+**Project Details**
+
+1. You can view the project details here. If the project is in a failed state, you can repair the project through the “Repair” option. 
+2. You can see the project-related events in the “Events” tab.
+3. Click on the “Pause” action which is available on the right side. When you click on "Pause" action,  all the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible but the “Launch Now “ button would be hidden.
+4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
+5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
+6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
+7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update List” button. It will add collaborators to the project. 
+
+.. image:: images/projectdetails.png 
+
+**Events**
+
+1. You can see project-related events here.
+
+.. image:: images/events.png
+
+**Available Products**
+
+1. You can view the Available Products information here and you can see products in a table view also.
+2. You can search based on product name and description. You can filter the products. We have following filter options:
+      
+	  a. **All** - You can see the all products here.
+	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
+	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon S3
+	  
+.. image:: images/availableproducts.png	 
+	 
+**My Products**
+
+1. You can view the provisioned products details here and You can see products in a table view also.
+2. You can search the product name and description of the product.
+3. You can filter the products. We have following filter options:
+      
+	  a. **All** - You can see the all(i.e., active,terminated,stopped and failed) products here.
+	  b. **Active** - You can see all the active products here.
+	  c. **Terminated** - You can see all terminated products here.
+	 
+.. image:: images/myproducts.png
 
 **Note**:
 
-a. When adding a project we are passing researcher information. Through this, we are linking researchers to the project. 
-b. The project is independent of the researcher. We can create an empty project and add researchers later. Through the "Manage" option in the view project details screen.
-c. If an AWS account is not available under an account ID field you can see a message like **"No AWS accounts available. Please contact your administrator to add AWS accounts to your organization"**.
+a. When adding a project we are passing collaborators information. Through this, we are linking collaborators to the project. 
+b. The project is independent of the researcher. We can create an empty project and add researchers later. Once project is active, we can add researchers through the "Manage" option which is at the project details screen.
 
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
