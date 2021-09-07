@@ -18,17 +18,17 @@ Fill the following details
 
    * - Field
      - Details
-   * - Username
-     - <Username that is used for login>
+   * - Email
+     - <Enter your Email ID that is used for login>
    * - Password
-     - <Password for this user>
+     - <Enter your password for this user>
 
 Click on the "Sign In" button. We can login successfully.
 
 Sign Out Process
 ----------------
 
-Login to the Research Gateway. Use details from :ref:`Appendix A<Appendix A>` for  User Name, Password as per password policy. Click on the dropdown bar which is at the top
+Login to the Research Gateway. Use details from :ref:`Appendix A<Appendix A>` for  Email, Password as per password policy. Click on the dropdown bar which is at the top
 Select “Sign out” option. Through this user logged out from the portal.
 
 .. figure:: images/signout3.png 
@@ -46,13 +46,13 @@ If sign out is unsuccessful you can see a message like "**Something went wrong w
 Forgot Password
 ---------------
 
-In case a user would like to reset his password, the reset password screen can be accessed from the sign in page. Choose the "Forgot Password" link.
+In case an user would like to reset his password, the reset password screen can be accessed from the sign in page. Choose the "Forgot Password" link.
 
 .. image:: images/login.png
 
 On clicking the link the user is navigated to the reset password screen.  
 
-.. image:: images/forgot.png
+.. image:: images/resetpassword.png
 
 Fill the following details
 
@@ -62,12 +62,11 @@ Fill the following details
 
    * - Field
      - Details
-   * - Username
-     - <Username that is used for login>
-   * - E-mail address
-     - <Registered Email ID>
+   * - Email ID
+     - <Enter your registered Email ID>
+
    
-Click on "Send Resend link" button. If the provided details are valid, the verification link that has been sent to registered email to reset the password. On clicking the link in the email, the user is prompted to change password screen.  
+Click on "Send Reset link" button. If the provided details are valid, the verification link that has been sent to registered email to reset the password. On clicking the link in the email, the user is prompted to change password screen.  
 
 .. image:: images/verificationemail.png
 

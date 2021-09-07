@@ -28,6 +28,7 @@ Indices and tables
    WhatIsRG
    GettingStarted
    AccessingRG
+   OrderingProducts
    Features
    Appendices 
 
