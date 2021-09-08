@@ -99,11 +99,12 @@ If the password change is unsuccessful you can see the verification error screen
 .. image:: images/success.png
 
 
-Sign up process
-----------------
-Follow the below instructions to create a new user.
+Sign-Up process
+---------------
 
-Method-1: Sign up with a Google ID
+You can follow the below instructions to create a new user.
+
+**Sign up with a Google ID**
 
 1. In a browser window, open the Research Gateway URL
 2. Click on the “Sign up with Google” button.
@@ -113,7 +114,7 @@ Method-1: Sign up with a Google ID
 
 .. image:: images/registerform.png
 
-Method-2: Sign up with an Email address
+**Sign up with an Email address**
 
 1. In a browser window, open the Research Gateway URL
 2. Click on the "Sign up for new account" link which is below the sign-in button. 
@@ -174,7 +175,7 @@ Click on the “+Add New” icon  which is at the top right corner. Organization
 	 
 Click on the **“Create Organization”** button. The new organizational unit is added successfully.
 
-.. image:: images/addnew.png
+.. image:: images/addorg.png
 
 **NOTE**: 
 
@@ -193,8 +194,7 @@ Adding an AWS account to use in a project
 Login into the Research Gateway. Click on dropdown bar which is above the header. Choose the  “Settings” option
 
 
-.. image:: images/Providersettings.png 
-   :name: Provider Settings menu item
+.. image:: images/mainview.png 
 
 Click on  the  “Settings” menu item. Provider settings page is opened.
 
@@ -373,11 +373,10 @@ Assigning Researchers to projects
 
 There is an edit functionality for the project entity. The project is independent of the researcher. An user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
 
-.. image:: images/Add.png 
+.. image:: images/projectdetails1.png 
 
 Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI. You can't unselect the researchers who have associated products. 
  
- .. image:: images/view.png 
- .. image:: images/view1.png
- .. image:: images/update1.png
+.. image:: images/researchers.png 
  
+.. image:: images/update.png
