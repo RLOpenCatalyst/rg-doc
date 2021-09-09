@@ -201,7 +201,13 @@ Click on  the  “Settings” menu item. Provider settings page is opened.
 .. image:: images/Provider2.png 
    :name: Provider Settings Page
    
-**Note:**  When we add the settings please make sure the user credentials has the IAMFullAccess/AdministratorAccess Permissions.
+**Note:**  When we add the settings please make sure the user credentials has the IAMFullAccess/AdministratorAccess Permissions. You can refer the list of policies that we are using create the role in Research Gateway.
+
+AccessPolicies
+
+.. literalinclude:: AccessPolicies.json
+  :language: JSON
+  :linenos:
 
 Click on  the  “+Add New” button in the provider setting page. The Add Provider setting dialog-box is opened.
 
