@@ -1,19 +1,68 @@
 User,Logical ID,Timestamp,Status,Status Reason
-<User Name>,AUTHENTICATION ,<IST time zone>,LOGIN_SUCCESSFUL,You can see the login success information .
-<User Name>,AUTHENTICATION ,<IST time zone>,LOGIN_FAILED,You can see the reason for login failure. 
-<User Name>,AUTHENTICATION ,<IST time zone>,LOGOUT_SUCCESSFUL,You can see the logout success information.
-<User Name>,DATA_SECURITY,<IST time zone>,SHARE_S3 BUCKET_COMPLETED,You can see the shared products information.
-<User Name>,DATA_SECURITY,<IST time zone>,UNSHARE_S3 BUCKET_COMPLETED,You can see the unshared products information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_COMPLETED,You can see the assigned products to the related project completion information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_FAILED,You can see the assigned products  failed information which related to the project.
-<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_STARTED,You can see the updated products started information which is related to the project.
-<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_COMPLETED,You can see the updated products to the related project completion information.
-<User Name>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_FAILED,You can see the updated produts to the related project failed information.
-<User Name>,CATALOG,<IST time zone>,UPDATE_TO_OU_COMPLETED,You can see the updated products to the related oragnizataional unit  updation information.
-<User Name>,CATALOG,<IST time zone>,ASSIGN_TO_OU_COMPLETED,You can see the assigned products to the related organizational unit  completion information.
-<User Name>,CATALOG,<IST time zone>,ROLLBACK_COMPLETE,You can see the  assigned products failed information  which related to the project.
-<User Name>,CATALOG,<IST time zone>,SYNC_STARTED,"You can see the  sync started information (i.e, which  user  started and related account name)"
-<User Name>,CATALOG,<IST time zone>,SYNC_COMPLETED,"You can see the  sync completed  information (i.e.. which user  started, related account name with  product count information)."
-<User Name>,CATALOG,<IST time zone>,SYNC_FAILED,"You can see the sync failed information(i.e., which user started, related account name and error information).
+<Username> or  <Email ID>,AUTHENTICATION ,<IST time zone>,LOGIN_SUCCESSFUL,You can see the login success information .
+<Username> or  <Email ID>,AUTHENTICATION ,<IST time zone>,LOGIN_FAILED,You can see the reason for login failure. 
+<Username> or  <Email ID>,AUTHENTICATION ,<IST time zone>,LOGOUT_SUCCESSFUL,You can see the logout success information.
+<Username> or  <Email ID>,DATA_SECURITY,<IST time zone>,SHARE_S3 BUCKET_COMPLETED,You can see the shared products information.
+<Username> or  <Email ID>,DATA_SECURITY,<IST time zone>,UNSHARE_S3 BUCKET_COMPLETED,You can see the unshared products information.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project information.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,STACK_CREATION_STARTED,You can see the assigned products  to the related project information.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,STACK_CREATION_FAILED,You can see the  assigned products failed information which is related to the project.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_COMPLETED,You can see the assigned products to the related project completion information.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_FAILED,You can see the assigned products  failed information which related to the project.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_STARTED,You can see the updated products started information which is related to the project.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_COMPLETED,You can see the updated products to the related project completion information.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,UPDATE_TO_PROJECT_FAILED,You can see the updated produts to the related project failed information.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,UPDATE_TO_OU_COMPLETED,You can see the updated products to the related oragnizataional unit  updation information.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,ASSIGN_TO_OU_COMPLETED,You can see the assigned products to the related organizational unit  completion information.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,ROLLBACK_COMPLETE,You can see the  assigned products failed information  which related to the project.
+<Username> or  <Email ID>,CATALOG,<IST time zone>,SYNC_STARTED,"You can see the  sync started information (i.e, which  user  started and related account name)"
+<Username> or  <Email ID>,CATALOG,<IST time zone>,SYNC_COMPLETED,"You can see the  sync completed  information (i.e.. which user  started, related account name with  products count information)."
+<Username> or  <Email ID>,CATALOG,<IST time zone>,SYNC_FAILED,"You can see the sync failed information(i.e., which user started, related account name and error information).
 "
+<Username> or  <Email ID>,CATALOG,<IST time zone>,PRODUCT_DETAILS_SYNC_COMPLETED,"You can see the sync completed information (i.e., which user started and related account name. It will show products count).
+"
+<Username> or  <Email ID>,KEY_PAIRS,<IST time zone>,KEY_PAIRS_SYNC_STARTED,"You can view the details about  KeyPairs sync (i.e., which user started)."
+<Username> or  <Email ID>,KEY_PAIRS,<IST time zone>,KEY_PAIRS_SYNC_COMPLETED,"You can see KeyPairs sync completed information (i.e., which user started and related account name. It will show KeyPairs count in that region)."
+<Username> or  <Email ID>,KEY_PAIRS,<IST time zone>,KEY_PAIRS_SYNC_FAILED,You can see KeyPairs sync failed information with the error  and it will show the solution to resolve the problem.
+<Username> or  <Email ID>,VPC,<IST time zone>,VPC_SYNC_STARTED,"You can view the details about  VPC sync (i.e., which user started)."
+<Username> or  <Email ID>,VPC,<IST time zone>,VPC_SYNC_COMPLETED,"You can see VPC sync completed information (i.e., which user started and related account name. It will show VPC count in that region)."
+<Username> or  <Email ID>,VPC,<IST time zone>,VPC_SYNC_FAILED,You can see VPC sync failed information with the error  and it will show the solution to resolve the problem.
+<Username> or  <Email ID>,SECURITY_GROUP,<IST time zone>,SECURITY_GROUP_SYNC_STARTED,"You can view the details about  security group sync (i.e., which user started)."
+<Username> or  <Email ID>,SECURITY_GROUP,<IST time zone>,SECURITY_GROUP_SYNC_COMPLETED,"You can see Security Groups sync completed information (i.e., which user started and related account name. It will show security groups count in that region)."
+<Username> or  <Email ID>,SECURITY_GROUP,<IST time zone>,SECURITY_GROUP_SYNC_FAILED,You can see Security Groups  sync failed information with the error  and it will show the solution to resolve the problem.
+<Username> or  <Email ID>,SUBNETS,<IST time zone>,SUBNETS_SYNC_STARTED,"You can view the details about  subnets sync (i.e., which user started)."
+<Username> or  <Email ID>,SUBNETS,<IST time zone>,SUBNETS_SYNC_COMPLETED,"You can see subnets sync completed information (i.e., which user started and related account name. It will show subnets count in that region)."
+<Username> or  <Email ID>,SUBNETS,<IST time zone>,SUBNETS_SYNC_FAILED,You can see ubnets sync failed information with the error  and it will show the solution to resolve the problem.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,VERIFY_SETTING_SUCCESSFUL,You can see the setting verification successful information with account number and account name.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,VERIFY_SETTING_FAILED,You can see the setting verification failed information with account number.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,"ADD_SETTING_SUCCESSFUL
+",You can see the setting creation successful information with account number.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,ADD_SETTING_FAILED,You can see the setting addition failed information with error.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,DELETE_SETTING_STARTED,You can see the details about  setting deletion started by which user. 
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,DELETE_SETTING_SUCCESS,You can see the setting deletion success information.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,"DELETE_SETTING_FAILED
+",You can see setting deletion failed  information 
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,SNS_TOPIC_SUBSCRIPTION_CREATION,You can see the SNS topic  subscription status information. 
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,SNS_TOPIC_CREATION,You can see the SNS topic creation status information. 
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,REPAIR_SETTING_STARTED,You can view the details about  setting repair started by which user. 
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,REPAIR_SETTING_SUCCESSFUL,You can  see  setting repair successful information. 
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,VERIFYING_POLICY_SUCCESSFUL,You can see the policy verification successful information  with account number.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,DETACHING_POLICY_FAILED,You can see policy deletion failed information with account number
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,DETACHING_POLICY_SUCCESSFUL,You can see policy deletion successful information with account number
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,DELETING_POLICY_SUCCESSFUL,You can see the policy deletion successful information.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,DELETING_POLICY_FAILED,You can see the policy deletion failed information with error.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,CREATING_POLICY_SUCCESSFUL,You can see the policy creation successful information.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,ROLE_NOT_FOUND,You can the role status with error in the related account. 
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,ROLE_CREATION_SUCCESSFUL,You can see the role creationsuccessful information. 
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,ATTACH_POLICY_TO_ROLE_SUCCESSFUL,You can see status about related policy attached to the role.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,NETWORK_CONFIGURATION,You can see the network configuration status information with related account name.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,ADDING_CROSS_ACCOUNT_SUCCESSFUL,You can see details about  cross account added to the base account properly or not.
+<Username> or  <Email ID>,SETTINGS,<IST time zone>,REPAIR_SETTING_SUCCESSFUL,You can see repair setting successful information with  account number.
+<Username> or  <Email ID>,REGISTRATION,<IST time zone>,ORGANIZATION_CREATED_SUCCESSFULLY,You can see the organization creation successful information with username or email id.
+<Username> or  <Email ID>,REGISTRATION,<IST time zone>,ORGANIZATION_CREATED_FAILED,You can see the organization creation failed information with username or email id.
+<Username> or  <Email ID>,REGISTRATION,<IST time zone>,REGISTRATION_INITIATED,You can see the registration started information with username or email id.
+<Username> or  <Email ID>,REGISTRATION,<IST time zone>,REGISTRATION_SUCCESSFUL,You can see the registration successful information with username or email id.
+<Username> or  <Email ID>,REGISTRATION,<IST time zone>,REGISTRATION_ERROR,You can see the registration failed information with username or email id.
+<Username> or  <Email ID>,REGISTRATION,<IST time zone>,VERIFICATION_LINK_EXPIRED,You can see the verification link  information with username or email id.
+<Username> or  <Email ID>,REGISTRATION,<IST time zone>,CATALOG_ASSIGNMENT_SUCCESSFUL,You can see the catalog assignment successful information with username or email id.
+<Username> or  <Email ID>,REGISTRATION,<IST time zone>,CATALOG_ASSIGNMENT_FAILED,You can see the catalog assignment failed information with username or email id.
