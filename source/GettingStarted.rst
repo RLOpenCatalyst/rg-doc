@@ -3,14 +3,14 @@ Getting Started
 
 Research Gateway is a cloud-based solution that makes it possible for researchers and other consumers of High Performance Computing to easily access resources in the AWS cloud.
 RLCatalyst Research Gateway is designed for simplicity and you can get started very quickly. 
-You can access this product either as a `hosted SaaS product`_ or as an Enterprise product.
+You can access this product either as a `hosted Silo model`_ or as a hosted Shared model.
 
-.. _hosted SaaS product: https://relevancelab.com/2021/02/11/8-steps-to-set-up-rlcatalyst-research-gateway/
+.. _hosted Silo model: https://relevancelab.com/2021/02/11/8-steps-to-set-up-rlcatalyst-research-gateway/
 
-If you are using the hosted version, you will be provided a public URL to which you can navigate using your browser. 
+If you are using the hosted Silo model, you will be provided a public URL to which you can navigate using your browser. 
 You will also be provided with the credentials for the Administrator user.
 
-If you are using the Enterprise version, your IT department will provide you a URL to access the product. You can set up an Administrator user by following the steps below.
+If you are using the hostel Shared model, you can sign up with your details. Use details from :ref:`Sign-Up <Sign-Up process>` to create a new user.
 
 .. contents::
 
@@ -98,15 +98,16 @@ If the password change is unsuccessful you can see the verification error screen
 
 .. image:: images/success.png
 
+.. _`Sign-Up process`:
 
 Sign-Up process
 ---------------
 
-You can follow the below instructions to create a new user.
+You can follow the below instructions to create a new user in hosted shared model.
 
 **Sign up with a Google ID**
 
-1. In a browser window, open the Research Gateway URL
+1. In a browser window, open the Research Gateway URL (https://research.rlcatalyst.com/login).
 2. Click on the “Sign up with Google” button.
 3. If you are already signed in to your Google account, you will be prompted to choose the Google account to use. Select an account.
 4. If you are not signed in to your Google account, you will be prompted for your credentials. Enter your Google account email address and password. 
@@ -116,7 +117,7 @@ You can follow the below instructions to create a new user.
 
 **Sign up with an Email address**
 
-1. In a browser window, open the Research Gateway URL
+1. In a browser window, open the Research Gateway URL (https://research.rlcatalyst.com/login).
 2. Click on the "Sign up for new account" link which is below the sign-in button. 
 3. A registration form will be opened. 
 
@@ -177,14 +178,9 @@ Click on the **“Create Organization”** button. The new organizational unit i
 
 .. image:: images/addorg.png
 
-**NOTE**: 
+**NOTE**: You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
 
- You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
-
-The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. Clicking on a specific organization shall lead to “View Organization Details” window .
-
-.. image:: images/ViewOrganizationDetailsPage.png
-
+The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. 
 
 .. _`Adding AWS Accounts`:
 
@@ -312,7 +308,7 @@ Fill in the following details
 
 Click on the “Create Project” button. Added a new project successfully.
 
-**Note**: While creation of project,if you select "Standard catalog" option it will create 6 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
+**Note**: While creation of project, if you select "Standard Catalog" option it will create 6 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
 
 Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in **"My Projects"** list. 
 
@@ -338,7 +334,7 @@ Once you click on the project, you can see the budget in the cards and remaining
 
 **Events**
 
-1. You can see project-related events here.
+You can see project-related events here.
 
 .. image:: images/events.png
 

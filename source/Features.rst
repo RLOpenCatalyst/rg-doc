@@ -19,8 +19,6 @@ An Administrator user can perform the following actions.
 
 If administrator logs as a first time, you can see the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Organization" screen.
 
-
-
 .. _Budgets:
 
 Budgets
@@ -145,9 +143,9 @@ Users can choose a password and click on the “Submit” button.
    b. It should have atleast one lower case character(a-z).
    c. It should have atleast one upper case character(A-Z).
    d. It should have atleast one number(0-9).
-   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ `).
+   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
    
-On successful validation, users will be allowed to login to the Research Gateway. 
+On successful validation, users will be allowed to login to the Research Gateway.
 
 .. image:: images/password1.png 
 
@@ -330,7 +328,7 @@ Once you click on the project, you can see the budget in the cards and remaining
 
 **Events**
 
-1. You can see the project-related events here.
+You can see the project-related events here.
 
 .. image:: images/events.png
 
