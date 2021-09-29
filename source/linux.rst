@@ -4,6 +4,8 @@ Amazon EC2 Linux
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. The RLCatalyst Research Gateway standard EC2 product is based on Amazon Linux 2 and can be used for any general-purpose computer. 
 We have greatly simplified the parameters that you have to enter to create an instance so that you can get started very quickly. The product launches in a matter of a few minutes and is ready to go.
 
+`Provisioning an EC2-Linux Instance video <https://youtu.be/i7GLqo6M1cU>`_
+
 Parameters
 -----------
 
