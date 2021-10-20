@@ -1,0 +1,35 @@
+Hosted Silo Model,,,
+Persona,Admin,Principal Investigator,Researcher
+Features,,,
+Landing Page,Yes,Yes,Yes
+Add AWS Account,Yes,,
+View AWS Account,Yes,Yes,Yes
+Repair AWS Account,Yes,,
+Delete AWS Account,Yes,,
+Perform Sync,Yes,Yes,Yes
+Add Organization,Yes,,
+Link AWS Account to Organization,Yes,,
+Link Principal to Organization,Yes,,
+Audit Trail,Yes,,
+Add new user through user form,Yes,,
+View users in table view and list view,Yes,,
+Add products to O.U catalog,Yes,,
+Update products in O.U,Yes,Yes,
+View products in standard catalog,Yes,Yes,
+Add products to a project,,Yes,
+Update products to a project,,Yes,
+View organization budget vs Actual,Yes,,
+Add Project,,Yes,
+View Project Details,,Yes,
+Project actions,,Yes,
+Link Researcher to Project,,Yes,
+View Project Budget vs Actual,Yes,Yes,Yes
+View Researcher budget vs Actual,Yes,Yes,Yes
+View product-wise budget under researcher,Yes,Yes,Yes
+View KeyPairs,Yes,Yes,Yes
+New KeyPair Creation,Yes,Yes,Yes
+View Studies,Yes,Yes,Yes
+Perform actions on a particular study,Yes,Yes,Yes
+View products in the catalog (Available products),Yes,Yes,Yes
+View Provisioned Products (My Products),Yes,Yes,Yes
+Perform Actions on Provisioned Products,Yes,Yes,Yes

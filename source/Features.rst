@@ -645,6 +645,26 @@ d. **Filter** - We have following filter options:
 
 **NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog Products.
 
+**Secure connections to resources using ALB to RStudio and Nextflow-Advanced products**
+
+1. Research Gateway can set up secure connections to your resources by putting them behind an Application Load Balancer with SSL connections using certificates managed by AWS Certificate Manager.
+2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
+   Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
+   
+ .. image:: images/ssl-alb.png 
+ 
+3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
+   Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
+4. Navigate to the available products panel and launch Nextflow-Advanced with required parameters. Once the product is provisioned you can see the outputs through the “View Outputs”. You can monitor the pipeline through “Monitor Pipeline”.
+
+.. image:: images/actions-nf.png 
+
+5. Navigate to the available products panel and launch RStudio with the required parameters. Once the product is provisioned you can connect to RStudio through the “Open link” action.
+   
+.. image:: images/actions-rstudio.png 
+
+`Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
+
 
 Product Order
 ^^^^^^^^^^^^^
@@ -959,7 +979,11 @@ You can see product related actions in the  Actions menu.
 
 4. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
 
-Fill the following Details
+5. Monitor Pipeline action : Through this you can monitor the pipeline.
+
+6. View Outputs action : Through this you can see the outputs.  
+
+Fill the following Details 
 
 .. list-table:: 
    :widths: 50, 50
