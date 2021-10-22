@@ -3,6 +3,8 @@ Amazon EC2 Windows
 
 Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. The RLCatalyst Research Gateway standard EC2 product is based on **Microsoft Windows Server 2019** and can be used for any general-purpose compute. We have greatly simplified the parameters you have to enter to create an instance so that you can get started very quickly. The product launches in a matter of a few minutes and is ready to go.
 
+`Provisioning an EC2 Windows Instance video <https://youtu.be/DktIx1Fsvs8>`_
+
 Parameters 
 -----------
 

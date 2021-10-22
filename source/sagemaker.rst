@@ -3,6 +3,8 @@ Amazon SageMaker
 
 Amazon SageMaker is a fully managed service that provides the ability to build, train and deploy ML models.
 
+`Provisioning an SageMaker Instance Video <https://youtu.be/CIF3uF-W2dU>`_
+
 Parameters
 ----------
 
