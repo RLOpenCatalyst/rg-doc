@@ -326,6 +326,8 @@ Once you click on the project, you can see the budget in the cards and remaining
 
 .. image:: images/projectdetails.png 
 
+Note: Whenever you clicked on the budget it will navigated to researcher-wise budget details page.
+
 **Events**
 
 You can see the project-related events here.
