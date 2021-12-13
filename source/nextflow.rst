@@ -24,8 +24,6 @@ Parameters
      - Name of existing S3 Bucket in that region.
    * - OutputDataLocation
      - Name of existing S3 Bucket in that region.
-   * - WorkDataLocation
-     - Name of existing S3 Bucket in that region.
    * - InstanceType
      - Choose instance type in the drop-down list for RStudio. Eg: t2.micro
    * - HeadNodeEBSVolumeSize
@@ -36,6 +34,8 @@ Parameters
      - This identifies the IP locations from where connections to this instance should be allowed. For the security of your instance, we recommend you allow connections only from your own location. You can find your IP using https://whatismyipaddress.com/ Eg: 0.0.0.0/0
    * - VPCId
      - Choose VPC Id in the drop-down list.
+   * - WorkerNodeSubnetId
+     - Choose Subnet Id inthe drop-down list.
    * - ComputeEnvMinvCpus
      - The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. Eg: 0
    * - ComputeEnvMaxvCpus
@@ -60,10 +60,12 @@ Estimated time to provision -  10 minutes
 Steps to connect
 ----------------
 
-1. Click on the “SSH” button under the “Connect” list on the right side of the page. This will open the SSH Window in a new browser tab. 
+1. Click on the “SSH to server” button under the “Connect” list on the right side of the page. This will open the SSH Window in a new browser tab. 
 2. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field. Click Submit. You should now be connected to the EC2 instance via SSH. Run the computation command in
 3. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
-4. You can de-provision the product through the “Terminate” option.
+4. You can monitor the pipeline through "Monitor Pipeline" option.
+5. You can view the outputs through "View Outputs" option.
+6. You can de-provision the product through the “Terminate” option.
 
 
 Other considerations   
