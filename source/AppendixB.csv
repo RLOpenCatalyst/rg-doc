@@ -170,13 +170,11 @@ Geos-Chem,Product Name,"Provide a name to help you easily identify this instance
 Nextflow-Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
 Eg: MedicalResearch
 "
-,Namespace,Namespace (e.g. project name) to use to label resources.
 ,"PipelineName
 ",URL to the git repository containing the pipeline code. The repo should contain nextflow.config file which specifies the name of the docker container image. Eg: https://github.com/seqeralabs/nextflow-tutorial.git
 ,PipelineContainer,Docker container image to the pipeline to be executed in the worker node. Eg: nextflow/rnaseq-nf:latest
 ,InputDataLocation,Name of existing S3 Bucket in that region
 ,OutputDataLocation,Name of existing S3 Bucket in that region
-,WorkDataLocation,Name of existing S3 Bucket in that region
 ,InstanceType,"Head Node EC2 instance type
 Eg: t2.small"
 ,HeadNodeEBSVolumeSize,"Amount of storage the Head Node will use.
@@ -200,4 +198,4 @@ Eg: 100"
 Eg: Optimal "
 ,WorkerNodeEBSVolumeSize,"The initial size of the volume 
 Eg: 100"
-,Expected time to provision,15 Minutes
+,Expected time to provision,10 Minutes
