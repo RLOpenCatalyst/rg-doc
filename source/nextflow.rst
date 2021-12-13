@@ -13,18 +13,14 @@ Parameters
    * - Parameter
      - Details
    * - Product Name
-     - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch
-   * - Namespace
-     - Namespace to use to label resources.
+     - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch 
    * - PipelineName
-     - URL to the git repository containing the pipeline code. The repo should contain nextflow.config file which specifies the name of the docker container image. Eg: https://github.com/seqeralabs/nextflow-tutorial.git
+     - Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL. The repo should contain the nextflow.config file which specifies the name of the docker container image. Eg: https://github.com/seqeralabs/nextflow-tutorial.git
    * - PipelineContainer
      - Docker container image to the pipeline to be executed in the worker node. Eg: nextflow/rnaseq-nf:latest
    * - InputDataLocation
      - Name of existing S3 Bucket in that region.
    * - OutputDataLocation
-     - Name of existing S3 Bucket in that region.
-   * - WorkDataLocation
      - Name of existing S3 Bucket in that region.
    * - InstanceType
      - Choose instance type in the drop-down list for RStudio. Eg: t2.micro
@@ -36,6 +32,8 @@ Parameters
      - This identifies the IP locations from where connections to this instance should be allowed. For the security of your instance, we recommend you allow connections only from your own location. You can find your IP using https://whatismyipaddress.com/ Eg: 0.0.0.0/0
    * - VPCId
      - Choose VPC Id in the drop-down list.
+   * - WorkerNodeSubnetId
+     - Subnet you want your Batch Worker Node to launch in. We recommend public subnets.
    * - ComputeEnvMinvCpus
      - The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. Eg: 0
    * - ComputeEnvMaxvCpus
@@ -60,9 +58,11 @@ Estimated time to provision -  10 minutes
 Steps to connect
 ----------------
 
-1. Click on the “SSH” button under the “Connect” list on the right side of the page. This will open the SSH Window in a new browser tab. 
+1. Click on the “SSH to Server” button under the “Connect” list on the right side of the page. This will open the SSH Window in a new browser tab. 
 2. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field. Click Submit. You should now be connected to the EC2 instance via SSH. Run the computation command in
-3. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+3. Next, Click on the "Montior Pipeline" button under the “Connect” list on the right side of the page. This will open into new browser tab and it will authenticate the URL and it will route to monitor pipeline page.
+4. Click on the "View Outputs" button under the “Connect” list on the right side of the page. It will render the pipeline results.
+Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 4. You can de-provision the product through the “Terminate” option.
 
 
