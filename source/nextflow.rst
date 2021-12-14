@@ -33,7 +33,7 @@ Parameters
    * - VPCId
      - Choose VPC Id in the drop-down list.
    * - WorkerNodeSubnetId
-     - Choose Subnet Id inthe drop-down list.
+     - Choose Subnet Id in the drop-down list.
    * - ComputeEnvMinvCpus
      - The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. Eg: 0
    * - ComputeEnvMaxvCpus
