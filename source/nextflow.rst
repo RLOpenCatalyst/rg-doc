@@ -13,11 +13,9 @@ Parameters
    * - Parameter
      - Details
    * - Product Name
-     - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch
-   * - Namespace
-     - Namespace to use to label resources.
+     - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch 
    * - PipelineName
-     - URL to the git repository containing the pipeline code. The repo should contain nextflow.config file which specifies the name of the docker container image. Eg: https://github.com/seqeralabs/nextflow-tutorial.git
+     - Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL. The repo should contain the nextflow.config file which specifies the name of the docker container image. Eg: https://github.com/seqeralabs/nextflow-tutorial.git
    * - PipelineContainer
      - Docker container image to the pipeline to be executed in the worker node. Eg: nextflow/rnaseq-nf:latest
    * - InputDataLocation
@@ -35,7 +33,7 @@ Parameters
    * - VPCId
      - Choose VPC Id in the drop-down list.
    * - WorkerNodeSubnetId
-     - Choose Subnet Id inthe drop-down list.
+     - Choose Subnet Id in the drop-down list.
    * - ComputeEnvMinvCpus
      - The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. Eg: 0
    * - ComputeEnvMaxvCpus
