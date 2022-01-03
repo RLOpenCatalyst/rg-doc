@@ -33,6 +33,11 @@ Steps to connect
 
 1. Click on the newly created S3 bucket in the “My Products” tab. The product details page will open. 
 2. Click on the “Upload” action. Click on "Add files" to upload multiple files. The file size should not be greater than 5 GB. Click on "Add folder" to upload entire folder to S3. Click the “submit” button and the file will be uploaded to the bucket. In the product details screen of the newly created S3 bucket, click the “Explore” action. The “Explore” screen displays all the details of the bucket.
+
+.. image:: images/multifiles.png 
+
+.. image:: images/upload2.png
+
 3. The newly uploaded file/folder should be visible. 
 	a. Select the check-box next to the file and then click the “Actions” drop-down and select “Delete”. The file should be deleted.
 	b. Select the check-box next to the file and then click the “Actions” drop-down and select “Download”. The file should be downloaded.

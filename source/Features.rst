@@ -881,17 +881,17 @@ There is a check to find out whether the file exists in the bucket or not. If ex
 
 **5. Explore Action**
 
-a. Through this action you can show all the files and folders in the S3 bucket with actions (download, delete) against each item.
+a. In the product details screen of the newly created S3 bucket, click the “Explore” action. Through this action you can see all the files and folders in the S3 bucket with actions (download, delete) against each item.
+
+.. image:: images/s3-actions.png 
+.. image:: images/basic.png
+
 b. For folders the user will be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
 c. For any deeper level, the user will be able to navigate back to an upper level.
-d. You can upload the different files (File should not contain more than 10MB)
+d. Click on the “Upload” action. Click on "Add files" to upload multiple files. The file size should not be greater than 5 GB. Click on "Add folder" to upload entire folder to S3. Click on the “submit” button and the file will be uploaded to the bucket. 
 
-
-.. image:: images/exploreaction.png
-
-
-.. image:: images/exploreaction2.png
-
+.. image:: images/multifiles.png 
+.. image:: images/upload2.png
 
 **6. Link Action**
 
