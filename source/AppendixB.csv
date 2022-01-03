@@ -2,7 +2,7 @@ Standard Catalog Information,,
 Product Type,Required Parameters,Details
 Amazon EC2 Linux,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud.
-,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,AllowedSSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,LatestAmiId,Please enter an  AMI of the EC2 instance.
 ,Instance Type,Choose the instance type for this instance. Eg: t2.small
@@ -142,7 +142,7 @@ Amazon HPC,Product Name,"Provide a name to help you easily identify this instanc
 ,Expected time to provision,40 minutes
 RStudio,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Description,"RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management."
-,Initial user,User Name for Rstudio
+,Initial user,User Name for Rstudio.  Do not use 'root' and 'ec2-user'.
 ,Initial Password,Password for RStudio. Please keep in your records as this will not be echoed in the CloudFormation Console
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,Instance Type,Instance type for RStudio. Choose instance type from the dropdown.  Eg: Default is t2.micro.
@@ -170,32 +170,27 @@ Geos-Chem,Product Name,"Provide a name to help you easily identify this instance
 Nextflow-Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
 Eg: MedicalResearch
 "
+,Nextflow Configuration,
 ,"PipelineName
-",URL to the git repository containing the pipeline code. The repo should contain nextflow.config file which specifies the name of the docker container image. Eg: https://github.com/seqeralabs/nextflow-tutorial.git
-,PipelineContainer,Docker container image to the pipeline to be executed in the worker node. Eg: nextflow/rnaseq-nf:latest
-,InputDataLocation,Name of existing S3 Bucket in that region
-,OutputDataLocation,Name of existing S3 Bucket in that region
+",Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL. The repo should contain the nextflow.config file which specifies the name of the docker container image.
+,PipelineContainer,"Public Docker container image of the pipeline to be executed. If you are using a custom pipeline, ensure that the custom container image is publicly available on Docker Hub. Eg: nextflow/rnaseq-nf:latest"
+,InputDataLocation,"An S3 bucket which holds input data for the Nextflow pipeline. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens)."
+,OutputDataLocation,"The full path on the local disk where outputs of the pipeline should be stored. The default path above will enable you to view the outputs via the browser. The path should be accessible to the user ec2-user. Alternately, provide an S3 bucket for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens). Eg: s3://<BucketName>"
+,Head Node Configuration,
 ,InstanceType,"Head Node EC2 instance type
 Eg: t2.small"
-,HeadNodeEBSVolumeSize,"Amount of storage the Head Node will use.
+,HeadNodeEBSVolumeSize,"The initial size of the volume (in GBs) Head Node EBS will use for storage.
 Eg: 16 "
-,KeyPair,"Choose the KeyPair in the list.
-Note: If keyPair is not available in the drop-down, click on the “+” button. A keypair creation form is opened. Fill the details in the form and click on the “Create KeyPair” button. Now that keypair is available in the list.
-
-Remember to save the private key file securely for future use. Do not share this file with others for the security of your account."
-,AllowedSSHLocation,"This identifies the IP locations from where connections to this instance should be allowed. For the security of your instance, we recommend you allow connections only from your own location. 
-You can find your IP using https://whatismyipaddress.com/
-Eg: 0.0.0.0/0
-"
-,VPCId,Choose VPC Id in the drop-down list.
-,WorkerNodeSubnetId,Subnet you want your Batch Worker Node to launch in
-,ComputeEnvMinvCpus,The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. Eg: 0
+,KeyPair,Name of an existing EC2 KeyPair to enable SSH access to the Head Node. Please create a key pair from the key pair screen if they are not available in the dropdown.
+,AllowedSSHLocation,The IP address range that can be used to SSH to the Head Node.
+,Batch Configuration,
+,VPCId,Choose VPC Id in the drop-down list. The VPC to create security groups and deploy AWS Batch to.
+,WorkerNodeSubnetId,Subnet you want your Batch Worker Node to launch in  We recommend public subnets.
+,ComputeEnvMinvCpus,"The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost. Eg: 0"
 ,ComputeEnvMaxvCpus,"The maximum number of CPUs for the default Batch Compute Environment
 Eg: 100"
-,SpotBidPercentage,"The maximum percentage of On-Demand pricing you want to pay for Spot resource
+,SpotBidPercentage,"The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage.
 Eg: 100"
-,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation
-Eg: Optimal "
-,WorkerNodeEBSVolumeSize,"The initial size of the volume 
-Eg: 100"
+,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation. You can specify one or more family or instance type. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal "
+,WorkerNodeEBSVolumeSize,The initial size of the volume (in GBs) Worker Node EBS will use for storage. Eg: 100
 ,Expected time to provision,10 Minutes
