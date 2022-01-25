@@ -12,17 +12,20 @@ Parameters
 
    * - Parameter
      - Details
-   
    * - Product Name
      - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch 
+   * - Nextflow Configuration
+     -
    * - PipelineName
      - Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL. The repo should contain the nextflow.config file which specifies the name of the docker container image. Eg: https://github.com/seqeralabs/nextflow-tutorial.git
    * - PipelineContainer
      - Public Docker container image of the pipeline to be executed. If you are using a custom pipeline, ensure that the custom container image is publicly available on Docker Hub Eg: nextflow/rnaseq-nf:latest
    * - InputDataLocation
-     - An S3 bucket which holds input data for the Nextflow pipeline. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens).
+     - The pattern to match samples to be processed as inputs to the pipeline. This pattern consists of two parts. A location, either local or an S3 bucket, which can be searched and a second part which is a pattern to match the files to be picked Eg: <my-data-bucket>/data/ggal/*_{1,2}.fq
    * - OutputDataLocation
      - The full path on the local disk where outputs of the pipeline should be stored. The default path above will enable you to view the outputs via the browser. The path should be accessible to the user ec2-user. Alternately, provide an S3 bucket for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens). Eg: s3://<BucketName>
+   * - Head Node Configuration
+     -
    * - InstanceType
      - Head Node EC2 instance type. Eg: t2.micro
    * - HeadNodeEBSVolumeSize
@@ -31,6 +34,8 @@ Parameters
      - Name of an existing EC2 KeyPair to enable SSH access to the Head Node. Please create a key pair from the key pair screen if they are not available in the dropdown. Remember to save the private key file securely for future use. Do not share this file with others for the security of your account
    * - AllowedSSHLocation
      - The IP address range that can be used to SSH to the Head Node. For the security of your instance, we recommend you allow connections only from your own location. You can find your IP using https://whatismyipaddress.com/ Eg: 0.0.0.0/0
+   * - Batch Configuration
+     - 
    * - VPCId
      - Choose VPC Id in the drop-down list.
    * - WorkerNodeSubnetId
@@ -52,7 +57,30 @@ Steps to launch
 
 1. Click on the project on the “My Projects” page.
 2. Navigate to the available products tab.
-3. Click the “Launch Now” button on the  “Nextflow-Advanced” product card. A product order form will open. Fill the details in the form and click the “Launch Now” button. You will see a  “Nextflow-Advanced” being created. In a few minutes, that product should appear in the “Active” state.
+3. Click the “Launch Now” button on the  “Nextflow-Advanced” product card. A product order form will open. Fill the details in the form .
+
+**Note**:
+
+	* PipelineName 
+		a.  You can see the drop down option which is on the right side of the PipelineName field.
+		b.  You can search the pipeline. If you type the correct pipeline you can see the info (ie.,”i”) icon which is at the right side of the field. If you click  the info icon it will be routed to the seqerlabs/nextflow-tutorial repo.If you type the wrong characters it will throw an error message accordingly.
+
+	* InputDataLocation
+		a.  You can see the filter options like All/Studies/Shared/ProjectStorage/Study in the Second part of the InputDataLocation field.
+		b.  You can see the default option like "**All**" in the filter.
+		c.  You can see the product names with  realted paths when you search in the InputDataLocation field. Note: You need to pass the S3 bucket name with the full path.  **Eg: <my-data-bucket>/data/ggal/*_{1,2}.fq**
+		d.  If you type the invalid characters it will throw an error message accordingly.
+		
+		.. image:: images/nf1.png
+
+	* OutputDataLocation
+		a.  Defaultly you can see the output path in the field.
+		b.  You can see the product names with  realted paths when you search in  the OutputDataLocation field. 
+		c.  You can see the filter options like All/Studies/Shared/ProjectStorage/Study.
+		d.  You can see the default option like "**All**" in the filter.
+		e.  If you type the invalida characters it will throw an error message accordingly.
+  
+4. Click on the “Launch Now” button. You will see a  “Nextflow-Advanced” being created. In a few minutes, that product should appear in the “Active” state.
 
 Estimated time to provision -  10 minutes
 

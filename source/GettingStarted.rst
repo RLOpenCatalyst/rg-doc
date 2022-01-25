@@ -228,10 +228,17 @@ Fill the following details
    * - Account Number
      - <Enter an AWS Account Number> [It should be a 12-digit number]
    * - Network Configuration
-     - <If you enable this option, Research Gateway will check if a default VPC exists and will create one if it does not exist. If you disable this option, provisioning resources from Standard Catalog may fail.)
-
+     -
+   * - Use deafult VPC
+     - <If you enable this option, Research Gateway will check if a default VPC exists and will create one if it does not exist. If you disable this option, provisioning resources from Standard Catalog may fail.>
+   * - Use SSL with ALB
+     - <If you enable this option, Research Gateway can set up secure connections to your resources by putting them behind an Application Load Balancer with SSL connections using certificates managed by AWS Certificate Manager. Check this box if you would like to create an ALB for this project. An ALB will incur costs irrespective of traffic passing through it.>	 
+   * - Storage Configuration
+     -
+   * - Use Project Storage	 
+     - <Research Gateway will setup a shared S3 bucket (project storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted at the project level. Note: For now defaultly it will create the project storage.>
+	 
 Click on the "Verify" button, it will check the provided details are valid or not. If details are valid, it will show verified account message with green color tick mark below the header otherwise it will throw an error message accordingly.
-
 
 Click on the “Add Account” button. An AWS account is added successfully. You can see all the account details in a table format.
 
@@ -240,7 +247,7 @@ Click on the “Add Account” button. An AWS account is added successfully. You
 1. The "Add Account" button was disabled until the details are verified.
 2. Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly.
 
-On each line item there is a contextual menu. Through this we can delete and sync the account.
+On each line item there is a contextual menu. Through this we can delete and sync the account/repair the account.
 
 .. image:: images/Project.png
 
@@ -257,17 +264,24 @@ Click on the “Sync Now” button. Once the synchronization is started you shou
 
 **Note**: The "Sync Now" option can get the products from the shared, local, account and organization level portfolio.
 
-Click on the contextual menu which is available at the right side of the account name and choose the "Assign O.U" option. 
+Click on the contextual menu which is available at the right side of the account name and choose the "Repair" option. 
 
-.. image:: images/Assign-OU.png
+.. image:: images/repair1.png
 
-One window is opened and all organizational units are listed there. Choose one organization from the list and click on the "Assign" button. On successful completion you can see the green color toaster message.
+Fill the access key and secret key values in the assigned boxes and click on the "Verify" button.
+
+.. image:: images/repair.png
+
+On successful completion of verify you can see the "repair" option, click on the button in the window, the account will be repaired.
+
+Click on the contextual menu which is available at the right side of the account name and choose the "Assign O.U" option. One window is opened and all organizational units are listed there. Choose one organization from the list and click on the "Assign" button. On successful completion you can see the green color toaster message.
 
 .. image:: images/Assign123.png
 
 .. image:: images/Assign4.png
 
 **Note** : When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
+
 
 **Secure connections to resources using ALB to RStudio and Nextflow-Advanced Products** 
 
@@ -330,6 +344,19 @@ Click on the “Create Project” button. Added a new project successfully.
 
 **Note**: While creation of project, if you select "Standard Catalog" option it will create 6 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
 
+Research Gateway will set up a shared S3 bucket(Project Storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted for at the project level. For a lot of scientific research, data is stored in file format (e.g. fasta, fastq files for Genomics research). The natural choice for storage of this data could be S3 (inexpensive, highly elastic) or Elastic Block Storage (access is extremely fast). As part of project creation we are creating project storage(i.e., S3 Bucket) and sharing with users.
+
+1. The Project level storage will be listed as a product in the My Products tab inside the project as an S3 bucket. There is explore action inside the S3 bucket<<There is a folder called “Shared”.
+   Note: It is a common folder(only accessible by user unless shared)  and it  is available to all users.
+
+.. image:: images/projectstorage.png   
+
+.. image:: images/shared.png  
+
+2. You can able to view, upload and delete objects in the storage.
+3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
+4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
+
 Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in **"My Projects"** list. 
 
 .. image:: images/myprojects.png 
@@ -348,9 +375,12 @@ Once you click on the project, you can see the budget in the cards and remaining
 4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update List” button. It will add collaborators to the project. 
 
 .. image:: images/projectdetails.png 
+
+7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update List” button. It will add collaborators to the project. 
+
+.. image:: images/manage.png
 
 **Events**
 
@@ -358,6 +388,11 @@ You can see project-related events here.
 
 .. image:: images/events.png
 
+.. csv-table::
+   :file: ProjectEvents.csv
+   :widths: 10, 10, 30, 50
+   :header-rows: 1
+   
 **Available Products**
 
 1. You can view the Available Products information here and you can see products in a table view also.

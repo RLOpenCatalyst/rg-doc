@@ -1,7 +1,7 @@
 User,Logical ID,Timestamp,Status,Status Reason
-<Username> or  <Email ID>,AUTHENTICATION ,<IST time zone>,LOGIN_SUCCESSFUL,You can see the login success information .
+<Username> or  <Email ID>,AUTHENTICATION ,<IST time zone>,LOGIN_SUCCESSFUL,You can see the login success information with session ID .
 <Username> or  <Email ID>,AUTHENTICATION ,<IST time zone>,LOGIN_FAILED,You can see the reason for login failure. 
-<Username> or  <Email ID>,AUTHENTICATION ,<IST time zone>,LOGOUT_SUCCESSFUL,You can see the logout success information.
+<Username> or  <Email ID>,AUTHENTICATION ,<IST time zone>,LOGOUT_SUCCESSFUL,You can see the logout success information with session ID.
 <Username> or  <Email ID>,DATA_SECURITY,<IST time zone>,SHARE_S3 BUCKET_COMPLETED,You can see the shared products information.
 <Username> or  <Email ID>,DATA_SECURITY,<IST time zone>,UNSHARE_S3 BUCKET_COMPLETED,You can see the unshared products information.
 <Username> or  <Email ID>,CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project information.
@@ -66,3 +66,14 @@ User,Logical ID,Timestamp,Status,Status Reason
 <Username> or  <Email ID>,REGISTRATION,<IST time zone>,VERIFICATION_LINK_EXPIRED,You can see the verification link  information with username or email id.
 <Username> or  <Email ID>,REGISTRATION,<IST time zone>,CATALOG_ASSIGNMENT_SUCCESSFUL,You can see the catalog assignment successful information with username or email id.
 <Username> or  <Email ID>,REGISTRATION,<IST time zone>,CATALOG_ASSIGNMENT_FAILED,You can see the catalog assignment failed information with username or email id.
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,
+,,,,

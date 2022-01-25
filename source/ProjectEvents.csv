@@ -1,0 +1,57 @@
+Logical ID,Time Stamp,Status,Status Reason
+CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project initiated information.
+CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_FAILED,You can see the reason for the failure.
+CATALOG,<IST time zone>,ASSIGN_TO_PROJECT_COMPLETED,You can see the assigned products to the related project completion information.
+CATALOG,<IST time zone>,STACK_CREATION_STARTED,"You can see the assigned products to the related project information(i.e.,which user started and assigned products to the project)"
+CATALOG,<IST time zone>,STACK_CREATION_COMPLETED,"You can see the assigned products to the related project completion information (i.e.,which user started and assigned products to the project)"
+CATALOG,<IST time zone>,STACK_CREATION_FAILED,You can see reason for stack creation failure.
+CATALOG,<IST time zone>,PRODUCT_DETAILS_SYNC_STARTED,You can see the product sync initiated information.
+CATALOG,<IST time zone>,PRODUCT_DETAILS_SYNC_COMPLETED,You can see the product sync completed information
+CATALOG,<IST time zone>,PRODUCT_DETAILS_SYNC_FAILED,You can see the product sync failed information with reason.
+CATALOG,<IST time zone>,SYNC_STARTED,"You can see the sync started information (i.e, which user started and related account name)"
+CATALOG,<IST time zone>,SYNC_COMPLETED,"You can see the sync completed information (i.e.. which user started, related account name with products count information)."
+CATALOG,<IST time zone>,SYNC_FAILED,"You can see the sync failed information(i.e., which user started, related account name and error information)."
+PROJECT CREATE,<IST time zone>,SHARING_AMI_SUCCESSFUL,You can see the shared AMI ID success information for RStudio and Nextflow-Advanced products.
+PROJECT CREATE,<IST time zone>,CREATING_SSM_PARAMETER_SUCCESSFUL,You can see SSM parameter creation success information.
+PROJECT CREATE,<IST time zone>,SHARING_AMI_FAILED,You can see the AMI failed information with reason.
+SECURITY_GROUP,<IST timezone>,SECURITY_GROUP_SYNC_STARTED,"You can see the Security Groups sync completed information (i.e., which user started and related account name. It will show security groups count in that region)."
+SECURITY_GROUP,<IST timezone>,SECURITY_GROUP_SYNC_COMPLETED,You can see the Security Groups sync failed information with the error and it will show the solution to resolve the problem.
+SECURITY_GROUP,<IST timezone>,SECURITY_GROUP_SYNC_FAILED,You can see the Security Groups sync failed information with the error and it will show the solution to resolve the problem.
+SUBNETS,<IST timezone>,SUBNETS_SYNC_STARTED,"You can view the details about subnets sync (i.e., which user started)."
+SUBNETS,<IST timezone>,SUBNETS_SYNC_COMPLETED,"You can see subnets sync completed information (i.e., which user started and related account name. It will show subnets count in that region)."
+SUBNETS,<IST timezone>,SUBNETS_SYNC_FAILED,You can see subnets sync failed information with the error and it will show the solution to resolve the problem.
+VPC,<IST timezone>,VPC_SYNC_STARTED,"You can view the details about VPC sync (i.e., which user started)."
+VPC,<IST timezone>,VPC_SYNC_COMPLETED,"You can see VPC sync completed information (i.e., which user started and related account name. It will show VPC count in that region)."
+VPC,<IST timezone>,VPC_SYNC_FAILED,You can see VPC sync failed information with the error and it will show the solution to resolve the problem.
+KEY_PAIRS,<IST timezone>,KEY_PAIRS_SYNC_STARTED,"You can view the details about KeyPairs sync (i.e., which user started)."
+KEY_PAIRS,<IST timezone>,KEY_PAIRS_SYNC_COMPLETED,"You can see KeyPairs sync completed information (i.e., which user started and related account name. It will show KeyPairs count in that region)."
+KEY_PAIRS,<IST timezone>,KEY_PAIRS_SYNC_FAILED,You can see KeyPairs sync failed information with the error and it will show the solution to resolve the problem.
+ENABLE_SSL,<IST timezone>,ENABLE_SSL_STARTED,You can see SSL_Enable started information
+ENABLE_SSL,<IST timezone>,ENABLE_SSL_COMPLETED,You can see the SSL_Enable completion information
+ENABLE_SSL,<IST timezone>,ENABLE_SSL_FAILED,You can see the SSL_Enable failed information with reason
+ENABLE_SSL,<IST timezone>,CERTIFICATE_CREATE_STARTED,You can see certification creation started information
+ENABLE_SSL,<IST timezone>,CERTIFICATE_CREATE_COMPLETED,You can see certification creation completion information
+ENABLE_SSL,<IST timezone>,CERTIFICATE_CREATE_FAILED,You can see certification creation failed information with reason.
+ENABLE_SSL,<IST timezone>,ALB_CREATE_STARTED,You can see ALB creation started  information
+ENABLE_SSL,<IST timezone>,ALB_CREATE_COMPLETED,You can see ALB creation completion information
+ENABLE_SSL,<IST timezone>,SG_CREATE_STARTED,You can see the security group creation started information
+ENABLE_SSL,<IST timezone>,SG_CREATE_COMPLETED,You can see the security group creation completion information
+ENABLE_SSL,<IST timezone>,LISTENER_CREATE_STARTED,You can see the listerner creation started information
+ENABLE_SSL,<IST timezone>,LISTENER_CREATE_COMPLETED,You can see the listerner creation completed information
+PROJECT REPAIR,<IST timezone>,REPAIR_STARTED,You can see the repair started information
+PROJECT REPAIR,<IST timezone>,REPAIRING_CATALOG,You can see the repairing catalog information
+PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_CREATION_STARTED,You can see the project storage creation started information
+PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_CREATION_COMPLETED,You can see the project storage creation completed information.
+PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_CREATION_FAILED,You can see the project storage creation failed information with reason.
+PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_REPAIR_STARTED,You can see the project storage repair started information.
+PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_REPAIR_COMPLETED,You can see the project storage repair completed information.
+PROJECT REPAIR,<IST timezone>,SHARED_FOLDER_CREATION_COMPLETED,You can see the shared folder creation completed information.
+PROJECT REPAIR,<IST timezone>,SHARED_FOLDER_CREATION_STARTED,You can see the shared folder creation started information.
+PROJECT REPAIR,<IST timezone>,OUTPUT_UPDATE_COMPLETED,You can see the output updation completed information
+PROJECT REPAIR,<IST timezone>,OUTPUT_UPDATE_STARTED,You can see the output updation started information
+PROJECT REPAIR,<IST timezone>,S3_CREATE_COMPLETED,You can see the S3 bucket creation completed information
+PROJECT REPAIR,<IST timezone>,S3_CREATE_STARTED,You can see the S3 bucket creation information
+PROJECT REPAIR,<IST timezone>,S3_TERMINATE_STARTED,You can see the S3 terminate initiated information
+PROJECT REPAIR,<IST timezone>,S3_TERMINATE_COMPLETED,You can see the S3 termination completed information
+BYOC,<IST timezone>,BYOC_STARTED,You can see the BYOC sync initiated information
+BYOC,<IST timezone>,BYOC_COMPLETED,You can see BYOC sync completed information.
