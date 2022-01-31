@@ -277,7 +277,7 @@ How to add a new Project
 Login to the Research Gateway. Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
 .. image:: images/projectcreation.png 
- 
+
 Fill in the following details
 
 .. list-table:: 
@@ -297,11 +297,24 @@ Fill in the following details
    * - Add Users
      - <Select collaborators from the list or create a new user from the **"Add Users"** button> [optional]
    * - Add products
-     - <Select catalog type from the list>
+     - <Select catalog type from the list [Standard Catalog/Bring your own catalog]>
    
 Click on the “Create Project” button. Added a new project successfully.
 
 **Note**: While creation of project, if you select "Standard catalog" option it will create 6 products(Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
+
+Research Gateway will set up a shared S3 bucket(Project Storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted for at the project level. For a lot of scientific research, data is stored in file format (e.g. fasta, fastq files for Genomics research). The natural choice for storage of this data could be S3 (inexpensive, highly elastic) or Elastic Block Storage (access is extremely fast). As part of project creation we are creating project storage(i.e., S3 Bucket) and sharing with users. At the same time, we would also like individual users to be able to access personal storage from their computing resources. 
+
+1. The Project level storage will be listed as a product in the My Products tab inside the project as an S3 bucket. There is explore action inside the S3 bucket<<There is a folder called “Shared”.
+   Note: It is a common folder(only accessible by user unless shared)  and it  is available to all users.
+
+.. image:: images/projectstorage.png   
+
+.. image:: images/shared.png  
+
+2. You can able to view, upload and delete objects in the storage.
+3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
+4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
 
 Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in "My Projects" list.
 
@@ -334,10 +347,15 @@ You can see the project-related events here.
 
 .. image:: images/events.png
 
+.. csv-table::
+   :file: ProjectEvents.csv
+   :widths: 20, 20, 50, 50
+   :header-rows: 1
+   
 **Available Products**
 
-1. You can view the Available Products information here and you can see products in a table view also.
-2. You can search based on product name and description. You can filter the products. We have following filter options:
+1. 	You can view the Available Products information here and you can see products in a table view also.
+2. 	You can search based on product name and description. You can filter the products. We have following filter options
       
 	  a. **All** - You can see the all products here.
 	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
@@ -979,7 +997,7 @@ You can see product related actions in the  Actions menu.
 
 3. Terminate action : Choose the "Terminate" option to de-provision the product.
 
-4. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+4. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
 
 5. Monitor Pipeline action : Through this you can monitor the pipeline.
 
