@@ -344,6 +344,8 @@ Click on the “Create Project” button. Added a new project successfully.
 
 **Note**: While creation of project, if you select "Standard Catalog" option it will create 6 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
 
+**Project Storage**
+
 Research Gateway will set up a shared S3 bucket(Project Storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted for at the project level. For a lot of scientific research, data is stored in file format (e.g. fasta, fastq files for Genomics research). The natural choice for storage of this data could be S3 (inexpensive, highly elastic) or Elastic Block Storage (access is extremely fast). As part of project creation we are creating project storage(i.e., S3 Bucket) and sharing with users.
 
 1. The Project level storage will be listed as a product in the My Products tab inside the project as an S3 bucket. There is explore action inside the S3 bucket<<There is a folder called “Shared”.
@@ -356,6 +358,7 @@ Research Gateway will set up a shared S3 bucket(Project Storage) where the team 
 2. You can able to view, upload and delete objects in the storage.
 3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
 4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
+
 
 Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in **"My Projects"** list. 
 
