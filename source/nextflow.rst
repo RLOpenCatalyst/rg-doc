@@ -21,7 +21,7 @@ Parameters
    * - PipelineContainer
      - Public Docker container image of the pipeline to be executed. If you are using a custom pipeline, ensure that the custom container image is publicly available on Docker Hub Eg: nextflow/rnaseq-nf:latest
    * - InputDataLocation
-     - The pattern to match samples to be processed as inputs to the pipeline. This pattern consists of two parts. A location, either local or an S3 bucket, which can be searched and a second part which is a pattern to match the files to be picked Eg: <my-data-bucket>/data/ggal/*_{1,2}.fq
+     - The pattern to match samples to be processed as inputs to the pipeline. This pattern consists of two parts. A location, either local or an S3 bucket, which can be searched and a second part which is a pattern to match the files to be picked Eg: <my-data-bucket>/data/ggal/*_{1,2}.fq .
    * - OutputDataLocation
      - The full path on the local disk where outputs of the pipeline should be stored. The default path above will enable you to view the outputs via the browser. The path should be accessible to the user ec2-user. Alternately, provide an S3 bucket for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens). Eg: s3://<BucketName>
    * - Head Node Configuration

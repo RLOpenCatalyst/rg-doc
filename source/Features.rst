@@ -547,7 +547,7 @@ You can see key Pairs details in table format:
 
 The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
 
-.. image:: images/delete.png
+.. image:: images/deletionkeypair.png
 
 You can search the keypair through Keypair name and Project name.
 
@@ -1211,7 +1211,7 @@ You can see key Pairs details in table format:
 
 The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
 
-.. image:: images/delete.png
+.. image:: images/deletionkeypair.png
 
 You can search the keypair through Keypair name and Project name.
 
