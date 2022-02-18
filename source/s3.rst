@@ -3,7 +3,7 @@ Amazon S3
 
 Amazon Simple Storage Service (Amazon S3) is an object storage service that offers scalability, data availability, security, and performance.
 
-`Provisioning an S3 bucket video <https://youtu.be/8I83Y9NqaQs>`_
+`Watch a video on how to provision an S3 bucket <https://youtu.be/8I83Y9NqaQs>`_
 
 Parameters
 -----------
