@@ -84,3 +84,4 @@ If the password change is successful you can navigate to the verification succes
 .. image:: images/success.png
 
 **Note:** If a user tries to reset password more than 10 times it will display the message like **“Attempt limit exceeded. Please try again”**
+

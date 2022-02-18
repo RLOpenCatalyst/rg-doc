@@ -116,6 +116,8 @@ Sign up with a Google ID
 
 .. image:: images/registerform.png
 
+Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
+
 Sign up with an Email address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -149,6 +151,12 @@ The password needs to confirm to the password policy.
 .. image:: images/verificationemail2.png
 
 If the password change is successful you will be navigated to the verification successful page. Through the “Click here to login button” you will be navigated to the Research Gateway login screen.
+
+Once logged in to your account, you will land on the Welcome page in Research Gateway.
+
+.. image:: images/registerform.png
+
+Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
 
 .. _`Adding Organizational Units`:
 
@@ -305,6 +313,14 @@ Secure connections to resources using ALB to RStudio and Nextflow-Advanced Produ
 .. image:: images/actions-rstudio.png 
 
 `Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
+
+Navigation to help
+------------------
+Through the "Help" option, you can see the Research Gateway documentation. Click on the top-right menu which is available on the header. 
+
+.. image:: images/Help.png
+
+**Note:** There is Help option which is available on the footer, through this option also you can navigate to the  Research Gateway documentation.
 
 .. _`Adding a new project`:
 
