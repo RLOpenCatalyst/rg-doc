@@ -46,7 +46,7 @@ If sign out is unsuccessful you can see a message like "**Something went wrong w
 Forgot Password
 ---------------
 
-In case an user would like to reset his password, the reset password screen can be accessed from the sign in page. Choose the "Forgot Password" link.
+In case a user would like to reset his password, the reset password screen can be accessed from the sign in page. Choose the "Forgot Password" link.
 
 .. image:: images/login.png
 
