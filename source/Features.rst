@@ -177,7 +177,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 .. image:: images/resend.png
 
-**NOTE**: If the user is inactive state then only you can see the "Resend verification mail" option.
+**NOTE**: The "Resend verification mail" option is available only if the user is inactive.
 
 Audit Trail
 ^^^^^^^^^^^
@@ -390,9 +390,110 @@ b. The project is independent of the researcher. We can create an empty project 
 c. **My Projects** page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
    to a project details page. Click on the specific project you can navigate to the project details page.
 
+.. _Users_PI:
+
+Users (for Principal Investigator)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+As a Principal Investigator  you can use the "Users" screen to view all users across all your projects in Research Gateway. Click on the “☰” option which is available on the left side header.
+
+Click on the **Users** menu item to navigate to the Users page.
+
+.. image:: images/user_pi.png
+
+.. image:: images/user1_pi.png
+
+
+You can see the users in card view or table view. Click on the “≣”  button which is on the right side of the screen.
+  
+  
+.. image:: images/user2_pi.png
+
+There is a search option which is beside the “+Add New” button. You can search based on users, username, and Email id. 
+
+.. image:: images/search_pi.png
+
+If the results are not matched with the searched item it will show a message like “No matching users found”.
+
+.. image:: images/search1_pi.png
+
+You can filter by role(Researcher/Principal Investigator), and sort by username(Asc/Desc), user-role(Asc/Desc), and creation date(Asc/Desc).
+
+.. image:: images/role_pi.png
+.. image:: images/sort_pi.png
+
+The user can see an active filter with enable and disable options. You can toggle the view between active or all users.
+
+.. image:: images/toggle_pi.png
+
+.. _`Adding Users_PI`:
+
+You can add a new user through the “+Add New” button which is on the right side of the screen. 
+
+Fill the following details 
+
+.. list-table:: 
+   :widths: 90, 90 
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Email 
+     - <Enter an Email ID>
+   * - Role
+     - <Select a role in the drop-down list>
+   * - First Name
+     - <Please enter firstname of the user>
+   * - Last Name
+     - <Please enter last name of the user> 
+
+Click on the “Add User” button. On successsful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
+
+.. image:: images/form.png
+
+The verification email has been sent. Check the verification email delivered to the registered email address and click on the verification link to activate the account. 
+
+.. image:: images/Verificationmail-1.png
+
+**NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
+
+Users can choose a password and click on the “Submit” button. 
+
+**Note**: The password policy should meet the following requirement :
+   a. The minimum password length of 8 characters and a maximum of 16 characters.
+   b. It should have atleast one lower case character(a-z).
+   c. It should have atleast one upper case character(A-Z).
+   d. It should have atleast one number(0-9).
+   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
+   
+On successful validation, users will be allowed to login to the Research Gateway.
+
+.. image:: images/password1.png 
+
+You can perform the following user actions 
+
+**Enable**
+
+There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
+
+.. image:: images/enable.png 
+
+**Disable**
+
+There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
+
+.. image:: images/disable.png 
+
+**Resend verification mail**
+
+There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
+
+.. image:: images/resend_pi.png
+
+**NOTE**: The "Resend verification mail" option is available only if the user is inactive.
+
 How to add researchers to existing project 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-There is an edit functionality for the project entity. The project is independent of the researcher. An user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
+There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
 
 .. image:: images/projectdetails1.png 
 
@@ -481,6 +582,7 @@ You can see researcher budget details which are linked to particular products an
 
 .. image:: images/budget4.png
 
+.. _Catalog_PI:
 
 Catalog (for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

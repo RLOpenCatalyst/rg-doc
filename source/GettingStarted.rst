@@ -10,7 +10,7 @@ You can access this product either as a `hosted Silo model`_ or as a hosted Shar
 If you are using the hosted Silo model, you will be provided a public URL to which you can navigate using your browser. 
 You will also be provided with the credentials for the Administrator user.
 
-If you are using the hostel Shared model, you can sign up with your details. Use details from :ref:`Sign-Up <Sign-Up process>` to create a new user.
+If you are using the hosted Shared model, you can sign up with your details. Use details from :ref:`Sign-Up <Sign-Up process>` to create a new user.
 
 .. contents::
 
@@ -26,21 +26,25 @@ Users with the Administrator role can perform the steps below.
   * :ref:`Adding Users<Adding Users>` - Users can have Administrator, Principal Investigator or Researcher roles.
   * `Adding AWS Accounts`_
   * `Adding Organizational Units`_
+  * :ref:`Adding Catalog Items<Catalog>`
 
 Users with the Principal Investigator role can perform the steps below.
   
   * `Adding a New Project`_
+  * :ref:`Adding Users<Users_PI>` - Users can have Principal Investigator or Researcher roles.
+  * `Adding AWS Accounts`_
+  * :ref:`Adding Catalog Items<Catalog_PI>`
   * `Assigning Researchers to projects`_
 
 Create an Admin user
 --------------------
 
 If you have subscribed to the hosted version of the Research Gateway application, you would have created the Admin user during registration.
-You would have subsequently received an email with a link to confirm the Administrator user's email. Use this details to login into Research Gateway.
+You would have subsequently received an email with a link to confirm the Administrator user's email. Use these details to login into Research Gateway.
 
 Sign-In Process
 ---------------
-Use details from :ref:`Appendix A<Appendix A>` for  Email, Password as per password policy.
+Use details from :ref:`Forgot Password<Forgot Password>` for  Email, Password as per password policy.
 
 Fill the following details 
 
@@ -59,12 +63,13 @@ Click on the “Sign-In“ button. We can log in successfully.
 
 .. image:: images/login.png
 
-	
+.. _`Forgot Password`:
+
 Forgot Password
 ---------------
 In case you have forgotten your password, you can use the “Forgot Password” link on the login screen which is under the "Sign In" button.
 
-click the link to navigate to the reset password screen.  
+Click the link to navigate to the reset password screen.  
 
 .. image:: images/forgot.png
 
@@ -456,7 +461,7 @@ b. The project is independent of the researcher. We can create an empty project 
 Assigning Researchers to projects
 ---------------------------------
 
-There is an edit functionality for the project entity. The project is independent of the researcher. An user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
+There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
 
 .. image:: images/projectdetails1.png 
 
