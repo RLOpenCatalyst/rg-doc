@@ -1095,9 +1095,9 @@ Fill the following Details
 Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 
 
-Nextflow-Advanced
+Nextflow Advanced
 -----------------
-Researcher can login to the portal and quickly order Nextflow-Advanced product. Find the Nextflow-Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
+Researcher can login to the portal and quickly order Nextflow Advanced product. Find the Nextflow Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
@@ -1111,6 +1111,38 @@ You can see product related actions in the  Actions menu.
 5. Monitor Pipeline action : Through this you can monitor the pipeline.
 
 6. View Outputs action : Through this you can see the outputs.  
+
+Fill the following Details 
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Username>
+   * - Authentication Type
+     - <Choose Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+	 
+Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+
+Cromwell Advanced
+-----------------
+Researcher can login to the portal and quickly order Cromwell Advanced product. Find the Cromwell Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+4. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+5. View Outputs action : Through this you can see the outputs.  
 
 Fill the following Details 
 

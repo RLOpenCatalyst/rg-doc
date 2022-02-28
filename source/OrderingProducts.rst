@@ -12,6 +12,7 @@ Ordering products in Research Gateway
    sagemaker
    rstudio
    nextflow
+   cromwell
    
    
 
