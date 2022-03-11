@@ -15,7 +15,7 @@ An Administrator user can perform the following actions.
   * View `Budgets`_
   * View the `Audit Trail`_
   * Add or Assign `Users`_
-  * Assign `Catalog`_ Items
+  * Assign :ref:`Catalog` Items
 
 If administrator logs as a first time, you can see the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Organization" screen.
 
@@ -210,44 +210,9 @@ You can filter the logs by admin, Principal Investigator, researcher, Organizati
 .. image:: images/Audit4.png
 
 
-.. _Catalog:
-
 Catalog
 ^^^^^^^
-As an Administrator you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. 
-   
-.. image:: images/catalog.png
-
-Click on the "Catalog" menu item. Through this, you can navigate to the Catalog details page.
-
-.. image:: images/catalog1.png
-
-You can see the standard catalog products on the listing page and you can enable the checkbox which is at the right side of the product and assign to a particular  O.U through the “Assign selected to O.U” button.
-
-.. image:: images/sc.png
-
-.. image:: images/assign2.png
-
-You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
-
-.. image:: images/update.png
-
-.. image:: images/update1.png
-
-You can search  product name and description of the product. We have following filter options:
- 
-  a. **All** : You can see all products here.
-  b. **Compute** :  You can see compute related products here.
-  c. **Storage**  : You can see storage related products here.
-  d. **Application** : You can see application related products here.
- 
- .. image:: images/filter1.png
- 
- .. image:: images/compute.png
- 
-If we could not find any products related to the filter you can see the message like “We could not find any products that matched your search”.
-
-.. image:: images/search3.png
+Use details from :ref:`Catalog` 
 
 **NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog products.
 
@@ -274,89 +239,9 @@ Clicking on a specific project will leads to a project details page.
 
 How to add a new Project 
 ^^^^^^^^^^^^^^^^^^^^^^^^
-Login to the Research Gateway. Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
+Use details from :ref:`Project ordering` to create projects.
 
-.. image:: images/projectcreation.png 
-
-Fill in the following details
-
-.. list-table:: 
-   :widths: 90, 90
-   :header-rows: 1
-
-   * - Attribute
-     - Details
-   * - Project Name
-     - <Project Name>
-   * - Project Description
-     - <Description about the project> 
-   * - Budget Available
-     - <Budget to allocate to this project (cumulative)>
-   * - Account Details 
-     - <Select an Account ID in the list or create a new account form the **"Add Accounts"** button>
-   * - Add Users
-     - <Select collaborators from the list or create a new user from the **"Add Users"** button> [optional]
-   * - Add products
-     - <Select catalog type from the list [Standard Catalog/Bring your own catalog]>
-   
-Click on the “Create Project” button. Added a new project successfully.
-
-**Note**: While creation of project, if you select "Standard catalog" option it will create 6 products(Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
-
-Project Storage
----------------
-
-Research Gateway will set up a shared S3 bucket(Project Storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted for at the project level. For a lot of scientific research, data is stored in file format (e.g. fasta, fastq files for Genomics research). The natural choice for storage of this data could be S3 (inexpensive, highly elastic) or Elastic Block Storage (access is extremely fast). As part of project creation we are creating project storage(i.e., S3 Bucket) and sharing with users. At the same time, we would also like individual users to be able to access personal storage from their computing resources. 
-
-1. The Project level storage will be listed as a product in the My Products tab inside the project as an S3 bucket. There is explore action inside the S3 bucket<<There is a folder called “Shared”.
-   Note: It is a common folder(only accessible by user unless shared)  and it  is available to all users.
-
-.. image:: images/projectstorage.png   
-
-.. image:: images/shared.png  
-
-2. You can able to view, upload and delete objects in the storage.
-3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
-4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
-
-Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in "My Projects" list.
-
-.. image:: images/myprojects.png 
-
-Once you click on the project, you can see the budget in the cards and remaining details will show a tabbed area with the following tabs:
-
-   1. Project Details
-   2. Events
-   3. Available Products
-   4. My Products
-
-Project Details Tab
--------------------
-
-1. You can view the project details here. 
-2. If the project was a failed state, you can repair the project through the “Repair” option.
-3. Click on the “Pause” action which is available on the right side. When you click on "Pause" action,  all the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible but the “Launch Now “ button would be hidden.
-4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
-5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
-6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher emails and click on the “Update List” button. It should add collaborators to the project.
-
-.. image:: images/projectdetails.png 
-
-Note: Whenever you clicked on the budget it will navigated to researcher-wise budget details page.
-
-Events Tab
-----------
-
-You can see the project-related events here.
-
-.. image:: images/events.png
-
-.. csv-table::
-   :file: ProjectEvents.csv
-   :widths: 20, 20, 50, 50
-   :header-rows: 1
-   
+ 
 Available Products Tab
 -----------------------
 
@@ -582,81 +467,14 @@ You can see researcher budget details which are linked to particular products an
 
 .. image:: images/budget4.png
 
-.. _Catalog_PI:
 
 Catalog (for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-As a Principal Investigator, you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. You can see the  following details: 
-   
-.. image:: images/cat1.png
-
-Click on the **Catalog** menu item to navigate to the Catalog screen.
-
-.. image:: images/cat2.png
-
-You can see the standard catalog products on the listing page. To assign a set of items to an Organizational Unit, select the items by checking the checkbox which is at the right corner of each product card. Then click the  "Assign selected to a project" button.
-
-.. image:: images/assign2.png
-
-.. image:: images/sc2.png
-
-You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
-
-.. image:: images/update.png
-
-.. image:: images/update1.png
-
-You can use the search field to search for a term in the product name and description of the product. You can also use the filter options as below :
-  
- a. **All** : You can see all products here.
- 
- b. **Research** :  You can see the products realted to compute and analytics here. Eg: Amazon EC2
- 
- c. **IT Application** : You can see application related products here.
- 
-  .. image:: images/filter1.png
-  
-  .. image:: images/compute.png
-  
-  .. image:: images/storage.png
- 
-If we could not find any products related to the filter you can see the message like “We could not find any products that matched your search”.
-
-.. image:: images/search3.png
+Use details from :ref:`Catalog`
 
 Key Pairs(for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The Key Pairs screen can be used by the Principal Investigator to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
-
- .. image:: images/key1.png
-
-.. image:: images/key2.png
-
-You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
-  
-Click on the "+Create New" button which is available at right side of the page. Fill the deatils in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
-
-.. image:: images/key3.png
-
-
-You can see key Pairs details in table format:
-
-.. csv-table::
-   :file: keypair.csv
-   :widths: 20, 20, 20, 20, 20
-   :header-rows: 1
-
-The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
-
-.. image:: images/deletionkeypair.png
-
-You can search the keypair through Keypair name and Project name.
-
-Ex: Type “Chiron” in the search area it should display the keypairs which are attached to the Chiron project.
-
-.. image:: images/se1.png
-
+Use details from :ref:`KeyPair` to look at Key pairs.
 
 Studies(for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -682,38 +500,7 @@ The studies landing page has a search bar that allows users to search the studie
 
 .. image:: images/sea1.png
 
-Public Study(for Principal Investigator)
-----------------------------------------
-You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
-
-	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
-	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
-											
- .. image:: images/sc3.png
- 
- .. image:: images/public.png
-  
-**Explore Action**
-
-You can see the files/folders which are  related to the datastore.
-
-.. image:: images/ex1.png
-
-**Link/Unlink Action**
-
-1. A user will be able to link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a pop-up that will have the list (dropdown) of active sagemakers for that user.
-2. You can see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
-4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
- 
- .. image:: images/link2.png
- 
- .. image:: images/unlink.png
- 
- .. image:: images/unlink2.png
-  
- .. image:: images/link1.png  
- 
+Please look at :ref:`Studies` for exact details.
 
 
 Researcher Features
@@ -723,12 +510,12 @@ As a Researcher you can view all your projects when you login to Research Gatewa
 
 .. image:: images/ResearcherLanding.png
  
-Researcher can view service catalog products available for the project. Click on a project card to navigate to the Project Details page. You can see KPI cards, available products and active products information in the project details page.
+Researcher can view service catalog products available for the project. Click on a project card to navigate to the Project Details page. You can see available cards, available products and active products information in the project details page.
 
-KPI Cards
-^^^^^^^^^
+Available Cards
+^^^^^^^^^^^^^^^
 
-You can see the following KPI cards:
+You can see the following available cards:
 a. Available Project Budget
 b. Consumed Project Budget
 c. My Consumed Budget
@@ -773,24 +560,6 @@ d. **Filter** - We have following filter options:
 .. image:: images/available.png
 
 **NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog Products.
-
-**Secure connections to resources using ALB to RStudio and Nextflow-Advanced products**
-
-1. Research Gateway can set up secure connections to your resources by putting them behind an Application Load Balancer with SSL connections using certificates managed by AWS Certificate Manager.
-2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
-   Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
-   
- .. image:: images/ssl-alb.png 
- 
-3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
-   Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
-4. Navigate to the available products panel and launch Nextflow-Advanced with required parameters. Once the product is provisioned you can see the outputs through the “View Outputs”. You can monitor the pipeline through “Monitor Pipeline”.
-
-.. image:: images/actions-nf.png 
-
-5. Navigate to the available products panel and launch RStudio with the required parameters. Once the product is provisioned you can connect to RStudio through the “Open link” action.
-   
-.. image:: images/actions-rstudio.png 
 
 `Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
 
@@ -866,281 +635,7 @@ When you click any action(Start/Stop/Terminate) in a provisioned product, state 
 .. image:: images/instance.png
 
 
-Actions available for products
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-EC2-Linux Product
------------------ 
-
-Researchers can login to the portal and quickly order  EC2 products.
-Find the Provisioned EC2 product i.e. EnvironmentalProtectionAgency in the My Products panel or click on the “View All” button to get a list of all provisioned products.
-You can see product related actions in the  Actions menu.
-
-1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
-
-2. Reboot action : You can reboot instances through  “Reboot” action.
-
-3. Terminate action : You can terminate the product through “Terminate” action.
-
-4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
-
-Fill the following details
-
-.. list-table:: 
-   :widths: 50, 50
-   :header-rows: 1
-
-   * - Attribute
-     - Details
-   * - Username
-     - <Jump server user name>
-   * - Authentication Type
-     - <Choose password/Pem file>
-   * - Upload Pem file
-     - <Upload the pem file>
-
-Click on the “Submit” button.
-
-**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
-
-
-.. image:: images/E2E.png
-
-.. image:: images/E2E2.png
-
-
-EC2-Windows Product
--------------------
-
-Researchers can login to the Research Gateway and quickly order Amazon EC2-Windows products.
-Find the Provisioned Amazon EC2-Windows product in the My Products panel and click on it.
-You can see the product related actions in the  Actions menu.
-
-1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
-
-2. Reboot action : You can reboot instances through  “Reboot” action.
-
-3. Terminate action : Choose the "Terminate" option to de-provision the product.
-
-4. SSH/RDP action : Choose the “RDP” action. Through this you can connect to the Remote Desktop in a new window.
-
-Fill the following Details
-
-.. list-table:: 
-   :widths: 50, 50
-   :header-rows: 1
-
-   * - Attribute
-     - Details
-   * - Username
-     - <Username>
-   * - Authentication Type
-     - <Choose Pem file>
-   * - Upload Pem file
-     - <Upload the pem file>
-	 
-Click on the “Submit” button. 
-
-.. image:: images/RDP.png
-
-**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
- 
-It will navigated to the password generation page. Before the downloading the RDP file you should copy/save the password and unhide it and click on the “Download RDP file" button. 
-
-.. image:: images/RDP1.png
-
-Once completed the download right-click on the file and choose the “Connect” option. Enter the username and password in a remote desktop connection window. 
-Due to the nature of self-signed certificates, you might get a warning that the security certificate could not be authenticated. To verify that simply choose [Yes] in the Remote Desktop Connection window. You can connect to the remote desktop successfully.
-
-**NOTE**: When we launch a new instance, password generation and encryption may take few minutes. We need to wait for 5-10 mins after the instance is created, if you upload any pem file before 10 mins, you can see a message like “**Password not available yet. Please wait at least 4 minutes after launching an instance before trying to retrieve the password**”
-
-S3 Product
------------
-
-As a Researcher, you can login to the Research Gateway and quickly order S3 Product.
-Find the S3 in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
-You can see product related actions in the  Actions menu.
-
-**1. Upload Action**
-
-Choose the “Upload” option. Through this you can upload a file to the S3 bucket.
-
-*Note:* When you try to upload more than 10MB file you will see a message like **"The size of this file is larger than the maximum(10MB) size allowed on this system. Please contact your administrator."**
-
-.. image:: images/testingevent2.png
-
-
-**2. Share Action**
-
-
-Choose the “Share” option. Through this you can  share the details to other team members.
-
-**NOTE:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket"**
-
-.. image:: images/testingevent1.png
-
-.. image:: images/testingevent3.png
-
-
-.. image:: images/testingevent4.png
-
-**3. Unshare Action**
-
-Choose the "Unshare" option. Through this you can unshare the details from the earlier shared team member.  
-
-.. image:: images/unshare.png
-
-.. image:: images/unshare1.png
-
-**Note:** The "Unshare" option is available only when the bucket is shared with other researchers. The owner(i.e.,person who provisioned product) can do the share and unshare. 
-
-**Note:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket.“**
-
-**4. Terminate Action**
-
-Choose the "Terminate" option to de-provision the product.
-
-There is a check to find out whether the file exists in the bucket or not. If exists it will throw an error message **”The bucket is not empty. Please delete all contents from the bucket and try again.”**
-
-
-.. image:: images/action.png
-
-
-**5. Explore Action**
-
-a. In the product details screen of the newly created S3 bucket, click the “Explore” action. Through this action you can see all the files and folders in the S3 bucket with actions (download, delete) against each item.
-
-.. image:: images/s3-actions.png 
-.. image:: images/basic.png
-
-b. For folders the user will be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
-c. For any deeper level, the user will be able to navigate back to an upper level.
-d. Click on the “Upload” action. Click on "Add files" to upload multiple files. The file size should not be greater than 5 GB. Click on "Add folder" to upload entire folder to S3. Click on the “submit” button and the file will be uploaded to the bucket. 
-
-.. image:: images/multifiles.png 
-.. image:: images/upload2.png
-
-**6. Link Action**
-
-You have to link Sagemaker from the S3 product details page using the provisioned product ID.
-For a S3 Provisioned Product, you should have a new action item called “Link”
-
-
-.. image:: images/linking.png 
-
-
-This action item should be a pop up which will have the list (dropdown) of active sagemakers for that user.
-
-.. image:: images/linking2.png
-
-You should have an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-You should also see an “Unlink action” to unlink sagemakers from s3 bucket side. You are providing “Copy bucket name” action from sagemaker product side.
-
-
-.. image:: images/event.png
-
-.. image:: images/event2.png
-
-
-If there are no active sagemaker products we are showing the following message to the user “There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first,before linking to an s3 bucket”.
-
-.. image:: images/computerresource.png 
-
-
-SageMaker Product
------------------
-
-Researcher can login to the portal and quickly order SageMaker product.
-Find the Sagemaker product in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
-You can see product related actions in the  Actions menu.
-
-1. Open Notebook : You can navigate to notebook through “Open Notebook“ action.
-
-2. Start/Stop action : You can stop the instance through “Start/Stop” action. Based on the instance state, you will see either the Start or the Stop action.
-
-3. Terminate Action: You can terminate the product through “Terminate” action.
-
-.. image:: images/sagemaker.png
-
-RStudio
--------
-Researcher can login to the portal and quickly order RStudio product. Find the RStudio product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
-You can see product related actions in the  Actions menu.
-
-1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
-
-2. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
-
-3. Reboot action : You can reboot instances through  “Reboot” action.
-
-4. Terminate action : Choose the "Terminate" option to de-provision the product.
-
-5. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
-
-Fill the following Details
-
-.. list-table:: 
-   :widths: 50, 50
-   :header-rows: 1
-
-   * - Attribute
-     - Details
-   * - Username
-     - <Username>
-   * - Authentication Type
-     - <Choose Pem file>
-   * - Upload Pem file
-     - <Upload the pem file>
-	 
-Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
-
-
-Nextflow-Advanced
------------------
-Researcher can login to the portal and quickly order Nextflow-Advanced product. Find the Nextflow-Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
-You can see product related actions in the  Actions menu.
-
-1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
-
-2. Reboot action : You can reboot instances through  “Reboot” action.
-
-3. Terminate action : Choose the "Terminate" option to de-provision the product.
-
-4. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
-
-5. Monitor Pipeline action : Through this you can monitor the pipeline.
-
-6. View Outputs action : Through this you can see the outputs.  
-
-Fill the following Details 
-
-.. list-table:: 
-   :widths: 50, 50
-   :header-rows: 1
-
-   * - Attribute
-     - Details
-   * - Username
-     - <Username>
-   * - Authentication Type
-     - <Choose Pem file>
-   * - Upload Pem file
-     - <Upload the pem file>
-	 
-Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
-
-
-HPC Product
------------
-
-AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. AWS delivers an integrated suite of services that provides everything needed to quickly and easily build and manage HPC clusters in the cloud to run the most compute intensive workloads across various industry verticals. These workloads span the traditional HPC applications, weather prediction, and seismic imaging, as well as emerging applications, like machine learning, deep learning, and autonomous driving. This product has a master node and cluster nodes with a auto scaling group which will enable the cluster nodes required to be completed. It has many job schedulers like Slurm, AWS jobs. You have used a CFT to make this product provisioned.
-
-.. image:: images/hpc.png
-
-.. image:: images/hpc2.png
-
-
-**Navigation to the other screens**
+**Navigation to the screens**
 
 Click on the “☰”  Symbol which is available on the left side header. You can see a menu like :
 
@@ -1206,122 +701,13 @@ The studies landing page has a search bar that allows users to search the collec
 
 .. image:: images/sea1.png
 
-Personal Study
---------------
-A researcher may have his own data or a Principal may create a data-store that is shared across researchers in the same project through the “Share” option. The “Study” details page will show a tabbed area with the following tabs:
-   1. Study details
-   2. Product details
 
-The “Study details” tab will show all the details of the study available in the collection. The actions associated with the study will be shown in an actions bar on the right side of the page. The “Product details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
-
- .. image:: images/personal.png
- 
- .. image:: images/sc4.png
-
-**Explore Action**
- 
-Through this action, you can see all the files and folders in the S3 bucket with actions (download, delete) against each item.
-  a. For folders, the user will be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
-  b. For any deeper level, the user will be able to navigate back to an upper level.
-  c. You can upload the different files (The file should not contain more than 10MB).
-  
- .. image:: images/ex1.png
- 
-**Link/Unlink Action**
- 
-1. A user can link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a 
-   p-up that will have the list (dropdown) of active sagemakers for that user.
-2. You will see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
-4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker 
-   product from the available products page first, before linking to an s3 bucket**.
-
- .. image:: images/link1.png  
- 
- .. image:: images/unlink.png
-
- .. image:: images/unlink2.png
- 
-**Share Action**
- 
-Choose the option like “Share”. Through this, you can share the details with other team members. If there are no researchers in the list it will show a message like “No researchers are available. Please add a new researcher to share the s3 bucket “
-
- .. image:: images/share1.png
- 
- .. image:: images/share3.png
- 
-**Terminate Action**
-
-You can terminate the study through the “Terminate” option.
-
- .. image:: images/ter1.png
-
-Public Study
-------------
-You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
-
-	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
-	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
-											
- .. image:: images/sc3.png
- 
- .. image:: images/public.png
-  
-**Explore Action**
-
-You can see the files/folders which are  related to the datastore.
-
-.. image:: images/ex1.png
-
-**Link/Unlink Action**
-
-1. A user will be able to link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a pop-up that will have the list (dropdown) of active sagemakers for that user.
-2. You can see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
-4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
- 
- .. image:: images/link2.png
- 
- .. image:: images/unlink.png
- 
- .. image:: images/unlink2.png
-  
- .. image:: images/link1.png  
+Please look at :ref:`Studies` for exact details.
  
 
 Key Pairs (For Researcher)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-The Key Pairs screen can be used by the Researcher to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
-
- .. image:: images/key1.png
-
-.. image:: images/key2.png
-
-You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
-  
-Click on the "+Create New" button which is available at right side of the page. Fill the deatils in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
-
-.. image:: images/key3.png
-
-
-You can see key Pairs details in table format:
-
-.. csv-table::
-   :file: keypair.csv
-   :widths: 20, 20, 20, 20, 20
-   :header-rows: 1
-
-The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
-
-.. image:: images/deletionkeypair.png
-
-You can search the keypair through Keypair name and Project name.
-
-Ex: Type “Chiron” in the search area it should display the keypairs which are attached to the Chiron project.
-
-.. image:: images/se1.png
-
-
+Plese use :ref:`KeyPair` 
 
 Instance-wide Features
 ++++++++++++++++++++++
