@@ -1,7 +1,67 @@
+.. _`Accessing the RLCatalyst Research Gateway`:
+
 Accessing the RLCatalyst Research Gateway
 =========================================
 
 .. contents::
+
+Sign-Up process
+---------------
+
+You can follow the below instructions to create a new user in hosted shared model.
+
+Sign up with a Google ID
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. In a browser window, open the Research Gateway URL (https://research.rlcatalyst.com/login).
+2. Click on the “Sign up with Google” button.
+3. If you are already signed in to your Google account, you will be prompted to choose the Google account to use. Select an account.
+4. If you are not signed in to your Google account, you will be prompted for your credentials. Enter your Google account email address and password. 
+5. Once logged in to your account, you will land on the Welcome page in Research Gateway.
+
+.. image:: images/registerform.png
+
+Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
+
+Sign up with an Email address
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. In a browser window, open the Research Gateway URL (https://research.rlcatalyst.com/login).
+2. Click on the "Sign up for new account" link which is below the sign-in button. 
+3. A registration form will be opened. 
+
+.. image:: images/registerform.png
+
+Fill the following details 
+
+.. list-table:: 
+   :widths: 50 50
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Email
+     - <Enter an Email ID>[Mandatory]
+   * - First Name
+     - <Enter first name> [Optional]
+   * - Last Name
+     - <Enter Last name> [Optional]
+   * - Phone number
+     - <Enter phone number of the user> [Optional]
+	 
+Click on the “Sign Up“ button. If the provided details are valid, you will receive a verification link on the registered email address to reset the password. On clicking the link in the email, you will be led to the change password screen.
+
+The password needs to confirm to the password policy. 
+
+.. image:: images/verificationemail2.png
+
+If the password change is successful you will be navigated to the verification successful page. Through the “Click here to login button” you will be navigated to the Research Gateway login screen.
+
+Once logged in to your account, you will land on the Welcome page in Research Gateway.
+
+.. image:: images/registerform.png
+
+Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
 
 Sign In Process
 ---------------
@@ -84,4 +144,3 @@ If the password change is successful you can navigate to the verification succes
 .. image:: images/success.png
 
 **Note:** If a user tries to reset password more than 10 times it will display the message like **“Attempt limit exceeded. Please try again”**
-
