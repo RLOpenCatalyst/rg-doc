@@ -82,7 +82,7 @@ Steps to launch
 		b.  The pattern to match samples to be processed as inputs to the pipeline. Eg. /data/ggal/*_{1,2}.fq. It can also point to a csv or tsv file that contains details of the files to be processed. 
 	
 	* OutputDataLocation
-		a.  Defaultly you can see the output path in the field.
+		a.  You can see the output path in the field.
 		b.  You can see the product names with  realted paths when you search in  the OutputDataLocation field. 
 		c.  You can see the filter options like All/Studies/Shared/ProjectStorage/Study.
 		d.  You can see the default option like "**All**" in the filter.
@@ -99,8 +99,8 @@ Steps to connect
 2. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field. Click Submit. You should now be connected to the EC2 instance via SSH. Run the computation command in.
 3. Once you connected to the terminal, enter into the pipeline folder. 
 
-		a.  If you select the public pipeline, run the following command: **sudo nextflow run main.nf -profile test_full,docker,batch**
-		b. 	If you select the custom pipleline, run the following command: **sudo nextflow run script7.nf -profile batch**	
+		a.  If you select the public pipeline, run the following command: **sudo nextflow -bg run script7.nf -profile batch --reads='./data/ggal/*_{1,2}.fq'**
+		b. 	If you select the custom pipeline, run the following command: **sudo nextflow run script7.nf -profile batch** after you have kept the custom data in S3 bucket and changed the Pipeline input data pattern.
 
 4. Once computation flow is completed you can see the success information on the terminal.
 5. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
