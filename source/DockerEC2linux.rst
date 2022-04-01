@@ -1,10 +1,7 @@
-Amazon EC2 Linux
-================
-
-Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. The RLCatalyst Research Gateway standard EC2 product is based on Amazon Linux 2 and can be used for any general-purpose computer. 
+Docker on Amazon EC2 Linux
+==========================
+Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. The RLCatalyst Research Gateway standard EC2 product is based on Amazon Linux 2, docker is installed and can be used for any general-purpose computer.
 We have greatly simplified the parameters that you have to enter to create an instance so that you can get started very quickly. The product launches in a matter of a few minutes and is ready to go.
-
-`Watch a video on how to provision an EC2-Linux product <https://youtu.be/i7GLqo6M1cU>`_
 
 Parameters
 -----------
@@ -27,21 +24,22 @@ Parameters
      - Choose instance type in the drop-down list Eg: t2.small
    
 
-.. image:: images/ec2-linux.png
+.. image:: images/docker.png
 
 Steps to launch
 ----------------
 
 1. Click on the project on the “My Projects” page.
 2. Navigate to the available products tab
-3. Click the “Launch Now” button on the  “Amazon EC2-Linux” product card. A product order form will open. Fill the details in the form and click the “Launch Now” button. You will see an  Amazon EC2-Linux being created. In a few minutes, that product should appear in the “Active” state.
+3. Click the “Launch Now” button on the  “Docker on Amazon EC2-Linux” product card. A product order form will open. Fill the details in the form and click the “Launch Now” button. You will see an  Docker on Amazon EC2-Linux being created. In a few minutes, that product should appear in the “Active” state.
 
-Estimated time to provision -  5 minutes
+
+Estimated time to provision -  10 minutes
 
 Steps to connect
 ----------------
 
-You can connect to your EC2 instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command:
+You can connect to your Docker on Amazon EC2-Linux Instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command:
 
 If you are connecting from a Windows box you can use an SSH client like PuTTY.
 
@@ -50,7 +48,8 @@ If you are connecting from a Windows box you can use an SSH client like PuTTY.
 3. Click on your instance in the My Products view. 
 4. In the product details page, you will find the SSH/RDP button in the Connect pane on the right side. Click on the button to launch the SSH Launcher window in a separate tab of your browser. 
 5. Select the Key file and click submit. The SSH window should open.
-6. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+6. Confirm with Docker version (running)
+7. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 If you are unable to connect, check your current IP address against the “AllowedSSHLocation” parameter provided at provisioning time.
 

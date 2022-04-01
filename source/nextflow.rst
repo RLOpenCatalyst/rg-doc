@@ -107,6 +107,7 @@ Steps to connect
 6. You can monitor the pipeline through "Monitor Pipeline" option.
 7. You can view the outputs through "View Outputs" option.
 8. You can de-provision the product through the “Terminate” option.
+9. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 .. image:: images/advanced.png
 

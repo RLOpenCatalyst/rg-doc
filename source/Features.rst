@@ -276,7 +276,7 @@ How to add a new Project
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Login to the Research Gateway. Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
-.. image:: images/projectcreation.png 
+.. image:: images/budgetalert.png 
 
 Fill in the following details
 
@@ -298,10 +298,12 @@ Fill in the following details
      - <Select collaborators from the list or create a new user from the **"Add Users"** button> [optional]
    * - Add products
      - <Select catalog type from the list [Standard Catalog/Bring your own catalog]>
+   * - Cost Control
+     - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
    
 Click on the “Create Project” button. Added a new project successfully.
 
-**Note**: While creation of project, if you select "Standard catalog" option it will create 6 products(Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
+**Note**: While creation of project, if you select "Standard catalog" option it will create 7 products(Amazon S3, Amazon EC2 Linux, Amazon EC2 Windows, RStudio, Nextflow Advanced and Cromwell Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
 
 Project Storage
 ---------------
@@ -322,6 +324,22 @@ Research Gateway will set up a shared S3 bucket(Project Storage) where the team 
 Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in "My Projects" list.
 
 .. image:: images/myprojects.png 
+
+Cost Control
+------------
+
+1. Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 80%) or stopping the project (at 90%).
+2. When creating a project if you select the “Automatically respond to budget alerts” checkbox and it will open a pop up box which contains message, Once you confirm that it  will control the costs by taking automatic actions when budget thresholds are breached. By turning this feature off, you will lose the benefits of this cost control feature.
+
+.. image:: images/budgetalert.png
+
+3. You can manually stop/pause/resume the project through the actions which are available on the project details page.
+
+.. image:: images/projectevents.png
+
+4. You can see the events related to cost control in the events page
+
+.. image:: images/costcontrol1.png
 
 Once you click on the project, you can see the budget in the cards and remaining details will show a tabbed area with the following tabs:
 
@@ -390,6 +408,13 @@ b. The project is independent of the researcher. We can create an empty project 
 c. **My Projects** page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
    to a project details page. Click on the specific project you can navigate to the project details page.
 
+Auto-Stop Resources on Idle
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If there is no action happening in the provisioned RStudio product by default it will auto stop the product after 15 minutes. if you want to use product you can manually start the product again.
+
+.. image:: images/rstudio1.png
+ 
 .. _Users_PI:
 
 Users (for Principal Investigator)
@@ -533,7 +558,6 @@ The project status changed to “Stopped”. In a Stopped state all underlying r
 .. image:: images/stop2.png
 
 .. image:: images/stop3.png
-
 
 **Note**: 
 
@@ -884,6 +908,8 @@ You can see product related actions in the  Actions menu.
 
 4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
 
+5. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+
 Fill the following details
 
 .. list-table:: 
@@ -1062,8 +1088,8 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/sagemaker.png
 
-RStudio
--------
+RStudio Product
+---------------
 Researcher can login to the portal and quickly order RStudio product. Find the RStudio product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
@@ -1076,6 +1102,8 @@ You can see product related actions in the  Actions menu.
 4. Terminate action : Choose the "Terminate" option to de-provision the product.
 
 5. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+6. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following Details
 
@@ -1095,8 +1123,9 @@ Fill the following Details
 Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 
 
-Nextflow Advanced
------------------
+Nextflow Advanced Product
+-------------------------
+
 Researcher can login to the portal and quickly order Nextflow Advanced product. Find the Nextflow Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
@@ -1111,6 +1140,8 @@ You can see product related actions in the  Actions menu.
 5. Monitor Pipeline action : Through this you can monitor the pipeline.
 
 6. View Outputs action : Through this you can see the outputs.  
+
+7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following Details 
 
@@ -1129,8 +1160,8 @@ Fill the following Details
 	 
 Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 
-Cromwell Advanced
------------------
+Cromwell Advanced Product
+-------------------------
 Researcher can login to the portal and quickly order Cromwell Advanced product. Find the Cromwell Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
@@ -1161,6 +1192,78 @@ Fill the following Details
 	 
 Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 
+
+Docker on Amazon EC2 Linux product
+----------------------------------
+
+Researchers can login to the portal and quickly order  Docker on Amazon EC2 Linux product.
+Find the Provisioned Docker on Amazon EC2  Linux product i.e. EnvironmentalProtectionAgency in the My Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : You can terminate the product through “Terminate” action.
+
+4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+5. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+
+Fill the following details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Jump server user name>
+   * - Authentication Type
+     - <Choose password/Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+
+Click on the “Submit” button.
+
+**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+
+MySQL Product
+-------------
+
+Researchers can login to the portal and quickly order MySQL product.
+Find the Provisioned MySQL product i.e. EnvironmentalProtectionAgency in the My Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : You can terminate the product through “Terminate” action.
+
+4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+5. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+
+Fill the following details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Jump server user name>
+   * - Authentication Type
+     - <Choose password/Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+
+Click on the “Submit” button.
+
+**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
 
 HPC Product
 -----------

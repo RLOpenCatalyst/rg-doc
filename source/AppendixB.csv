@@ -167,7 +167,7 @@ Geos-Chem,Product Name,"Provide a name to help you easily identify this instance
 ,Latest AMI ID,AMI ID of the EC2 instance.
 ,Instance Type,GEOS-CHEM EC2 instance type. Choose instance type from the dropdown.
 ,Expected time to provision,15 Minutes
-Nextflow-Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
+Nextflow Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
 Eg: MedicalResearch
 "
 ,Nextflow Configuration,
@@ -175,7 +175,7 @@ Eg: MedicalResearch
 ",Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL. The repo should contain the nextflow.config file which specifies the name of the docker container image.
 ,PipelineContainer,"Public Docker container image of the pipeline to be executed. If you are using a custom pipeline, ensure that the custom container image is publicly available on Docker Hub. Eg: nextflow/rnaseq-nf:latest"
 ,InputDataLocation,"An S3 bucket which holds input data for the Nextflow pipeline. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens)."
-,InputDataPattern,"The pattern to match samples to be processed as inputs to the pipeline. E.g. data/ggal/*_{1,2}.fq. It can also point to a csv or tsv file that contains details of the files to be processed."
+,InputDataPattern,"The pattern to match samples to be processed as inputs to the pipeline. E.g. <data/ggal/*_{1,2}.fq>. It can also point to a csv or tsv file that contains details of the files to be processed."
 ,OutputDataLocation,"The full path on the local disk where outputs of the pipeline should be stored. The default path above will enable you to view the outputs via the browser. The path should be accessible to the user ec2-user. Alternately, provide an S3 bucket for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens). Eg: s3://<BucketName>"
 ,Head Node Configuration,
 ,InstanceType,"Head Node EC2 instance type
@@ -221,3 +221,19 @@ Eg: 100"
 ,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation. You can specify one or more family or instance type. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal "
 ,WorkerNodeEBSVolumeSize,The initial size of the volume (in GBs) Worker Node EBS will use for storage. Eg: 100
 ,Expected time to provision,10 Minutes
+Docker on Amazon EC2 Linux,Description,"Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. The RLCatalyst Research Gateway standard EC2 product is based on Amazon Linux 2, docker is installed and can be used for any general-purpose computer"
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
+,AllowedSSH Location,The IP address range that can be used to SSH to the EC2 instances
+,LatestAmiId,Please enter an  AMI of the EC2 instance.
+,Instance Type,Choose the instance type for this instance. Eg: t2.small
+,Expected time to provision,10 minutes
+MySQL,Description,"MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, covering the entire range from personal projects and websites, via e-commerce and information services"
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,ConnectFromPort,Provide which Port has to be opened in the Security Group of the EC2 Instance to access MySQL Docker Container Eg: 3306
+,ConnectToPort,Provide which Port has to be opened in the Security Group of the EC2 Instance to access MySQL Docker Container  Eg: 3306 
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
+,AllowedSSH Location,The IP address range that can be used to SSH to the EC2 instances
+,LatestAmiId,Please enter an  AMI of the EC2 instance.
+,Instance Type,Choose the instance type for this instance. Eg: t2.small
+,Expected time to provision,10 minutes

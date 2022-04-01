@@ -15,7 +15,7 @@ Appendix B
 
 .. csv-table::
    :file: AppendixB.csv
-   :widths: 90, 60, 100
+   :widths: 50, 40, 100
    :header-rows: 2
    
 .. _`Appendix C`:

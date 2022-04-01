@@ -193,7 +193,10 @@ Click on the **“Create Organization”** button. The new organizational unit i
 
 .. image:: images/addorg.png
 
-**NOTE**: You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
+**NOTE**: 
+
+1. You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
+2. You can create an organization without selection of account name.
 
 The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. 
 
@@ -295,8 +298,16 @@ Click on the contextual menu which is available at the right side of the account
 
 .. image:: images/Assign4.png
 
-**Note** : When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
+Click on the contextual menu which is available at the right side of the account name and choose the "Details" option. One window is opened which contains all project details.
 
+.. image:: images/Details.png
+
+.. image:: images/Details1.png
+
+**Note** : 
+
+1. When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
+2. If the project is already assigned to the organization then only you can see the details icon which is beside the account name or details option in the contextual menu.
 
 Secure connections to resources using ALB to RStudio and Nextflow-Advanced Products 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -311,7 +322,7 @@ Secure connections to resources using ALB to RStudio and Nextflow-Advanced Produ
    Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
 4. Navigate to the available products panel and launch Nextflow-Advanced with required parameters. Once the product is provisioned you can see the outputs through the “View Outputs”. You can monitor the pipeline through “Monitor Pipeline”.
 
-.. image:: images/actions-nf.png 
+.. image:: images/advanced.png 
 
 5. Navigate to the available products panel and launch RStudio with the required parameters. Once the product is provisioned you can connect to RStudio through the “Open link” action.
    
@@ -340,7 +351,7 @@ If Principal Investigator logs as a first time, you can view the welcome screen.
 
 Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
-.. image:: images/projectcreation.png
+.. image:: images/budgetalert.png
 
 Fill in the following details
 
@@ -362,6 +373,8 @@ Fill in the following details
      - <Select users from the list or create new collaborators through "Add Users" button.> [optional]
    * - Add Products
      - <Select any one of the catalog type from the list>
+   * - Cost Control
+     - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
 
 
 Click on the “Create Project” button. Added a new project successfully.
@@ -384,6 +397,20 @@ Research Gateway will set up a shared S3 bucket(Project Storage) where the team 
 3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
 4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
 
+Cost Control
+^^^^^^^^^^^^
+1. Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 80%) or stopping the project (at 90%).
+2. When creating a project if you select the “Automatically respond to budget alerts” checkbox and it will open a popup box which contains message, Once you confirm that it  will control the costs by taking automatic actions when budget thresholds are breached. By turning this feature off, you will lose the benefits of this cost control feature.
+
+.. image:: images/budgetalert.png
+
+3. You can manually stop/pause/resume the project through the actions which are available on the project details page.
+
+.. image:: images/projectevents.png
+
+4. You can see the events related to cost control in the events page
+
+.. image:: images/costcontrol1.png
 
 Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in **"My Projects"** list. 
 
@@ -406,7 +433,7 @@ Project Details
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
 
-.. image:: images/projectdetails.png 
+.. image:: images/projectevents.png 
 
 7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update List” button. It will add collaborators to the project. 
 

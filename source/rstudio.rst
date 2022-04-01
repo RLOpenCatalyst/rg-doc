@@ -44,8 +44,10 @@ Steps to connect
 1. Click on “Open Link” under the “Connect” list on the right side of the page. This will open the Rstudio in a new browser tab. 
 2. Click on the “SSH” button under the “Connect” list on the right side of the page. This will open the SSH Window in a new browser tab. 
 3. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field. Click Submit. You should now be connected to the EC2 instance via SSH. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+4. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
- .. image:: images/rstudio-actions.png
+ 
+ .. image:: images/rstudio1.png
  
 Other considerations
 --------------------
