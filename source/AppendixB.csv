@@ -237,3 +237,10 @@ MySQL,Description,"MySQL is the world's most popular open source database. With 
 ,LatestAmiId,Please enter an  AMI of the EC2 instance.
 ,Instance Type,Choose the instance type for this instance. Eg: t2.small
 ,Expected time to provision,10 minutes
+Ubuntu 20 04 on Amazon EC2 ,Description,"Use Ubuntu 20.04, on Amazon Elastic Compute Cloud (Amazon EC2)."
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
+,AllowedSSH Location,The IP address range that can be used to SSH to the EC2 instances
+,LatestAmiId,Please enter an  AMI of the EC2 instance.
+,Instance Type,Choose the instance type for this instance. Eg: t2.small
+,Expected time to provision,10 minutes

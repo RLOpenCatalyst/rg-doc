@@ -15,6 +15,7 @@ Ordering products in Research Gateway
    cromwell
    DockerEC2linux
    MySql
+   ubuntu
    
    
 

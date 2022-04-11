@@ -32,7 +32,7 @@ Steps to launch
 
 1. Click on the project on the “My Projects” page.
 2. Navigate to the available products tab
-3. Click the “Launch Now” button on the  “Amazon EC2-Windows” product card. A product order form will open. Fill the details in the form and click the “Launch Now” button. You will see an  Amazon EC2-Windows being created. In a few minutes, that product should appear in the “Active” state.
+3. Click the “Launch Now” button on the  “Amazon EC2 Windows” product card. A product order form will open. Fill the details in the form and click the “Launch Now” button. You will see an  Amazon EC2 Windows being created. In a few minutes, that product should appear in the “Active” state.
 
 Estimated time to provision -  5 minutes
 

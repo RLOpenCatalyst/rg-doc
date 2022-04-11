@@ -83,7 +83,12 @@ Steps to connect
 ----------------
 
 1. Click on the “SSH to Server” button under the “Connect” list on the right side of the page. This will open the SSH Window in a new browser tab. 
-2. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field. Click Submit. You should now be connected to the EC2 instance via SSH. Run the computation command in.
+2. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field and click on the "Submit" button. You should now be connected to the EC2 instance via SSH. To submit the workflow via curl use the following command:
+  
+   $ curl -X POST "http://localhost:8000/api/workflows/v1" \ -H "accept: application/json" \ -F "workflowSource=@filename.wdl" \ -F "workflowInputs=@filename.json"
+	  
+   Note: You will receive a response accordingly
+	
 3. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 4. You can view the outputs through “View Outputs” option.
 5. You can de-provision the product through the “Terminate” option.
