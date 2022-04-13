@@ -41,7 +41,7 @@ Estimated time to provision - 10 minutes
 Steps to connect
 ----------------
 
-You can connect to your EC2 instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command: ssh <your_username>@<host_ip_address>
+You can connect to your EC2 instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command: ssh -i <your_username>@<host_ip_address>
 
 If you are connecting from a Windows box you can use an SSH client like PuTTY.
 
@@ -49,7 +49,7 @@ If you are connecting from a Windows box you can use an SSH client like PuTTY.
 2. Navigate to the “My Products” tab
 3. Click on your instance in the My Products view. 
 4. In the product details page, you will find the SSH/RDP button in the Connect pane on the right side. Click on the button to launch the SSH Launcher window in a separate tab of your browser. 
-5. Enter  an username and  select the autentication type from the list, upload the Pem file and click submit. The SSH window should open.
+5. Enter a username and select the authentication type from the list and upload the Pem file and click on submit. The SSH window should open.
 6. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 If you are unable to connect, check your current IP address against the “AllowedSSHLocation” parameter provided at provisioning time.

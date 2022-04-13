@@ -17,7 +17,7 @@ Parameters
    * - KeyPair
      - Choose a KeyPair in the dropdown list. Note: If KeyPair is not available in the drop-down, click on the “+” button. A KeyPair creation form is opened. Fill the details in the form and click on the “Create KeyPair” button. Now that KeyPair is available in the list. Remember to save the private key file securely for future use. Do not share this file with others for the security of your account.
    * - LatestAmiId
-     - LatestAmiId - Provide the location from where to pick the latest AMI on which the instance should be based. Valid values are: Amazon Linux 2 - /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
+     - LatestAmiId - Provide the location from where to pick the latest AMI on which the instance should be based. Valid values are: Amazon Linux 2 - /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2 Note: The value provided is for Amazon Linux 2. The valid value for Ubuntu image should be picked from the Ubuntu yaml file.
    * - AllowedSSHLocation
      - This identifies the IP locations from where connections to this instance should be allowed. For the security of your instance, we recommend you allow connections only from your own location. You can find your IP using https://whatismyipaddress.com/
    * - InstanceType
@@ -38,7 +38,7 @@ Estimated time to provision - 10 minutes
 Steps to connect
 ----------------
 
-You can connect to your EC2 instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command: ssh <your_username>@<host_ip_address>
+You can connect to your EC2 instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command: ssh -i ubuntu@<host_ip_address> Eg: ssh -i mynewkeypair.pem ubuntu@53.54.55.56
 
 If you are connecting from a Windows box you can use an SSH client like PuTTY.
 
@@ -46,7 +46,7 @@ If you are connecting from a Windows box you can use an SSH client like PuTTY.
 2. Navigate to the “My Products” tab
 3. Click on your instance in the My Products view. 
 4. In the product details page, you will find the SSH/RDP button in the Connect pane on the right side. Click on the button to launch the SSH Launcher window in a separate tab of your browser. 
-5. Enter “Ubuntu” as the username, select the autentication type from the list and upload the Pem file and click on submit. The SSH window should open.
+5. Enter “Ubuntu” as the username, select the autentication type from the list and upload the Pem file and click on Submit. The SSH window should open. Run the computation command in.
 6. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 If you are unable to connect, check your current IP address against the “AllowedSSHLocation” parameter provided at provisioning time.
