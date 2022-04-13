@@ -263,7 +263,7 @@ Click on the “Add Account” button. An AWS account is added successfully. You
 **NOTE**: 
 
 1. The "Add Account" button was disabled until the details are verified.
-2. Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly.
+2. Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly. 
 
 On each line item there is a contextual menu. Through this we can delete and sync the account/repair the account.
 

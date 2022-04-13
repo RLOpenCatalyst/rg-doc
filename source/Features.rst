@@ -68,8 +68,20 @@ When Consumed Budget exceeds a threshold (say 80%), the budget management screen
 
 You can  also see researcher-wise budget details which are linked to a particular project and  you can see configured product details in product-wise budget details page.
  
-
 .. image:: images/Image4.png
+
+Cost allocation tags activation
+-------------------------------
+
+1. Login to your AWS account.
+2. Note that if your account is a child account under a master account, these actions will have to be done in the Master account.
+3. In the services search bar at the top, type "Billing", then click on the search result which says "Billing".
+4. In the Billing screen, click on "Cost Allocation tags" in the left-hand panel.
+
+.. image:: images/billing.png
+
+5. Approve the following tags: project_name, researcher_name and cost_resource. Once completion of this step the tags are activated.
+
 
 Users
 ^^^^^
