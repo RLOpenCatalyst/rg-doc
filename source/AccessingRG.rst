@@ -8,7 +8,7 @@ Accessing the RLCatalyst Research Gateway
 Sign-Up process
 ---------------
 
-You can follow the below instructions to create a new user in hosted shared model.
+You can follow the below instructions to create a new user in SAAS model.
 
 Sign up with a Google ID
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -62,6 +62,8 @@ Once logged in to your account, you will land on the Welcome page in Research Ga
 .. image:: images/registerform.png
 
 Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
+
+.. _`AccessingSignIn`: 
 
 Sign In Process
 ---------------
