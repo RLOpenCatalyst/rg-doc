@@ -33,6 +33,7 @@ Indices and tables
    Catalog
    KeyPair
    Studies
+   AddAccount
    Features
    Appendices
    
