@@ -10,14 +10,50 @@ Administrator Features
 
 An Administrator user can perform the following actions.
 
-  * :ref:`Add an Organizational Unit<Adding Organizational Units>`
-  * :ref:`Add AWS Accounts for projects<Adding AWS Accounts>`
+  .. * :ref:`Add an Organizational Unit<Adding Organizational Units>`
+    
+  * View: `Adding Organizational Units`_  
+  * :ref:`Add Account` Items      
   * View `Budgets`_
   * View the `Audit Trail`_
   * Add or Assign `Users`_
   * Assign :ref:`Catalog` Items
 
 If administrator logs as a first time, you can see the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Organization" screen.
+
+.. _Adding Organizational Units:  
+
+Adding Organizational Units 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^  
+
+To plan the creation of a new Organization, use the planning sheet in :ref:`Appendix A<Appendix A>` to collect all the information required upfront. Login into the Research Gateway. User landed to the  main dashboard.
+
+.. image:: images/OrganizationPage.png
+
+Click on the “+Add New” icon  which is at the top right corner. Organization form is opened.
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Organization Name
+     - <Name of the Organization> 
+   * - Organization Description
+     - <Description>
+   * - Account Details
+     - <Select account ID from the list or create new account through **"Add Accounts"** button >
+   * - Add Users
+     - <Select Principal Investigator ID from the list or create new one through **"Add users"** button > [Optional]
+	 
+Click on the **“Create Organization”** button. The new organizational unit is added successfully.
+
+.. image:: images/addorg.png
+
+**NOTE**: You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
+
+The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. 
 
 .. _Budgets:
 
