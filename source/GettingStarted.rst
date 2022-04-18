@@ -3,50 +3,91 @@ Getting Started
 
 Research Gateway is a cloud-based solution that makes it possible for researchers and other consumers of High Performance Computing to easily access resources in the AWS cloud.
 RLCatalyst Research Gateway is designed for simplicity and you can get started very quickly. 
-You can access this product either as a `hosted Silo model`_ or as a hosted Shared model.
+You can access this product either as a SAAS model.
 
-.. _hosted Silo model: https://relevancelab.com/2021/02/11/8-steps-to-set-up-rlcatalyst-research-gateway/
+.. .. _hosted Silo model: https://relevancelab.com/2021/02/11/8-steps-to-set-up-rlcatalyst-research-gateway/
 
-If you are using the hosted Silo model, you will be provided a public URL to which you can navigate using your browser. 
-You will also be provided with the credentials for the Administrator user.
+If you are using the Enterprise model, you will be provided a public URL to which you can navigate using your browser. 
+You will be given credentials for the Administrator user.
 
-If you are using the hosted Shared model, you can sign up with your details. Use details from :ref:`Accessing the RLCatalyst Research Gateway` to create a new user.
+If you are using the SAAS model, you can sign up with your details. Use details from :ref:`Accessing the RLCatalyst Research Gateway` to create a new user.
 
 .. contents::
 
-Planning your set up
+Enterprise Model
 --------------------
 
-Setting up your RLCatalyst Research Gateway for use involves the following steps.
 
-.. image:: images/FirstSetupTask.png 
+.. Setting up your RLCatalyst Research Gateway for use involves the following steps.
+
+.. .. image:: images/FirstSetupTask.png 
 
 Users with the Administrator role can perform the steps below.
 
-  * :ref:`Accessing the RLCatalyst Research Gateway` - Users can have Administrator, Principal Investigator or Researcher roles.
-  * `Adding AWS Accounts`_
-  * `Adding Organizational Units`_
-  * :ref:`Adding Catalog Items<Catalog>`
+  * :ref:`AccessingRG<AccessingSignIn>` - Users could have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Features<Adding Organizational Units>` for looking at updating Organizationl units and other features like budgets,Audit trail and Users.
+  * :ref:`Add Account` 
+  * :ref:`Adding Catalog Items<Catalog>` 
 
+
+  .. * :ref:`Add an Organizational Unit<Adding Organizational Units>`
+  .. * View `Adding Organizational Units`_  
+  .. * :ref:`Add AWS Accounts for projects<Adding AWS Accounts>`  
+  .. * View `Budgets`_
+  .. * View the `Audit Trail`_
+  .. * Add or Assign `Users`_
+  .. * Assign :ref:`Catalog` Items 
+  
 Users with the Principal Investigator role can perform the steps below.
   
+  * :ref:`Accessing the RLCatalyst Research Gateway` - Users could have Administrator, Principal Investigator or Researcher roles.
   * :ref:`Project ordering` to create projects.
   * :ref:`Adding Users<Users_PI>` - Users can have Principal Investigator or Researcher roles.
-  * `Adding AWS Accounts`_
-  * :ref:`Adding Catalog Items<Catalog_PI>`
+  * :ref:`Add Account`  
+  * :ref:`Adding Catalog Items<Catalog>`
+  * :ref:`KeyPair`:for creating the key pairs.
+  * :ref:`Studies` for creating the Studies.
   * `Assigning Researchers to projects`_
+
+Users with the Researcher role can perform the steps below.
+  
+  * :ref:`Accessing the RLCatalyst Research Gateway` - Users could have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Project ordering` to create projects.
+  * :ref:`KeyPair`:for creating the key pairs.
+  * :ref:`Studies` for creating the Studies.
+
+  
+SAAS Model  
+-------------  
+
+ Users with the Principal Investigator role can perform the steps below.
+  
+  * :ref:`Accessing the RLCatalyst Research Gateway` - Users could have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Project ordering` to create projects.
+  * :ref:`Adding Users<Users_PI>` - Users can have Principal Investigator or Researcher roles.
+  * :ref:`Add Account`  
+  * :ref:`Adding Catalog Items<Catalog>`  
+  * :ref:`KeyPair`:for creating the key pairs.
+  * :ref:`Studies` for creating the Studies.
+  * `Assigning Researchers to projects`_
+
+ Users with the Researcher role can perform the steps below.
+  
+  * :ref:`Accessing the RLCatalyst Research Gateway` - Users can have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Project ordering` to create projects.
+  * :ref:`KeyPair`:for creating the key pairs.
+  * :ref:`Studies` for creating the Studies.
+
 
 Create an Admin user
 --------------------
 
-If you have subscribed to the hosted version of the Research Gateway application, you would have created the Admin user during registration.
+If you have subscribed to the Enterprise model of the Research Gateway application, you would have created the Admin user during registration.
 You would have subsequently received an email with a link to confirm the Administrator user's email. Use these details to login into Research Gateway.
 
 
 
-
-
-.. _`Adding Organizational Units`:
+.. .. _`Adding Organizational Units`:
 
 Adding Organizational Units
 ---------------------------
@@ -80,7 +121,7 @@ Click on the **“Create Organization”** button. The new organizational unit i
 
 The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. 
 
-.. _`Adding AWS Accounts`:
+.. .. _`Adding AWS Accounts`:
 
 Adding an AWS account to use in a project
 ---------------------------------------------
@@ -174,30 +215,6 @@ Click on the contextual menu which is available at the right side of the account
 
 **Note** : When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
 
-
-Secure connections to resources using ALB 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. Research Gateway can set up secure connections to your resources by putting them behind an Application Load Balancer with SSL connections using certificates managed by AWS Certificate Manager.
-2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
-   Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
-   
- .. image:: images/ssl-alb.png 
- 
-3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
-   Note: Refer :ref:`Project ordering` for project creation.
-   Note - another document 
-   :ref:`my-reference-label`.
-
-`Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
-
-Navigation to help
-------------------
-Through the "Help" option, you can see the Research Gateway documentation. Click on the top-right menu which is available on the header. 
-
-.. image:: images/Help.png
-
-**Note:** There is Help option which is available on the footer, through this option also you can navigate to the  Research Gateway documentation.
 
 Assigning Researchers to projects
 ---------------------------------
