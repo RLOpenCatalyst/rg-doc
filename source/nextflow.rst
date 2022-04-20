@@ -3,7 +3,7 @@ Nextflow-Advanced
 
 Use the scalability of AWS Batch to run Nextflow workflows. This is ideal for large workloads and larger data-sets.
 
-`Watch a video on how to provision a Nextflow-Advanced product <https://youtu.be/DzdDANF_EgA>`_
+ `Watch a video on how to provision a Nextflow-Advanced product <https://youtu.be/DzdDANF_EgA>`_
 
 Parameters
 -----------
