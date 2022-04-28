@@ -3,167 +3,91 @@ Getting Started
 
 Research Gateway is a cloud-based solution that makes it possible for researchers and other consumers of High Performance Computing to easily access resources in the AWS cloud.
 RLCatalyst Research Gateway is designed for simplicity and you can get started very quickly. 
-You can access this product either as a `hosted Silo model`_ or as a hosted Shared model.
+You can access this product either as a SAAS model.
 
-.. _hosted Silo model: https://relevancelab.com/2021/02/11/8-steps-to-set-up-rlcatalyst-research-gateway/
+.. .. _hosted Silo model: https://relevancelab.com/2021/02/11/8-steps-to-set-up-rlcatalyst-research-gateway/
 
-If you are using the hosted Silo model, you will be provided a public URL to which you can navigate using your browser. 
-You will also be provided with the credentials for the Administrator user.
+If you are using the Enterprise model, you will be provided a public URL to which you can navigate using your browser. 
+You will be given credentials for the Administrator user.
 
-If you are using the hosted Shared model, you can sign up with your details. Use details from :ref:`Sign-Up <Sign-Up process>` to create a new user.
+If you are using the SAAS model, you can sign up with your details. Use details from :ref:`Accessing the RLCatalyst Research Gateway` to create a new user.
 
 .. contents::
 
-Planning your set up
+Enterprise Model
 --------------------
 
-Setting up your RLCatalyst Research Gateway for use involves the following steps.
 
-.. image:: images/FirstSetupTask.png 
+.. Setting up your RLCatalyst Research Gateway for use involves the following steps.
+
+.. .. image:: images/FirstSetupTask.png 
 
 Users with the Administrator role can perform the steps below.
 
-  * :ref:`Adding Users<Adding Users>` - Users can have Administrator, Principal Investigator or Researcher roles.
-  * `Adding AWS Accounts`_
-  * `Adding Organizational Units`_
-  * :ref:`Adding Catalog Items<Catalog>`
+  * :ref:`AccessingRG<AccessingSignIn>` - Users could have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Features<Adding Organizational Units>` for looking at updating Organizationl units and other features like budgets,Audit trail and Users.
+  * :ref:`Add Account` 
+  * :ref:`Adding Catalog Items<Catalog>` 
 
+
+  .. * :ref:`Add an Organizational Unit<Adding Organizational Units>`
+  .. * View `Adding Organizational Units`_  
+  .. * :ref:`Add AWS Accounts for projects<Adding AWS Accounts>`  
+  .. * View `Budgets`_
+  .. * View the `Audit Trail`_
+  .. * Add or Assign `Users`_
+  .. * Assign :ref:`Catalog` Items 
+  
 Users with the Principal Investigator role can perform the steps below.
   
-  * `Adding a New Project`_
+  * :ref:`Accessing the RLCatalyst Research Gateway` - Users could have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Project ordering` to create projects.
   * :ref:`Adding Users<Users_PI>` - Users can have Principal Investigator or Researcher roles.
-  * `Adding AWS Accounts`_
-  * :ref:`Adding Catalog Items<Catalog_PI>`
+  * :ref:`Add Account`  
+  * :ref:`Adding Catalog Items<Catalog>`
+  * :ref:`KeyPair`:for creating the key pairs.
+  * :ref:`Studies` for creating the Studies.
   * `Assigning Researchers to projects`_
+
+Users with the Researcher role can perform the steps below.
+  
+  * :ref:`Accessing the RLCatalyst Research Gateway` - Users could have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Project ordering` to create projects.
+  * :ref:`KeyPair`:for creating the key pairs.
+  * :ref:`Studies` for creating the Studies.
+
+  
+SAAS Model  
+-------------  
+
+ Users with the Principal Investigator role can perform the steps below.
+  
+  * :ref:`Accessing the RLCatalyst Research Gateway` - Users could have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Project ordering` to create projects.
+  * :ref:`Adding Users<Users_PI>` - Users can have Principal Investigator or Researcher roles.
+  * :ref:`Add Account`  
+  * :ref:`Adding Catalog Items<Catalog>`  
+  * :ref:`KeyPair`:for creating the key pairs.
+  * :ref:`Studies` for creating the Studies.
+  * `Assigning Researchers to projects`_
+
+ Users with the Researcher role can perform the steps below.
+  
+  * :ref:`Accessing the RLCatalyst Research Gateway` - Users can have Administrator, Principal Investigator or Researcher roles.
+  * :ref:`Project ordering` to create projects.
+  * :ref:`KeyPair`:for creating the key pairs.
+  * :ref:`Studies` for creating the Studies.
+
 
 Create an Admin user
 --------------------
 
-If you have subscribed to the hosted version of the Research Gateway application, you would have created the Admin user during registration.
+If you have subscribed to the Enterprise model of the Research Gateway application, you would have created the Admin user during registration.
 You would have subsequently received an email with a link to confirm the Administrator user's email. Use these details to login into Research Gateway.
 
-Sign-In Process
----------------
-Use details from :ref:`Forgot Password<Forgot Password>` for  Email, Password as per password policy.
 
-Fill the following details 
 
-.. list-table:: 
-   :widths: 50 50
-   :header-rows: 1
-
-   * - Field
-     - Details
-   * - Email
-     - <Email ID that is used for login>
-   * - Password
-     - <Password for this user>
-	 
-Click on the “Sign-In“ button. We can log in successfully.
-
-.. image:: images/login.png
-
-.. _`Forgot Password`:
-
-Forgot Password
----------------
-In case you have forgotten your password, you can use the “Forgot Password” link on the login screen which is under the "Sign In" button.
-
-Click the link to navigate to the reset password screen.  
-
-.. image:: images/forgot.png
-
-Fill the following details
-
-.. list-table:: 
-   :widths: 50, 50
-   :header-rows: 1
-
-   * - Field
-     - Details
-   * - E-mail address
-     - <Registered Email ID>
-   
-Click on "Send Resend link" button. If the provided details are valid, you will get a verification link on the registered email address to reset the password. On clicking the link in the email, the user is lead to the change password screen.  
-
-.. image:: images/verificationemail.png
-
-**Note**: The password policy should meet the following requirement
-   a. The minimum password length of 8 characters and a maximum of 16 characters.
-   b. It should have atleast one lower case character(a-z).
-   c. It should have atleast one upper case character(A-Z).
-   d. It should have atleast one number(0-9).
-   e. It should have atleast one special character (= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~).
-
-If the password change is successful you can navigate to the verification successful page. Through the "Click here to login button" you can navigate to the login screen.
- 
-If the password change is unsuccessful you can see the verification error screen. 
-
-.. image:: images/password.png
-
-.. image:: images/success.png
-
-.. _`Sign-Up process`:
-
-Sign-Up process
----------------
-
-You can follow the below instructions to create a new user in hosted shared model.
-
-Sign up with a Google ID
-^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. In a browser window, open the Research Gateway URL (https://research.rlcatalyst.com/login).
-2. Click on the “Sign up with Google” button.
-3. If you are already signed in to your Google account, you will be prompted to choose the Google account to use. Select an account.
-4. If you are not signed in to your Google account, you will be prompted for your credentials. Enter your Google account email address and password. 
-5. Once logged in to your account, you will land on the Welcome page in Research Gateway.
-
-.. image:: images/registerform.png
-
-Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
-
-Sign up with an Email address
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. In a browser window, open the Research Gateway URL (https://research.rlcatalyst.com/login).
-2. Click on the "Sign up for new account" link which is below the sign-in button. 
-3. A registration form will be opened. 
-
-.. image:: images/registerform.png
-
-Fill the following details 
-
-.. list-table:: 
-   :widths: 50 50
-   :header-rows: 1
-
-   * - Field
-     - Details
-   * - Email
-     - <Enter an Email ID>[Mandatory]
-   * - First Name
-     - <Enter first name> [Optional]
-   * - Last Name
-     - <Enter Last name> [Optional]
-   * - Phone number
-     - <Enter phone number of the user> [Optional]
-	 
-Click on the “Sign Up“ button. If the provided details are valid, you will receive a verification link on the registered email address to reset the password. On clicking the link in the email, you will be led to the change password screen.
-
-The password needs to confirm to the password policy. 
-
-.. image:: images/verificationemail2.png
-
-If the password change is successful you will be navigated to the verification successful page. Through the “Click here to login button” you will be navigated to the Research Gateway login screen.
-
-Once logged in to your account, you will land on the Welcome page in Research Gateway.
-
-.. image:: images/registerform.png
-
-Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
-
-.. _`Adding Organizational Units`:
+.. .. _`Adding Organizational Units`:
 
 Adding Organizational Units
 ---------------------------
@@ -197,7 +121,7 @@ Click on the **“Create Organization”** button. The new organizational unit i
 
 The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. 
 
-.. _`Adding AWS Accounts`:
+.. .. _`Adding AWS Accounts`:
 
 Adding an AWS account to use in a project
 ---------------------------------------------
@@ -213,12 +137,6 @@ Click on  the  “Settings” menu item. Provider settings page is opened.
    :name: Provider Settings Page
    
 **Note:**  When we add the settings please make sure the user credentials has the IAMFullAccess/AdministratorAccess Permissions. You can refer the list of policies that we are using create the role in Research Gateway.
-
-AccessPolicies
-
-.. literalinclude:: AccessPolicies.json
-  :language: JSON
-  :linenos:
 
 Click on  the  “+Add New” button in the provider setting page. The Add Provider setting dialog-box is opened.
 
@@ -297,166 +215,6 @@ Click on the contextual menu which is available at the right side of the account
 
 **Note** : When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
 
-
-Secure connections to resources using ALB to RStudio and Nextflow-Advanced Products 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-1. Research Gateway can set up secure connections to your resources by putting them behind an Application Load Balancer with SSL connections using certificates managed by AWS Certificate Manager.
-2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
-   Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
-   
- .. image:: images/ssl-alb.png 
- 
-3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
-   Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
-4. Navigate to the available products panel and launch Nextflow-Advanced with required parameters. Once the product is provisioned you can see the outputs through the “View Outputs”. You can monitor the pipeline through “Monitor Pipeline”.
-
-.. image:: images/actions-nf.png 
-
-5. Navigate to the available products panel and launch RStudio with the required parameters. Once the product is provisioned you can connect to RStudio through the “Open link” action.
-   
-.. image:: images/actions-rstudio.png 
-
-`Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
-
-Navigation to help
-------------------
-Through the "Help" option, you can see the Research Gateway documentation. Click on the top-right menu which is available on the header. 
-
-.. image:: images/Help.png
-
-**Note:** There is Help option which is available on the footer, through this option also you can navigate to the  Research Gateway documentation.
-
-.. _`Adding a new project`:
-
-Adding a new project
--------------------- 
-
-Login to the Research Gateway as a Principal Investigator. 
-
-If Principal Investigator logs as a first time, you can view the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. 
-
-.. image:: images/welcome.png
-
-Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
-
-.. image:: images/projectcreation.png
-
-Fill in the following details
-
-.. list-table:: 
-   :widths: 50, 50
-   :header-rows: 1
-
-   * - Attribute
-     - Details
-   * - Project Name
-     - <Project Name>
-   * - Project Description
-     - <Description about the project> 
-   * - Budget Available
-     - <Budget to allocate to this project (cumulative)> 
-   * - Account Details
-     - <Select an Account ID from the list. If accounts are not listed create a new account through "Add Accounts" button.> 
-   * - Add Users
-     - <Select users from the list or create new collaborators through "Add Users" button.> [optional]
-   * - Add Products
-     - <Select any one of the catalog type from the list>
-
-
-Click on the “Create Project” button. Added a new project successfully.
-
-**Note**: While creation of project, if you select "Standard Catalog" option it will create 6 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
-
-Project Storage
-^^^^^^^^^^^^^^^
-
-Research Gateway will set up a shared S3 bucket(Project Storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted for at the project level. For a lot of scientific research, data is stored in file format (e.g. fasta, fastq files for Genomics research). The natural choice for storage of this data could be S3 (inexpensive, highly elastic) or Elastic Block Storage (access is extremely fast). As part of project creation we are creating project storage(i.e., S3 Bucket) and sharing with users.
-
-1. The Project level storage will be listed as a product in the My Products tab inside the project as an S3 bucket. There is explore action inside the S3 bucket<<There is a folder called “Shared”.
-   Note: It is a common folder(only accessible by user unless shared)  and it  is available to all users.
-
-.. image:: images/projectstorage.png   
-
-.. image:: images/shared.png  
-
-2. You can able to view, upload and delete objects in the storage.
-3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
-4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
-
-
-Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in **"My Projects"** list. 
-
-.. image:: images/myprojects.png 
-
-
-Once you click on the project, you can see the budget in the cards and remaining details will show a tabbed area with the following tabs:
-   1. Project Details
-   2. Events
-   3. Available Products
-   4. My Products
-
-Project Details
-^^^^^^^^^^^^^^^
-
-1. You can view the project details here. If the project is in a failed state, you can repair the project through the “Repair” option. 
-2. You can see the project-related events in the “Events” tab.
-3. Click on the “Pause” action which is available on the right side. When you click on "Pause" action,  all the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible but the “Launch Now “ button would be hidden.
-4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
-5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
-6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-
-.. image:: images/projectdetails.png 
-
-7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update List” button. It will add collaborators to the project. 
-
-.. image:: images/manage.png
-
-Events
-^^^^^^
-
-You can see project-related events here.
-
-.. image:: images/events.png
-
-.. csv-table::
-   :file: ProjectEvents.csv
-   :widths: 10, 10, 30, 50
-   :header-rows: 1
-   
-Available Products
-^^^^^^^^^^^^^^^^^^
-
-1. You can view the Available Products information here and you can see products in a table view also.
-2. You can search based on product name and description. You can filter the products. We have following filter options:
-      
-	  a. **All** - You can see the all products here.
-	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
-	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon S3
-	  
-.. image:: images/availableproducts.png	 
-	 
-My Products
-^^^^^^^^^^^
-
-1. You can view the provisioned products details here and You can see products in a table view also.
-2. You can search the product name and description of the product.
-3. You can filter the products. We have following filter options:
-      
-	  a. **All** - You can see the all(i.e., active,terminated,stopped and failed) products here.
-	  b. **Active** - You can see all the active products here.
-	  c. **Terminated** - You can see all terminated products here.
-	 
-.. image:: images/myproducts.png
-
-**Note**:
-
-a. When adding a project we are passing collaborators information. Through this, we are linking collaborators to the project. 
-b. The project is independent of the researcher. We can create an empty project and add researchers later. Once project is active, we can add researchers through the "Manage" option which is at the project details screen.
-
-*My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
-
-.. image:: images/projectdetails.png 
 
 Assigning Researchers to projects
 ---------------------------------

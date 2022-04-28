@@ -12,7 +12,7 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('C:\\Users\\rle0547\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages'))
+sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
@@ -20,6 +20,7 @@ import sphinx_rtd_theme
 project = 'Research Gateway'
 copyright = '2021, Relevance Lab'
 author = 'Relevance Lab'
+master_doc = 'index'
 
 # The full version, including alpha/beta/rc tags
 release = '1.10.0'

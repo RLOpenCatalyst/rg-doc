@@ -28,9 +28,16 @@ Indices and tables
    WhatIsRG
    GettingStarted
    AccessingRG
+   ProjectOrdering
    OrderingProducts
+   Catalog
+   KeyPair
+   Studies
+   AddAccount
    Features
-   Appendices 
+   Appendices
+   
+    
 
 
 

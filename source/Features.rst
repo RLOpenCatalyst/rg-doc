@@ -10,14 +10,50 @@ Administrator Features
 
 An Administrator user can perform the following actions.
 
-  * :ref:`Add an Organizational Unit<Adding Organizational Units>`
-  * :ref:`Add AWS Accounts for projects<Adding AWS Accounts>`
+  .. * :ref:`Add an Organizational Unit<Adding Organizational Units>`
+    
+  * View: `Adding Organizational Units`_  
+  * :ref:`Add Account` Items      
   * View `Budgets`_
   * View the `Audit Trail`_
   * Add or Assign `Users`_
-  * Assign `Catalog`_ Items
+  * Assign :ref:`Catalog` Items
 
 If administrator logs as a first time, you can see the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Organization" screen.
+
+.. _Adding Organizational Units:  
+
+Adding Organizational Units 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^  
+
+To plan the creation of a new Organization, use the planning sheet in :ref:`Appendix A<Appendix A>` to collect all the information required upfront. Login into the Research Gateway. User landed to the  main dashboard.
+
+.. image:: images/OrganizationPage.png
+
+Click on the “+Add New” icon  which is at the top right corner. Organization form is opened.
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Organization Name
+     - <Name of the Organization> 
+   * - Organization Description
+     - <Description>
+   * - Account Details
+     - <Select account ID from the list or create new account through **"Add Accounts"** button >
+   * - Add Users
+     - <Select Principal Investigator ID from the list or create new one through **"Add users"** button > [Optional]
+	 
+Click on the **“Create Organization”** button. The new organizational unit is added successfully.
+
+.. image:: images/addorg.png
+
+**NOTE**: You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
+
+The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. 
 
 .. _Budgets:
 
@@ -210,44 +246,9 @@ You can filter the logs by admin, Principal Investigator, researcher, Organizati
 .. image:: images/Audit4.png
 
 
-.. _Catalog:
-
 Catalog
 ^^^^^^^
-As an Administrator you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. 
-   
-.. image:: images/catalog.png
-
-Click on the "Catalog" menu item. Through this, you can navigate to the Catalog details page.
-
-.. image:: images/catalog1.png
-
-You can see the standard catalog products on the listing page and you can enable the checkbox which is at the right side of the product and assign to a particular  O.U through the “Assign selected to O.U” button.
-
-.. image:: images/sc.png
-
-.. image:: images/assign2.png
-
-You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
-
-.. image:: images/update.png
-
-.. image:: images/update1.png
-
-You can search  product name and description of the product. We have following filter options:
- 
-  a. **All** : You can see all products here.
-  b. **Compute** :  You can see compute related products here.
-  c. **Storage**  : You can see storage related products here.
-  d. **Application** : You can see application related products here.
- 
- .. image:: images/filter1.png
- 
- .. image:: images/compute.png
- 
-If we could not find any products related to the filter you can see the message like “We could not find any products that matched your search”.
-
-.. image:: images/search3.png
+Use details from :ref:`Catalog` 
 
 **NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog products.
 
@@ -274,89 +275,9 @@ Clicking on a specific project will leads to a project details page.
 
 How to add a new Project 
 ^^^^^^^^^^^^^^^^^^^^^^^^
-Login to the Research Gateway. Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
+Use details from :ref:`Project ordering` to create projects.
 
-.. image:: images/projectcreation.png 
-
-Fill in the following details
-
-.. list-table:: 
-   :widths: 90, 90
-   :header-rows: 1
-
-   * - Attribute
-     - Details
-   * - Project Name
-     - <Project Name>
-   * - Project Description
-     - <Description about the project> 
-   * - Budget Available
-     - <Budget to allocate to this project (cumulative)>
-   * - Account Details 
-     - <Select an Account ID in the list or create a new account form the **"Add Accounts"** button>
-   * - Add Users
-     - <Select collaborators from the list or create a new user from the **"Add Users"** button> [optional]
-   * - Add products
-     - <Select catalog type from the list [Standard Catalog/Bring your own catalog]>
-   
-Click on the “Create Project” button. Added a new project successfully.
-
-**Note**: While creation of project, if you select "Standard catalog" option it will create 6 products(Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
-
-Project Storage
----------------
-
-Research Gateway will set up a shared S3 bucket(Project Storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted for at the project level. For a lot of scientific research, data is stored in file format (e.g. fasta, fastq files for Genomics research). The natural choice for storage of this data could be S3 (inexpensive, highly elastic) or Elastic Block Storage (access is extremely fast). As part of project creation we are creating project storage(i.e., S3 Bucket) and sharing with users. At the same time, we would also like individual users to be able to access personal storage from their computing resources. 
-
-1. The Project level storage will be listed as a product in the My Products tab inside the project as an S3 bucket. There is explore action inside the S3 bucket<<There is a folder called “Shared”.
-   Note: It is a common folder(only accessible by user unless shared)  and it  is available to all users.
-
-.. image:: images/projectstorage.png   
-
-.. image:: images/shared.png  
-
-2. You can able to view, upload and delete objects in the storage.
-3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
-4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
-
-Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in "My Projects" list.
-
-.. image:: images/myprojects.png 
-
-Once you click on the project, you can see the budget in the cards and remaining details will show a tabbed area with the following tabs:
-
-   1. Project Details
-   2. Events
-   3. Available Products
-   4. My Products
-
-Project Details Tab
--------------------
-
-1. You can view the project details here. 
-2. If the project was a failed state, you can repair the project through the “Repair” option.
-3. Click on the “Pause” action which is available on the right side. When you click on "Pause" action,  all the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible but the “Launch Now “ button would be hidden.
-4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
-5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
-6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher emails and click on the “Update List” button. It should add collaborators to the project.
-
-.. image:: images/projectdetails.png 
-
-Note: Whenever you clicked on the budget it will navigated to researcher-wise budget details page.
-
-Events Tab
-----------
-
-You can see the project-related events here.
-
-.. image:: images/events.png
-
-.. csv-table::
-   :file: ProjectEvents.csv
-   :widths: 20, 20, 50, 50
-   :header-rows: 1
-   
+ 
 Available Products Tab
 -----------------------
 
@@ -582,81 +503,14 @@ You can see researcher budget details which are linked to particular products an
 
 .. image:: images/budget4.png
 
-.. _Catalog_PI:
 
 Catalog (for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-As a Principal Investigator, you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. You can see the  following details: 
-   
-.. image:: images/cat1.png
-
-Click on the **Catalog** menu item to navigate to the Catalog screen.
-
-.. image:: images/cat2.png
-
-You can see the standard catalog products on the listing page. To assign a set of items to an Organizational Unit, select the items by checking the checkbox which is at the right corner of each product card. Then click the  "Assign selected to a project" button.
-
-.. image:: images/assign2.png
-
-.. image:: images/sc2.png
-
-You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
-
-.. image:: images/update.png
-
-.. image:: images/update1.png
-
-You can use the search field to search for a term in the product name and description of the product. You can also use the filter options as below :
-  
- a. **All** : You can see all products here.
- 
- b. **Research** :  You can see the products realted to compute and analytics here. Eg: Amazon EC2
- 
- c. **IT Application** : You can see application related products here.
- 
-  .. image:: images/filter1.png
-  
-  .. image:: images/compute.png
-  
-  .. image:: images/storage.png
- 
-If we could not find any products related to the filter you can see the message like “We could not find any products that matched your search”.
-
-.. image:: images/search3.png
+Use details from :ref:`Catalog`
 
 Key Pairs(for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The Key Pairs screen can be used by the Principal Investigator to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
-
- .. image:: images/key1.png
-
-.. image:: images/key2.png
-
-You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
-  
-Click on the "+Create New" button which is available at right side of the page. Fill the deatils in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
-
-.. image:: images/key3.png
-
-
-You can see key Pairs details in table format:
-
-.. csv-table::
-   :file: keypair.csv
-   :widths: 20, 20, 20, 20, 20
-   :header-rows: 1
-
-The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
-
-.. image:: images/deletionkeypair.png
-
-You can search the keypair through Keypair name and Project name.
-
-Ex: Type “Chiron” in the search area it should display the keypairs which are attached to the Chiron project.
-
-.. image:: images/se1.png
-
+Use details from :ref:`KeyPair` to look at Key pairs.
 
 Studies(for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -682,38 +536,7 @@ The studies landing page has a search bar that allows users to search the studie
 
 .. image:: images/sea1.png
 
-Public Study(for Principal Investigator)
-----------------------------------------
-You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
-
-	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
-	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
-											
- .. image:: images/sc3.png
- 
- .. image:: images/public.png
-  
-**Explore Action**
-
-You can see the files/folders which are  related to the datastore.
-
-.. image:: images/ex1.png
-
-**Link/Unlink Action**
-
-1. A user will be able to link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a pop-up that will have the list (dropdown) of active sagemakers for that user.
-2. You can see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
-4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
- 
- .. image:: images/link2.png
- 
- .. image:: images/unlink.png
- 
- .. image:: images/unlink2.png
-  
- .. image:: images/link1.png  
- 
+Please look at :ref:`Studies` for exact details.
 
 
 Researcher Features
@@ -723,12 +546,12 @@ As a Researcher you can view all your projects when you login to Research Gatewa
 
 .. image:: images/ResearcherLanding.png
  
-Researcher can view service catalog products available for the project. Click on a project card to navigate to the Project Details page. You can see KPI cards, available products and active products information in the project details page.
+Researcher can view service catalog products available for the project. Click on a project card to navigate to the Project Details page. You can see available cards, available products and active products information in the project details page.
 
-KPI Cards
-^^^^^^^^^
+Available Cards
+^^^^^^^^^^^^^^^
 
-You can see the following KPI cards:
+You can see the following available cards:
 a. Available Project Budget
 b. Consumed Project Budget
 c. My Consumed Budget
@@ -773,24 +596,6 @@ d. **Filter** - We have following filter options:
 .. image:: images/available.png
 
 **NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog Products.
-
-**Secure connections to resources using ALB to RStudio and Nextflow-Advanced products**
-
-1. Research Gateway can set up secure connections to your resources by putting them behind an Application Load Balancer with SSL connections using certificates managed by AWS Certificate Manager.
-2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
-   Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
-   
- .. image:: images/ssl-alb.png 
- 
-3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
-   Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
-4. Navigate to the available products panel and launch Nextflow-Advanced with required parameters. Once the product is provisioned you can see the outputs through the “View Outputs”. You can monitor the pipeline through “Monitor Pipeline”.
-
-.. image:: images/actions-nf.png 
-
-5. Navigate to the available products panel and launch RStudio with the required parameters. Once the product is provisioned you can connect to RStudio through the “Open link” action.
-   
-.. image:: images/actions-rstudio.png 
 
 `Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
 
@@ -864,6 +669,7 @@ When you click any action(Start/Stop/Terminate) in a provisioned product, state 
 **NOTE**: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**The instance-id of the product is not available. Please try after some time**".
 
 .. image:: images/instance.png
+
 
 
 Actions available for products
@@ -1174,6 +980,7 @@ AWS provides the most elastic and scalable cloud infrastructure to run your HPC 
 
 **Navigation to the other screens**
 
+
 Click on the “☰”  Symbol which is available on the left side header. You can see a menu like :
 
 1. **My Projects** : Through this, you can navigate to My Projects page
@@ -1238,231 +1045,15 @@ The studies landing page has a search bar that allows users to search the collec
 
 .. image:: images/sea1.png
 
-Personal Study
---------------
-A researcher may have his own data or a Principal may create a data-store that is shared across researchers in the same project through the “Share” option. The “Study” details page will show a tabbed area with the following tabs:
-   1. Study details
-   2. Product details
 
-The “Study details” tab will show all the details of the study available in the collection. The actions associated with the study will be shown in an actions bar on the right side of the page. The “Product details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
-
- .. image:: images/personal.png
- 
- .. image:: images/sc4.png
-
-**Explore Action**
- 
-Through this action, you can see all the files and folders in the S3 bucket with actions (download, delete) against each item.
-  a. For folders, the user will be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
-  b. For any deeper level, the user will be able to navigate back to an upper level.
-  c. You can upload the different files (The file should not contain more than 10MB).
-  
- .. image:: images/ex1.png
- 
-**Link/Unlink Action**
- 
-1. A user can link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a 
-   p-up that will have the list (dropdown) of active sagemakers for that user.
-2. You will see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
-4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker 
-   product from the available products page first, before linking to an s3 bucket**.
-
- .. image:: images/link1.png  
- 
- .. image:: images/unlink.png
-
- .. image:: images/unlink2.png
- 
-**Share Action**
- 
-Choose the option like “Share”. Through this, you can share the details with other team members. If there are no researchers in the list it will show a message like “No researchers are available. Please add a new researcher to share the s3 bucket “
-
- .. image:: images/share1.png
- 
- .. image:: images/share3.png
- 
-**Terminate Action**
-
-You can terminate the study through the “Terminate” option.
-
- .. image:: images/ter1.png
-
-Public Study
-------------
-You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
-
-	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
-	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
-											
- .. image:: images/sc3.png
- 
- .. image:: images/public.png
-  
-**Explore Action**
-
-You can see the files/folders which are  related to the datastore.
-
-.. image:: images/ex1.png
-
-**Link/Unlink Action**
-
-1. A user will be able to link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a pop-up that will have the list (dropdown) of active sagemakers for that user.
-2. You can see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
-4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
- 
- .. image:: images/link2.png
- 
- .. image:: images/unlink.png
- 
- .. image:: images/unlink2.png
-  
- .. image:: images/link1.png  
+Please look at :ref:`Studies` for exact details.
  
 
 Key Pairs (For Researcher)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
-The Key Pairs screen can be used by the Researcher to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
-
- .. image:: images/key1.png
-
-.. image:: images/key2.png
-
-You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
-  
-Click on the "+Create New" button which is available at right side of the page. Fill the deatils in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
-
-.. image:: images/key3.png
+Plese use :ref:`KeyPair` 
 
 
-You can see key Pairs details in table format:
-
-.. csv-table::
-   :file: keypair.csv
-   :widths: 20, 20, 20, 20, 20
-   :header-rows: 1
-
-The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
-
-.. image:: images/deletionkeypair.png
-
-You can search the keypair through Keypair name and Project name.
-
-Ex: Type “Chiron” in the search area it should display the keypairs which are attached to the Chiron project.
-
-.. image:: images/se1.png
-
-
-
-Instance-wide Features
-++++++++++++++++++++++
-
-SAML Integration using OKTA as an example
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-SAML stands for Security Assertion Markup Language, an open standard that passes authorization credentials from identity providers (IdPs) to service providers (SPs). SAML is the link between the authentication of a user’s identity and the authorization to use a service. It’s the language that helps IdPs and SPs communicate. 
-
-Within the SAML workflow, OKTA can act as both the IdP and SP. When a user requests access to a third-party application registered with OKTA, they are redirected to the OKTA dashboard. SAML is most frequently used to enable single sign-on (SSO), which authenticates accredited users between an identity provider and a service provider.
-
-As an example, We can do it with OKTA. You can follow the below SAML integration steps with OKTA.
-
-Configuration steps for Research Gateway application in OKTA
-------------------------------------------------------------
-
-1. Sign in to your OKTA tenant as an administrator.
-2. In the Admin Console, navigate to **Applications-->Applications**.
-3. Click on the “**Add Application**” button.
-4. Click on the “**Create New App**”  button.
-5. In the Create a New Application dialog
-	a. Select platform as “Web”.
-	b. Select SAML 2.0 in the Sign-on method section.
-	c. Click on the “**Create**” button.
-6. On the General Settings tab, enter an application name for your integration and upload a logo and click on the “**Next**” button. 
-7. On the Configure SAML tab, configure the following things.
-    a. In the Single Sign-on URL, enter the Assertion Consumer Service (ACS) URL
-	b. Enter the Audience URI into the Audience URI (SP Entity ID) field.
-	c. Choose the Name ID format and application username that must be sent to your application in the SAML response.
-	d. In the **Attribute Statements** section, enter the SAML attributes to be shared with your application. 
-	
-       .. image:: images/statement1.png	
-
-   e. For Group Attribute Statement follow the below things. 
-   
-       .. image:: images/statement2.png
-
-8. Click the “**Next**” button.
-9. Fill the Feedback form and click on the “**Finish**” button.
-
-
-Research Gateway supports integration with Identity Providers that support SAML 2.0. If you need your instance of the gateway integrated with your IdP please contact us.	
-
-Research Gateway as SaaS solution on AWS Marketplace
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Research Gateway is available as a software as a service (SaaS) solution on AWS Marketplace as a SaaS Contract on Monthly or Annual basis. Customers can choose to auto-renew their contacts on expiry.
-
-SaaS Subscription Steps
------------------------
-The below steps that will be done for publishing our product as Saas in the AWS marketplace.
-
-**a. User Subscription**
-
-When our product has been listed for consumption in the AWS marketplace, customers can subscribe to our product.
-
-1. Log in to AWS account with valid credentials. Navigate to AWS Marketplace.
-2. Type “RLCatalyst” in the search bar. You can see the result as **RLCatalyst Research Gateway(Saas)**. 
-
-    a. Show the pricing information(Small/Medium/Large). 
-	b. Show option of Monthly or Annual. 
-	c. Show option of Auto-renewal (Yes/No).
-	
- Click on the **Continue on Subscribe** button which is available at the top right side of the page. Fill the required parameters like contract options and renewal settings. Now click on the “Create contract” button. Click on “Pay Now” button. After completion of payment options, the user will be redirected to the RG registration website.
- 
-**b. Registration page**
-
-After subscribing to the product, the customer is directed to a website we create and manage as a part of our SaaS product to register their account and conﬁgure the product. When creating our product, we provide a URL to our registration landing page. AWS Marketplace 
-uses that URL to redirect customers to our registration landing page after they subscribe. On our software's registration URL, we collect whatever information is required to create an account for the customer. After successful registration, we will be notifying the customer 
-when the product is available for them to consume with a login URL and admin credentials.
-
-**c. Create a new instance of the portal**
-
-When a new customer signs up for our product, we will be creating a new instance of our product and host it in a different environment for 
-the customer. An URL will be created for the new environment which they will be shared with the customer. Once a new environment 
-is created, we will seed admin credentials to the database and the same will be shared with the customer along with the URL created in the previous step.
-
-1. Login to the Research Gateway  with the new password. Navigate to the Provider settings and click on the “+Add New” button ---Fill the required parameters and click on the “Add” button.
-2. Navigate to the “Users” through the left navigation menu.
-3. Click on the “+Add New” button in the users listing page. A new user form opened. Fill the required parameters and click on the “Add User” button. A new user with PI role was created.
-4. Navigate to “Users” through the left navigation menu. Click on the “+Add New” button in the users listing page. A new user form opened. Fill the required parameters and click on the “Add User” button. A new user with a researcher role was created.
-   **Note**: Assign the researcher to the organization while .
-5. Navigate to “My Organization” through the left navigation menu . Users can create a new organization with the “+Add New” button on the landing page.
-6. Navigate to catalog through the left navigation menu . In the filter select the “View -Standard catalog “  option and enable the checkboxes which are available at the right side of the products and click on the “Assign to selected O.U” button. Select the organization in the list box and click on the “Assign” button.
-7. Login to PI account<<Create a new project with the “+Add New” button on the landing page.
-   **Note**: You need to select the researcher from the list.
-8. Navigate to the catalog through the left navigation menu and choose the  “View-O.U catalog” in the filter and enable the checkboxes which are at the right side of the products and click on “Assign to a project” button and on Successful completion of assign you can see green color toaster message.
-9. Login as Researcher <<Navigate to the project details page--you can see the assigned catalog products in the available products panel. 
-   Choose the product and click on the **Launch Now** button. Fill the required parameters in the form and launch it. 
-   **Note**: While creating the EC2 we need to enter the key pair name.  Navigate to the keypairs through the left navigation menu. Click on the “+Create New” button. Fill the required parameters and click on the “Create key pair” button. New key pair was created. Now navigate to the available products panel. Choose EC2 product and fill the params and click on the “Launch Now” button. The product was launched successfully.
-
-**d. Tracking usage**
-
-When the product is live for the customer to use, we have to track the usage of the customer based on the pricing model they chose while subscribing to our product and the dimension they are consuming. For software as a service (SaaS) subscriptions, we meter for all usage, and then customers are billed by AWS based on the metering records that we provide. For SaaS contracts, we only make sure that the customer is not using the product beyond the contract’s entitlements.
-
-
-Securely managing multiple AWS accounts with Cross-Account IAM-Roles
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can use AWS Identity and Access Management (IAM) roles to grant access to resources in your AWS account, another AWS account you own, or a third-party account. We are taking your credentials and creating the roles that’s why we want your IAMFull access/Administrator Access. 
-
-Role Creation Process in Research Gateway
------------------------------------------
-
-1. While adding the settings once you provide the credentials, we will verify the credentials and give the required access.
-2. Later we created the role and attached the required policy and this was created by Research Gateway.
-3. We shouldn’t use your credentials in any other place.
-
-Role usage
-----------
-Whenever the call is made to your AWS account we assume the created role and get the temporary credentials and proceed with the action.
 
 
 
