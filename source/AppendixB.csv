@@ -195,3 +195,29 @@ Eg: 100"
 ,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation. You can specify one or more family or instance type. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal "
 ,WorkerNodeEBSVolumeSize,The initial size of the volume (in GBs) Worker Node EBS will use for storage. Eg: 100
 ,Expected time to provision,10 Minutes
+Cromwell Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
+Eg: MedicalResearch
+"
+,Cromwell Configuration,
+,"PipelineName
+",Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL.
+,InputDataLocation,An S3 bucket path which holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
+,OutputDataLocation,An S3 bucket path which holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
+,Head Node Configuration,
+,InstanceType,"Head Node EC2 instance type
+Eg: t2.small"
+,HeadNodeEBSVolumeSize,"The initial size of the volume (in GBs) Head Node EBS will use for storage.
+Eg: 16 "
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the Head Node. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
+,AllowedSSHLocation,The IP address range that can be used to SSH to the Head Node.
+,Batch Configuration,
+,VPCId,Choose VPC Id in the drop-down list. The VPC to create security groups and deploy AWS Batch to. NOTE: Must be the same VPC as the provided subnet IDs.
+,WorkerNodeSubnetId,Subnet you want your Batch Worker Node to launch in  We recommend public subnets.
+,ComputeEnvMinvCpus,"The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost. Eg: 0"
+,ComputeEnvMaxvCpus,"The maximum number of CPUs for the default Batch Compute Environment
+Eg: 100"
+,SpotBidPercentage,"The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage.
+Eg: 100"
+,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation. You can specify one or more family or instance type. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal "
+,WorkerNodeEBSVolumeSize,The initial size of the volume (in GBs) Worker Node EBS will use for storage. Eg: 100
+,Expected time to provision,10 Minutes

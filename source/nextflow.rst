@@ -1,4 +1,4 @@
-Nextflow-Advanced
+Nextflow Advanced
 =================
 
 Use the scalability of AWS Batch to run Nextflow workflows. This is ideal for large workloads and larger data-sets.
@@ -79,13 +79,13 @@ Steps to launch
 		
 	* InputDataPattern
 		a.	This is a plain edit field. 
-		b.  The pattern to match samples to be processed as inputs to the pipeline. Eg. /data/ggal/*_{1,2}.fq. It can also point to a csv or tsv file that contains details of the files to be processed. 
+		b.  The pattern to match samples to be processed as inputs to the pipeline (Eg: /data/ggal/*_{1,2}.fq). It can also point to a csv or tsv file that contains details of the files to be processed. 
 	
 	* OutputDataLocation
 		a.  You can see the output path in the field.
 		b.  You can see the product names with  realted paths when you search in  the OutputDataLocation field. 
 		c.  You can see the filter options like All/Studies/Shared/ProjectStorage/Study.
-		d.  You can see the default option like "**All**" in the filter.
+		d.  You can see the default option like "*All*" in the filter.
 		e.  If you type the invaliad characters it will throw an error message accordingly.
   
 4. Click on the “Launch Now” button. You will see a  “Nextflow-Advanced” being created. In a few minutes, that product should appear in the “Active” state.

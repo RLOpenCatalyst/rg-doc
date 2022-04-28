@@ -671,7 +671,315 @@ When you click any action(Start/Stop/Terminate) in a provisioned product, state 
 .. image:: images/instance.png
 
 
-**Navigation to the screens**
+
+Actions available for products
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+EC2-Linux Product
+----------------- 
+
+Researchers can login to the portal and quickly order  EC2 products.
+Find the Provisioned EC2 product i.e. EnvironmentalProtectionAgency in the My Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : You can terminate the product through “Terminate” action.
+
+4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+Fill the following details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Jump server user name>
+   * - Authentication Type
+     - <Choose password/Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+
+Click on the “Submit” button.
+
+**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+
+
+.. image:: images/E2E.png
+
+.. image:: images/E2E2.png
+
+
+EC2-Windows Product
+-------------------
+
+Researchers can login to the Research Gateway and quickly order Amazon EC2-Windows products.
+Find the Provisioned Amazon EC2-Windows product in the My Products panel and click on it.
+You can see the product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+4. SSH/RDP action : Choose the “RDP” action. Through this you can connect to the Remote Desktop in a new window.
+
+Fill the following Details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Username>
+   * - Authentication Type
+     - <Choose Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+	 
+Click on the “Submit” button. 
+
+.. image:: images/RDP.png
+
+**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+ 
+It will navigated to the password generation page. Before the downloading the RDP file you should copy/save the password and unhide it and click on the “Download RDP file" button. 
+
+.. image:: images/RDP1.png
+
+Once completed the download right-click on the file and choose the “Connect” option. Enter the username and password in a remote desktop connection window. 
+Due to the nature of self-signed certificates, you might get a warning that the security certificate could not be authenticated. To verify that simply choose [Yes] in the Remote Desktop Connection window. You can connect to the remote desktop successfully.
+
+**NOTE**: When we launch a new instance, password generation and encryption may take few minutes. We need to wait for 5-10 mins after the instance is created, if you upload any pem file before 10 mins, you can see a message like “**Password not available yet. Please wait at least 4 minutes after launching an instance before trying to retrieve the password**”
+
+S3 Product
+-----------
+
+As a Researcher, you can login to the Research Gateway and quickly order S3 Product.
+Find the S3 in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+**1. Upload Action**
+
+Choose the “Upload” option. Through this you can upload a file to the S3 bucket.
+
+*Note:* When you try to upload more than 10MB file you will see a message like **"The size of this file is larger than the maximum(10MB) size allowed on this system. Please contact your administrator."**
+
+.. image:: images/testingevent2.png
+
+
+**2. Share Action**
+
+
+Choose the “Share” option. Through this you can  share the details to other team members.
+
+**NOTE:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket"**
+
+.. image:: images/testingevent1.png
+
+.. image:: images/testingevent3.png
+
+
+.. image:: images/testingevent4.png
+
+**3. Unshare Action**
+
+Choose the "Unshare" option. Through this you can unshare the details from the earlier shared team member.  
+
+.. image:: images/unshare.png
+
+.. image:: images/unshare1.png
+
+**Note:** The "Unshare" option is available only when the bucket is shared with other researchers. The owner(i.e.,person who provisioned product) can do the share and unshare. 
+
+**Note:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket.“**
+
+**4. Terminate Action**
+
+Choose the "Terminate" option to de-provision the product.
+
+There is a check to find out whether the file exists in the bucket or not. If exists it will throw an error message **”The bucket is not empty. Please delete all contents from the bucket and try again.”**
+
+
+.. image:: images/action.png
+
+
+**5. Explore Action**
+
+a. In the product details screen of the newly created S3 bucket, click the “Explore” action. Through this action you can see all the files and folders in the S3 bucket with actions (download, delete) against each item.
+
+.. image:: images/s3-actions.png 
+.. image:: images/basic.png
+
+b. For folders the user will be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
+c. For any deeper level, the user will be able to navigate back to an upper level.
+d. Click on the “Upload” action. Click on "Add files" to upload multiple files. The file size should not be greater than 5 GB. Click on "Add folder" to upload entire folder to S3. Click on the “submit” button and the file will be uploaded to the bucket. 
+
+.. image:: images/multifiles.png 
+.. image:: images/upload2.png
+
+**6. Link Action**
+
+You have to link Sagemaker from the S3 product details page using the provisioned product ID.
+For a S3 Provisioned Product, you should have a new action item called “Link”
+
+
+.. image:: images/linking.png 
+
+
+This action item should be a pop up which will have the list (dropdown) of active sagemakers for that user.
+
+.. image:: images/linking2.png
+
+You should have an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
+You should also see an “Unlink action” to unlink sagemakers from s3 bucket side. You are providing “Copy bucket name” action from sagemaker product side.
+
+
+.. image:: images/event.png
+
+.. image:: images/event2.png
+
+
+If there are no active sagemaker products we are showing the following message to the user “There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first,before linking to an s3 bucket”.
+
+.. image:: images/computerresource.png 
+
+
+SageMaker Product
+-----------------
+
+Researcher can login to the portal and quickly order SageMaker product.
+Find the Sagemaker product in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Open Notebook : You can navigate to notebook through “Open Notebook“ action.
+
+2. Start/Stop action : You can stop the instance through “Start/Stop” action. Based on the instance state, you will see either the Start or the Stop action.
+
+3. Terminate Action: You can terminate the product through “Terminate” action.
+
+.. image:: images/sagemaker.png
+
+RStudio
+-------
+Researcher can login to the portal and quickly order RStudio product. Find the RStudio product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
+
+3. Reboot action : You can reboot instances through  “Reboot” action.
+
+4. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+5. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+Fill the following Details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Username>
+   * - Authentication Type
+     - <Choose Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+	 
+Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+
+
+Nextflow Advanced
+-----------------
+Researcher can login to the portal and quickly order Nextflow Advanced product. Find the Nextflow Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+4. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+5. Monitor Pipeline action : Through this you can monitor the pipeline.
+
+6. View Outputs action : Through this you can see the outputs.  
+
+Fill the following Details 
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Username>
+   * - Authentication Type
+     - <Choose Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+	 
+Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+
+Cromwell Advanced
+-----------------
+Researcher can login to the portal and quickly order Cromwell Advanced product. Find the Cromwell Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
+You can see product related actions in the  Actions menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Reboot action : You can reboot instances through  “Reboot” action.
+
+3. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+4. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+5. View Outputs action : Through this you can see the outputs.  
+
+Fill the following Details 
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Username>
+   * - Authentication Type
+     - <Choose Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+	 
+Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+
+
+HPC Product
+-----------
+
+AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. AWS delivers an integrated suite of services that provides everything needed to quickly and easily build and manage HPC clusters in the cloud to run the most compute intensive workloads across various industry verticals. These workloads span the traditional HPC applications, weather prediction, and seismic imaging, as well as emerging applications, like machine learning, deep learning, and autonomous driving. This product has a master node and cluster nodes with a auto scaling group which will enable the cluster nodes required to be completed. It has many job schedulers like Slurm, AWS jobs. You have used a CFT to make this product provisioned.
+
+.. image:: images/hpc.png
+
+.. image:: images/hpc2.png
+
+
+**Navigation to the other screens**
+
 
 Click on the “☰”  Symbol which is available on the left side header. You can see a menu like :
 

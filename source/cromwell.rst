@@ -1,3 +1,4 @@
+
 Cromwell-Advanced
 =================
 
@@ -37,9 +38,9 @@ Parameters
    * - Batch Configuration
      - 
    * - VPCId
-     - Choose VPC Id in the drop-down list.
+     - Choose VPC Id in the drop-down list. The VPC to create security groups and deploy AWS Batch to. NOTE: Must be the same VPC as the provided subnet IDs.
    * - WorkerNodeSubnetId
-     - Choose Subnet Id in the drop-down list. Subnet you want your Batch Worker Node to launch in. We recommend public subnets.
+     - Choose Subnet Id in the drop-down list. Subnet you want your batch compute environment to launch in. We recommend public subnets.
    * - ComputeEnvMinvCpus
      - The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost. Eg: 0
    * - ComputeEnvMaxvCpus
@@ -51,13 +52,12 @@ Parameters
    * - WorkerNodeEBSVolumeSize
      - The initial size of the volume (in GBs) Worker Node EBS will use for storage.  Eg: 100
 
-   
 Steps to launch
 ----------------
 
 1. Click on the project on the “My Projects” page.
 2. Navigate to the available products tab.
-3. Click the “Launch Now” button on the  “Cromwell-Advanced” product card. A product order form will open. Fill the details in the form .
+3. Click the “Launch Now” button on the  “Cromwell Advanced” product card. A product order form will open. Fill the details in the form .
 
 **Note**:
 
@@ -81,7 +81,6 @@ Steps to launch
 		e.  If you type the invaliad characters it will throw an error message accordingly.
   
 4. Click on the “Launch Now” button. You will see a  “Cromwell-Advanced” being created. In a few minutes, that product should appear in the “Active” state.
-
 Estimated time to provision -  10 minutes
 
 Steps to connect

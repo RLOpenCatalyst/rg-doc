@@ -38,20 +38,20 @@ ENABLE_SSL,<IST timezone>,SG_CREATE_STARTED,You can see the security group creat
 ENABLE_SSL,<IST timezone>,SG_CREATE_COMPLETED,You can see the security group creation completion information
 ENABLE_SSL,<IST timezone>,LISTENER_CREATE_STARTED,You can see the listerner creation started information
 ENABLE_SSL,<IST timezone>,LISTENER_CREATE_COMPLETED,You can see the listerner creation completed information
-PROJECT REPAIR,<IST timezone>,REPAIR_STARTED,You can see the repair started information
-PROJECT REPAIR,<IST timezone>,REPAIRING_CATALOG,You can see the repairing catalog information
-PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_CREATION_STARTED,You can see the project storage creation started information
-PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_CREATION_COMPLETED,You can see the project storage creation completed information.
-PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_CREATION_FAILED,You can see the project storage creation failed information with reason.
-PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_REPAIR_STARTED,You can see the project storage repair started information.
-PROJECT REPAIR,<IST timezone>,PROJECT_STORAGE_REPAIR_COMPLETED,You can see the project storage repair completed information.
-PROJECT REPAIR,<IST timezone>,SHARED_FOLDER_CREATION_COMPLETED,You can see the shared folder creation completed information.
-PROJECT REPAIR,<IST timezone>,SHARED_FOLDER_CREATION_STARTED,You can see the shared folder creation started information.
-PROJECT REPAIR,<IST timezone>,OUTPUT_UPDATE_COMPLETED,You can see the output updation completed information
-PROJECT REPAIR,<IST timezone>,OUTPUT_UPDATE_STARTED,You can see the output updation started information
-PROJECT REPAIR,<IST timezone>,S3_CREATE_COMPLETED,You can see the S3 bucket creation completed information
-PROJECT REPAIR,<IST timezone>,S3_CREATE_STARTED,You can see the S3 bucket creation information
-PROJECT REPAIR,<IST timezone>,S3_TERMINATE_STARTED,You can see the S3 terminate initiated information
-PROJECT REPAIR,<IST timezone>,S3_TERMINATE_COMPLETED,You can see the S3 termination completed information
+PROJECT_STORAGE,<IST timezone>,REPAIR_STARTED,You can see the repair started information
+PROJECT_STORAGE,<IST timezone>,REPAIRING_CATALOG,You can see the repairing catalog information
+PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_CREATION_STARTED,You can see the project storage creation started information
+PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_CREATION_COMPLETED,You can see the project storage creation completed information.
+PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_CREATION_FAILED,You can see the project storage creation failed information with reason.
+PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_REPAIR_STARTED,You can see the project storage repair started information.
+PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_REPAIR_COMPLETED,You can see the project storage repair completed information.
+PROJECT_STORAGE,<IST timezone>,SHARED_FOLDER_CREATION_COMPLETED,You can see the shared folder creation completed information.
+PROJECT_STORAGE,<IST timezone>,SHARED_FOLDER_CREATION_STARTED,You can see the shared folder creation started information.
+PROJECT_STORAGE,<IST timezone>,OUTPUT_UPDATE_COMPLETED,You can see the output updation completed information
+PROJECT_STORAGE,<IST timezone>,OUTPUT_UPDATE_STARTED,You can see the output updation started information
+PROJECT_STORAGE,<IST timezone>,S3_CREATE_COMPLETED,You can see the S3 bucket creation completed information
+PROJECT_STORAGE,<IST timezone>,S3_CREATE_STARTED,You can see the S3 bucket creation information
+PROJECT_STORAGE,<IST timezone>,S3_TERMINATE_STARTED,You can see the S3 terminate initiated information
+PROJECT_STORAGE,<IST timezone>,S3_TERMINATE_COMPLETED,You can see the S3 termination completed information
 BYOC,<IST timezone>,BYOC_STARTED,You can see the BYOC sync initiated information
 BYOC,<IST timezone>,BYOC_COMPLETED,You can see BYOC sync completed information.
