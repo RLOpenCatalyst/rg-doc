@@ -105,3 +105,17 @@ User,Logical ID,Timestamp,Status,Status Reason
 <Username> or <Email ID>,PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_REPAIR_COMPLETED,You can see the project storage repair completed information.
 <Username> or <Email ID>,BYOC(BRING YOUR OWN CATALOG),<IST timezone>,BYOC_STARTED,You can see the BYOC sync initiated information
 <Username> or <Email ID>,BYOC(BRING YOUR OWN CATALOG),<IST timezone>,BYOC_COMPLETED,You can see BYOC sync completed information.
+<Username> or <Email ID>,PROJECT REPAIR,<IST timezone>,BUDGET_REPAIR_SUCCESSFUL,You can see the budget repair success information
+<Username> or <Email ID>,PROJECT REPAIR,<IST timezone>,REPAIRING_BUDGET_STARTED,You can see the budget repair initiated information
+<Username> or <Email ID>,PROJECT REPAIR,<IST timezone>,CATALOG_REPAIR_SUCCESSFUL,You can see the catalog repair success information
+<Username> or <Email ID>,PROJECT REPAIR,<IST timezone>,REPAIR_ACTION_COMPLETED_SUCCESSFULLY,You can see the repair action coompletion status.
+<Username> or <Email ID>,PROJECT CREATE,<IST timezone>,PROJECT_CREATION_FAILED,You can see the project creation failed information with reason.
+<Username> or <Email ID>,PROJECT CREATE,<IST timezone>,PROJECT_CREATION_SUCCESSFULL,You can see the project creation success information
+<Username> or <Email ID>,COST_CONTROL,<IST timezone>,PROJECT_RESUMED,"You can see the project name with status
+ and triggered user name"
+<Username> or <Email ID>,COST_CONTROL,<IST timezone>,PROJECT_STOPPED,"You can see the project name with status
+ and triggered user name"
+<Username> or <Email ID>,COST_CONTROL,<IST timezone>,PROJECT_PAUSED,"You can see the project name with status
+ and triggered user name"
+<Username> or <Email ID>,COST_CONTROL,<IST timezone>,PROJECT_AUTO_STOPPED,"You can see the project was auto stopped status
+ with budget threshold crossed value"

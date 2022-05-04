@@ -38,8 +38,8 @@ ENABLE_SSL,<IST timezone>,SG_CREATE_STARTED,You can see the security group creat
 ENABLE_SSL,<IST timezone>,SG_CREATE_COMPLETED,You can see the security group creation completion information
 ENABLE_SSL,<IST timezone>,LISTENER_CREATE_STARTED,You can see the listerner creation started information
 ENABLE_SSL,<IST timezone>,LISTENER_CREATE_COMPLETED,You can see the listerner creation completed information
-PROJECT_STORAGE,<IST timezone>,REPAIR_STARTED,You can see the repair started information
-PROJECT_STORAGE,<IST timezone>,REPAIRING_CATALOG,You can see the repairing catalog information
+PROJECT REPAIR ,<IST timezone>,REPAIR_STARTED,You can see the repair started information
+PROJECT REPAIR ,<IST timezone>,REPAIRING_CATALOG,You can see the repairing catalog information
 PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_CREATION_STARTED,You can see the project storage creation started information
 PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_CREATION_COMPLETED,You can see the project storage creation completed information.
 PROJECT_STORAGE,<IST timezone>,PROJECT_STORAGE_CREATION_FAILED,You can see the project storage creation failed information with reason.
@@ -55,3 +55,15 @@ PROJECT_STORAGE,<IST timezone>,S3_TERMINATE_STARTED,You can see the S3 terminate
 PROJECT_STORAGE,<IST timezone>,S3_TERMINATE_COMPLETED,You can see the S3 termination completed information
 BYOC,<IST timezone>,BYOC_STARTED,You can see the BYOC sync initiated information
 BYOC,<IST timezone>,BYOC_COMPLETED,You can see BYOC sync completed information.
+PROJECT REPAIR,<IST timezone>,BUDGET_REPAIR_SUCCESSFUL,You can see the  budget repair success information 
+PROJECT REPAIR,<IST timezone>,REPAIRING_BUDGET_STARTED,You can see the budget repair initiated information
+PROJECT REPAIR,<IST timezone>,CATALOG_REPAIR_SUCCESSFUL,You can see the catalog repair success information
+PROJECT REPAIR,<IST timezone>,REPAIR_ACTION_COMPLETED_SUCCESSFULLY,You can see the repair action coompletion status.
+PROJECT CREATE,<IST timezone>,PROJECT_CREATION_FAILED,You can see the project creation failed information with reason.
+PROJECT CREATE,<IST timezone>,PROJECT_CREATION_SUCCESSFULL,You can see the project creation success information
+COST_CONTROL,<IST timezone>,PROJECT_RESUMED,You can see the project name with status and triggered user name
+COST_CONTROL,<IST timezone>,PROJECT_STOPPED,You can see the project name with status and triggered user name
+COST_CONTROL,<IST timezone>,PROJECT_PAUSED,You can see the project name with status and triggered user name
+COST_CONTROL,<IST timezone>,PROJECT_AUTO_STOPPED,You can see the project was auto stopped status with budget threshold crossed value
+PROJECT_UPDATE,<IST timezone>,CREATING_SSM_PARAMETER_SUCCESSFUL,You can see SSM parameter creation success information.
+PROJECT_UPDATE,<IST timezone>,SHARING_AMI_SUCCESSFUL,You can see the shared AMI with ID success information for RStudio and Nextflow-Advanced products.

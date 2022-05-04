@@ -13,6 +13,9 @@ Ordering products in Research Gateway
    rstudio
    nextflow
    cromwell
+   DockerEC2linux
+   MySql
+   ubuntu
    
    
 
