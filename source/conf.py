@@ -22,7 +22,7 @@ copyright = '2021, Relevance Lab'
 author = 'Relevance Lab'
 
 # The full version, including alpha/beta/rc tags
-release = '1.10.2'
+release = '1.11.0'
 
 
 # -- General configuration ---------------------------------------------------

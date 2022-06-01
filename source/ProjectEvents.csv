@@ -67,3 +67,4 @@ COST_CONTROL,<IST timezone>,PROJECT_PAUSED,You can see the project name with sta
 COST_CONTROL,<IST timezone>,PROJECT_AUTO_STOPPED,You can see the project was auto stopped status with budget threshold crossed value
 PROJECT_UPDATE,<IST timezone>,CREATING_SSM_PARAMETER_SUCCESSFUL,You can see SSM parameter creation success information.
 PROJECT_UPDATE,<IST timezone>,SHARING_AMI_SUCCESSFUL,You can see the shared AMI with ID success information for RStudio and Nextflow-Advanced products.
+COST_CONTROL,<IST timezone>,EOD_REPORT_GENERATED,You can see the EOD report generated success information with username.
