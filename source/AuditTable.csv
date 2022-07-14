@@ -119,3 +119,11 @@ User,Logical ID,Timestamp,Status,Status Reason
  and triggered user name"
 <Username> or <Email ID>,COST_CONTROL,<IST timezone>,PROJECT_AUTO_STOPPED,"You can see the project was auto stopped status
  with budget threshold crossed value"
+<Username> or <Email ID>,PROJECT_UPDATE,<IST timezone>,CREATING_SSM_PARAMETER_SUCCESSFUL,You can see SSM parameter creation success information.
+<Username> or <Email ID>,PROJECT_UPDATE,<IST timezone>,SHARING_AMI_SUCCESSFUL,"You can see the shared AMI with ID success information for RStudio and 
+Nextflow-Advanced products."
+SYSTEM,COST_CONTROL,<IST timezone>,EOD_REPORT_GENERATED,You can see the EOD report generated success information with username.
+<Username> or <Email ID>,ARCHIVE_PROJECT,<IST timezone>,PROJECT_CLEANUP_STARTED,You can see project clean up initiated information with triggered user name
+<Username> or <Email ID>,ARCHIVE_PROJECT,<IST timezone>,PROJECT_CLEANUP_COMPLETED,You can see project clean up completed information with triggered user name
+<Username> or <Email ID>,ARCHIVE_PROJECT,<IST timezone>,PROJECT_BUDGET_CLEANUP_COMPLETED,You can see project budget clean up completed information with triggered user name
+<Username> or <Email ID>,ARCHIVE_PROJECT,<IST timezone>,PRODUCT_STACK_CLEANUP_COMPLETED,You can see product stack clean up completed information with triggered user name

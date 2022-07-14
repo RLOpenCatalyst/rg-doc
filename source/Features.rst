@@ -38,7 +38,7 @@ At the top of this view you can see the summary of budgets across all organizati
 You can see the following KPI cards:
 
   * **Total Budget Allotted**: This is the sum total of budget allocated for all projects in the Organization.
-  * **Total Budget Consumed**: This is the budget consumed by all Organizations.
+  * **Total Direct Cost**: This is the budget consumed by all Organizations.
   * **Total Budget Available**: This is the portion of the alloted budget which is not yet consumed.
 
 .. image:: images/Image2.png
@@ -56,13 +56,28 @@ The following details are visible in a table format:
    :header-rows: 1
 
 
-The Administrator user can download the Budget details through the “Export CSV”  option. By clicking on a specific line item, the user can see project-wise budget details which are linked to a particular Organizational Unit.
+The Administrator user can download the Budget details through the “Export as CSV” option. 
 
 .. image:: images/Image3.png
 
-When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification
+When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification.
 
 .. image:: images/budget1.png
+
+**Project-wise budget view**
+
+The Administrator user can view project-specific budget details by clicking on a specific project in the available list. 
+
+The following details are visible in a table format:
+
+
+.. csv-table::
+   :file: BudgetTable2.csv
+   :widths: 10, 15, 10, 10, 15
+   :header-rows: 1
+   
+   
+.. image:: images/budget2.png
 
 **Researcher-wise budget view**
 
@@ -274,7 +289,7 @@ If Principal Investigator logs as a first time, he can view the welcome screen. 
 
 Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen.
 
-.. image:: images/projectcreation.png 
+.. image:: images/project1.png 
 
 My Projects page of the Research Gateway will list all the existing projects created along with other details.
 
@@ -282,13 +297,13 @@ My Projects page of the Research Gateway will list all the existing projects cre
 
 Clicking on a specific project will leads to a project details page.
 
-.. image:: images/projectdetails.png 
+.. image:: images/projectevents.png 
 
 How to add a new Project 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Login to the Research Gateway. Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
-.. image:: images/budgetalert.png 
+.. image:: images/project1.png 
 
 Fill in the following details
 
@@ -304,18 +319,25 @@ Fill in the following details
      - <Description about the project> 
    * - Budget Available
      - <Budget to allocate to this project (cumulative)>
+   * - Project Copies
+     - <Please enter number of projects you want to create -(between 1 and 10)>
    * - Account Details 
      - <Select an Account ID in the list or create a new account form the **"Add Accounts"** button>
    * - Add Users
      - <Select collaborators from the list or create a new user from the **"Add Users"** button> [optional]
    * - Add products
-     - <Select catalog type from the list [Standard Catalog/Bring your own catalog]>
+     - <Create products in the service catalog from our standard catalog or bring your own service catalog portfolio> [optional] 
    * - Cost Control
      - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
    
 Click on the “Create Project” button. Added a new project successfully.
 
-**Note**: While creation of project, if you select "Standard catalog" option it will create 7 products(Amazon S3, Amazon EC2 Linux, Amazon EC2 Windows, RStudio, Nextflow Advanced and Cromwell Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
+**Note**:
+ 
+1. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
+2. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
+3. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+
 
 Project Storage
 ---------------
@@ -343,9 +365,9 @@ Cost Control
 1. Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 80%) or stopping the project (at 90%).
 2. When creating a project if you select the “Automatically respond to budget alerts” checkbox and it will open a pop up box which contains message, Once you confirm that it  will control the costs by taking automatic actions when budget thresholds are breached. By turning this feature off, you will lose the benefits of this cost control feature.
 
-.. image:: images/budgetalert.png
+.. image:: images/project1.png
 
-3. You can manually stop/pause/resume the project through the actions which are available on the project details page.
+3. You can manually Stop/Pause/Resume/Archive the project through the actions which are available on the project details page.
 
 .. image:: images/projectevents.png
 
@@ -369,9 +391,18 @@ Project Details Tab
 4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher emails and click on the “Update List” button. It should add collaborators to the project.
+7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
 
-.. image:: images/projectdetails.png 
+.. image:: images/projectevents.png 
+
+8. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update list” button. It will add collaborators to the project. You can search the researchers, through the search option.
+
+.. image:: images/manage.png
+
+9. Click on the "Manage" option under the **Add products** field. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
+
+.. image:: images/manage1.png
+
 
 Note: Whenever you clicked on the budget it will navigated to researcher-wise budget details page.
 
@@ -384,7 +415,7 @@ You can see the project-related events here.
 
 .. csv-table::
    :file: ProjectEvents.csv
-   :widths: 20, 20, 50, 50
+   :widths: 10, 10, 10, 50
    :header-rows: 1
    
 Available Products Tab
@@ -530,7 +561,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 How to add researchers to existing project 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
+There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the "Assigned researchers" field in the Project Details tab.
 
 .. image:: images/projectdetails1.png 
 
@@ -539,13 +570,52 @@ Select the Researchers and click on the “Update List” button. You can see th
 .. image:: images/researchers.png 
  
 .. image:: images/update.png
- 
+
+How to edit the catalog type 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+There is an edit functionality for the catalog type. You can create a project without selection of catalog type, once project is active you can see message "There are no Bring your own catalog type configured for this project" under "Add Products" field.
+
+.. image:: images/default.png 
+
+Once project is active, navigate to the project details tab and click on the “Manage (i.e., Pencil icon)” option which is at the **Add products** field in the Project Details tab. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
+
+.. image:: images/productsedit.png 
+
+.. image:: images/manage1.png
+
+
+**Note**:
+
+1. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
+2. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
+3. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+
+End of Day - Email report on  the running instances
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+End of day shall be deemed to be 8PM based on the time-zone for each account. This should preferably be configurable at least at the instance level. 
+
+Since Research Gateway supports multiple regions (and hence multiple time-zones), there is a need to only process those accounts which are currently at the end of day. RG currently supports seven regions only but could support more in the future. So the mechanism to determine EOD should be independent of which regions are supported. Based on this, the best option is to have a scheduled task that runs hourly in the scheduler component. This task can then determine if any of the supported regions are at  the end of the day.
+
+You will receive a consolidated end of day - Email report(8PM IST) for all your projects with details. You will see the report for active products only.
+
+.. image:: images/EODReport.png
+
+**Note**:
+1. The active users(Principal Investigator and Researchers) will receive the EOD report if at least one instance is in running state.
+2. The Emails shall be sent only to verified users of Research Gateway.
+3. In the project events tab, you can see the EOD report generated information.
+
+.. image:: images/EODReport1.png
+
+
 Actions on Projects
 ^^^^^^^^^^^^^^^^^^^
 
-Once project is active, we can do Pause/Resume/Stop actions on  a project.
+Once project is active, we can do Pause/Resume/Stop/Archive actions on a project.
 
-.. image:: images/projectdetails.png 
+.. image:: images/projectevents.png 
 
 **Pause Action**
 
@@ -571,6 +641,14 @@ The project status changed to “Stopped”. In a Stopped state all underlying r
 
 .. image:: images/stop3.png
 
+**Archive Action**
+
+Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
+
+.. image:: images/Archive.png
+
+.. image:: images/Archive2.png
+
 **Note**: 
 
 1. If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
@@ -593,11 +671,11 @@ Sign in as the Principal Investigator. Click on the “☰” Symbol which is av
 
 You can see budget details  with different KPI cards. You can see the following KPI cards:
 
-  a. **Project Budget** : This is the budget allocated for the project during the creation of the project.
+  a. **Total Budget Alloted** : This is the budget allocated for the project during the creation of the project.
 
-  b. **Consumed Budget** : This is the budget consumed by all the researchers in the project.
+  b. **Total Direct Cost** : This is the budget consumed by all the researchers in the project.
 
-  c. **Available Budget** : This is available budget for the project
+  c. **Total Budget Available** : This is available budget for the project
 
 You can see Project-wise Budget details in the table format:
 
@@ -606,7 +684,7 @@ You can see Project-wise Budget details in the table format:
    :widths: 10, 15, 10, 10, 15
    :header-rows: 1
  
-You can download the budget details through the “Export CSV”  option.
+You can download the budget details through the “Export as CSV”  option.
 
 Note: When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification.
 
@@ -765,25 +843,36 @@ KPI Cards
 ^^^^^^^^^
 
 You can see the following KPI cards:
-a. Available Project Budget
-b. Consumed Project Budget
-c. My Consumed Budget
 
-**Available Project Budget**
+a. Total Budget Alloted
+b. Total Direct Cost
+c. Total Budget Available
+
+**Total Budget Alloted**
 
 This is the budget allocated for the project during the creation of the project.
 
-**Consumed Project Budget**
+**Total Direct Cost**
 
 This is the budget consumed by all the researchers in the project.
 
-**My Consumed Budget**
+*Total Budget Available**
 
-This budget is consumed by the researcher who is logged in for that project.
-
+This budget is available by the researcher who is logged in for that project.
 
 .. image:: images/kpi.png 
 
+In project-wise budget details page, you can see below details in a table format
+
+
+.. csv-table::
+   :file: BudgetTable2.csv
+   :widths: 10, 15, 10, 10, 55
+   :header-rows: 1
+
+In researcher-wise details budget page you can see the below details in a table format
+
+.. image:: images/researcherlevel.png
 
 Available Products
 ^^^^^^^^^^^^^^^^^^

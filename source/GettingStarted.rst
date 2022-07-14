@@ -205,7 +205,7 @@ The Organizations page of the Research Gateway lists all the existing organizati
 Adding an AWS account to use in a project
 ---------------------------------------------
 
-Login into the Research Gateway. Click on dropdown bar which is above the header. Choose the  “Settings” option
+Login into the Research Gateway. Click on dropdown bar which is above the header. Choose the “Settings” option
 
 
 .. image:: images/mainview.png 
@@ -265,7 +265,7 @@ Click on the “Add Account” button. An AWS account is added successfully. You
 1. The "Add Account" button was disabled until the details are verified.
 2. Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly. 
 
-On each line item there is a contextual menu. Through this we can delete and sync the account/repair the account.
+On each line item there is a contextual menu. Through this we can repair the account. 
 
 .. image:: images/Project.png
 
@@ -273,18 +273,12 @@ Click on the 3-dotted icon which is available at the right side of the account d
 
 .. image:: images/delete.png
 
-Research Gateway works in conjunction with AWS Service Catalog. To synchronize the Service Catalog to your project, select the Product Sync option.
-Click on the “Sync Now” button. Once the synchronization is started you should see the “Sync Started” message.
+**Note** : If the account is not linked to project then only you can see the "Delete" option in the contextual menu .
 
-.. image:: images/sync1.png
-
-.. image:: images/sync2.png
-
-**Note**: The "Sync Now" option can get the products from the shared, local, account and organization level portfolio.
 
 Click on the contextual menu which is available at the right side of the account name and choose the "Repair" option. 
 
-.. image:: images/repair1.png
+.. image:: images/Project.png
 
 Fill the access key and secret key values in the assigned boxes and click on the "Verify" button.
 
@@ -298,16 +292,10 @@ Click on the contextual menu which is available at the right side of the account
 
 .. image:: images/Assign4.png
 
-Click on the contextual menu which is available at the right side of the account name and choose the "Details" option. One window is opened which contains all project details.
-
-.. image:: images/Details.png
-
-.. image:: images/Details1.png
-
 **Note** : 
 
 1. When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
-2. If the project is already assigned to the organization then only you can see the details icon which is beside the account name or details option in the contextual menu.
+2. You can create multiple projects with one account.
 
 Secure connections to resources using ALB to RStudio and Nextflow-Advanced Products 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -351,7 +339,7 @@ If Principal Investigator logs as a first time, you can view the welcome screen.
 
 Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
-.. image:: images/budgetalert.png
+.. image:: images/project1.png
 
 Fill in the following details
 
@@ -367,19 +355,25 @@ Fill in the following details
      - <Description about the project> 
    * - Budget Available
      - <Budget to allocate to this project (cumulative)> 
+   * - Project Copies
+     - <Please enter number of projects you want to create -(between 1 and 10)>
    * - Account Details
-     - <Select an Account ID from the list. If accounts are not listed create a new account through "Add Accounts" button.> 
+     - <Select an Account ID from the list. If accounts are not listed create a new account through "Add Accounts" button> 
    * - Add Users
-     - <Select users from the list or create new collaborators through "Add Users" button.> [optional]
+     - <Select users from the list or create new collaborators through "Add Users" button> [optional]
    * - Add Products
-     - <Select any one of the catalog type from the list>
+     - <Create products in the service catalog from our standard catalog or bring your own service catalog portfolio> [optional] 
    * - Cost Control
      - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
 
 
 Click on the “Create Project” button. Added a new project successfully.
 
-**Note**: While creation of project, if you select "Standard Catalog" option it will create 6 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio and Nextflow-Advanced). If you select "Bring your own catalog" option it will pull all the products in the portfolio of the AWS account.
+**Note**: 
+
+1. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
+2. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
+3. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
 
 Project Storage
 ^^^^^^^^^^^^^^^
@@ -402,7 +396,7 @@ Cost Control
 1. Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 80%) or stopping the project (at 90%).
 2. When creating a project if you select the “Automatically respond to budget alerts” checkbox and it will open a popup box which contains message, Once you confirm that it  will control the costs by taking automatic actions when budget thresholds are breached. By turning this feature off, you will lose the benefits of this cost control feature.
 
-.. image:: images/budgetalert.png
+.. image:: images/project1.png
 
 3. You can manually stop/pause/resume the project through the actions which are available on the project details page.
 
@@ -428,16 +422,21 @@ Project Details
 
 1. You can view the project details here. If the project is in a failed state, you can repair the project through the “Repair” option. 
 2. You can see the project-related events in the “Events” tab.
-3. Click on the “Pause” action which is available on the right side. When you click on "Pause" action,  all the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible but the “Launch Now “ button would be hidden.
+3. Click on the “Pause” action which is available on the right side. When you click on "Pause" action, all the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible but the “Launch Now “ button would be hidden.
 4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
+7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
 
 .. image:: images/projectevents.png 
 
-7. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update List” button. It will add collaborators to the project. 
+8. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update list” button. It will add collaborators to the project. You can search the researchers, through the search option.
 
 .. image:: images/manage.png
+
+9. Click on the "Manage" option under the **Add products** field. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
+
+.. image:: images/manage1.png
 
 Events
 ^^^^^^
@@ -448,7 +447,7 @@ You can see project-related events here.
 
 .. csv-table::
    :file: ProjectEvents.csv
-   :widths: 10, 10, 30, 50
+   :widths: 10, 10, 10, 50
    :header-rows: 1
    
 Available Products
@@ -488,7 +487,7 @@ b. The project is independent of the researcher. We can create an empty project 
 Assigning Researchers to projects
 ---------------------------------
 
-There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details Page.
+There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details tab.
 
 .. image:: images/projectdetails1.png 
 
@@ -497,3 +496,23 @@ Select the Researchers and click on the “Update List” button. You can see th
 .. image:: images/researchers.png 
  
 .. image:: images/update.png
+
+
+How to edit the catalog type
+----------------------------
+
+There is an edit functionality for the catalog type. You can create a project without selection of catalog type, once project is active you can see message "There are no Bring your own catalog type configured for this project" under "Add Products" field.
+
+.. image:: images/default.png 
+
+Once project is active, navigate to the project details tab and click on the “Manage (i.e., Pencil icon)” option which is at the **Add products** field in the Project Details tab. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
+
+.. image:: images/productsedit.png 
+
+.. image:: images/manage1.png
+
+**Note**:
+
+1. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
+2. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
+3. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
