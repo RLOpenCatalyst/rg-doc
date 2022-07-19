@@ -28,6 +28,8 @@ Users with the Administrator role can perform the steps below.
   * `Adding Organizational Units`_
   * :ref:`Adding Catalog Items<Catalog>`
 
+**NOTE** : The administrator should assign products from standard catalog collection to the organizational unit before a PI can successfully create a project with attached Project Storage.
+
 Users with the Principal Investigator role can perform the steps below.
   
   * `Adding a New Project`_
@@ -207,6 +209,13 @@ Click on the **“Create Organization”** button. The new organizational unit i
 2. You can create an organization without selection of account name.
 
 The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. 
+
+.. _`Assigning catalog items to OU`:
+
+Assigning catalog items to OU
+------------------------------
+
+The administrator should :ref:`assign products from standard catalog collection to the organizational unit<catalog>` before a PI can successfully create a project with attached Project Storage.
 
 .. _`Adding AWS Accounts`:
 
@@ -502,12 +511,13 @@ My Products
 
 a. When adding a project we are passing collaborators information. Through this, we are linking collaborators to the project. 
 b. The project is independent of the researcher. We can create an empty project and add researchers later. Once project is active, we can add researchers through the "Manage" option which is at the project details screen.
+c. The products which are updated in the last 30 minutes will be visible under the active filter.
 
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
 .. image:: images/projectdetails.png
 
-Assigning Researchers to projects
+Assigning Researchers to Projects
 ---------------------------------
 
 There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details tab.
