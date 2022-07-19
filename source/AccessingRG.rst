@@ -85,3 +85,10 @@ If the password change is successful you can navigate to the verification succes
 
 **Note:** If a user tries to reset password more than 10 times it will display the message like **“Attempt limit exceeded. Please try again”**
 
+
+Session Timeout
+-------------------------
+
+If the user is idle for more than 15 minutes and then performs any activity on the website, the current session will be logged out with a red toaster message and the user will be routed to the login page. In an enterprise deployment, the duration of the timeout can be customized.
+
+.. image:: images/sessiontimeout.png 
