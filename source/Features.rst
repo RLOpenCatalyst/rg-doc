@@ -136,6 +136,11 @@ The user can see an active filter with enable and disable options. You can toggl
 
 You can add a new user through the “+Add New” button which is on the right side of the screen. 
 
+.. image:: images/addnewuser.png
+
+
+1. Click on "Add New User" button to add a single user via the “Add User” form.
+
 Fill the following details 
 
 .. list-table:: 
@@ -175,6 +180,65 @@ Users can choose a password and click on the “Submit” button.
 On successful validation, users will be allowed to login to the Research Gateway.
 
 .. image:: images/password1.png 
+
+
+
+2. Click on "Import Users via CSV" to add multiple users via csv file.
+
+.. image:: images/bulkuserimport.png
+
+
+CSV file should contain following details
+
+.. list-table:: 
+   :widths: 90, 90 
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - email 
+     - <Enter an Email ID>
+   * - first_name
+     - <Please enter firstname of the user>
+   * - last_name
+     - <Please enter last name of the user>
+   * - role
+     - <Add role for the user>
+   * - userTags
+     - <Add tags for the user>
+
+**Note**: 
+
+1. If the user role is other than valid values (0 = Researcher, 1 = Principal Investigator, 2 = Administrator ), it will be automatically reset  to 0  (researcher) and the user will be created with the role as researcher.
+
+2. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
+
+
+The new user creation process will begin when the user clicks the "Open" button and a green toaster message will appear. When importing users in bulk, the user creation may take some time. The green toaster message does not imply successful creation of all users. Please check the audit trail to see if any user creation failed.
+
+
+The verification email has been sent. Check the verification email delivered to the registered email address and click on the verification link to activate the account. 
+
+.. image:: images/Verificationmail-1.png
+
+**NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
+
+Users can choose a password and click on the “Submit” button. 
+
+**Note**: The password policy should meet the following requirement :
+   a. The minimum password length of 8 characters and a maximum of 16 characters.
+   b. It should have atleast one lower case character(a-z).
+   c. It should have atleast one upper case character(A-Z).
+   d. It should have atleast one number(0-9).
+   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
+   
+On successful validation, users will be allowed to login to the Research Gateway.
+
+.. image:: images/password1.png 
+
+
+3. Click on "Download CSV format" to download sample csv file which provides all the appropriate columns.
+
 
 You can perform the following user actions 
 
@@ -355,9 +419,6 @@ Research Gateway will set up a shared S3 bucket(Project Storage) where the team 
 3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
 4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
 
-Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in "My Projects" list.
-
-.. image:: images/myprojects.png 
 
 Cost Control
 ------------
@@ -367,7 +428,7 @@ Cost Control
 
 .. image:: images/project1.png
 
-3. You can manually Stop/Pause/Resume/Archive the project through the actions which are available on the project details page.
+3. You can manually Stop/Pause/Resume/Archive/Add Budget the project through the actions which are available on the project details page.
 
 .. image:: images/projectevents.png
 
@@ -450,6 +511,7 @@ a. When adding a project we are passing collaborator information. Through this, 
 b. The project is independent of the researcher. We can create an empty project and add collaborators later. We can add collaborators through the "Manage" option which is at the project details screen.
 c. **My Projects** page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
    to a project details page. Click on the specific project you can navigate to the project details page.
+d. The products which are updated in the last 30 minutes will be visible under the active filter.
 
 Auto-Stop Resources on Idle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -497,6 +559,10 @@ The user can see an active filter with enable and disable options. You can toggl
 
 You can add a new user through the “+Add New” button which is on the right side of the screen. 
 
+.. image:: images/addnewuser.png
+
+1. Click on “Add New User” button to add a single user via the “Add User” form.
+
 Fill the following details 
 
 .. list-table:: 
@@ -536,6 +602,63 @@ Users can choose a password and click on the “Submit” button.
 On successful validation, users will be allowed to login to the Research Gateway.
 
 .. image:: images/password1.png 
+
+2. Click on “Import Users via CSV” to add multiple users via csv file.
+
+.. image:: images/bulkuserimport.png
+
+
+CSV file should contain following details
+
+.. list-table:: 
+   :widths: 90, 90 
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - email 
+     - <Enter an Email ID>
+   * - first_name
+     - <Please enter firstname of the user>
+   * - last_name
+     - <Please enter last name of the user>
+   * - role
+     - <Add role for the user>
+   * - userTags
+     - <Add tags for the user>
+
+**Note**: 
+
+1. If the user role is other than valid values (0 = Researcher, 1 = Principal Investigator), it will be automatically reset  to 0  (researcher) and the user will be created with the role as researcher.
+
+2. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
+
+
+The new user creation process will begin when the user clicks the "Open" button and a green toaster message will appear. When importing users in bulk, the user creation may take some time. The green toaster message does not imply successful creation of all users. Please check the audit trail to see if any user creation failed.
+
+
+The verification email has been sent. Check the verification email delivered to the registered email address and click on the verification link to activate the account. 
+
+.. image:: images/Verificationmail-1.png
+
+**NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
+
+Users can choose a password and click on the “Submit” button. 
+
+**Note**: The password policy should meet the following requirement :
+   a. The minimum password length of 8 characters and a maximum of 16 characters.
+   b. It should have atleast one lower case character(a-z).
+   c. It should have atleast one upper case character(A-Z).
+   d. It should have atleast one number(0-9).
+   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
+   
+On successful validation, users will be allowed to login to the Research Gateway.
+
+.. image:: images/password1.png 
+
+
+3. Click on "Download CSV format" to download sample csv file which provides all the appropriate columns.
+
 
 You can perform the following user actions 
 
@@ -613,7 +736,7 @@ You will receive a consolidated end of day - Email report(8PM IST) for all your 
 Actions on Projects
 ^^^^^^^^^^^^^^^^^^^
 
-Once project is active, we can do Pause/Resume/Stop/Archive actions on a project.
+Once project is active, we can do Pause/Resume/Stop/Archive/Add Budget actions on a project.
 
 .. image:: images/projectevents.png 
 
@@ -649,11 +772,23 @@ Click on the "Archive" button which is available on the right side, it was route
 
 .. image:: images/Archive2.png
 
+**Add Budget Action**
+
+The “Add Budget” action will provide Principal Investigators a way to add more budget to the project . Clicking on the “Add Budget” button will bring up a dialog box where you can add any whole number greater than 0.
+
+.. image:: images/AddBudget1.png
+
+.. image:: images/AddBudget2.png
+
+.. image:: images/AddBudget3.png
+
 **Note**: 
 
 1. If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
 2. Once project is failed, We can do repair on a project. Click on the "Repair" button which is at the project details page. We can see related events in events page.
 3. Once project is failed we can do catalog sync on a project. Click on the "Sync" button which is at the project details page. We can see related events in events page.
+4. If the project is in  “Paused” or "Active"  state the Principal Investigator user can “Add Budget”. If the budget amount added, brings the project back within the budget threshold, the “Resume” button will be visible to the user. 
+5. If the project is no longer required, the Principal Investigator user can click on “Archive” button  which is on the project details page. We can see related events in the events page.
 
 
 Budgets (for Principal Investigator)
@@ -665,7 +800,7 @@ As a Principal Investigator, you can view the organization-wide budgets from the
 
 Sign in as the Principal Investigator. Click on the “☰” Symbol which is available on left side header. Click on the "Budgets" menu item through this, you can navigate to the Budget Details page.  
 
-.. image:: images/budgets.png 
+.. image:: images/budgets.png
 
 .. image:: images/budget2.png
 
@@ -827,7 +962,30 @@ You can see the files/folders which are  related to the datastore.
  .. image:: images/unlink2.png
   
  .. image:: images/link1.png  
+
  
+Audit Trail(For Principal Investigator)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As a Principal Investigator  you can use the Audit Trail screen to view security-related audits. Click on the “☰” option which is available on the left side header.
+
+.. image:: images/AuditTrailPI.png
+
+Click on the "Audit Trail" menu item. Through this, you can navigate to the Audit Trail page.
+
+.. image:: images/AuditTrailPI1.png
+
+If you try to search the non-existent word it will display a message like “No matching organizations found”. You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
+
+.. image:: images/search2.png
+
+.. image:: images/AuditTrailPI2.png
+
+You can filter the logs by Principal Investigator, researcher, and Project which will show the details of your own O.U. . You can also filter the logs through the date. 
+
+.. image:: images/AuditTrailPI3.png
+
+.. image:: images/AuditTrailPI4.png
 
 
 Researcher Features
@@ -977,6 +1135,7 @@ Through the “View All” button in the panel header, you can see following:
 	  b. **Active** - You can see all the active products here.
 	  c. **Terminated** - You can see all terminated products here.
 
+**Note**: The products which are updated in the last 30 minutes will be visible under active filter.
 
 .. image:: images/myproduct2.png
 

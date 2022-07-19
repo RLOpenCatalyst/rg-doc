@@ -72,7 +72,7 @@ Steps to launch
 	* InputDataLocation
 		a.  You can see the filter options like All/Studies/Shared/ProjectStorage/Study in the Second part of the InputDataLocation field.
 		b.  You can see the default option like "**All**" in the filter.
-		c.  You can see the product names with  realted paths when you search in the InputDataLocation field. You need to select the S3 bucket name from the available list.
+		c.  You can see the product names with  realted paths when you search in the InputDataLocation field. You need to select the S3 bucket name or project storage buckets from the available list.
 		d.  If you type the invalid characters it will throw an error message accordingly.
 		
 		.. image:: images/nf1.png

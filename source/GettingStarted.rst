@@ -103,6 +103,7 @@ If the password change is unsuccessful you can see the verification error screen
 
 .. image:: images/success.png
 
+
 .. _`Sign-Up process`:
 
 Sign-Up process
@@ -162,6 +163,13 @@ Once logged in to your account, you will land on the Welcome page in Research Ga
 .. image:: images/registerform.png
 
 Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
+
+.. _`Session timeout`:
+
+Session Timeout
+-------------------------
+
+If the user is idle for more than 15 minutes and then performs any activity on the website, the current session will be logged out with a red toaster message and the user will be routed to the login page. In an enterprise deployment, the duration of the timeout can be customized.
 
 .. _`Adding Organizational Units`:
 
@@ -292,6 +300,20 @@ Click on the contextual menu which is available at the right side of the account
 
 .. image:: images/Assign4.png
 
+For Administrator login, 
+
+1. The link option beside each account will show the details of the project which is linked to it. 
+
+.. image:: images/adminaccountlink.png
+
+.. image:: images/adminaccountlink2.png
+
+2. Click on the 3-dotted icon which is available at the right side of the account details page and choose  details option which will show the details of the project which is linked to it.
+
+.. image:: images/adminaccountlink1.png
+
+.. image:: images/adminaccountlink3.png
+
 **Note** : 
 
 1. When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
@@ -398,7 +420,7 @@ Cost Control
 
 .. image:: images/project1.png
 
-3. You can manually stop/pause/resume the project through the actions which are available on the project details page.
+3. You can manually stop/pause/resume/Add Budget/Archive the project through the actions which are available on the project details page.
 
 .. image:: images/projectevents.png
 
@@ -427,6 +449,7 @@ Project Details
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
 7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
+8. Click on the “Add Budget” button which is available on the right side, it should show a dialog box where you can add budget value of whole number greater than 0.
 
 .. image:: images/projectevents.png 
 
@@ -482,7 +505,7 @@ b. The project is independent of the researcher. We can create an empty project 
 
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
-.. image:: images/projectdetails.png 
+.. image:: images/projectdetails.png
 
 Assigning Researchers to projects
 ---------------------------------
