@@ -41,9 +41,10 @@ Steps to connect
 3. The newly uploaded file/folder should be visible. 
 	a. Select the check-box next to the file and then click the “Actions” drop-down and select “Delete”. The file should be deleted.
 	b. Select the check-box next to the file and then click the “Actions” drop-down and select “Download”. The file should be downloaded.
-4. In the product details screen of the newly created S3 bucket, click the “Share” action. Choose the researcher name in the list and click on the “Submit” button. Once completed you can see the share option in the header which is after the product name. 
-5. Through the “Unshare” option you can stop the product sharing.
-6. You can de-provision the product through the “Terminate” option.
+4. Select the check-box next to the files/folders and then click the “Actions” drop-down and select “Copy to clipboard”. The File-names/Folder-names with the full path should be copied to clipboard.You can also copy the individual file-name/folder-name with the full path using “Copy to clipboard” action from 3 dotted icon beside each file /folder.
+5. In the product details screen of the newly created S3 bucket, click the “Share” action. Choose the researcher name in the list and click on the “Submit” button. Once completed you can see the share option in the header which is after the product name. 
+6. Through the “Unshare” option you can stop the product sharing.
+7. You can de-provision the product through the “Terminate” option.
 
 .. image:: images/s3-actions.png 
 

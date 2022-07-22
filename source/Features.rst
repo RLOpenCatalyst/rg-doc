@@ -58,8 +58,6 @@ The following details are visible in a table format:
 
 The Administrator user can download the Budget details through the “Export as CSV” option. 
 
-.. image:: images/Image3.png
-
 When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification.
 
 .. image:: images/budget1.png
@@ -136,7 +134,7 @@ The user can see an active filter with enable and disable options. You can toggl
 
 You can add a new user through the “+Add New” button which is on the right side of the screen. 
 
-.. image:: images/addnewuser.png
+.. image:: images/addnewuser1.png
 
 
 1. Click on "Add New User" button to add a single user via the “Add User” form.
@@ -157,6 +155,21 @@ Fill the following details
      - <Please enter firstname of the user>
    * - Last Name
      - <Please enter last name of the user> 
+   * - Organizational Unit
+     - <Select a organizational unit in the drop-down list>
+   * - Tags
+     - <Add tags to associate with the user>
+
+**NOTE**: Users can add the tags based on following  
+
+1. Users can add a maximum of 5 tags. Or A user may add up to five tags.
+2. Each tag should have a minimum of 3 characters and a maximum of 32.
+3. Users cannot duplicate tags for one user.
+4. Each tag can include :
+
+    a. Alphabetic characters(a-z , A-Z)
+    b. Numerical characters(0-9)
+    c. Special characters( @ - + . -)
 
 Click on the “Add User” button. On successsful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
@@ -328,14 +341,19 @@ You can view and update the products for the particular organization. Enable the
 You can search  product name and description of the product. We have following filter options:
  
   a. **All** : You can see all products here.
-  b. **Compute** :  You can see compute related products here.
-  c. **Storage**  : You can see storage related products here.
-  d. **Application** : You can see application related products here.
- 
- .. image:: images/filter1.png
- 
- .. image:: images/compute.png
- 
+
+  .. image:: images/filter1.png
+
+
+  b. **Research** : You can see the products realted to compute and analytics here. Eg: Amazon EC2.
+
+   .. image:: images/Research1.png
+
+
+  c. **IT Applications** : IT Application : You can see application related products here.
+
+ .. image:: images/ITApplications1.png
+
 If we could not find any products related to the filter you can see the message like “We could not find any products that matched your search”.
 
 .. image:: images/search3.png
@@ -501,7 +519,6 @@ My Products Tab
 	  a. **All** - You can see the all(i.e., active,terminated,stopped and failed) products here.
 	  b. **Active** - You can see all the active products here.
 	  c. **Terminated** - You can see all terminated products here.
-
 	 
 .. image:: images/myproducts.png
 
@@ -512,6 +529,8 @@ b. The project is independent of the researcher. We can create an empty project 
 c. **My Projects** page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
    to a project details page. Click on the specific project you can navigate to the project details page.
 d. The products which are updated in the last 30 minutes will be visible under the active filter.
+e. When the Principal Investigator logs-in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
+
 
 Auto-Stop Resources on Idle
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -578,11 +597,24 @@ Fill the following details
    * - First Name
      - <Please enter firstname of the user>
    * - Last Name
-     - <Please enter last name of the user> 
+     - <Please enter last name of the user>
+   * - Tags
+     - <Add tags to associate with the user>
+
+**NOTE**: Users can add the tags based on following 
+
+1. Users can add a maximum of 5 tags. Or A user may add up to five tags.
+2. Each tag should have a minimum of 3 characters and a maximum of 32.
+3. Users cannot duplicate tags for one user.
+4. Each tag can include :
+
+    a. Alphabetic characters(a-z , A-Z)
+    b. Numerical characters(0-9)
+    c. Special characters( @ - + . -)
 
 Click on the “Add User” button. On successsful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
-.. image:: images/form.png
+.. image:: images/form1.png
 
 The verification email has been sent. Check the verification email delivered to the registered email address and click on the verification link to activate the account. 
 
@@ -688,8 +720,8 @@ There is an edit functionality for the project entity. The project is independen
 
 .. image:: images/projectdetails1.png 
 
-Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI. You can't unselect the researchers who have associated products. 
- 
+Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI and see events regarding update action in “Events ” tab  . You can’t unselect the researchers who have associated products.
+
 .. image:: images/researchers.png 
  
 .. image:: images/update.png
@@ -859,17 +891,17 @@ You can view and update the products for the particular organization. Enable the
 You can use the search field to search for a term in the product name and description of the product. You can also use the filter options as below :
   
  a. **All** : You can see all products here.
+
+  .. image:: images/filter1.png
  
  b. **Research** :  You can see the products realted to compute and analytics here. Eg: Amazon EC2
  
+   .. image:: images/Research.png
+
  c. **IT Application** : You can see application related products here.
  
-  .. image:: images/filter1.png
-  
-  .. image:: images/compute.png
-  
-  .. image:: images/storage.png
- 
+   .. image:: images/ITApplications.png
+
 If we could not find any products related to the filter you can see the message like “We could not find any products that matched your search”.
 
 .. image:: images/search3.png
@@ -933,14 +965,15 @@ The studies landing page has a search bar that allows users to search the studie
 
 Public Study(for Principal Investigator)
 ----------------------------------------
+
+.. image:: images/public.png
+
 You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
 
 	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
 	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
 											
  .. image:: images/sc3.png
- 
- .. image:: images/public.png
   
 **Explore Action**
 
@@ -1014,7 +1047,7 @@ This is the budget allocated for the project during the creation of the project.
 
 This is the budget consumed by all the researchers in the project.
 
-*Total Budget Available**
+**Total Budget Available**
 
 This budget is available by the researcher who is logged in for that project.
 
@@ -1135,7 +1168,11 @@ Through the “View All” button in the panel header, you can see following:
 	  b. **Active** - You can see all the active products here.
 	  c. **Terminated** - You can see all terminated products here.
 
-**Note**: The products which are updated in the last 30 minutes will be visible under active filter.
+**Note**: 
+
+1. The products which are updated in the last 30 minutes will be visible under active filter.
+2. When the Researcher logs in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
+
 
 .. image:: images/myproduct2.png
 
@@ -1162,13 +1199,17 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Reboot action : You can reboot instances through  “Reboot” action.
+2. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-3. Terminate action : You can terminate the product through “Terminate” action.
+.. image:: images/instancetypeEC2linux.png 
 
-4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+3. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+4. Terminate action : You can terminate the product through “Terminate” action.
+
+5. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+6. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 
@@ -1204,11 +1245,15 @@ You can see the product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Reboot action : You can reboot instances through  “Reboot” action.
+2. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-3. Terminate action : Choose the "Terminate" option to de-provision the product.
+.. image:: images/instancetypeEC2Windows.png
 
-4. SSH/RDP action : Choose the “RDP” action. Through this you can connect to the Remote Desktop in a new window.
+3. Reboot action : You can reboot instances through  “Reboot” action.
+
+4. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+5. SSH/RDP action : Choose the “RDP” action. Through this you can connect to the Remote Desktop in a new window.
 
 Fill the following Details
 
@@ -1294,7 +1339,7 @@ There is a check to find out whether the file exists in the bucket or not. If ex
 
 **5. Explore Action**
 
-a. In the product details screen of the newly created S3 bucket, click the “Explore” action. Through this action you can see all the files and folders in the S3 bucket with actions (download, delete) against each item.
+a. In the product details screen of the newly created S3 bucket, click the “Explore” action. Through this action you can see all the files and folders in the S3 bucket with actions (download, delete, Copy to clipboard) against each item.
 
 .. image:: images/s3-actions.png 
 .. image:: images/basic.png
@@ -1355,15 +1400,19 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
+2. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-3. Reboot action : You can reboot instances through  “Reboot” action.
+.. image:: images/instancetypeRstudio.png
 
-4. Terminate action : Choose the "Terminate" option to de-provision the product.
+3. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
 
-5. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+4. Reboot action : You can reboot instances through  “Reboot” action.
 
-6. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+5. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+6. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following Details
 
@@ -1391,17 +1440,21 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Reboot action : You can reboot instances through  “Reboot” action.
+2. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-3. Terminate action : Choose the "Terminate" option to de-provision the product.
+.. image:: images/InstancetypeNextflow.png
 
-4. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+3. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Monitor Pipeline action : Through this you can monitor the pipeline.
+4. Terminate action : Choose the "Terminate" option to de-provision the product.
 
-6. View Outputs action : Through this you can see the outputs.  
+5. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
 
-7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+6. Monitor Pipeline action : Through this you can monitor the pipeline.
+
+7. View Outputs action : Through this you can see the outputs.  
+
+8. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following Details 
 
@@ -1427,13 +1480,17 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Reboot action : You can reboot instances through  “Reboot” action.
+2. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-3. Terminate action : Choose the "Terminate" option to de-provision the product.
+.. image:: images/instancetypecromwell.png
 
-4. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+3. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. View Outputs action : Through this you can see the outputs.  
+4. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+5. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+6. View Outputs action : Through this you can see the outputs.  
 
 Fill the following Details 
 
@@ -1462,13 +1519,17 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Reboot action : You can reboot instances through  “Reboot” action.
+2. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-3. Terminate action : You can terminate the product through “Terminate” action.
+.. image:: images/instancetypeDocker.png
 
-4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+3. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+4. Terminate action : You can terminate the product through “Terminate” action.
+
+5. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+6. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 
@@ -1498,13 +1559,17 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Reboot action : You can reboot instances through  “Reboot” action.
+2. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-3. Terminate action : You can terminate the product through “Terminate” action.
+.. image:: images/instancetypeSQL.png
 
-4. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+3. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+4. Terminate action : You can terminate the product through “Terminate” action.
+
+5. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+6. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 
@@ -1570,10 +1635,13 @@ You can see Project-wise Budget details in the table format:
    :widths: 20, 20, 20, 20, 20
    :header-rows: 1
 
-You can see configured product-wise budget details which are linked to a particular project.
+You can see configured Researcher-wise budget details which are linked to a particular project.
 
  .. image:: images/Researcherbudget.png
 
+You can also see configures Product-wise budget details which are linker to a particular Researcher.
+
+ .. image:: images/ResearcherProductwisebudget.png
 
 Studies (For Researcher)
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1653,14 +1721,15 @@ You can terminate the study through the “Terminate” option.
 
 Public Study
 ------------
+
+ .. image:: images/public.png
+
 You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
 
 	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
 	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
 											
  .. image:: images/sc3.png
- 
- .. image:: images/public.png
   
 **Explore Action**
 

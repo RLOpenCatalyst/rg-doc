@@ -421,6 +421,8 @@ Research Gateway will set up a shared S3 bucket(Project Storage) where the team 
 2. You can able to view, upload and delete objects in the storage.
 3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
 4. The Storage will be mounted as a specific folder inside the EC2 machine which the user can use to perform any tasks on. Any data written to the folder will be synced back to the storage and will be accessible to the user on exploring.
+5. Use the "Copy to clipboard" action from the "Actions" dropdown to copy all selected file names and folder names along with the full path. The same action can also be performed from the three-dotted icon next to each file or folder.
+
 
 Cost Control
 ^^^^^^^^^^^^
@@ -504,7 +506,8 @@ My Products
 	  a. **All** - You can see the all(i.e., active,terminated,stopped and failed) products here.
 	  b. **Active** - You can see all the active products here.
 	  c. **Terminated** - You can see all terminated products here.
-	 
+
+
 .. image:: images/myproducts.png
 
 **Note**:
@@ -512,6 +515,7 @@ My Products
 a. When adding a project we are passing collaborators information. Through this, we are linking collaborators to the project. 
 b. The project is independent of the researcher. We can create an empty project and add researchers later. Once project is active, we can add researchers through the "Manage" option which is at the project details screen.
 c. The products which are updated in the last 30 minutes will be visible under the active filter.
+d. When the Principal Investigator logs in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
 
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
@@ -524,8 +528,8 @@ There is an edit functionality for the project entity. The project is independen
 
 .. image:: images/projectdetails1.png 
 
-Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI. You can't unselect the researchers who have associated products. 
- 
+Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI and see events regarding update action in “Events ” tab  . You can’t unselect the researchers who have associated products.
+
 .. image:: images/researchers.png 
  
 .. image:: images/update.png
