@@ -56,4 +56,7 @@ If you are unable to connect, check your current IP address against the “Allow
 Other considerations
 ---------------------
 
-You can stop your instance using the “Stop” button in the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
+You can stop your instance using the “Stop” button in the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. 
+You can also change the instance type when your instance is in a stopped state using the “Instance Type” button in the product details page of your instance.
+
+Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
