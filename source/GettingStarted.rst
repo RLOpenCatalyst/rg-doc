@@ -475,14 +475,9 @@ Project Details
 Events
 ^^^^^^
 
-You can see project-related events here.
+You can see project-related events in the :ref:`Appendix E<Appendix E>`.
 
 .. image:: images/events.png
-
-.. csv-table::
-   :file: ProjectEvents.csv
-   :widths: 10, 10, 10, 50
-   :header-rows: 1
    
 Available Products
 ^^^^^^^^^^^^^^^^^^

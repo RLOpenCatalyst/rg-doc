@@ -294,12 +294,7 @@ Click on the **Audit Trail** menu item. Through this, you can navigate to the Au
 
 .. image:: images/Audit2.png
 
-You can see the following audit event details in the table view : 
-
-.. csv-table::
-   :file: AuditTable.csv
-   :widths: 20, 20, 20, 20, 20
-   :header-rows: 1
+You can see the audit event details in the :ref:`Appendix D<Appendix D>` 
    
 If you try to search the non-existent word it will display a message like “No matching organizations found". You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
 
@@ -488,14 +483,9 @@ Note: Whenever you clicked on the budget it will navigated to researcher-wise bu
 Events Tab
 ----------
 
-You can see the project-related events here.
+You can see the project-related events in the :ref:`Appendix E<Appendix E>`.
 
 .. image:: images/events.png
-
-.. csv-table::
-   :file: ProjectEvents.csv
-   :widths: 10, 10, 10, 50
-   :header-rows: 1
    
 Available Products Tab
 -----------------------
@@ -1020,6 +1010,7 @@ You can filter the logs by Principal Investigator, researcher, and Project which
 
 .. image:: images/AuditTrailPI4.png
 
+You can see the audit event details in the :ref:`Appendix F<Appendix F>` 
 
 Researcher Features
 +++++++++++++++++++
@@ -1138,7 +1129,7 @@ You can see the provisioned products details in the My Products Panel.
 
 You can view provisioned product details like product name, product type, consumed budget and product status in the card. Choose one product in the panel and click on the card.
 
-.. image:: images/myproducts.png
+.. image:: images/Researchermyproducts1.png
 
 The Product details page will show a tabbed area with the following tabs:
    1. Product Details
@@ -1151,7 +1142,7 @@ The “Product details” tab will show all the details of the product available
 
 You can see provisioned product details through “View All” option. You can  see all product details.
 
-.. image:: images/myproducts.png
+.. image:: images/Researchermyproducts2.png
 
 
 Through the “View All” button in the panel header, you can see following:
@@ -1590,25 +1581,6 @@ Click on the “Submit” button.
 
 **NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
 
-HPC Product
------------
-
-AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. AWS delivers an integrated suite of services that provides everything needed to quickly and easily build and manage HPC clusters in the cloud to run the most compute intensive workloads across various industry verticals. These workloads span the traditional HPC applications, weather prediction, and seismic imaging, as well as emerging applications, like machine learning, deep learning, and autonomous driving. This product has a master node and cluster nodes with a auto scaling group which will enable the cluster nodes required to be completed. It has many job schedulers like Slurm, AWS jobs. You have used a CFT to make this product provisioned.
-
-.. image:: images/hpc.png
-
-.. image:: images/hpc2.png
-
-
-**Navigation to the other screens**
-
-Click on the “☰”  Symbol which is available on the left side header. You can see a menu like :
-
-1. **My Projects** : Through this, you can navigate to My Projects page
-2. **Budgets** : Through this, you can navigate to the Budget Details page 
-3. **Studies** : Through this, you can navigate to the Studies Details page.
-4. **Key Pairs** : Through this, you can navigate to the Key Pairs Details page.
-
 Budgets (for Researcher)
 ^^^^^^^^^^^^^^^^^^^^^^^^
 As a researcher you can use the **Budgets** screen to view your individual budget consumption across projects. You can see budget details with different KPI cards. You can see the following KPI cards:
@@ -1757,7 +1729,7 @@ Key Pairs (For Researcher)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 The Key Pairs screen can be used by the Researcher to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
 
- .. image:: images/key1.png
+ .. image:: images/Researcherkey1.png
 
 .. image:: images/key2.png
 
