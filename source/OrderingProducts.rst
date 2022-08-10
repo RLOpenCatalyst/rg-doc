@@ -16,7 +16,7 @@ Ordering products in Research Gateway
    DockerEC2linux
    MySql
    ubuntu
-   
+   PCluster
    
 
 
