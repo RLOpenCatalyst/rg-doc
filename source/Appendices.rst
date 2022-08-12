@@ -15,7 +15,7 @@ Appendix B - Standard Catalog Information
 
 .. csv-table::
    :file: AppendixB.csv
-   :widths: 50, 40, 100
+   :widths: 50, 40, 200
    :header-rows: 2
    
 .. _`Appendix C`:

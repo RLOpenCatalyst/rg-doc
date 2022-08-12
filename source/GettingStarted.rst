@@ -10,7 +10,8 @@ You can access this product either as a `hosted Silo model`_ or as a hosted Shar
 If you are using the hosted Silo model, you will be provided a public URL to which you can navigate using your browser. 
 You will also be provided with the credentials for the Administrator user.
 
-If you are using the hosted Shared model, you can sign up with your details. Use details from :ref:`Sign-Up <Sign-Up process>` to create a new user.
+1. The Administrator can add Organizational Units and AWS Accounts, create Users, assign them to the OUs and assign catalog items to the OUs.
+2. If you are using the hosted Shared model, you can sign up with your details. Use details from :ref:`Sign-Up <Sign-Up process>` to create a new tenant.
 
 .. contents::
 
@@ -464,11 +465,11 @@ Project Details
 
 .. image:: images/projectevents.png 
 
-8. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update list” button. It will add collaborators to the project. You can search the researchers, through the search option.
+9. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update list” button. It will add collaborators to the project. You can search the researchers, through the search option.
 
 .. image:: images/manage.png
 
-9. Click on the "Manage" option under the **Add products** field. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
+10. Click on the "Manage" option under the **Add products** field. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
 
 .. image:: images/manage1.png
 
@@ -487,7 +488,7 @@ Available Products
       
 	  a. **All** - You can see the all products here.
 	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
-	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon S3
+	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 	  
 .. image:: images/availableproducts.png	 
 	 

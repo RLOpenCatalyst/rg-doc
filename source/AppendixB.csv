@@ -244,3 +244,19 @@ Ubuntu 20 04 on Amazon EC2 ,Description,"Use Ubuntu 20.04, on Amazon Elastic Com
 ,LatestAmiId,Please enter an  AMI of the EC2 instance.
 ,Instance Type,Choose the instance type for this instance. Eg: t2.small
 ,Expected time to provision,10 minutes
+PCluster ,Description,"PCluster Product of Research Gateway is easy to deploy High Performance Computing based on AWS ParallelCluster 3.0 which supports AWS Batch and Slurm schedulers"
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Instance Type,Choose the instance type for this instance. Eg: t2.small
+,SSHLocation,The IP address range that can be used to SSH to the EC2 instances
+,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
+,CustomAMI,Enter the AMI Id of a custom AMI if you wish to use a non-default AMI. e.g. ami-12345678. The AMI Id entered should exist in this project account and region.
+,HeadNodeInstanceType,Select Head Node EC2 instance type from the drop-down list
+,VpcId,Select The VPC to create security groups and deploy AWS Batch or slurm to from drop-down list
+,HeadNodeSubnetId,Select the Subnet you want your Head Node to launch in from the drop-down list. You must select a public subnet.
+,Scheduler,Select a Cluster scheduler from the drop-down list 
+,WorkerNodeInstanceType,Select the instance types to be used to carry out the computation from the drop-down list
+,WorkerNodeSubnetId,Select the Subnet you want your Batch or slurm Worker Node to launch in  from the drop-down list. We recommend public subnets.
+,ComputeEnvMinvCpus,"Enter The minimum number of CPUs to be kept in running state for the Batch/slurm Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost."
+,ComputeEnvMaxvCpus,Enter The maximum number of CPUs for the default Batch or slurm Compute Environment
+,ComputeEnvDesiredvCpus,Enter The Desired number of CPUs for the default Batch Compute Environment
+,SpotBidPercentage,Enter The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage
