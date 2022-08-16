@@ -195,8 +195,10 @@ On successful validation, users will be allowed to login to the Research Gateway
 .. image:: images/password1.png 
 
 
+2. Click on "Download CSV format" to download sample csv file which provides all the appropriate columns.
 
-2. Click on "Import Users via CSV" to add multiple users via csv file.
+
+3. Click on "Import Users via CSV" to add multiple users via csv file.
 
 .. image:: images/bulkuserimport.png
 
@@ -249,8 +251,6 @@ On successful validation, users will be allowed to login to the Research Gateway
 
 .. image:: images/password1.png 
 
-
-3. Click on "Download CSV format" to download sample csv file which provides all the appropriate columns.
 
 
 You can perform the following user actions 
@@ -495,7 +495,7 @@ Available Products Tab
       
 	  a. **All** - You can see the all products here.
 	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
-	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon S3
+	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 
 .. image:: images/availableproducts.png	 
 
@@ -625,7 +625,10 @@ On successful validation, users will be allowed to login to the Research Gateway
 
 .. image:: images/password1.png 
 
-2. Click on “Import Users via CSV” to add multiple users via csv file.
+2. Click on "Download CSV format" to download sample csv file which provides all the appropriate columns.
+
+
+3. Click on “Import Users via CSV” to add multiple users via csv file.
 
 .. image:: images/bulkuserimport.png
 
@@ -678,8 +681,6 @@ On successful validation, users will be allowed to login to the Research Gateway
 
 .. image:: images/password1.png 
 
-
-3. Click on "Download CSV format" to download sample csv file which provides all the appropriate columns.
 
 
 You can perform the following user actions 
@@ -1075,7 +1076,7 @@ d. **Filter** - We have following filter options:
       
 	  a. **All** - You can see the all products here.
 	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
-	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon S3
+	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 
 .. image:: images/available.png
 
@@ -1194,13 +1195,15 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypeEC2linux.png 
 
-3. Reboot action : You can reboot instances through  “Reboot” action.
+3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Terminate action : You can terminate the product through “Terminate” action.
+4. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+5. Terminate action : You can terminate the product through “Terminate” action.
 
-6. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+6. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 
@@ -1240,11 +1243,13 @@ You can see the product related actions in the  Actions menu.
 
 .. image:: images/instancetypeEC2Windows.png
 
-3. Reboot action : You can reboot instances through  “Reboot” action.
+3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Terminate action : Choose the "Terminate" option to de-provision the product.
+4. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. SSH/RDP action : Choose the “RDP” action. Through this you can connect to the Remote Desktop in a new window.
+5. Terminate action : Choose the "Terminate" option to de-provision the product.
+
+6. SSH/RDP action : Choose the “RDP” action. Through this you can connect to the Remote Desktop in a new window.
 
 Fill the following Details
 
@@ -1380,12 +1385,16 @@ You can see product related actions in the  Actions menu.
 
 2. Start/Stop action : You can stop the instance through “Start/Stop” action. Based on the instance state, you will see either the Start or the Stop action.
 
-3. Terminate Action: You can terminate the product through “Terminate” action.
+3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-.. image:: images/sagemaker.png
+4. Terminate Action: You can terminate the product through “Terminate” action.
+
+.. image:: images/sage-ations.png
+
 
 RStudio Product
 ---------------
+
 Researcher can login to the portal and quickly order RStudio product. Find the RStudio product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
@@ -1395,15 +1404,17 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypeRstudio.png
 
-3. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
+3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Reboot action : You can reboot instances through  “Reboot” action.
+4. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
 
-5. Terminate action : Choose the "Terminate" option to de-provision the product.
+5. Reboot action : You can reboot instances through  “Reboot” action.
 
-6. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+6. Terminate action : Choose the "Terminate" option to de-provision the product.
 
-7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+7. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+8. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following Details
 
@@ -1435,17 +1446,19 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/InstancetypeNextflow.png
 
-3. Reboot action : You can reboot instances through  “Reboot” action.
+3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Terminate action : Choose the "Terminate" option to de-provision the product.
+4. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+5. Terminate action : Choose the "Terminate" option to de-provision the product.
 
-6. Monitor Pipeline action : Through this you can monitor the pipeline.
+6. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
 
-7. View Outputs action : Through this you can see the outputs.  
+7. Monitor Pipeline action : Through this you can monitor the pipeline.
 
-8. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+8. View Outputs action : Through this you can see the outputs.  
+
+9. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following Details 
 
@@ -1464,8 +1477,10 @@ Fill the following Details
 	 
 Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 
+
 Cromwell Advanced Product
 -------------------------
+
 Researcher can login to the portal and quickly order Cromwell Advanced product. Find the Cromwell Advanced product in the Active Products panel or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
@@ -1475,13 +1490,15 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypecromwell.png
 
-3. Reboot action : You can reboot instances through  “Reboot” action.
+3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Terminate action : Choose the "Terminate" option to de-provision the product.
+4. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+5. Terminate action : Choose the "Terminate" option to de-provision the product.
 
-6. View Outputs action : Through this you can see the outputs.  
+6. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+
+7. View Outputs action : Through this you can see the outputs.  
 
 Fill the following Details 
 
@@ -1514,13 +1531,15 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypeDocker.png
 
-3. Reboot action : You can reboot instances through  “Reboot” action.
+3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Terminate action : You can terminate the product through “Terminate” action.
+4. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+5. Terminate action : You can terminate the product through “Terminate” action.
 
-6. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+6. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 
@@ -1554,13 +1573,15 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypeSQL.png
 
-3. Reboot action : You can reboot instances through  “Reboot” action.
+3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Terminate action : You can terminate the product through “Terminate” action.
+4. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+5. Terminate action : You can terminate the product through “Terminate” action.
 
-6. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+6. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+
+7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 
@@ -1580,6 +1601,48 @@ Fill the following details
 Click on the “Submit” button.
 
 **NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+
+PCluster Product
+----------------
+
+Researchers can login to the Research Gateway and quickly order PCluster products. 
+Find the Provisioned PCluster product in the My Products panel and click on it. 
+You can see the product related actions in the Actions Menu.
+
+1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
+
+2. Share action: You can share the product  with all the members in the Project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+
+3. Reboot action : You can reboot instances through “Reboot” action.
+
+4. Terminate action : Choose the “Terminate” option to de-provision the product.
+
+5. SSH to PCluster HeadNode  action : Choose the “SSH to PCluster HeadNode” action. Through this you can connect to the SSH Terminal in a new window.
+
+
+.. image:: images/PCluster3.png
+
+Fill the following details
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Username
+     - <Jump server user name>
+   * - Authentication Type
+     - <Choose password/Pem file>
+   * - Upload Pem file
+     - <Upload the pem file>
+
+Click on the “Submit” button.
+
+NOTE : If you pass an empty parameter or wrong parameter in the username or pem file field you may see an error message accordingly.
+
+Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
+
 
 Budgets (for Researcher)
 ^^^^^^^^^^^^^^^^^^^^^^^^

@@ -31,6 +31,6 @@ View KeyPairs,Yes,Yes,Yes
 New KeyPair Creation,Yes,Yes,Yes
 View Studies,Yes,Yes,Yes
 Perform actions on a particular study,Yes,Yes,Yes
-View products in the catalog (Available products),Yes,Yes,Yes
-View Provisioned Products (My Products),Yes,Yes,Yes
-Perform Actions on Provisioned Products,Yes,Yes,Yes
+View products in the catalog (Available products),,Yes,Yes
+View Provisioned Products (My Products),,Yes,Yes
+Perform Actions on Provisioned Products,,Yes,Yes

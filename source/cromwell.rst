@@ -93,11 +93,15 @@ Steps to connect
 4. You can view the outputs through “View Outputs” option.
 5. You can de-provision the product through the “Terminate” option.
 
+ .. image:: images/cromwelladvanced.png
+
 Other considerations   
 ---------------------
 
 You can stop your instance using the “Stop” button in the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. 
 You can also change the instance type when your instance is in a stopped state using the “Instance Type” button in the product details page of your instance.
+
+You can share the product with all the members of the project using the “Share” button in the product details page of your product. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 
