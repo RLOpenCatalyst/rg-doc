@@ -102,9 +102,9 @@ If the password change is successful you can navigate to the verification succes
  
 If the password change is unsuccessful you can see the verification error screen. 
 
-.. image:: images/password.png
+.. image:: images/ChangePassword.png
 
-.. image:: images/success.png
+.. image:: images/ChangePassword_Success.png
 
 
 .. _`Sign-Up process`:
@@ -181,7 +181,7 @@ Adding Organizational Units
 
 To plan the creation of a new Organization, use the planning sheet in :ref:`Appendix A<Appendix A>` to collect all the information required upfront. Login into the Research Gateway. User landed to the  main dashboard.
 
-.. image:: images/OrganizationPage.png
+.. image:: images/Admin_MyOrganizationsPage.png
 
 Click on the “+Add New” icon  which is at the top right corner. Organization form is opened.
 
@@ -202,7 +202,7 @@ Click on the “+Add New” icon  which is at the top right corner. Organization
 	 
 Click on the **“Create Organization”** button. The new organizational unit is added successfully.
 
-.. image:: images/addorg.png
+.. image:: images/Admin_CreateOrganizationPage.png
 
 **NOTE**: 
 
@@ -226,11 +226,11 @@ Adding an AWS account to use in a project
 Login into the Research Gateway. Click on dropdown bar which is above the header. Choose the “Settings” option
 
 
-.. image:: images/mainview.png 
+.. image:: images/Principal_LandingPage_SettingsMenu.png 
 
 Click on  the  “Settings” menu item. Provider settings page is opened.
 
-.. image:: images/Provider2.png 
+.. image:: images/Principal_Settings_ProviderSettings.png 
    :name: Provider Settings Page
    
 **Note:**  When we add the settings please make sure the user credentials has the IAMFullAccess/AdministratorAccess Permissions. You can refer the list of policies that we are using create the role in Research Gateway.
@@ -285,7 +285,7 @@ Click on the “Add Account” button. An AWS account is added successfully. You
 
 On each line item there is a contextual menu. Through this we can repair the account. 
 
-.. image:: images/Project.png
+.. image:: images/Principal_Settings_RepairAction.png
 
 Click on the 3-dotted icon which is available at the right side of the account details page and choose “Delete” option. A confirmation dialog box is opened and enable the check box and click on the "Delink" button, the account will be deleted. You can only delete provider settings that are not linked to any project or organization.
 
@@ -296,11 +296,11 @@ Click on the 3-dotted icon which is available at the right side of the account d
 
 Click on the contextual menu which is available at the right side of the account name and choose the "Repair" option. 
 
-.. image:: images/Project.png
+.. image:: images/Principal_Settings_RepairAction.png
 
 Fill the access key and secret key values in the assigned boxes and click on the "Verify" button.
 
-.. image:: images/repair.png
+.. image:: images/Settings_ProviderSetting_Repair.png
 
 On successful completion of verify you can see the "repair" option, click on the button in the window, the account will be repaired.
 
@@ -308,21 +308,21 @@ Click on the contextual menu which is available at the right side of the account
 
 .. image:: images/Assign123.png
 
-.. image:: images/Assign4.png
+.. image:: images/Admin_Settings.png
 
 For Administrator login, 
 
 1. The link option beside each account will show the details of the project which is linked to it. 
 
-.. image:: images/adminaccountlink.png
+.. image:: images/Admin_settings_ProviderSettings.png
 
-.. image:: images/adminaccountlink2.png
+.. image:: images/Admin_settings_ProviderSettings_Details.png
 
 2. Click on the 3-dotted icon which is available at the right side of the account details page and choose  details option which will show the details of the project which is linked to it.
 
-.. image:: images/adminaccountlink1.png
+.. image:: images/Admin_Settings_ProviderSettings_3DottedAction_Details.png
 
-.. image:: images/adminaccountlink3.png
+.. image:: images/Admin_settings_ProviderSettings_Details.png
 
 **Note** : 
 
@@ -342,11 +342,11 @@ Secure connections to resources using ALB to RStudio and Nextflow-Advanced Produ
    Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
 4. Navigate to the available products panel and launch Nextflow-Advanced with required parameters. Once the product is provisioned you can see the outputs through the “View Outputs”. You can monitor the pipeline through “Monitor Pipeline”.
 
-.. image:: images/advanced.png 
+.. image:: images/Principal_Product_NF_Details.png
 
 5. Navigate to the available products panel and launch RStudio with the required parameters. Once the product is provisioned you can connect to RStudio through the “Open link” action.
    
-.. image:: images/actions-rstudio.png 
+.. image:: images/Principal_Product_RStudio_ProductDetails.png 
 
 `Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
 
@@ -354,7 +354,7 @@ Navigation to help
 ------------------
 Through the "Help" option, you can see the Research Gateway documentation. Click on the top-right menu which is available on the header. 
 
-.. image:: images/Help.png
+.. image:: images/Principal_rightmenu_Help.png
 
 **Note:** There is Help option which is available on the footer, through this option also you can navigate to the  Research Gateway documentation.
 
@@ -371,7 +371,11 @@ If Principal Investigator logs as a first time, you can view the welcome screen.
 
 Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
-.. image:: images/project1.png
+.. image:: images/Principal_CreateProject_1.png
+
+.. image:: images/Principal_CreateProject_2.png
+
+.. image:: images/Principal_CreateProject_3.png
 
 Fill in the following details
 
@@ -415,9 +419,9 @@ Research Gateway will set up a shared S3 bucket(Project Storage) where the team 
 1. The Project level storage will be listed as a product in the My Products tab inside the project as an S3 bucket. There is explore action inside the S3 bucket<<There is a folder called “Shared”.
    Note: It is a common folder(only accessible by user unless shared)  and it  is available to all users.
 
-.. image:: images/projectstorage.png   
+.. image:: images/Principal_Project_ProjectStorage.png   
 
-.. image:: images/shared.png  
+.. image:: images/Principal_Project_ProjectStorage_SharedFolder.png  
 
 2. You can able to view, upload and delete objects in the storage.
 3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
@@ -430,19 +434,23 @@ Cost Control
 1. Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 80%) or stopping the project (at 90%).
 2. When creating a project if you select the “Automatically respond to budget alerts” checkbox and it will open a popup box which contains message, Once you confirm that it  will control the costs by taking automatic actions when budget thresholds are breached. By turning this feature off, you will lose the benefits of this cost control feature.
 
-.. image:: images/project1.png
+.. image:: images/Principal_CreateProject_1.png
+
+.. image:: images/Principal_CreateProject_2.png
+
+.. image:: images/Principal_CreateProject_3.png
 
 3. You can manually stop/pause/resume/Add Budget/Archive the project through the actions which are available on the project details page.
 
-.. image:: images/projectevents.png
+.. image:: images/Principal_ProjectDetails.png
 
 4. You can see the events related to cost control in the events page
 
-.. image:: images/costcontrol1.png
+.. image:: images/Principal_CostControl_events.png
 
 Initially project is in creating state. Once project creation completed the status will be changed to "Active". Click on the project in **"My Projects"** list. 
 
-.. image:: images/myprojects.png 
+.. image:: images/Principal_MyProjects.png
 
 
 Once you click on the project, you can see the budget in the cards and remaining details will show a tabbed area with the following tabs:
@@ -463,22 +471,22 @@ Project Details
 7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
 8. Click on the “Add Budget” button which is available on the right side, it should show a dialog box where you can add budget value of whole number greater than 0.
 
-.. image:: images/projectevents.png 
+.. image:: images/Principal_ProjectDetails.png 
 
 9. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update list” button. It will add collaborators to the project. You can search the researchers, through the search option.
 
-.. image:: images/manage.png
+.. image:: images/Principal_ProjectDetails_AssignUsers.png
 
 10. Click on the "Manage" option under the **Add products** field. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
 
-.. image:: images/manage1.png
+.. image:: images/Principal_ProjectDetails_AddProducts.png
 
 Events
 ^^^^^^
 
 You can see project-related events in the :ref:`Appendix E<Appendix E>`.
 
-.. image:: images/events.png
+.. image:: images/Principal_Project_EventsTab.png
    
 Available Products
 ^^^^^^^^^^^^^^^^^^
@@ -490,7 +498,7 @@ Available Products
 	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
 	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 	  
-.. image:: images/availableproducts.png	 
+.. image:: images/Principal_Project_AvailableProducts.png	 
 	 
 My Products
 ^^^^^^^^^^^
@@ -504,7 +512,7 @@ My Products
 	  c. **Terminated** - You can see all terminated products here.
 
 
-.. image:: images/myproducts.png
+.. image:: images/Principal_Project_MyProducts.png
 
 **Note**:
 
@@ -515,20 +523,20 @@ d. When the Principal Investigator logs in, the user will be able to see the Act
 
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
-.. image:: images/projectdetails.png
+.. image:: images/Principal_ProjectDetails.png
 
 Assigning Researchers to Projects
 ---------------------------------
 
 There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the Assigned researchers field in the Project Details tab.
 
-.. image:: images/projectdetails1.png 
+.. image:: images/Principal_ProjectDetails.png
 
 Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI and see events regarding update action in “Events ” tab  . You can’t unselect the researchers who have associated products.
 
-.. image:: images/researchers.png 
+.. image:: images/Principal_ProjectDetails_AssignUsers.png 
  
-.. image:: images/update.png
+.. image:: images/Principal_ProjectDetails_AssignUsers_Completed.png
 
 
 How to edit the catalog type
@@ -536,13 +544,13 @@ How to edit the catalog type
 
 There is an edit functionality for the catalog type. You can create a project without selection of catalog type, once project is active you can see message "There are no Bring your own catalog type configured for this project" under "Add Products" field.
 
-.. image:: images/default.png 
+.. image:: images/Principal_ProjectDetails_WithoutEditCatalogType.png 
 
 Once project is active, navigate to the project details tab and click on the “Manage (i.e., Pencil icon)” option which is at the **Add products** field in the Project Details tab. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
 
-.. image:: images/productsedit.png 
+.. image:: images/Principal_Project_ProjectDetails_AddProducts.png 
 
-.. image:: images/manage1.png
+.. image:: images/Principal_ProjectDetails_AddProducts.png
 
 **Note**:
 
