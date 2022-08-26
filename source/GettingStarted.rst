@@ -346,7 +346,7 @@ Secure connections to resources using ALB to RStudio and Nextflow-Advanced Produ
 
 5. Navigate to the available products panel and launch RStudio with the required parameters. Once the product is provisioned you can connect to RStudio through the “Open link” action.
    
-.. image:: images/Principal_Product_RStudio_ProductDetails.png 
+.. image:: images/Product_RStudio_ProductDetails.png 
 
 `Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
 

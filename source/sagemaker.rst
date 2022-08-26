@@ -19,7 +19,7 @@ Parameters
    * - InstanceType
      - Choose instance type in the drop-down list. Eg: ml.t2.medium
 
-.. image:: images/sagemaker.png
+.. image:: images/AmazonSagemaker_LaunchForm.png
 
 Steps to launch
 -----------------
@@ -36,7 +36,7 @@ Steps to connect
 1. Click on the “Link” button under the “Connect” list on the right side of the page. This will open the sageMaker notebook in a new browser tab. 
 2. You can de-provision the product through the “Terminate” option.
 
-.. image:: images/sage-actions.png
+.. image:: images/Sagemaker_ProjectDetails_Action.png
 
 Other considerations
 ---------------------

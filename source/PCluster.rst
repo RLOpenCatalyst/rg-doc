@@ -45,7 +45,13 @@ Parameters
    * - SpotBidPercentage
      - Enter The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage.
 
-.. image:: images/PCluster.png
+.. image:: images/Product_PCluster_LaunchForm1.png
+
+.. image:: images/Product_PCluster_LaunchForm2.png
+
+.. image:: images/Product_PCluster_LaunchForm3.png
+
+.. image:: images/Product_PCluster_LaunchForm4.png
 
 Steps to launch
 ----------------

@@ -24,7 +24,7 @@ Parameters
      - Choose instance type in the drop-down list Eg: t2.small
    
 
-.. image:: images/docker.png
+.. image:: images/DockeronAmazonEC2Linux_LaunchForm.png
 
 Steps to launch
 ----------------

@@ -17,7 +17,7 @@ Parameters
    * - Product Name
      - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch
  
-.. image:: images/S3.png
+.. image:: images/AmazonS3_LaunchForm.png
  
 Steps to launch
 ----------------
@@ -34,9 +34,9 @@ Steps to connect
 1. Click on the newly created S3 bucket in the “My Products” tab. The product details page will open. 
 2. Click on the “Upload” action. Click on "Add files" to upload multiple files. The file size should not be greater than 5 GB. Click on "Add folder" to upload entire folder to S3. Click the “submit” button and the file will be uploaded to the bucket. In the product details screen of the newly created S3 bucket, click the “Explore” action. The “Explore” screen displays all the details of the bucket.
 
-.. image:: images/multifiles.png 
+.. image:: images/S3Product_Explore_UploadAction_MultipleFiles.png
 
-.. image:: images/upload2.png
+.. image:: images/Principal_Product_S3_Explore_Upload.png
 
 3. The newly uploaded file/folder should be visible. 
 	a. Select the check-box next to the file and then click the “Actions” drop-down and select “Delete”. The file should be deleted.
@@ -46,7 +46,7 @@ Steps to connect
 6. Through the “Unshare” option you can stop the product sharing.
 7. You can de-provision the product through the “Terminate” option.
 
-.. image:: images/s3-actions.png 
+.. image:: images/Principal_S3Product_LinkAction.png
 
 Other considerations
 ---------------------

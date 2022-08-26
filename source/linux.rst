@@ -27,7 +27,7 @@ Parameters
      - Choose instance type in the drop-down list Eg: t2.small
    
 
-.. image:: images/ec2-linux.png
+.. image:: images/AmazonEC2Linux_LaunchForm.png
 
 Steps to launch
 ----------------
