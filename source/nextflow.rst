@@ -75,7 +75,7 @@ Steps to launch
 		c.  You can see the product names with  realted paths when you search in the InputDataLocation field. You need to select the S3 bucket name or project storage buckets from the available list.
 		d.  If you type the invalid characters it will throw an error message accordingly.
 		
-		.. image:: images/nf1.png
+		.. image:: images/Nextflow_Launchform_inputoutputfields.png
 		
 	* InputDataPattern
 		a.	This is a plain edit field. 
@@ -109,7 +109,7 @@ Steps to connect
 8. You can de-provision the product through the “Terminate” option.
 9. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
-.. image:: images/advanced.png
+.. image:: images/Principal_Product_NF_Details.png
 
 Other considerations   
 ---------------------

@@ -93,7 +93,7 @@ Steps to connect
 4. You can view the outputs through “View Outputs” option.
 5. You can de-provision the product through the “Terminate” option.
 
- .. image:: images/cromwelladvanced.png
+ .. image:: images/Product_CromwellAdvanced_ProductDetails.png
 
 Other considerations   
 ---------------------

@@ -31,8 +31,9 @@ Parameters
      - Provide the root login password for MySQL DB.
    
 
-.. image:: images/Mysql.png
+.. image:: images/Principal_MySQL_Launchform1.png
 
+.. image:: images/Principal_MySQL_Launchform2.png
 
 Steps to launch
 ----------------

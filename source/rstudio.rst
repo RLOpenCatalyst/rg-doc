@@ -27,7 +27,7 @@ Parameters
      - Choose instance type in the drop-down list for RStudio. Eg: t2.micro
 
 
- .. image:: images/rstudio.png
+ .. image:: images/Principal_Product_RStudio_LaunchForm.png
  
 Steps to launch
 ----------------
@@ -47,7 +47,7 @@ Steps to connect
 4. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
  
- .. image:: images/rstudio1.png
+ .. image:: images/Product_RStudio_ProductDetails.png
  
 Other considerations
 --------------------

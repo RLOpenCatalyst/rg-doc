@@ -24,7 +24,7 @@ Parameters
      - Choose instance type in the drop-down list Eg: t2.small
    
 
-.. image:: images/ubuntu.png
+.. image:: images/Product_Ubuntu20.04OnAmazonEC2_LaunchForm.png
 
 Steps to launch
 ----------------

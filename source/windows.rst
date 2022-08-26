@@ -25,7 +25,7 @@ Parameters
    * - InstanceType
      - Choose instance type in the drop-down list. Eg: t2.small
 	 
-.. image:: images/ec2-windows.png
+.. image:: images/AmazonEC2Windows_LaunchForm.png
 	 
 Steps to launch
 ---------------
