@@ -30,7 +30,7 @@ As an Administrator, you can view the organization-wide budgets from the **Budge
 Login as the Administrator user. Click on “☰” option which is available on the top-left side. Click on the **Budgets** menu item to navigate to the Budgets page.
 
  
-.. image:: images/AdminMenu.png
+.. image:: images/Admin_Navigation_Action.png
 
 **Budget KPIs**
 
@@ -41,7 +41,7 @@ You can see the following KPI cards:
   * **Total Direct Cost**: This is the budget consumed by all Organizations.
   * **Total Budget Available**: This is the portion of the alloted budget which is not yet consumed.
 
-.. image:: images/Image2.png
+.. image:: images/Admin_Budgets_Organization-WiseBudgetBreakdown.png
 
 **Organization-wise budget view**
 
@@ -75,13 +75,13 @@ The following details are visible in a table format:
    :header-rows: 1
    
    
-.. image:: images/budget2.png
+.. image:: images/Admin_Budgets_Project-WiseBudgetBreakdown.png
 
 **Researcher-wise budget view**
 
 You can  also see researcher-wise budget details which are linked to a particular project and  you can see configured product details in product-wise budget details page.
  
-.. image:: images/Image4.png
+.. image:: images/Admin_Budgets_Researcher-WiseBudgetBreakdown.png
 
 Cost allocation tags activation
 -------------------------------
@@ -102,19 +102,19 @@ As an Administrator you can use the "Users" screen to view all users across Rese
    
 Click on the **Users** menu item to navigate to the Users page.
 
-.. image:: images/user.png
+.. image:: images/Admin_Navigation_Action.png
 
-.. image:: images/user1.png
+.. image:: images/Admin_Users_DefaultPage.png
 
 
 You can see the users in card view or table view. Click on the “≣”  button which is on the right side of the screen.
   
   
-.. image:: images/user2.png
+.. image:: images/Admin_Users_DefaultPage_TableView.png
 
 There is a search option which is beside the “+Add New” button. You can search based on users, username, and Email id. 
 
-.. image:: images/search.png
+.. image:: images/Administrator_Users_Search.png
 
 If the results are not matched with the searched item it will show a message like “No matching users found”.
 
@@ -122,19 +122,19 @@ If the results are not matched with the searched item it will show a message lik
 
 You can filter by O.U, Filter by role(Admin/Researcher/Principal Investigator), and sort by username(Asc/Desc), user-role(Asc/Desc), and creation date(Asc/Desc).
 
-.. image:: images/role.png
-.. image:: images/filter.png
-.. image:: images/sort.png
+.. image:: images/Administrator_Users_FilterbyRole.png
+.. image:: images/Administrator_Users_FilterByOU_filter.png
+.. image:: images/Administrator_Users_SortBy.png
 
 The user can see an active filter with enable and disable options. You can toggle the view between active or all users.
 
-.. image:: images/toggle.png
+.. image:: images/Admin_Users_Active_Toggle.png
 
 .. _`Adding Users`:
 
 You can add a new user through the “+Add New” button which is on the right side of the screen. 
 
-.. image:: images/addnewuser1.png
+.. image:: images/Admin_Users_addnewuserDropdown.png
 
 
 1. Click on "Add New User" button to add a single user via the “Add User” form.
@@ -259,7 +259,7 @@ You can perform the following user actions
 
 There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Choose the organizational unit in the drop-down list and click on the “Assign” button. You can see a successful toaster message also. Once assigned you can see O.U name under the Email id. 
 
-.. image:: images/assign.png 
+.. image:: images/Admin_Users_AssignO.U.png
 
 .. image:: images/assign1.png 
 
@@ -279,7 +279,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
 
-.. image:: images/resend.png
+.. image:: images/Admin_Users_ResendVerificationEmail.png
 
 **NOTE**: The "Resend verification mail" option is available only if the user is inactive.
 
@@ -288,11 +288,11 @@ Audit Trail
 
 As an Administrator you can use the **Audit Trail** screen to view security-related audits. Click on the “☰” option which is available on the left side header.
    
-.. image:: images/Audit1.png
+.. image:: images/Admin_AuditTrail_Navigation.png
 
 Click on the **Audit Trail** menu item. Through this, you can navigate to the Audit Trail page.
 
-.. image:: images/Audit2.png
+.. image:: images/Admin_AuditTrail_DefaultPage.png
 
 You can see the audit event details in the :ref:`Appendix D<Appendix D>` 
    
@@ -300,13 +300,13 @@ If you try to search the non-existent word it will display a message like “No 
 
 .. image:: images/search2.png
 
-.. image:: images/fail.png
+.. image:: images/Admin_AuditTrail_LoginFailedRecords.png
 
 You can filter the logs by admin, Principal Investigator, researcher, Organization, and Project. You can also filter the logs through the date. 
 
-.. image:: images/Audit3.png
+.. image:: images/Admin_AuditTrail_FilterLogsBy.png
 
-.. image:: images/Audit4.png
+.. image:: images/Admin_AuditTrail_SelectDateRange.png
 
 
 .. _Catalog:
@@ -315,11 +315,11 @@ Catalog
 ^^^^^^^
 As an Administrator you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. 
    
-.. image:: images/catalog.png
+.. image:: images/Administrator_Catalog_Navigation.png
 
 Click on the "Catalog" menu item. Through this, you can navigate to the Catalog details page.
 
-.. image:: images/catalog1.png
+.. image:: images/Admin_Catalog_DefaultPage.png
 
 You can see the standard catalog products on the listing page and you can enable the checkbox which is at the right side of the product and assign to a particular  O.U through the “Assign selected to O.U” button.
 
@@ -329,9 +329,9 @@ You can see the standard catalog products on the listing page and you can enable
 
 You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
 
-.. image:: images/update.png
+.. image:: images/Admin_Catalog_UpdateToSelectedO.U.png
 
-.. image:: images/update1.png
+.. image:: images/Admin_Catalog_UpdateToSelectedO.U_ToasterMessage.png
 
 You can search  product name and description of the product. We have following filter options:
  
@@ -366,21 +366,29 @@ If Principal Investigator logs as a first time, he can view the welcome screen. 
 
 Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen.
 
-.. image:: images/project1.png 
+.. image:: images/Principal_CreateProject_1.png
+
+.. image:: images/Principal_CreateProject_2.png
+
+.. image:: images/Principal_CreateProject_3.png 
 
 My Projects page of the Research Gateway will list all the existing projects created along with other details.
 
-.. image:: images/myprojects.png
+.. image:: images/Principal_MyProjects.png
 
 Clicking on a specific project will leads to a project details page.
 
-.. image:: images/projectevents.png 
+.. image:: images/Principal_ProjectDetails.png  
 
 How to add a new Project 
 ^^^^^^^^^^^^^^^^^^^^^^^^
 Login to the Research Gateway. Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
-.. image:: images/project1.png 
+.. image:: images/Principal_CreateProject_1.png
+
+.. image:: images/Principal_CreateProject_2.png
+
+.. image:: images/Principal_CreateProject_3.png 
 
 Fill in the following details
 
@@ -424,9 +432,9 @@ Research Gateway will set up a shared S3 bucket(Project Storage) where the team 
 1. The Project level storage will be listed as a product in the My Products tab inside the project as an S3 bucket. There is explore action inside the S3 bucket<<There is a folder called “Shared”.
    Note: It is a common folder(only accessible by user unless shared)  and it  is available to all users.
 
-.. image:: images/projectstorage.png   
+.. image:: images/Principal_Project_ProjectStorage.png   
 
-.. image:: images/shared.png  
+.. image:: images/Principal_Project_ProjectStorage_SharedFolder.png  
 
 2. You can able to view, upload and delete objects in the storage.
 3. While launching any EC2 based product, the user will be prompted whether to mount the Project and User level storage.
@@ -439,15 +447,19 @@ Cost Control
 1. Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 80%) or stopping the project (at 90%).
 2. When creating a project if you select the “Automatically respond to budget alerts” checkbox and it will open a pop up box which contains message, Once you confirm that it  will control the costs by taking automatic actions when budget thresholds are breached. By turning this feature off, you will lose the benefits of this cost control feature.
 
-.. image:: images/project1.png
+.. image:: images/Principal_CreateProject_1.png
+
+.. image:: images/Principal_CreateProject_2.png
+
+.. image:: images/Principal_CreateProject_3.png 
 
 3. You can manually Stop/Pause/Resume/Archive/Add Budget the project through the actions which are available on the project details page.
 
-.. image:: images/projectevents.png
+.. image:: images/Principal_ProjectDetails.png
 
 4. You can see the events related to cost control in the events page
 
-.. image:: images/costcontrol1.png
+.. image:: images/Principal_Project_Events_CostControlEvents.png
 
 Once you click on the project, you can see the budget in the cards and remaining details will show a tabbed area with the following tabs:
 
@@ -467,15 +479,15 @@ Project Details Tab
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
 7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
 
-.. image:: images/projectevents.png 
+.. image:: images/Principal_ProjectDetails.png 
 
 8. Click on the “Manage” option under the **Assigned Researchers** field. Once clicked on that, enable the checkbox beside the researcher Emails and click on the “Update list” button. It will add collaborators to the project. You can search the researchers, through the search option.
 
-.. image:: images/manage.png
+.. image:: images/Principal_ProjectDetails_AssignUsers.png
 
 9. Click on the "Manage" option under the **Add products** field. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
 
-.. image:: images/manage1.png
+.. image:: images/Principal_ProjectDetails_AddProducts.png
 
 
 Note: Whenever you clicked on the budget it will navigated to researcher-wise budget details page.
@@ -485,7 +497,7 @@ Events Tab
 
 You can see the project-related events in the :ref:`Appendix E<Appendix E>`.
 
-.. image:: images/events.png
+.. image:: images/Principal_Project_EventsTab.png
    
 Available Products Tab
 -----------------------
@@ -497,7 +509,7 @@ Available Products Tab
 	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
 	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 
-.. image:: images/availableproducts.png	 
+.. image:: images/Principal_Project_AvailableProducts.png	 
 
 My Products Tab
 ---------------
@@ -510,7 +522,7 @@ My Products Tab
 	  b. **Active** - You can see all the active products here.
 	  c. **Terminated** - You can see all terminated products here.
 	 
-.. image:: images/myproducts.png
+.. image:: images/Principal_Project_MyProducts.png
 
 **NOTE**: 
 
@@ -527,7 +539,7 @@ Auto-Stop Resources on Idle
 
 If there is no action happening in the provisioned RStudio product by default it will auto stop the product after 15 minutes. if you want to use product you can manually start the product again.
 
-.. image:: images/rstudio1.png
+.. image:: images/Product_RStudio_ProductDetails.png
  
 .. _Users_PI:
 
