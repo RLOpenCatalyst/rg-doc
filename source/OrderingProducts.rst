@@ -17,6 +17,7 @@ Ordering products in Research Gateway
    MySql
    ubuntu
    PCluster
+   FSxForLustre
    
 
 
