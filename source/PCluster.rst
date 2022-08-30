@@ -30,6 +30,8 @@ Parameters
      - Select The VPC to create security groups and deploy AWS Batch or slurm to from drop-down list
    * - HeadNodeSubnetId
      - Select the Subnet you want your Head Node to launch in from the drop-down list. You must select a public subnet.
+   * - FileSystemId
+     - Enter the File System Id of the FSx for Lustre file system which you want to use. e.g. fs-12345678. Leave this field to default if you do not want to use FSx for Lustre.   
    * - Scheduler
      - Select a Cluster scheduler from the drop-down list 
    * - WorkerNodeInstanceType 

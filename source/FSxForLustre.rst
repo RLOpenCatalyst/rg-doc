@@ -3,6 +3,8 @@ FSx For Lustre
 
 This Product Sets up an FSX for Lustre filesystem with PERSISTENT_1 deployment type using SSD storage.
 
+FSx for Lustre is a fully managed shared storage built on top of a popular high-performance file system. It provides sub-millisecond latency and hundreds of GBs/s throughput for workloads with shared storage. Create an instance of this file-system and connect it to your HPC workloads (PCluster) for enhanced performance.
+
 Parameters 
 ----------
 
@@ -59,5 +61,5 @@ Steps to connect
 5. You can de-provision the product through the “Terminate” option
 
 .. image:: images/Product_FSxForLustre_ProductDetails.png
-    
+
 .. image:: images/Product_FSxForLustre_OutputsTab.png
