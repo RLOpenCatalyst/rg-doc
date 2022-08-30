@@ -549,38 +549,37 @@ As a Principal Investigator  you can use the "Users" screen to view all users ac
 
 Click on the **Users** menu item to navigate to the Users page.
 
-.. image:: images/user_pi.png
+.. image:: images/Principal_Users_Navigation.png
 
-.. image:: images/user1_pi.png
+.. image:: images/Principal_Users_ActiveUserToggle.png
 
 
 You can see the users in card view or table view. Click on the “≣”  button which is on the right side of the screen.
   
   
-.. image:: images/user2_pi.png
+.. image:: images/Principal_Users_TableView.png
 
 There is a search option which is beside the “+Add New” button. You can search based on users, username, and Email id. 
 
-.. image:: images/search_pi.png
+.. image:: images/Principal_Users_Search.png
 
 If the results are not matched with the searched item it will show a message like “No matching users found”.
 
-.. image:: images/search1_pi.png
+.. image:: images/Principal_Users_Searchnotmatched.png
 
 You can filter by role(Researcher/Principal Investigator), and sort by username(Asc/Desc), user-role(Asc/Desc), and creation date(Asc/Desc).
 
-.. image:: images/role_pi.png
-.. image:: images/sort_pi.png
+.. image:: images/Principal_Users_FilterByRole.png
+.. image:: images/Principal_Users_SortBy.png
 
 The user can see an active filter with enable and disable options. You can toggle the view between active or all users.
 
-.. image:: images/toggle_pi.png
-
+.. image:: images/Principal_Users_ActiveUserToggle.png
 .. _`Adding Users_PI`:
 
 You can add a new user through the “+Add New” button which is on the right side of the screen. 
 
-.. image:: images/addnewuser.png
+.. image:: images/Principal_Users_AddNewUser.png
 
 1. Click on “Add New User” button to add a single user via the “Add User” form.
 
@@ -713,7 +712,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
 
-.. image:: images/resend_pi.png
+.. image:: images/Principal_Users_ResendVerificationEmail.png
 
 **NOTE**: The "Resend verification mail" option is available only if the user is inactive.
 
@@ -721,26 +720,26 @@ How to add researchers to existing project
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is at the "Assigned researchers" field in the Project Details tab.
 
-.. image:: images/projectdetails1.png 
+.. image:: images/Principal_ProjectDetails.png
 
 Select the Researchers and click on the “Update List” button. You can see the “Updated Successfully” toaster message in the UI and see events regarding update action in “Events ” tab  . You can’t unselect the researchers who have associated products.
 
-.. image:: images/researchers.png 
+.. image:: images/Principal_ProjectDetails_AssignUsers.png
  
-.. image:: images/update.png
+.. image:: images/Principal_ProjectDetails_AssignUsers_Completed.png
 
 How to edit the catalog type 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 There is an edit functionality for the catalog type. You can create a project without selection of catalog type, once project is active you can see message "There are no Bring your own catalog type configured for this project" under "Add Products" field.
 
-.. image:: images/default.png 
+.. image:: images/Principal_ProjectDetails_WithoutEditCatalogType.png
 
 Once project is active, navigate to the project details tab and click on the “Manage (i.e., Pencil icon)” option which is at the **Add products** field in the Project Details tab. Once clicked on that, it will display the list. Select the option from the list and click on the "Update list" button.
 
-.. image:: images/productsedit.png 
+.. image:: images/Principal_ProjectDetails.png 
 
-.. image:: images/manage1.png
+.. image:: images/Principal_ProjectDetails_AddProducts.png
 
 
 **Note**:
@@ -773,13 +772,13 @@ Actions on Projects
 
 Once project is active, we can do Pause/Resume/Stop/Archive/Add Budget actions on a project.
 
-.. image:: images/projectevents.png 
+.. image:: images/Principal_ProjectDetails.png 
 
 **Pause Action**
 
 The project status changed to “Paused”. All the researchers under this project would be affected. In a Paused state new provisioning is not allowed. Users can continue to use already provisioned resources as before. All the available products would be visible  but “Launch Now “ button would be hidden.
 
-.. image:: images/pause.png
+.. image:: images/Principal_ProjectPause_Success.png
 
 .. image:: images/pause2.png
 
@@ -787,13 +786,13 @@ The project status changed to “Paused”. All the researchers under this proje
 
 The project status changed  to “Active”. In the Active state, team-members can launch new products from the catalog of Available Products.
 
-.. image:: images/resume.png
+.. image:: images/Project_ResumeAction_Active.png
 
 **Stop Action** 
 
 The project status changed to “Stopped”. In a Stopped state all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except the s3 product.
 
-.. image:: images/stop.png
+.. image:: images/Principal_Project_Stopped_SuccessMessage.png
 
 .. image:: images/stop2.png
 
@@ -803,19 +802,19 @@ The project status changed to “Stopped”. In a Stopped state all underlying r
 
 Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
 
-.. image:: images/Archive.png
+.. image:: images/Principal_ProjectDetails.png
 
-.. image:: images/Archive2.png
+.. image:: images/Principal_Project_ArchiveProject_PopUp.png
 
 **Add Budget Action**
 
 The “Add Budget” action will provide Principal Investigators a way to add more budget to the project . Clicking on the “Add Budget” button will bring up a dialog box where you can add any whole number greater than 0.
 
-.. image:: images/AddBudget1.png
+.. image:: images/Principal_ProjectDetails.png
 
-.. image:: images/AddBudget2.png
+.. image:: images/Principal_ProjectDetails_AddBudget.png
 
-.. image:: images/AddBudget3.png
+.. image:: images/Principal_ProjectDetails_AddBudget_Completed.png
 
 **Note**: 
 
@@ -835,9 +834,9 @@ As a Principal Investigator, you can view the organization-wide budgets from the
 
 Sign in as the Principal Investigator. Click on the “☰” Symbol which is available on left side header. Click on the "Budgets" menu item through this, you can navigate to the Budget Details page.  
 
-.. image:: images/budgets.png
+.. image:: images/Principal_Budgets_Navigation.png
 
-.. image:: images/budget2.png
+.. image:: images/Principal_Budget_Project-WiseBudgetBreakdown.png
 
 You can see budget details  with different KPI cards. You can see the following KPI cards:
 
@@ -862,9 +861,9 @@ Note: When Consumed Budget exceeds a threshold (say 80%), the budget management 
  
 You can see researcher budget details which are linked to particular products and you can see configured products information in Researcher-wise Budget details page
 
-.. image:: images/budget3.png
+.. image:: images/Principal_Budgets_ResearcherWiseBudgetBreakdown.png
 
-.. image:: images/budget4.png
+.. image:: images/Principal_Budgets_Product-WiseBudgetBreakdown.png
 
 .. _Catalog_PI:
 
@@ -887,9 +886,9 @@ You can see the standard catalog products on the listing page. To assign a set o
 
 You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
 
-.. image:: images/update.png
+.. image:: images/Principal_Catalog_UpdateToSelectedO.U.png
 
-.. image:: images/update1.png
+.. image:: images/Principal_Catalog_UpdateToSelectedO.U_ToasterMessage.png
 
 You can use the search field to search for a term in the product name and description of the product. You can also use the filter options as below :
   
@@ -913,9 +912,9 @@ Key Pairs(for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The Key Pairs screen can be used by the Principal Investigator to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
 
- .. image:: images/key1.png
-
-.. image:: images/key2.png
+.. image:: images/Principal_Keypairs_Navigation.png
+  
+.. image:: images/Principal_Keypair_DefaultPage.png
 
 You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
   
@@ -933,13 +932,13 @@ You can see key Pairs details in table format:
 
 The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
 
-.. image:: images/deletionkeypair.png
+.. image:: images/keypair_DeleteKeypair_PopUp.png
 
 You can search the keypair through Keypair name and Project name.
 
 Ex: Type “Chiron” in the search area it should display the keypairs which are attached to the Chiron project.
 
-.. image:: images/se1.png
+.. image:: images/Principal_KeyPairs_Search.png
 
 
 Studies(for Principal Investigator)
@@ -976,13 +975,13 @@ You can connect to Open Data like the AWS registry of open data. The “Study”
 	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
 	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
 											
- .. image:: images/sc3.png
+ .. image:: images/Principal_Studies_StudyDetails.png
   
 **Explore Action**
 
 You can see the files/folders which are  related to the datastore.
 
-.. image:: images/ex1.png
+.. image:: images/Principal_Studies_Explore.png
 
 **Link/Unlink Action**
 
@@ -991,13 +990,13 @@ You can see the files/folders which are  related to the datastore.
 3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
 4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
  
- .. image:: images/link2.png
- 
- .. image:: images/unlink.png
- 
- .. image:: images/unlink2.png
+ .. image:: images/Principal_Studies_Linkaction_Available.png
+
+ .. image:: images/Principal_Studies_UnlinkResource.png
+
+ .. image:: images/Principal_Studies_UnlinkResource_Success.png
   
- .. image:: images/link1.png  
+ .. image:: images/Principal_Studies_Link.png  
 
  
 Audit Trail(For Principal Investigator)
@@ -1005,17 +1004,17 @@ Audit Trail(For Principal Investigator)
 
 As a Principal Investigator  you can use the Audit Trail screen to view security-related audits. Click on the “☰” option which is available on the left side header.
 
-.. image:: images/AuditTrailPI.png
+.. image:: images/Principal_AuditTrail_Navigation.png
 
 Click on the "Audit Trail" menu item. Through this, you can navigate to the Audit Trail page.
 
-.. image:: images/AuditTrailPI1.png
+.. image:: images/Principal_AuditTrail_DefaultPage.png
 
 If you try to search the non-existent word it will display a message like “No matching organizations found”. You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
 
 .. image:: images/search2.png
 
-.. image:: images/AuditTrailPI2.png
+.. image:: images/Principal_AuditTrail_Search.png
 
 You can filter the logs by Principal Investigator, researcher, and Project which will show the details of your own O.U. . You can also filter the logs through the date. 
 
