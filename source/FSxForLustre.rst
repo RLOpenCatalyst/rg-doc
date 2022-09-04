@@ -5,6 +5,8 @@ This Product Sets up an FSX for Lustre filesystem with PERSISTENT_1 deployment t
 
 FSx for Lustre is a fully managed shared storage built on top of a popular high-performance file system. It provides sub-millisecond latency and hundreds of GBs/s throughput for workloads with shared storage. Create an instance of this file-system and connect it to your HPC workloads (PCluster) for enhanced performance.
 
+`Watch a video on how to provision an FSx for Lustre product. <https://www.youtube.com/embed/TIQANO-DOtg?start=85&end=163&autoplay=1>`_
+
 Parameters 
 ----------
 

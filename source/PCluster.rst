@@ -5,6 +5,8 @@ PCluster Product of Research Gateway helps you to set up a high performance comp
 
 PCluster enables you to quickly build an HPC compute environment in AWS. It automatically sets up the required compute resources and shared filesystem. You canuse PCluster with batch schedulers, such as AWS Batch and Slurm. PCluster facilitates quick-start, proof of concept deployments as well as production deployments.
 
+`Watch a video on how to provision a PCluster product. <https://www.youtube.com/embed/TIQANO-DOtg?start=164&end=208&autoplay=1>`_
+
 Parameters
 -----------
 
