@@ -73,6 +73,8 @@ Steps to connect
 2. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field. Click Submit. You should now be connected to the EC2 instance via SSH. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 3. You can de-provision the product through the “Terminate” option.
 
+`Watch a video that demonstrates using OpenFOAM on a PCluster product. <https://www.youtube.com/embed/TIQANO-DOtg?start=209&end=370&autoplay=1>`_
+
 Other considerations
 ---------------------
 
