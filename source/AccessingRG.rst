@@ -69,7 +69,9 @@ Click on "Send Reset link" button. If the provided details are valid, the verifi
 
 .. image:: images/verificationemail.png
 
-**Note**: The password policy should meet the following requirement
+.. note::
+  
+  The password policy should meet the following requirement
    a. The minimum password length of 8 characters and a maximum of 16 characters.
    b. It should have atleast one lower case character(a-z).
    c. It should have atleast one upper case character(A-Z).
@@ -82,7 +84,7 @@ If the password change is successful you can navigate to the verification succes
 
 .. image:: images/ChangePassword_Success.png
 
-**Note:** If a user tries to reset password more than 10 times it will display the message like **“Attempt limit exceeded. Please try again”**
+.. note:: If a user tries to reset password more than 10 times it will display the message like **“Attempt limit exceeded. Please try again”**
 
 
 Session Timeout

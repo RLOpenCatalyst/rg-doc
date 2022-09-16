@@ -29,7 +29,7 @@ Users with the Administrator role can perform the steps below.
   * `Adding Organizational Units`_
   * :ref:`Adding Catalog Items<Catalog>`
 
-**NOTE** : The administrator should assign products from standard catalog collection to the organizational unit before a PI can successfully create a project with attached Project Storage.
+.. note:: The administrator should assign products from standard catalog collection to the organizational unit before a PI can successfully create a project with attached Project Storage.
 
 Users with the Principal Investigator role can perform the steps below.
   
@@ -91,7 +91,9 @@ Click on "Send Resend link" button. If the provided details are valid, you will 
 
 .. image:: images/verificationemail.png
 
-**Note**: The password policy should meet the following requirement
+.. note::
+
+ The password policy should meet the following requirement
    a. The minimum password length of 8 characters and a maximum of 16 characters.
    b. It should have atleast one lower case character(a-z).
    c. It should have atleast one upper case character(A-Z).
@@ -125,7 +127,7 @@ Sign up with a Google ID
 
 .. image:: images/registerform.png
 
-Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
+.. note:: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
 
 Sign up with an Email address
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -165,7 +167,7 @@ Once logged in to your account, you will land on the Welcome page in Research Ga
 
 .. image:: images/registerform.png
 
-Note: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
+.. note:: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
 
 .. _`Session timeout`:
 
@@ -204,10 +206,10 @@ Click on the **“Create Organization”** button. The new organizational unit i
 
 .. image:: images/Admin_CreateOrganizationPage.png
 
-**NOTE**: 
+.. note:: 
 
-1. You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
-2. You can create an organization without selection of account name.
+  a. You can create an organization without Principal Investigator. Through the "Assign O.U." option in users, you can assign later.
+  b. You can create an organization without selection of account name.
 
 The Organizations page of the Research Gateway lists all the existing organizational units created, with some details of each organization displayed on the card. 
 
@@ -233,7 +235,7 @@ Click on  the  “Settings” menu item. Provider settings page is opened.
 .. image:: images/Principal_Settings_ProviderSettings.png 
    :name: Provider Settings Page
    
-**Note:**  When we add the settings please make sure the user credentials has the IAMFullAccess/AdministratorAccess Permissions. You can refer the list of policies that we are using create the role in Research Gateway.
+.. note::  When we add the settings please make sure the user credentials has the IAMFullAccess/AdministratorAccess Permissions. You can refer the list of policies that we are using create the role in Research Gateway.
 
 AccessPolicies
 
@@ -278,10 +280,11 @@ Click on the "Verify" button, it will check the provided details are valid or no
 
 Click on the “Add Account” button. An AWS account is added successfully. You can see all the account details in a table format.
 
-**NOTE**: 
+.. note::
 
-1. The "Add Account" button was disabled until the details are verified.
-2. Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly. 
+  a. The "Add Account" button was disabled until the details are verified.
+
+  b. Please ensure that the IAM user whose credentials you entered has the IAMFullAccess/AdministratorAccess policy attached otherwise, it will through an error message accordingly. 
 
 On each line item there is a contextual menu. Through this we can repair the account. 
 
@@ -291,7 +294,7 @@ Click on the 3-dotted icon which is available at the right side of the account d
 
 .. image:: images/delete.png
 
-**Note** : If the account is not linked to project then only you can see the "Delete" option in the contextual menu .
+.. note:: If the account is not linked to project then only you can see the "Delete" option in the contextual menu .
 
 
 Click on the contextual menu which is available at the right side of the account name and choose the "Repair" option. 
@@ -324,10 +327,10 @@ For Administrator login,
 
 .. image:: images/Admin_settings_ProviderSettings_Details.png
 
-**Note** : 
+.. note::
 
-1. When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
-2. You can create multiple projects with one account.
+ a. When the account is not linked to any other organizations than only you can see the "Assign O.U" option.
+ b. You can create multiple projects with one account.
 
 Secure connections to resources using ALB to RStudio and Nextflow-Advanced Products 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -356,7 +359,7 @@ Through the "Help" option, you can see the Research Gateway documentation. Click
 
 .. image:: images/Principal_rightmenu_Help.png
 
-**Note:** There is Help option which is available on the footer, through this option also you can navigate to the  Research Gateway documentation.
+.. note:: There is Help option which is available on the footer, through this option also you can navigate to the  Research Gateway documentation.
 
 .. _`Adding a new project`:
 
@@ -405,11 +408,11 @@ Fill in the following details
 
 Click on the “Create Project” button. Added a new project successfully.
 
-**Note**: 
-
-1. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
-2. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
-3. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+.. note:: 
+ 
+ a. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
+ b. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
+ c. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
 
 Project Storage
 ^^^^^^^^^^^^^^^
@@ -514,12 +517,12 @@ My Products
 
 .. image:: images/Principal_Project_MyProducts.png
 
-**Note**:
+.. note::
 
-a. When adding a project we are passing collaborators information. Through this, we are linking collaborators to the project. 
-b. The project is independent of the researcher. We can create an empty project and add researchers later. Once project is active, we can add researchers through the "Manage" option which is at the project details screen.
-c. The products which are updated in the last 30 minutes will be visible under the active filter.
-d. When the Principal Investigator logs in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
+ a. When adding a project we are passing collaborators information. Through this, we are linking collaborators to the project. 
+ b. The project is independent of the researcher. We can create an empty project and add researchers later. Once project is active, we can add researchers through the "Manage" option which is at the project details screen.
+ c. The products which are updated in the last 30 minutes will be visible under the active filter.
+ d. When the Principal Investigator logs in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
 
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
@@ -552,8 +555,8 @@ Once project is active, navigate to the project details tab and click on the “
 
 .. image:: images/Principal_ProjectDetails_AddProducts.png
 
-**Note**:
+.. note::
 
-1. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
-2. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
-3. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+ a. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
+ b. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
+ c. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.

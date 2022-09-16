@@ -160,13 +160,13 @@ Fill the following details
    * - Tags
      - <Add tags to associate with the user>
 
-**NOTE**: Users can add the tags based on following  
+.. note:: 
 
-1. Users can add a maximum of 5 tags. Or A user may add up to five tags.
-2. Each tag should have a minimum of 3 characters and a maximum of 32.
-3. Users cannot duplicate tags for one user.
-4. Each tag can include :
-
+ Users can add the tags based on following  
+  a. Users can add a maximum of 5 tags. Or A user may add up to five tags.
+  b. Each tag should have a minimum of 3 characters and a maximum of 32.
+  c. Users cannot duplicate tags for one user.
+  d. Each tag can include :
     a. Alphabetic characters(a-z , A-Z)
     b. Numerical characters(0-9)
     c. Special characters( @ - + . -)
@@ -179,11 +179,13 @@ The verification email has been sent. Check the verification email delivered to 
 
 .. image:: images/Verificationmail-1.png
 
-**NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
+.. note:: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
 Users can choose a password and click on the “Submit” button. 
 
-**Note**: The password policy should meet the following requirement :
+.. note::
+
+ The password policy should meet the following requirement :
    a. The minimum password length of 8 characters and a maximum of 16 characters.
    b. It should have atleast one lower case character(a-z).
    c. It should have atleast one upper case character(A-Z).
@@ -222,11 +224,11 @@ CSV file should contain following details
    * - userTags
      - <Add tags for the user>
 
-**Note**: 
+.. note:: 
 
-1. If the user role is other than valid values (0 = Researcher, 1 = Principal Investigator, 2 = Administrator ), it will be automatically reset  to 0  (researcher) and the user will be created with the role as researcher.
+ a. If the user role is other than valid values (0 = Researcher, 1 = Principal Investigator, 2 = Administrator ), it will be automatically reset  to 0  (researcher) and the user will be created with the role as researcher.
 
-2. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
+ b. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
 
 
 The new user creation process will begin when the user clicks the "Open" button and a green toaster message will appear. When importing users in bulk, the user creation may take some time. The green toaster message does not imply successful creation of all users. Please check the audit trail to see if any user creation failed.
@@ -236,11 +238,13 @@ The verification email has been sent. Check the verification email delivered to 
 
 .. image:: images/Verificationmail-1.png
 
-**NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
+.. note:: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
 Users can choose a password and click on the “Submit” button. 
 
-**Note**: The password policy should meet the following requirement :
+.. note::
+
+ The password policy should meet the following requirement :
    a. The minimum password length of 8 characters and a maximum of 16 characters.
    b. It should have atleast one lower case character(a-z).
    c. It should have atleast one upper case character(A-Z).
@@ -281,7 +285,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 .. image:: images/Admin_Users_ResendVerificationEmail.png
 
-**NOTE**: The "Resend verification mail" option is available only if the user is inactive.
+.. note:: The "Resend verification mail" option is available only if the user is inactive.
 
 Audit Trail
 ^^^^^^^^^^^
@@ -353,7 +357,7 @@ If we could not find any products related to the filter you can see the message 
 
 .. image:: images/search3.png
 
-**NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog products.
+.. note:: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog products.
 
 Principal Investigator Features
 +++++++++++++++++++++++++++++++
@@ -417,11 +421,11 @@ Fill in the following details
    
 Click on the “Create Project” button. Added a new project successfully.
 
-**Note**:
+.. note::
  
-1. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
-2. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
-3. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+ a. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
+ b. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
+ c. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
 
 
 Project Storage
@@ -490,7 +494,7 @@ Project Details Tab
 .. image:: images/Principal_ProjectDetails_AddProducts.png
 
 
-Note: Whenever you clicked on the budget it will navigated to researcher-wise budget details page.
+.. note:: Whenever you clicked on the budget it will navigated to researcher-wise budget details page.
 
 Events Tab
 ----------
@@ -524,14 +528,13 @@ My Products Tab
 	 
 .. image:: images/Principal_Project_MyProducts.png
 
-**NOTE**: 
+.. note:: 
 
-a. When adding a project we are passing collaborator information. Through this, we are linking researchers to the project. 
-b. The project is independent of the researcher. We can create an empty project and add collaborators later. We can add collaborators through the "Manage" option which is at the project details screen.
-c. **My Projects** page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead 
-   to a project details page. Click on the specific project you can navigate to the project details page.
-d. The products which are updated in the last 30 minutes will be visible under the active filter.
-e. When the Principal Investigator logs-in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
+ a. When adding a project we are passing collaborator information. Through this, we are linking researchers to the project. 
+ b. The project is independent of the researcher. We can create an empty project and add collaborators later. We can add collaborators through the "Manage" option which is at the project details screen.
+ c. **My Projects** page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead to a project details page. Click on the specific project you can navigate to the project details page.
+ d. The products which are updated in the last 30 minutes will be visible under the active filter.
+ e. When the Principal Investigator logs-in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
 
 
 Auto-Stop Resources on Idle
@@ -602,16 +605,16 @@ Fill the following details
    * - Tags
      - <Add tags to associate with the user>
 
-**NOTE**: Users can add the tags based on following 
-
-1. Users can add a maximum of 5 tags. Or A user may add up to five tags.
-2. Each tag should have a minimum of 3 characters and a maximum of 32.
-3. Users cannot duplicate tags for one user.
-4. Each tag can include :
-
-    a. Alphabetic characters(a-z , A-Z)
-    b. Numerical characters(0-9)
-    c. Special characters( @ - + . -)
+.. note:: 
+  
+  Users can add the tags based on following 
+   a. Users can add a maximum of 5 tags. Or A user may add up to five tags.
+   b. Each tag should have a minimum of 3 characters and a maximum of 32.
+   c. Users cannot duplicate tags for one user.
+   d. Each tag can include :
+       a. Alphabetic characters(a-z , A-Z)
+       b. Numerical characters(0-9)
+       c. Special characters( @ - + . -)
 
 Click on the “Add User” button. On successsful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
@@ -621,11 +624,13 @@ The verification email has been sent. Check the verification email delivered to 
 
 .. image:: images/Verificationmail-1.png
 
-**NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
+.. note:: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
 Users can choose a password and click on the “Submit” button. 
 
-**Note**: The password policy should meet the following requirement :
+.. note:: 
+  
+  The password policy should meet the following requirement :
    a. The minimum password length of 8 characters and a maximum of 16 characters.
    b. It should have atleast one lower case character(a-z).
    c. It should have atleast one upper case character(A-Z).
@@ -663,11 +668,11 @@ CSV file should contain following details
    * - userTags
      - <Add tags for the user>
 
-**Note**: 
+.. note::
 
-1. If the user role is other than valid values (0 = Researcher, 1 = Principal Investigator), it will be automatically reset  to 0  (researcher) and the user will be created with the role as researcher.
+ a. If the user role is other than valid values (0 = Researcher, 1 = Principal Investigator), it will be automatically reset  to 0  (researcher) and the user will be created with the role as researcher.
 
-2. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
+ b. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
 
 
 The new user creation process will begin when the user clicks the "Open" button and a green toaster message will appear. When importing users in bulk, the user creation may take some time. The green toaster message does not imply successful creation of all users. Please check the audit trail to see if any user creation failed.
@@ -677,11 +682,13 @@ The verification email has been sent. Check the verification email delivered to 
 
 .. image:: images/Verificationmail-1.png
 
-**NOTE**: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
+.. note:: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
 Users can choose a password and click on the “Submit” button. 
 
-**Note**: The password policy should meet the following requirement :
+.. note::
+
+ The password policy should meet the following requirement :
    a. The minimum password length of 8 characters and a maximum of 16 characters.
    b. It should have atleast one lower case character(a-z).
    c. It should have atleast one upper case character(A-Z).
@@ -714,7 +721,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 .. image:: images/Principal_Users_ResendVerificationEmail.png
 
-**NOTE**: The "Resend verification mail" option is available only if the user is inactive.
+.. note:: The "Resend verification mail" option is available only if the user is inactive.
 
 How to add researchers to existing project 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -742,11 +749,11 @@ Once project is active, navigate to the project details tab and click on the “
 .. image:: images/Principal_ProjectDetails_AddProducts.png
 
 
-**Note**:
+.. note::
 
-1. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
-2. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
-3. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+ a. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
+ b. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
+ c. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
 
 End of Day - Email report on  the running instances
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -759,10 +766,11 @@ You will receive a consolidated end of day - Email report(8PM IST) for all your 
 
 .. image:: images/EODReport.png
 
-**Note**:
-1. The active users(Principal Investigator and Researchers) will receive the EOD report if at least one instance is in running state.
-2. The Emails shall be sent only to verified users of Research Gateway.
-3. In the project events tab, you can see the EOD report generated information.
+.. note::
+
+ a. The active users(Principal Investigator and Researchers) will receive the EOD report if at least one instance is in running state.
+ b. The Emails shall be sent only to verified users of Research Gateway.
+ c. In the project events tab, you can see the EOD report generated information.
 
 .. image:: images/EODReport1.png
 
@@ -816,13 +824,13 @@ The “Add Budget” action will provide Principal Investigators a way to add mo
 
 .. image:: images/Principal_ProjectDetails_AddBudget_Completed.png
 
-**Note**: 
+.. note:: 
 
-1. If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
-2. Once project is failed, We can do repair on a project. Click on the "Repair" button which is at the project details page. We can see related events in events page.
-3. Once project is failed we can do catalog sync on a project. Click on the "Sync" button which is at the project details page. We can see related events in events page.
-4. If the project is in  “Paused” or "Active"  state the Principal Investigator user can “Add Budget”. If the budget amount added, brings the project back within the budget threshold, the “Resume” button will be visible to the user. 
-5. If the project is no longer required, the Principal Investigator user can click on “Archive” button  which is on the project details page. We can see related events in the events page.
+  a. If there are any failed provisioned product in my products panel you cannot do actions on the project. You need to terminate that product.
+  b. Once project is failed, We can do repair on a project. Click on the "Repair" button which is at the project details page. We can see related events in events page.
+  c. Once project is failed we can do catalog sync on a project. Click on the "Sync" button which is at the project details page. We can see related events in events page.
+  d. If the project is in  “Paused” or "Active"  state the Principal Investigator user can “Add Budget”. If the budget amount added, brings the project back within the budget threshold, the “Resume” button will be visible to the user. 
+  e. If the project is no longer required, the Principal Investigator user can click on “Archive” button  which is on the project details page. We can see related events in the events page.
 
 
 Budgets (for Principal Investigator)
@@ -855,7 +863,7 @@ You can see Project-wise Budget details in the table format:
  
 You can download the budget details through the “Export as CSV”  option.
 
-Note: When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification.
+.. note:: When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification.
 
  .. image:: images/budget6.png
  
@@ -1091,7 +1099,7 @@ d. **Filter** - We have following filter options:
 
 .. image:: images/available.png
 
-**NOTE**: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog Products.
+.. note:: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog Products.
 
 **Secure connections to resources using ALB to RStudio and Nextflow-Advanced products**
 
@@ -1123,7 +1131,7 @@ Product order form is opened. Input parameters associated with the selected prod
 
 .. image:: images/product.png 
 
-Note: You can see VPC, subnets, security groups and keypair names are displaying in the listbox according to related field. Through this user can easily select the keypair and while provisioning the product and use the compute resources.
+.. note:: You can see VPC, subnets, security groups and keypair names are displaying in the listbox according to related field. Through this user can easily select the keypair and while provisioning the product and use the compute resources.
 
 .. image:: images/product2.png 
 
@@ -1171,21 +1179,21 @@ Through the “View All” button in the panel header, you can see following:
 	  b. **Active** - You can see all the active products here.
 	  c. **Terminated** - You can see all terminated products here.
 
-**Note**: 
+.. note::
 
-1. The products which are updated in the last 30 minutes will be visible under active filter.
-2. When the Researcher logs in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
+ a. The products which are updated in the last 30 minutes will be visible under active filter.
+ b. When the Researcher logs in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
 
 
 .. image:: images/myproduct2.png
 
-**NOTE** : When you on click on "View All" option you can see active products defaultly. 
+.. note:: When you on click on "View All" option you can see active products defaultly. 
 
 While product is in the *Creating* state the details page displays a time limit that provision will take through the “Live in 5/10/15 mins” tag.
 
 When you click any action(Start/Stop/Terminate) in a provisioned product, state should be changed automatically using server side events.
 
-**NOTE**: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**The instance-id of the product is not available. Please try after some time**".
+.. note:: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**The instance-id of the product is not available. Please try after some time**".
 
 .. image:: images/instance.png
 
@@ -1233,7 +1241,7 @@ Fill the following details
 
 Click on the “Submit” button.
 
-**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+.. note:: If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
 
 
 .. image:: images/E2E.png
@@ -1281,7 +1289,7 @@ Click on the “Submit” button.
 
 .. image:: images/RDP.png
 
-**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+.. note:: If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
  
 It will navigated to the password generation page. Before the downloading the RDP file you should copy/save the password and unhide it and click on the “Download RDP file" button. 
 
@@ -1290,7 +1298,7 @@ It will navigated to the password generation page. Before the downloading the RD
 Once completed the download right-click on the file and choose the “Connect” option. Enter the username and password in a remote desktop connection window. 
 Due to the nature of self-signed certificates, you might get a warning that the security certificate could not be authenticated. To verify that simply choose [Yes] in the Remote Desktop Connection window. You can connect to the remote desktop successfully.
 
-**NOTE**: When we launch a new instance, password generation and encryption may take few minutes. We need to wait for 5-10 mins after the instance is created, if you upload any pem file before 10 mins, you can see a message like “**Password not available yet. Please wait at least 4 minutes after launching an instance before trying to retrieve the password**”
+.. note:: When we launch a new instance, password generation and encryption may take few minutes. We need to wait for 5-10 mins after the instance is created, if you upload any pem file before 10 mins, you can see a message like “**Password not available yet. Please wait at least 4 minutes after launching an instance before trying to retrieve the password**”
 
 S3 Product
 -----------
@@ -1303,7 +1311,7 @@ You can see product related actions in the  Actions menu.
 
 Choose the “Upload” option. Through this you can upload a file to the S3 bucket.
 
-*Note:* When you try to upload more than 10MB file you will see a message like **"The size of this file is larger than the maximum(10MB) size allowed on this system. Please contact your administrator."**
+.. note:: When you try to upload more than 10MB file you will see a message like **"The size of this file is larger than the maximum(10MB) size allowed on this system. Please contact your administrator."**
 
 .. image:: images/testingevent2.png
 
@@ -1313,7 +1321,7 @@ Choose the “Upload” option. Through this you can upload a file to the S3 buc
 
 Choose the “Share” option. Through this you can  share the details to other team members.
 
-**NOTE:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket"**
+.. note:: If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket"**
 
 .. image:: images/testingevent1.png
 
@@ -1330,9 +1338,9 @@ Choose the "Unshare" option. Through this you can unshare the details from the e
 
 .. image:: images/unshare1.png
 
-**Note:** The "Unshare" option is available only when the bucket is shared with other researchers. The owner(i.e.,person who provisioned product) can do the share and unshare. 
+.. note:: The "Unshare" option is available only when the bucket is shared with other researchers. The owner(i.e.,person who provisioned product) can do the share and unshare. 
 
-**Note:** If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket.“**
+.. note:: If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket.“**
 
 **4. Terminate Action**
 
@@ -1569,7 +1577,7 @@ Fill the following details
 
 Click on the “Submit” button.
 
-**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+.. note:: If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
 
 MySQL Product
 -------------
@@ -1611,7 +1619,7 @@ Fill the following details
 
 Click on the “Submit” button.
 
-**NOTE** : If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
+.. note:: If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
 
 PCluster Product
 ----------------
@@ -1650,7 +1658,7 @@ Fill the following details
 
 Click on the “Submit” button.
 
-NOTE : If you pass an empty parameter or wrong parameter in the username or pem file field you may see an error message accordingly.
+.. note:: If you pass an empty parameter or wrong parameter in the username or pem file field you may see an error message accordingly.
 
 Click on the “Submit” button. Once completed the work, scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 
@@ -1911,15 +1919,15 @@ is created, we will seed admin credentials to the database and the same will be 
 2. Navigate to the “Users” through the left navigation menu.
 3. Click on the “+Add New” button in the users listing page. A new user form opened. Fill the required parameters and click on the “Add User” button. A new user with PI role was created.
 4. Navigate to “Users” through the left navigation menu. Click on the “+Add New” button in the users listing page. A new user form opened. Fill the required parameters and click on the “Add User” button. A new user with a researcher role was created.
-   **Note**: Assign the researcher to the organization while .
+   .. note:: Assign the researcher to the organization while .
 5. Navigate to “My Organization” through the left navigation menu . Users can create a new organization with the “+Add New” button on the landing page.
 6. Navigate to catalog through the left navigation menu . In the filter select the “View -Standard catalog “  option and enable the checkboxes which are available at the right side of the products and click on the “Assign to selected O.U” button. Select the organization in the list box and click on the “Assign” button.
 7. Login to PI account<<Create a new project with the “+Add New” button on the landing page.
-   **Note**: You need to select the researcher from the list.
+   .. note:: You need to select the researcher from the list.
 8. Navigate to the catalog through the left navigation menu and choose the  “View-O.U catalog” in the filter and enable the checkboxes which are at the right side of the products and click on “Assign to a project” button and on Successful completion of assign you can see green color toaster message.
 9. Login as Researcher <<Navigate to the project details page--you can see the assigned catalog products in the available products panel. 
    Choose the product and click on the **Launch Now** button. Fill the required parameters in the form and launch it. 
-   **Note**: While creating the EC2 we need to enter the key pair name.  Navigate to the keypairs through the left navigation menu. Click on the “+Create New” button. Fill the required parameters and click on the “Create key pair” button. New key pair was created. Now navigate to the available products panel. Choose EC2 product and fill the params and click on the “Launch Now” button. The product was launched successfully.
+   .. note:: While creating the EC2 we need to enter the key pair name.  Navigate to the keypairs through the left navigation menu. Click on the “+Create New” button. Fill the required parameters and click on the “Create key pair” button. New key pair was created. Now navigate to the available products panel. Choose EC2 product and fill the params and click on the “Launch Now” button. The product was launched successfully.
 
 **d. Tracking usage**
 
