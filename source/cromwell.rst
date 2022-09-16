@@ -56,7 +56,7 @@ Steps to launch
 2. Navigate to the available products tab.
 3. Click the “Launch Now” button on the  “Cromwell Advanced” product card. A product order form will open. Fill the details in the form .
 
-**Note**:
+.. note::
 
 	* PipelineName 
 		a.  You can see the drop down option which is on the right side of the PipelineName field.
