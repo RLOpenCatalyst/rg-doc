@@ -25,7 +25,7 @@ Parameters
    * - InputDataLocation
      - An S3 bucket which holds input data for the Nextflow pipeline. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens).
    * - InputDataPattern
-     - The pattern to match samples to be processed as inputs to the pipeline. Eg: data/ggal/*_{1,2}.fq. It can also point to a csv or tsv file that contains details of the files to be processed.
+     - The pattern to match samples to be processed as inputs to the pipeline. Eg: data/ggal/\*_{1,2}.fq. It can also point to a csv or tsv file that contains details of the files to be processed.
    * - OutputDataLocation
      - The full path on the local disk where outputs of the pipeline should be stored. The default path above will enable you to view the outputs via the browser. The path should be accessible to the user ec2-user. Alternately, provide an S3 bucket for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens).
    * - Head Node Configuration
@@ -79,7 +79,7 @@ Steps to launch
 		
 	* InputDataPattern
 		a.	This is a plain edit field. 
-		b.  The pattern to match samples to be processed as inputs to the pipeline (Eg: /data/ggal/*_{1,2}.fq). It can also point to a csv or tsv file that contains details of the files to be processed. 
+		b.  The pattern to match samples to be processed as inputs to the pipeline (Eg: /data/ggal/\*_{1,2}.fq). It can also point to a csv or tsv file that contains details of the files to be processed. 
 	
 	* OutputDataLocation
 		a.  Defaultly you can see the output path in the field.
