@@ -12,7 +12,6 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('C:\\Users\\rle0547\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python39\\site-packages'))
 import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
@@ -22,7 +21,7 @@ copyright = '2021, Relevance Lab'
 author = 'Relevance Lab'
 
 # The full version, including alpha/beta/rc tags
-release = '1.11.0'
+release = '1.13.0'
 
 
 # -- General configuration ---------------------------------------------------
