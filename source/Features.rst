@@ -1636,8 +1636,9 @@ You can see the product related actions in the Actions Menu.
 
 4. Terminate action : Choose the “Terminate” option to de-provision the product.
 
-5. SSH to PCluster HeadNode  action : Choose the “SSH to PCluster HeadNode” action. Through this you can connect to the SSH Terminal in a new window.
+5. SSH Terminal action : Choose the “SSH Terminal” action. Through this you can connect to the SSH Terminal in a new window.
 
+6. Remote Desktop : Choose the "Remote Desktop" action. The cluster head-node by default has NICE DCV installed which allows you to connect to the head-node via a GUI interface. This is especially useful to visualize results of the jobs that you run on the cluster (e.g. using Paraview to view the results of OpenFOAM jobs).
 
 .. image:: images/PCluster3.png
 

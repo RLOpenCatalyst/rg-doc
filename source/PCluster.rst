@@ -36,18 +36,27 @@ Parameters
      - Enter the File System Id of the FSx for Lustre file system which you want to use. e.g. fs-12345678. Leave this field to default if you do not want to use FSx for Lustre.   
    * - Scheduler
      - Select a Cluster scheduler from the drop-down list 
-   * - WorkerNodeInstanceType 
+   * - ComputeNodeInstanceType 
      - Select the instance types to be used to carry out the computation from the drop-down list
-   * - WorkerNodeSubnetId
-     - Select the Subnet you want your Batch or slurm Worker Node to launch in  from the drop-down list. We recommend public subnets.
+   * - QueueCapacityType
+     - Select the type of the compute resources used in the queue. Supported values are ONDEMAND or SPOT from the drop-down list.
+   * - ComputeNodeSubnetId
+     - Select the Subnet you want your Batch or slurm Worker Node to launch in from the drop-down list. We recommend public subnets.
    * - ComputeEnvMinvCpus
-     - Enter The minimum number of CPUs to be kept in running state for the Batch/slurm Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost.
+     - Enter the minimum number of CPUs to be kept in running state for the Batch/slurm Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost.
    * - ComputeEnvMaxvCpus
-     - Enter The maximum number of CPUs for the default Batch or slurm Compute Environment
+     - Enter the maximum number of CPUs for the default Batch or slurm Compute Environment
    * - ComputeEnvDesiredvCpus
-     - Enter The Desired number of CPUs for the default Batch Compute Environment
+     - Enter the Desired number of CPUs for the default Batch Compute Environment
    * - SpotBidPercentage
-     - Enter The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage.
+     - Enter the maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage.
+   * - DisableSimultaneousMultithreading
+     - Select the true/false value from the drop-down list. If selected value is true it will Disable hyperthreading on the compute nodes.Works with slurm Scheduler.
+   * - EnableEFA
+     - Select the true/false value from the drop-down list. If selected value is true it will Enable better network performances. Only available for certain instance types, If user select unsupported instance, EFA assigned to false.Works with slurm Scheduler
+   * - PlacementGroup
+     - Select the true/false value from drop-down list. If selected value is true it will Enable a PlacementGroup. Use with EnableEFA.Works with slurm Scheduler
+
 
 .. image:: images/Product_PCluster_LaunchForm1.png
 
@@ -69,9 +78,10 @@ Estimated time to provision - 40 minutes
 Steps to connect
 ----------------
 
-1. Click on “SSH to PCluster HeadNode” under the “Connect” list on the right side of the page. This will open the SSH Terminal in a new browser tab.
+1. Click on “SSH Terminal” under the “Connect” list on the right side of the page. This will open the SSH Terminal in a new browser tab.
 2. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field. Click Submit. You should now be connected to the EC2 instance via SSH. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 3. You can de-provision the product through the “Terminate” option.
+4. Click on "Remote Desktop" under the "Connect" list on the right side of the page. The cluster head-node by default has NICE DCV installed which allows you to connect to the head-node via a GUI interface. This is especially useful to visualize results of the jobs that you run on the cluster (e.g. using Paraview to view the results of OpenFOAM jobs).
 
 `Watch a video that demonstrates using OpenFOAM on a PCluster product. <https://www.youtube.com/embed/TIQANO-DOtg?start=209&end=370&autoplay=1>`_
 
