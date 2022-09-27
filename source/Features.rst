@@ -83,6 +83,8 @@ You can  also see researcher-wise budget details which are linked to a particula
  
 .. image:: images/Admin_Budgets_Researcher-WiseBudgetBreakdown.png
 
+.. _`Cost_allocation`:
+
 Cost allocation tags activation
 -------------------------------
 
