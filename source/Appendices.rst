@@ -97,3 +97,49 @@ Bug-fixes for existing issues
 13. s3 : explore: upload: create an audit trail event for failure.
 14. PCluster:Latest AMI causing stack to fail if there is a fileSystemId as input parameter when scheduler is aws batch, need to fix
 
+Appendix H - FAQs - Frequently Asked Questions
+==============================================
+
+1. How can I access help or reach out for support?
+
+ **Answer**: You can use the Chat widget or you can send an email to rlcloudsupport@relevancelab.com to create a support case.
+
+
+2. In the in-browser SSH window in Research Gateway, how do I paste commands from the clipboard?
+  
+ **Answer**: Use the browser menu to paste from the clipboard.
+
+ .. image:: images/FAQ_SSHwindow.png
+
+3. I have just received an email from AWS for request to authorise email address to be used with Amazon SES and Amazon Pinpoint in region US East (N. Virginia). Can I check this is triggered by you and not a phishing email?
+ 
+ **Answer**: This is to verify your email address so that Research Gateway can send you a daily End-Of-Day report if any instances are left running. The report will act as a reminder to turn off the system. So we would recommend to go ahead and verify your email through that link sent out via AWS.
+
+4. The costs that are shown in Research Gateway are less than what I am seeing in my AWS console.
+ 
+ **Answer**:  The costs shown in Research Gateway are the direct costs (costs that can be ascribed to the products created by PI or Researchers in the project). Directs costs may take up to 24 hours to show under the direct costs. To avoid higher API costs, we only update the costs once a day at 12:00 AM UTC time. There are a few shared products like the project-storage and the ALB that is created for SSL connections. That cost is not shown as part of the direct costs. There will also be some costs which are shared costs (e.g. Data Transfer, API calls etc.) which will be on your bill but not shown in the direct costs.
+
+5. I have started a rstudio machine and installed something. The machine was stopped now, why is that the case?
+ 
+ **Answer**: RStudio machines have an idle detection script that will stop the machine after 15 minutes of inactivity. The Idle timeout is actually based on the Rstudio interface and not the SSH session. You can however modify the timeout period by editing the below mentioned file in your instance /usr/local/bin/check-idle : Ln. No - 12 (MAX_IDLE_MINUTES = 15). You can specify your timeout period in minutes or set it to 0 to disable the feature.
+
+6. I added an AWS account and created a project in Research Gateway. However the cost always shows zero even though I have provisioned workspaces.
+ 
+ **Answer**: This indicates that you have not approved the cost_allocation tags in your payee account. Research Gateway tags all resources with certain tags so that we can track the costs. However AWS requires that cost allocation tags be first approved in the payee account. Your account may be a payee account (in which case you might be able to follow the instructions in the link yourself). More often than not, there is a master account which IT controls which is the payee account. The consumption accounts are child accounts of that master account. In this latter case the cost allocation tags need to be approved in the payee (master account).  Note that products created before the tags are approved will not be tracked for cost. See the procedure for :ref:`Cost allocation tags activation<Cost_allocation>`.
+
+7. My First Name or Last Name is incorrect. How can I correct it?
+ 
+ **Answer**: Please contact rlcloudsupport@relevancelab.com.
+
+8. I provisioned a product but received an error "You have requested more vCPU capacity than your current vCPU limit of N allows for the instance bucket that the specified instance type belongs to."
+ 
+ **Answer**: It looks like you have hit an AWS Service Quota limit. Please contact your Principal Investigator or IT Administrator who manages your AWS account and ask them to create a support case with AWS for a `service quota <https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html>`_ limit increment.
+
+9. I provisioned a product but it is stuck in "Transitioning". How can I connect to the system?
+ 
+ **Answer**: This should occur very rarely. Please contact rlcloudsupport@relevancelab.com.
+
+10. I received a verification link when I registered for Research Gateway (or when my Principal Investigator invited me). However when I click on the link, I get an error that says the link has expired.
+ 
+ **Answer**:  The link expires in 24 hours for security reasons. You can ask your PI to "Resend the verification link" from the user management screen. If you are still facing an issue, you can send an email to rlcloudsupport@relevancelab.com.
+
