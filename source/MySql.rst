@@ -49,7 +49,7 @@ Steps to connect
 
 You can connect to your EC2 instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command:
 
-If you are connecting from a Windows box you can use an SSH client like PuTTY.
+If you are connecting from a Windows box you can use an SSH client like `PuTTY <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html>`_.
 
 1. Click on the project on the “My Projects” page.
 2. Navigate to the “My Products” tab
