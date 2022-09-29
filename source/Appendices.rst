@@ -150,7 +150,13 @@ Appendix H - FAQs - Frequently Asked Questions
  ssh -i </path/to/pem/file>  <user-name>@<ip-address>
 
  In this user-name is ec2-user for Amazon Linux 2 workspaces and ubuntu for Ubuntu workspaces and rstudio for RStudio workspaces.
- You have to add some details on how to get the public-ip-address.
+
+ To get the public-ip-address:
+ 1. Click on the Project card
+ 2. Click on My Products tab
+ 3. Click on any Product card(Nextflow Advanced , Rstudio etc) 
+ 4. Click on Outputs tab
+ 5. Scrolling down in the Outputs tab will show you InstanceIPAddress domain where you will get public-ip-address.
 
  If you are connecting from a Windows box you can use an SSH client like `PuTTY <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html>`_.
 
