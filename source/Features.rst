@@ -965,20 +965,20 @@ Each card shows the following data:
 4. Bookmark this study.
 5. View Details link(Clicking on the “View details” call-to-action on a study card will lead to a Study details page).
 
-.. image:: images/studies1.png
+.. image:: images/PrincipalInvestigator_Studies_DefaultPage.png
 
 The studies landing page should have a “Filter” feature that allows the user to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies.
 
-.. image:: images/fil1.png
+.. image:: images/PrincipalInvestigator_Studies_AllFilters_DefaultPage.png
 
 The studies landing page has a search bar that allows users to search the studies based on name and description.
 
-.. image:: images/sea1.png
+.. image:: images/PrincipalInvestigator_Studies_Search.png
 
 Public Study(for Principal Investigator)
 ----------------------------------------
 
-.. image:: images/public.png
+.. image:: images/PrincipalInvestigator_Studies_PublicFilter_DefaultPage.png
 
 You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
 
@@ -1008,7 +1008,154 @@ You can see the files/folders which are  related to the datastore.
   
  .. image:: images/Principal_Studies_Link.png  
 
+
+External Study(for Principal Investigator)
+------------------------------------------
+
+As a Principal Investigator you can bring an existing S3 bucket in your AWS project account as an external study and the same can be mounted to the workspaces launched in the projects to which the study has been assigned to. An external study can only be used in projects which use the same AWS account.
+
+**Navigation to Studies screen**
+
+To create an External Study, Click on “☰” Symbol which is available on the left side header. By clicking on the “Studies” menu item, you will be navigated to the studies details page.
+
+Click on “Create Study” Button to open up the create study form 
+
+ .. image:: images/PrincipalInvestigator_Studies_DefaultPage.png
  
+Fill the following details
+
+1. Study Details
+
+.. list-table:: 
+   :widths: 100, 100 
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Study Name 
+     - <Please provide a name to help you easily identify the study. Only alphanumeric characters, hyphens and underscores are allowed. Spaces and special characters are not allowed. Study name is not unique, you can create different study with same study name>
+   * - Description   
+     - <Please provide a description about the contents of the study. This description will be displayed on the Study card.>
+   * - Study Type
+     - <Currently only External Study is supported.>
+   * - Access Level
+     - <Currently only ReadOnly Study is supported.>
+   * - Tags for this study
+     - <Enter value (optional) You can add up to 15 unique tags. You can give any value and click on the arrow button the tags are added to the study. You can add the alphabet and special characters like hyphens. You cannot add numbers or special characters as tags. You can add only add 15 tags or less. Once you add 15 tags then the tag field  will disappear. You can not duplicate the tags.>
+
+
+.. image:: images/Studies_ExternalStudies_StudyDetails.png
+
+
+2. Bucket Details
+
+.. list-table:: 
+   :widths: 100, 100 
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Bucket Name 
+     - <Please provide a bucket name that hosts the data. The bucket should already exist in AWS. Only lowercase letters, numbers, dots, hyphens are allowed. Spaces and special characters are not allowed. If the bucket is not available in AWS, then You cannot register that bucket as a study and you will be able to  see an error message when you click on “Register Study” button>
+   * - Bucket Region   
+     - <Choose the region in which the bucket resides.>
+   * - Is the Bucket Encrypted?
+     - <You can keep it as default value “No" or When you click on checkbox “Yes” it will ask you for KMS Arn (In Study Account) - Enter the ARN for the KMS key>
+   * - Prefix
+     - <Please provide a location within the bucket to which access is provided. Only Alphanumeric, underscore, hyphen, dot and forward slash are allowed. spaces and special characters are not allowed. Prefix should end with a forward slash character (/). The prefix should not correspond to an object name in the bucket. If no prefix is provided, the entire bucket will be accessible. Incomplete prefix or non existing prefix will throw error message when you click on “Register Study” button>
+
+.. image:: images/Studies_ExternalStudies_BucketDetails.png
+
+.. image:: images/Studies_ExternalStudies_BucketDetails_KMSARNField.png
+
+3. Account Details
+
+.. list-table:: 
+   :widths: 100, 100 
+   :header-rows: 1
+
+   * - Field
+     - Details
+   * - Project Account 
+     - <Choose the account configured as settings in RG to which you want the study to be mapped to. All the  projects linked to this particular study account will only show up here. You can select any one of the projects from the dropdown. The project account account number and study account should be the same, then only you  can create a study with one account.if not the creation of external study will not be possible>
+   * - Study Scope   
+     - <Currently only Project level scope is allowed. All the  project members can see the study details. But if any user who is not part of the project , will not be able to see the study details.>
+   * - Projects
+     - <Choose the projects to which the study needs to be assigned to. Linux based workspaces in the selected projects will automatically mount this study. Currently only the projects selected at creation of the study will be able to access the study. By default it shows no project is added to the account.Once You select the account then all the  projects which are linked to the selected account settings will  be listed here.>
+  
+.. image:: images/Studies_ExternalStudies_AccountDetails.png
+
+.. image:: images/Studies_ExternalStudies_AccountDetails_ProjectListForSelectedAccount.png
+
+
+After filling the details click on Register Study button below the form, your study will be registered successfully
+
+.. image:: images/ExternalStudy_SuccessMessage.png
+  
+
+The studies landing page should have a “Filter” feature that allows you to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies/External . You will be able to see your registered External Study using the “External” filter
+
+
+.. image:: images/PrincipalInvestigator_Studies_AllFilters_DefaultPage.png
+
+.. image:: images/ExternalStudy_Example.png
+
+
+Each card shows the following data:
+
+1. Name
+2. Description
+3. Tags
+4. Bookmark this study.
+
+When you click on the External Study card you will be able to see  The “Study” details page which will show a tabbed area with the following tabs:
+
+1. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
+
+.. image:: images/ExternalStudy_StudyDetails.png
+
+2. Resource details: In the “Resource details” tab you can see the Bucket information.
+
+.. image:: images/ExternalStudy_ResourceDetails.png
+
+
+
+**Explore Action**
+
+When you click on the Explore button which is available at the right side of the page below Connect tab you will be able to see the files/folders which are related to the datastore. You can do root and back action but you will not be able to 'back' any further than the prefix specified.
+
+
+.. image:: images/ExternalStudy_Connect_ExploreAction.png
+
+
+**Link/Unlink Action**
+
+1. You will be able to link a study to a Sagemaker workspace using the “Link” action in the Actions bar. This action item should be a pop-up that will have the list (dropdown) of active Sagemaker workspaces owned by you.
+2. You can see an icon similar to the shared icon for showing that this S3 bucket is linked with AWS Sagemaker.
+3. You can link the study with multiple AWS Sagemaker notebooks. Through the “unlink resource” you can unlink with compute resources
+4. If there are no active AWS Sagemaker products we are showing the following message to the You There is no provisioned Sagemaker product. Please Launch an AWS Sagemaker product from the available products page first, before linking to an s3 bucket.
+
+.. image:: images/ExternalStudy_Link_AmazonSagemaker.png
+
+.. image:: images/ExternalStudy_Link_AmazonSagemaker_Success.png
+
+.. image:: images/ExternalStudy_Link_AmazonSagemaker_UnlinkResouce.png
+
+.. image:: images/ExternalStudy_Linked_AmazonSagemaker_CopyBucketName.png
+
+.. image:: images/ExternalStudy_Unlink_AmazonSagemaker.png
+
+.. image:: images/ExternalStudy_Unlink_AmazonSagemaker_Success.png
+
+.. note:: When your External Study creation fails due to invalid/unavailable input values you will be able to see following error toaster message
+
+.. image:: images/ExternalStudy_ErrorMessage.png
+
+
+.. note::  Only Principal Investigator users can create an External Study. Researcher users cannot create external study.
+
+
+
 Audit Trail(For Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
