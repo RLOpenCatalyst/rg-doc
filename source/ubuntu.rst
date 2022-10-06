@@ -38,9 +38,9 @@ Estimated time to provision - 10 minutes
 Steps to connect
 ----------------
 
-You can connect to your EC2 instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command: ssh -i ubuntu@<host_ip_address> Eg: ssh -i mynewkeypair.pem ubuntu@53.54.55.56
+You can connect to your EC2 instance through the RLCatalyst Research Gateway or via an external SSH client. If you are connecting from a Linux box use the following command: ssh -i <pem-file-path> ubuntu@<host_ip_address> Eg: ssh -i mynewkeypair.pem ubuntu@53.54.55.56
 
-If you are connecting from a Windows box you can use an SSH client like PuTTY.
+If you are connecting from a Windows box you can use an SSH client like `PuTTY <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html>`_.
 
 1. Click on the project on the “My Projects” page.
 2. Navigate to the “My Products” tab

@@ -143,3 +143,28 @@ Appendix H - FAQs - Frequently Asked Questions
  
  **Answer**:  The link expires in 24 hours for security reasons. You can ask your PI to "Resend the verification link" from the user management screen. If you are still facing an issue, you can send an email to rlcloudsupport@relevancelab.com.
 
+11. how the user can connect to their workspaces using an external SSH client?
+
+ **Answer**: For linux product you have to do 
+ 
+ ssh -i </path/to/pem/file>  <user-name>@<ip-address>
+
+ In this user-name is ec2-user for Amazon Linux 2 workspaces and ubuntu for Ubuntu workspaces and rstudio for RStudio workspaces.
+
+ To get the public-ip-address:
+ 1. Click on the Project card
+ 2. Click on My Products tab
+ 3. Click on any Product card(Nextflow Advanced , Rstudio etc) 
+ 4. Click on Outputs tab
+ 5. Scrolling down in the Outputs tab will show you InstanceIPAddress domain where you will get public-ip-address.
+
+ If you are connecting from a Windows box you can use an SSH client like `PuTTY <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html>`_.
+
+ 1. Click on the project on the “My Projects” page.
+ 2. Navigate to the “My Products” tab
+ 3. Click on your instance in the My Products view. 
+ 4. In the product details page, you will find the SSH/RDP button in the Connect pane on the right side. Click on the button to launch the SSH Launcher window in a separate tab of your browser. 
+ 5. Enter a username and select the authentication type from the list and upload the Pem file and click on submit. The SSH window should open.
+
+ If you are unable to connect, check your current IP address against the “AllowedSSHLocation” parameter provided at provisioning time.
+
