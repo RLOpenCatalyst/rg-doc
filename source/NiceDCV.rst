@@ -26,7 +26,7 @@ Parameters
 
 
 Steps to launch
-===============
+----------------
 
 
 1. Click on the project on the “My Projects” page.
@@ -38,7 +38,7 @@ Estimated time to provision - 15 minutes
 
 
 Steps to connect
-================
+-----------------
 
 
 1. Click on “SSH Terminal” under the “Connect” list on the right side of the page. This will open the SSH Terminal in a new browser tab.
@@ -48,7 +48,7 @@ Steps to connect
 
 
 Other considerations
-====================
+--------------------
 
 You can stop your instance using the “Stop” button in the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 
