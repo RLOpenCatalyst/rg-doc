@@ -19,6 +19,7 @@ Ordering products in Research Gateway
    PCluster
    FSxForLustre
    NiceDCV
+   AmazonEFS
 
 
 
