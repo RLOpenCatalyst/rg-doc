@@ -271,10 +271,7 @@ Fill the following details
      - <If you enable this option, Research Gateway will check if a default VPC exists and will create one if it does not exist. If you disable this option, provisioning resources from Standard Catalog may fail.>
    * - Use SSL with ALB
      - <If you enable this option, Research Gateway can set up secure connections to your resources by putting them behind an Application Load Balancer with SSL connections using certificates managed by AWS Certificate Manager. Check this box if you would like to create an ALB for this project. An ALB will incur costs irrespective of traffic passing through it.>	 
-   * - Storage Configuration
-     -
-   * - Use Project Storage	 
-     - <Research Gateway will setup a shared S3 bucket (project storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted at the project level. Note: For now defaultly it will create the project storage.>
+  
 	 
 Click on the "Verify" button, it will check the provided details are valid or not. If details are valid, it will show verified account message with green color tick mark below the header otherwise it will throw an error message accordingly.
 
@@ -339,7 +336,7 @@ Secure connections to resources using ALB to RStudio and Nextflow-Advanced Produ
 2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
    Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
    
- .. image:: images/ssl-alb.png 
+ .. image:: images/ssl-alb.png
  
 3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
    Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
@@ -380,6 +377,8 @@ Click on the  “+Add New” button in the My Project page or use details from :
 
 .. image:: images/Principal_CreateProject_3.png
 
+.. image:: images/Principal_CreateProject_4.png  
+
 Fill in the following details
 
 .. list-table:: 
@@ -404,6 +403,8 @@ Fill in the following details
      - <Create products in the service catalog from our standard catalog or bring your own service catalog portfolio> [optional] 
    * - Cost Control
      - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
+   * - Use Project Storage 
+     - <Research Gateway will setup a shared S3 bucket (project storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted at the project level. Note: For now defaultly it will create the project storage.>
 
 
 Click on the “Create Project” button. Added a new project successfully.
@@ -413,6 +414,7 @@ Click on the “Create Project” button. Added a new project successfully.
  a. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
  b. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
  c. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+ d. If you select the “Use Project Storage” option it will create project storage at the time of project creation, if you unselect the “Use Project Storage” option it will not create project storage.
 
 Project Storage
 ^^^^^^^^^^^^^^^
@@ -443,7 +445,11 @@ Cost Control
 
 .. image:: images/Principal_CreateProject_3.png
 
+.. image:: images/Principal_CreateProject_4.png 
+
 3. You can manually stop/pause/resume/Add Budget/Archive the project through the actions which are available on the project details page.
+
+.. note:: ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
 
 .. image:: images/Principal_ProjectDetails.png
 
@@ -471,7 +477,7 @@ Project Details
 4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
+7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed. ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
 8. Click on the “Add Budget” button which is available on the right side, it should show a dialog box where you can add budget value of whole number greater than 0.
 
 .. image:: images/Principal_ProjectDetails.png 
@@ -560,3 +566,4 @@ Once project is active, navigate to the project details tab and click on the “
  a. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
  b. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
  c. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+ d. If you select the “Use Project Storage” option it will create project storage at the time of project creation, if you unselect the “Use Project Storage” option it will not create project storage.
