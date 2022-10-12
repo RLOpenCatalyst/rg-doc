@@ -378,6 +378,8 @@ Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account 
 
 .. image:: images/Principal_CreateProject_3.png 
 
+.. image:: images/Principal_CreateProject_4.png
+
 My Projects page of the Research Gateway will list all the existing projects created along with other details.
 
 .. image:: images/Principal_MyProjects.png
@@ -395,6 +397,8 @@ Login to the Research Gateway. Click on the  “+Add New” button in the My Pro
 .. image:: images/Principal_CreateProject_2.png
 
 .. image:: images/Principal_CreateProject_3.png 
+
+.. image:: images/Principal_CreateProject_4.png
 
 Fill in the following details
 
@@ -420,7 +424,9 @@ Fill in the following details
      - <Create products in the service catalog from our standard catalog or bring your own service catalog portfolio> [optional] 
    * - Cost Control
      - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
-   
+   * - Use Project Storage 
+     - <Research Gateway will setup a shared S3 bucket (project storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted at the project level. Note: For now by default it will create the project storage. Selecting "Use Project Storage" will pull in S3 into your project catalog>
+
 Click on the “Create Project” button. Added a new project successfully.
 
 .. note::
@@ -428,7 +434,7 @@ Click on the “Create Project” button. Added a new project successfully.
  a. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
  b. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
  c. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
-
+ d. If you select the “Use Project Storage” option it will create project storage at the time of project creation, if you unselect the “Use Project Storage” option it will not create project storage.
 
 Project Storage
 ---------------
@@ -459,7 +465,11 @@ Cost Control
 
 .. image:: images/Principal_CreateProject_3.png 
 
+.. image:: images/Principal_CreateProject_4.png
+
 3. You can manually Stop/Pause/Resume/Archive/Add Budget the project through the actions which are available on the project details page.
+
+.. note:: ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
 
 .. image:: images/Principal_ProjectDetails.png
 
@@ -483,7 +493,7 @@ Project Details Tab
 4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed.
+7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed. ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
 
 .. image:: images/Principal_ProjectDetails.png 
 
@@ -756,6 +766,8 @@ Once project is active, navigate to the project details tab and click on the “
  a. While creating the project, if you select the "Standard Catalog" option it will create 7 products(Amazon Sagemaker, Amazon S3, Amazon EC2-Linux, Amazon EC2-Windows, RStudio, Cromwell Advanced and Nextflow Advanced). 
  b. If you select the "Bring all catalog items" option it will sync all the products which have the required launch permission in the portfolio of the AWS account.
  c. If you select the "Bring specific catalog items" option it will sync only the products which have the tag in the portfolio of the AWS account.
+ d. If you select the “Use Project Storage” option it will create project storage at the time of project creation, if you unselect the “Use Project Storage” option it will not create project storage.
+
 
 End of Day - Email report on  the running instances
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -814,7 +826,11 @@ Click on the "Archive" button which is available on the right side, it was route
 
 .. image:: images/Principal_ProjectDetails.png
 
-.. image:: images/Principal_Project_ArchiveProject_PopUp.png
+.. image:: images/ProjectArchive_FirstCheckboxSelected.png
+
+ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
+
+.. image:: images/ProjectArchive_BothCheckboxSelected.png
 
 **Add Budget Action**
 
@@ -1256,7 +1272,7 @@ d. **Filter** - We have following filter options:
 2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
    Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
    
- .. image:: images/ssl-alb.png 
+ .. image:: images/ssl-alb.png
  
 3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
    Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.

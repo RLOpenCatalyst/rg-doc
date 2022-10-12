@@ -132,3 +132,8 @@ PROJECT,PROJECT_BUDGET_CHANGED,You can see project budget changes success inform
 PROJECT,PROJECT_UPDATE_USER,You can see assigned researchers to project update success information with count 
 USER,USER_CREATION_COMPLETE,You can see new user creation success information with triggered new user name
 USER,USER_CREATION_FAILED,You can see new user creation failed information with new user name and reason 
+PROVISIONED_PRODUCT_ACTION,PROVISIONING_STARTED,"You can see product provision start information with product name, product id and project name"
+PROVISIONED_PRODUCT_ACTION,PROVISIONING_COMPLETE,"You can see product provision completion information with product name, product id and project name"
+PROVISIONED_PRODUCT_ACTION,PROVISIONING_FAILED,"You can see product provision failed information with product name, product id and project name"
+PROVISIONED_PRODUCT_ACTION,TERMINATION_STARTED,"You can see product termination start information with product name, product id and project name"
+PROVISIONED_PRODUCT_ACTION,TERMINATION_COMPLETE,"You can see product termination completion information with product name, product id and project name"
