@@ -60,6 +60,31 @@ Appendix F - Audit Trail Events for Principal Investigator
 
 Appendix G - Release Notes
 ==========================
+
+v1.14.0
+^^^^^^^
+
+Enhancements
+------------
+1. Select User-Created Studies to Mount. Users now have the ability to choose up to 5 studies that will be mounted to the workspaces being created. With this feature, the “Bring Your Own Bucket “ (BYOB) feature is now complete. This powerful feature allows users to create their own studies, assign them to specific projects, choose which studies to mount while creating workspaces, and finally use the mounted studies to read the data from their workspaces.
+2. Current Month Cost in Daily EOD Report. Users are always sensitive to cost in the AWS cloud environment. To help them be aware of the costs, we have created an End of Day report to the principal investigator, which will give them the current month direct costs as well as the AWS current month to date billing. This is expected to help users keep better track of their project budgets.
+3. Budget Screen Enhancements. Budget screens will also show the current month direct costs in line with the feature above.
+4. Edit User-Created Studies. This allows users to reuse the studies they create by assigning new projects to the same study. A classic use-case is when a professor wants to use a dataset for a semester project by his students. Each semester the project and students would change but the dataset created as a study would remain the same.
+5. Export Project Budget Details. This feature is being done for a Singapore based university using the Research Gateway product. They wanted the details of the budget consumption to be exported in a form that can be used for analysis using the Excel or other tools.
+
+Bug-fixes
+---------
+
+1. Organization Id to be added to all Audit Trail events to allow filtering by OU.
+2. Project sync was not working when more than 200 products exist in Service Catalog.
+3. Invalid URL typed by user should show error message.
+4. KMS ARN field should be validated in Add/Edit Internaly Study screen.
+5. Updates to project catalog should be restricted when one update is in progress.
+6. Product Cost Trends chart should show dates in ascending order.
+7. S3 Explore: Copy to clipboard action getting duplicated.
+8. SSH action links should be accessible only to owners.
+9. Security fixes. This includes some technology refresh in major third-party technologies used like MongoDB, npm packages, node.js etc. The chief among these is an upgrade to MongoDB v4.0.0 that also allows us to upgrade to Node.js v18. Database passwords are now stored using AWS Secret Manager service, providing an additional layer of security, in line with AWS recommended best practices.
+
 v1.13.2
 ^^^^^^^
 
