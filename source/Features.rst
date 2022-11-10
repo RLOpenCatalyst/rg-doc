@@ -1472,16 +1472,7 @@ As a Researcher, you can login to the Research Gateway and quickly order S3 Prod
 Find the S3 in the Active Products panel. Or click on the “View All” button to get a list of all provisioned products.
 You can see product related actions in the  Actions menu.
 
-**1. Upload Action**
-
-Choose the “Upload” option. Through this you can upload a file to the S3 bucket.
-
-.. note:: When you try to upload more than 10MB file you will see a message like **"The size of this file is larger than the maximum(10MB) size allowed on this system. Please contact your administrator."**
-
-.. image:: images/testingevent2.png
-
-
-**2. Share Action**
+**1. Share Action**
 
 
 Choose the “Share” option. Through this you can  share the details to other team members.
@@ -1495,7 +1486,7 @@ Choose the “Share” option. Through this you can  share the details to other 
 
 .. image:: images/testingevent4.png
 
-**3. Unshare Action**
+**2. Unshare Action**
 
 Choose the "Unshare" option. Through this you can unshare the details from the earlier shared team member.  
 
@@ -1507,7 +1498,7 @@ Choose the "Unshare" option. Through this you can unshare the details from the e
 
 .. note:: If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket.“**
 
-**4. Terminate Action**
+**3. Terminate Action**
 
 Choose the "Terminate" option to de-provision the product.
 
@@ -1517,7 +1508,7 @@ There is a check to find out whether the file exists in the bucket or not. If ex
 .. image:: images/action.png
 
 
-**5. Explore Action**
+**4. Explore Action**
 
 a. In the product details screen of the newly created S3 bucket, click the “Explore” action. Through this action you can see all the files and folders in the S3 bucket with actions (download, delete, Copy to clipboard) against each item.
 
@@ -1531,7 +1522,9 @@ d. Click on the “Upload” action. Click on "Add files" to upload multiple fil
 .. image:: images/multifiles.png 
 .. image:: images/upload2.png
 
-**6. Link Action**
+.. note:: When you try to upload more than 10MB file you will see a message like **"The size of this file is larger than the maximum(10MB) size allowed on this system. Please contact your administrator."**
+
+**5. Link Action**
 
 You have to link Sagemaker from the S3 product details page using the provisioned product ID.
 For a S3 Provisioned Product, you should have a new action item called “Link”

@@ -32,7 +32,7 @@ Steps to connect
 ----------------
 
 1. Click on the newly created S3 bucket in the “My Products” tab. The product details page will open. 
-2. Click on the “Upload” action. Click on "Add files" to upload multiple files. The file size should not be greater than 5 GB. Click on "Add folder" to upload entire folder to S3. Click the “submit” button and the file will be uploaded to the bucket. In the product details screen of the newly created S3 bucket, click the “Explore” action. The “Explore” screen displays all the details of the bucket.
+2. Click on the "Explore" action. Click on "Add files" to upload multiple files. The file size should not be greater than 5 GB. Click on "Add folder" to upload entire folder to S3. Click the “submit” button and the file will be uploaded to the bucket. In the product details screen of the newly created S3 bucket, click the “Explore” action. The “Explore” screen displays all the details of the bucket.
 
 .. image:: images/S3Product_Explore_UploadAction_MultipleFiles.png
 
