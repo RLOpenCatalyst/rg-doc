@@ -401,10 +401,10 @@ Fill in the following details
      - <Select users from the list or create new collaborators through "Add Users" button> [optional]
    * - Add Products
      - <Create products in the service catalog from our standard catalog or bring your own service catalog portfolio> [optional] 
-   * - Cost Control
-     - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
    * - Use Project Storage 
      - <Research Gateway will setup a shared S3 bucket (project storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted at the project level. Note: For now by default it will create the project storage. Selecting "Use Project Storage" will pull in S3 into your project catalog>
+   * - Cost Control
+     - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
 
 
 Click on the “Create Project” button. Added a new project successfully.

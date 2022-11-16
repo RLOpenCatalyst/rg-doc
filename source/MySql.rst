@@ -15,6 +15,8 @@ Parameters
      - Details
    * - Product Name
      - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch
+   * - Study Selection
+     - Expand the section to select studies to mount to your workspace.Select one or more studies to mount to your workspace from the dropdown list(Maximum of 2)
    * - ConnectFromPort
      - Provide which Port has to be opened in the Security Group of the EC2 Instance to access MySQL Docker Container Eg: 3306
    * - KeyPair
@@ -34,6 +36,8 @@ Parameters
 .. image:: images/Principal_MySQL_Launchform1.png
 
 .. image:: images/Principal_MySQL_Launchform2.png
+
+.. image:: images/Principal_MySQL_Launchform3.png
 
 Steps to launch
 ----------------

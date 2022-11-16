@@ -16,6 +16,8 @@ Parameters
      - Details
    * - Product Name
      - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch
+   * - Study Selection
+     - Expand the section to select studies to mount to your workspace.Select one or more studies to mount to your workspace from the dropdown list(Maximum of 2)
    * - InitialUser
      - User name for RStudio
    * - InitialPassword
@@ -27,7 +29,10 @@ Parameters
      - Choose instance type in the drop-down list for RStudio. Eg: t2.micro
 
 
- .. image:: images/Principal_Product_RStudio_LaunchForm.png
+ .. image:: images/Principal_Product_RStudio_LaunchForm1.png
+
+ .. image:: images/Principal_Product_RStudio_LaunchForm2.png
+ 
  
 Steps to launch
 ----------------

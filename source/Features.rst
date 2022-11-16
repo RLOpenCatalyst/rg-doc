@@ -422,11 +422,12 @@ Fill in the following details
      - <Select collaborators from the list or create a new user from the **"Add Users"** button> [optional]
    * - Add products
      - <Create products in the service catalog from our standard catalog or bring your own service catalog portfolio> [optional] 
-   * - Cost Control
-     - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
    * - Use Project Storage 
      - <Research Gateway will setup a shared S3 bucket (project storage) where the team members can store data. This shared storage will be mounted into all supported workspaces. Storage costs will be accounted at the project level. Note: For now by default it will create the project storage. Selecting "Use Project Storage" will pull in S3 into your project catalog>
+   * - Cost Control
+     - <Research Gateway can automatically create budget consumption alerts and take actions like pausing the project (at 12%) or stopping the project (at 18%). Check this box to enable these actions.>
 
+     
 Click on the “Create Project” button. Added a new project successfully.
 
 .. note::
@@ -866,11 +867,11 @@ Sign in as the Principal Investigator. Click on the “☰” Symbol which is av
 
 You can see budget details  with different KPI cards. You can see the following KPI cards:
 
-  a. **Total Budget Alloted** : This is the budget allocated for the project during the creation of the project.
+  a. **Total Direct Cost Budget** : This is the budget allocated for the project during the creation of the project.
 
   b. **Total Direct Cost** : This is the budget consumed by all the researchers in the project.
 
-  c. **Total Budget Available** : This is available budget for the project
+  c. **Current Month Total Direct Cost** : This is budget consumed by all the researchers in the project during current month.
 
 You can see Project-wise Budget details in the table format:
 
@@ -912,7 +913,7 @@ You can see the standard catalog products on the listing page. To assign a set o
 
 You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
 
-.. image:: images/Principal_Catalog_UpdateToSelectedO.U.png
+.. image:: images/Principal_Catalog_UpdateToSelectedOU.png
 
 .. image:: images/Principal_Catalog_UpdateToSelectedO.U_ToasterMessage.png
 
@@ -983,7 +984,7 @@ Each card shows the following data:
 
 .. image:: images/PrincipalInvestigator_Studies_DefaultPage.png
 
-The studies landing page should have a “Filter” feature that allows the user to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies.
+The studies landing page should have a “Filter” feature that allows the user to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies/Internal.
 
 .. image:: images/PrincipalInvestigator_Studies_AllFilters_DefaultPage.png
 
@@ -1025,14 +1026,14 @@ You can see the files/folders which are  related to the datastore.
  .. image:: images/Principal_Studies_Link.png  
 
 
-External Study(for Principal Investigator)
+Internal Study(for Principal Investigator)
 ------------------------------------------
 
-As a Principal Investigator you can bring an existing S3 bucket in your AWS project account as an external study and the same can be mounted to the workspaces launched in the projects to which the study has been assigned to. An external study can only be used in projects which use the same AWS account.
+As a Principal Investigator you can bring an existing S3 bucket in your AWS project account as an Internal study and the same can be mounted to the workspaces launched in the projects to which the study has been assigned to. An Internal study can only be used in projects which use the same AWS account.
 
 **Navigation to Studies screen**
 
-To create an External Study, Click on “☰” Symbol which is available on the left side header. By clicking on the “Studies” menu item, you will be navigated to the studies details page.
+To create an Internal Study, Click on “☰” Symbol which is available on the left side header. By clicking on the “Studies” menu item, you will be navigated to the studies details page.
 
 Click on “Create Study” Button to open up the create study form 
 
@@ -1053,14 +1054,14 @@ Fill the following details
    * - Description   
      - <Please provide a description about the contents of the study. This description will be displayed on the Study card.>
    * - Study Type
-     - <Currently only External Study is supported.>
+     - <Currently only Internal Study is supported.>
    * - Access Level
      - <Currently only ReadOnly Study is supported.>
    * - Tags for this study
      - <Enter value (optional) You can add up to 15 unique tags. You can give any value and click on the arrow button the tags are added to the study. You can add the alphabet and special characters like hyphens. You cannot add numbers or special characters as tags. You can add only add 15 tags or less. Once you add 15 tags then the tag field  will disappear. You can not duplicate the tags.>
 
 
-.. image:: images/Studies_ExternalStudies_StudyDetails.png
+.. image:: images/Studies_InternalStudies_StudyDetails.png
 
 
 2. Bucket Details
@@ -1080,9 +1081,9 @@ Fill the following details
    * - Prefix
      - <Please provide a location within the bucket to which access is provided. Only Alphanumeric, underscore, hyphen, dot and forward slash are allowed. spaces and special characters are not allowed. Prefix should end with a forward slash character (/). The prefix should not correspond to an object name in the bucket. If no prefix is provided, the entire bucket will be accessible. Incomplete prefix or non existing prefix will throw error message when you click on “Register Study” button>
 
-.. image:: images/Studies_ExternalStudies_BucketDetails.png
+.. image:: images/Studies_InternalStudies_BucketDetails.png
 
-.. image:: images/Studies_ExternalStudies_BucketDetails_KMSARNField.png
+.. image:: images/Studies_InternalStudies_BucketDetails_KMSARNField.png
 
 3. Account Details
 
@@ -1093,28 +1094,28 @@ Fill the following details
    * - Field
      - Details
    * - Project Account 
-     - <Choose the account configured as settings in RG to which you want the study to be mapped to. All the  projects linked to this particular study account will only show up here. You can select any one of the projects from the dropdown. The project account account number and study account should be the same, then only you  can create a study with one account.if not the creation of external study will not be possible>
+     - <Choose the account configured as settings in RG to which you want the study to be mapped to. All the  projects linked to this particular study account will only show up here. You can select any one of the projects from the dropdown. The project account account number and study account should be the same, then only you  can create a study with one account.if not the creation of internal study will not be possible>
    * - Study Scope   
      - <Currently only Project level scope is allowed. All the  project members can see the study details. But if any user who is not part of the project , will not be able to see the study details.>
    * - Projects
      - <Choose the projects to which the study needs to be assigned to. Linux based workspaces in the selected projects will automatically mount this study. Currently only the projects selected at creation of the study will be able to access the study. By default it shows no project is added to the account.Once You select the account then all the  projects which are linked to the selected account settings will  be listed here.>
   
-.. image:: images/Studies_ExternalStudies_AccountDetails.png
+.. image:: images/Studies_InternalStudies_AccountDetails.png
 
-.. image:: images/Studies_ExternalStudies_AccountDetails_ProjectListForSelectedAccount.png
+.. image:: images/Studies_InternalStudies_AccountDetails_ProjectListForSelectedAccount.png
 
 
 After filling the details click on Register Study button below the form, your study will be registered successfully
 
-.. image:: images/ExternalStudy_SuccessMessage.png
+.. image:: images/InternalStudy_SuccessMessage.png
   
 
-The studies landing page should have a “Filter” feature that allows you to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies/External . You will be able to see your registered External Study using the “External” filter
+The studies landing page should have a “Filter” feature that allows you to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies/Internal . You will be able to see your registered Internal Study using the “Internal” filter
 
 
 .. image:: images/PrincipalInvestigator_Studies_AllFilters_DefaultPage.png
 
-.. image:: images/ExternalStudy_Example.png
+.. image:: images/InternalStudy_Example.png
 
 
 Each card shows the following data:
@@ -1124,24 +1125,21 @@ Each card shows the following data:
 3. Tags
 4. Bookmark this study.
 
-When you click on the External Study card you will be able to see  The “Study” details page which will show a tabbed area with the following tabs:
+When you click on the Internal Study card you will be able to see  The “Study” details page which will show a tabbed area with the following tabs:
 
 1. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
 
-.. image:: images/ExternalStudy_StudyDetails.png
+.. image:: images/InternalStudy_StudyDetails.png
 
 2. Resource details: In the “Resource details” tab you can see the Bucket information.
 
-.. image:: images/ExternalStudy_ResourceDetails.png
-
-
-
+.. image:: images/InternalStudy_ResourceDetails.png
 **Explore Action**
 
 When you click on the Explore button which is available at the right side of the page below Connect tab you will be able to see the files/folders which are related to the datastore. You can do root and back action but you will not be able to 'back' any further than the prefix specified.
 
 
-.. image:: images/ExternalStudy_Connect_ExploreAction.png
+.. image:: images/InternalStudy_Connect_ExploreAction.png
 
 
 **Link/Unlink Action**
@@ -1151,26 +1149,42 @@ When you click on the Explore button which is available at the right side of the
 3. You can link the study with multiple AWS Sagemaker notebooks. Through the “unlink resource” you can unlink with compute resources
 4. If there are no active AWS Sagemaker products we are showing the following message to the You There is no provisioned Sagemaker product. Please Launch an AWS Sagemaker product from the available products page first, before linking to an s3 bucket.
 
-.. image:: images/ExternalStudy_Link_AmazonSagemaker.png
+.. image:: images/InternalStudy_Link_AmazonSagemaker.png
 
-.. image:: images/ExternalStudy_Link_AmazonSagemaker_Success.png
+.. image:: images/InternalStudy_Link_AmazonSagemaker_Success.png
 
-.. image:: images/ExternalStudy_Link_AmazonSagemaker_UnlinkResouce.png
+.. image:: images/InternalStudy_Link_AmazonSagemaker_UnlinkResouce.png
 
-.. image:: images/ExternalStudy_Linked_AmazonSagemaker_CopyBucketName.png
+.. image:: images/InternalStudy_Linked_AmazonSagemaker_CopyBucketName.png
 
-.. image:: images/ExternalStudy_Unlink_AmazonSagemaker.png
+.. image:: images/InternalStudy_Unlink_AmazonSagemaker.png
 
-.. image:: images/ExternalStudy_Unlink_AmazonSagemaker_Success.png
+.. image:: images/InternalStudy_Unlink_AmazonSagemaker_Success.png
 
-.. note:: When your External Study creation fails due to invalid/unavailable input values you will be able to see following error toaster message
+.. note:: When your Internal Study creation fails due to invalid/unavailable input values you will be able to see following error toaster message
 
-.. image:: images/ExternalStudy_ErrorMessage.png
+.. image:: images/InternalStudy_ErrorMessage.png
 
+.. note::  Only Principal Investigator users can create an Internal Study. Researcher users cannot create internal study.
 
-.. note::  Only Principal Investigator users can create an External Study. Researcher users cannot create external study.
+**Edit Action**
 
+1. You can edit the study through the "Edit" action.
 
+.. image:: images/InternalStudy_EditAction.png
+
+.. image:: images/InternalStudy_Edit_StudyDetails.png
+
+.. image:: images/InternalStudy_Edit_BucketDetails.png
+
+.. image:: images/InternalStudy_Edit_AccountDetails.png
+
+.. csv-table::
+   :file: EditStudyParameters.csv
+   :widths: 10, 15
+   :header-rows: 1
+
+.. image:: images/InternalStudy_EditAction_SuccessMessage.png
 
 Audit Trail(For Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1211,21 +1225,21 @@ KPI Cards
 
 You can see the following KPI cards:
 
-a. Total Budget Alloted
-b. Total Direct Cost
-c. Total Budget Available
+a. Total Project Direct Cost
+b. My Total Direct Cost
+c. My Current Month Direct Cost
 
-**Total Budget Alloted**
+**Total Project Direct Cost**
 
-This is the budget allocated for the project during the creation of the project.
+This is the total budget consumed by all the researchers in the project.
 
-**Total Direct Cost**
+**My Total Direct Cost**
 
-This is the budget consumed by all the researchers in the project.
+This is the total budget consumed by the researcher who is logged in for that project.
 
-**Total Budget Available**
+**My Current Month Direct Cost**
 
-This budget is available by the researcher who is logged in for that project.
+This is the current month budget cosumed by the researcher who is logged in for that project.
 
 .. image:: images/kpi.png 
 
@@ -1834,10 +1848,9 @@ Login as the Researcher. Click on “☰” Symbol which is available on the lef
   
 You can see budget details with different KPI cards. You can see the following KPI cards :
 
-1. **Total Budget Allotted** : This is the budget allocated for the project during the creation of the project.
-2. **Consumed Budget** : This is the budget consumed by all the researchers in the project.
-3. **Available Budget** : This is the available budget for the project.
-
+1. **Total Project Direct Cost** : This is the total budget consumed by all the researchers in the project.
+2. **My Total Direct Cost** : This is the total budget consumed by the researcher who is logged in for that project.
+3. **My Current Month Direct Cost** : This is the current month budget cosumed by the researcher who is logged in for that project.
  
  .. image:: images/bud2.png 
  
