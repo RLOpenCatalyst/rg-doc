@@ -17,6 +17,8 @@ Parameters
      - Details
    * - Product Name
      - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch
+   * - Study Selection
+     - Expand the section to select studies to mount to your workspace.Select one or more studies to mount to your workspace from the dropdown list(Maximum of 2)
    * - KeyPair
      - Choose a KeyPair in the dropdown list. Note: If KeyPair is not available in the drop-down, click on the “+” button. A KeyPair creation form is opened. Fill the details in the form and click on the “Create KeyPair” button. Now that KeyPair is available in the list. Remember to save the private key file securely for future use. Do not share this file with others for the security of your account.
    * - LatestAmiId
@@ -25,9 +27,10 @@ Parameters
      - This identifies the IP locations from where connections to this instance should be allowed. For the security of your instance, we recommend you allow connections only from your own location. You can find your IP using https://whatismyipaddress.com/
    * - InstanceType
      - Choose instance type in the drop-down list Eg: t2.small
-   
+  
+.. image:: images/AmazonEC2Linux_LaunchForm1.png
 
-.. image:: images/AmazonEC2Linux_LaunchForm.png
+.. image:: images/AmazonEC2Linux_LaunchForm2.png
 
 Steps to launch
 ----------------
