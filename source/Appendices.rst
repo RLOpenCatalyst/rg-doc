@@ -61,6 +61,46 @@ Appendix F - Audit Trail Events for Principal Investigator
 Appendix G - Release Notes
 ==========================
 
+v1.15.0
+^^^^^^^^
+
+Enhancements
+-------------
+
+#. Principal Investigators will now see all the products launched by all the project team-members in the All Products tab. They will also be able to perform Stop and Terminate actions on the products using the 3-dotted icon which is available at the right side of the table.  
+   
+   * Products which are in Creating, Transitioning and Terminating State will not show any actions in the All Products tab.
+   
+   * Products which are in stopped state will show only the Terminate action.
+   
+   * Project Storage will not show any actions as it cannot be terminated independent of the project.
+   
+   * EFS or FSx file-systems will only show the Terminate action.
+#. PCluster Enhancement. Users will now be given choice to connect either an EFS or FSx file- system (provisioned earlier) to the PCluster.
+#. End of Day (EOD) Report for Principal Investigators. EOD Reports will be sent with the subject as "Research Cost Tracking Daily Report". It will show the following tables.
+   
+   * Account table: This table lists all the accounts in use in your tenant. Each account will show the month-to-date consumption and the forecast value.
+   
+   * Projects summary table: This table shows each project’s summary including month to date consumption and cumulative consumption (since inception).
+#. Project Details table: This table shows all the Active products per project and the month to date and cumulative cost per project. It also shows a single line item for the cumulative month-to-date and cumulative cost of Terminated products. For each provisioned product User will now be able to see Created on Parameter in Product Details Tab which will indicate the Product Creation Date.
+#. Audit Trail: Filter values should be sorted in Alphabetical order. This will help Users to find the expected values more easily. 
+
+
+Bug-fixes
+----------
+1. Amazon SageMaker : product launch failed. 
+   Note: User will need to manually sync their project once for the product template to get updated in their account. 
+2. Notificationsink: When send email of failed product fails, the error message talks about the email failure instead of actual error 
+3. Date range picker on the Costs tab now allows to select only valid dates based on the lifespan of the product. 
+4. Choosing Organizational Unit should be disabled when the role is chosen as Admin while creating a user. 
+5. My Products tab: Budget value for product card is showing two decimal values but when the search is performed in my products tab it is not working as expected 
+6. When a role gets removed from AWS console and we still have a setting in RG DB, new settings addition is failing by throwing a malformed policy error 
+7. Product daily cost missing for certain days  
+8. Even if the Status key value "DELETE_IN_PROGRESS" or "AVAILABLE" is set, the isDeleted flag is set to true. 
+9. User Creation: If B2C mode is set to true and the user is PI, then only create the default organization. 
+10. All audit events should be tagged with organization ID. 
+
+ 
 v1.14.0
 ^^^^^^^
 
@@ -74,7 +114,6 @@ Enhancements
 
 Bug-fixes
 ---------
-
 1. Organization Id to be added to all Audit Trail events to allow filtering by OU.
 2. Project sync was not working when more than 200 products exist in Service Catalog.
 3. Invalid URL typed by user should show error message.
@@ -104,12 +143,12 @@ Bug-fixes for existing issues
 -----------------------------
 
 1. User Management: User should be added to the DB only after cognito signup is successful
-2. User id should be case insensitive
-2. notificationsink: Product Provisioning events should only be sent to the PI and Researchers
-3. notificationsink: product events not getting updated when isDeleted flag is set to true
-4. Users Screen: Add User :Error toaster message changes.
-5. Security vulnerability for the Passport-Cognito package in the Node Js Server Side Code
-6. Security fixes related to OWASP Top 10 vulnerabilities.
+2. User id should be case insensitive.
+3. notificationsink: Product Provisioning events should only be sent to the PI and Researchers
+4. notificationsink: product events not getting updated when isDeleted flag is set to true
+5. Users Screen: Add User :Error toaster message changes.
+6. Security vulnerability for the Passport-Cognito package in the Node Js Server Side Code
+7. Security fixes related to OWASP Top 10 vulnerabilities.
 
 v1.13.0
 ^^^^^^^
