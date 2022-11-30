@@ -39,7 +39,7 @@ You can see the following KPI cards:
 
   * **Total Budget Allotted**: This is the sum total of budget allocated for all projects in the Organization.
   * **Total Direct Cost**: This is the budget consumed by all Organizations.
-  * **Total Budget Available**: This is the portion of the alloted budget which is not yet consumed.
+  * **Total Budget Available**: This is the portion of the allotted budget which is not yet consumed.
 
 .. image:: images/Admin_Budgets_Organization-WiseBudgetBreakdown.png
 
@@ -154,7 +154,7 @@ Fill the following details
    * - Role
      - <Select a role in the drop-down list>
    * - First Name
-     - <Please enter firstname of the user>
+     - <Please enter first name of the user>
    * - Last Name
      - <Please enter last name of the user> 
    * - Organizational Unit
@@ -173,7 +173,7 @@ Fill the following details
     b. Numerical characters(0-9)
     c. Special characters( @ - + . -)
 
-Click on the “Add User” button. On successsful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
+Click on the “Add User” button. On successful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
 .. image:: images/form.png
 
@@ -189,10 +189,10 @@ Users can choose a password and click on the “Submit” button.
 
  The password policy should meet the following requirement :
    a. The minimum password length of 8 characters and a maximum of 16 characters.
-   b. It should have atleast one lower case character(a-z).
-   c. It should have atleast one upper case character(A-Z).
-   d. It should have atleast one number(0-9).
-   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
+   b. It should have at least one lower case character(a-z).
+   c. It should have at least one upper case character(A-Z).
+   d. It should have at least one number(0-9).
+   e. It should have at least one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
    
 On successful validation, users will be allowed to login to the Research Gateway.
 
@@ -218,7 +218,7 @@ CSV file should contain following details
    * - email 
      - <Enter an Email ID>
    * - first_name
-     - <Please enter firstname of the user>
+     - <Please enter first name of the user>
    * - last_name
      - <Please enter last name of the user>
    * - role
@@ -248,10 +248,10 @@ Users can choose a password and click on the “Submit” button.
 
  The password policy should meet the following requirement :
    a. The minimum password length of 8 characters and a maximum of 16 characters.
-   b. It should have atleast one lower case character(a-z).
-   c. It should have atleast one upper case character(A-Z).
-   d. It should have atleast one number(0-9).
-   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
+   b. It should have at least one lower case character(a-z).
+   c. It should have at least one upper case character(A-Z).
+   d. It should have at least one number(0-9).
+   e. It should have at least one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
    
 On successful validation, users will be allowed to login to the Research Gateway.
 
@@ -346,7 +346,7 @@ You can search  product name and description of the product. We have following f
   .. image:: images/filter1.png
 
 
-  b. **Research** : You can see the products realted to compute and analytics here. Eg: Amazon EC2.
+  b. **Research** : You can see the products related to compute and analytics here. Eg: Amazon EC2.
 
    .. image:: images/Research1.png
 
@@ -470,7 +470,7 @@ Cost Control
 
 3. You can manually Stop/Pause/Resume/Archive/Add Budget the project through the actions which are available on the project details page.
 
-.. note:: ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
+.. note:: Project Storage can be deleted while archiving a project. You will now be prompted for deletion of the project storage when you archive a project. Select the checkbox if you want to delete the project storage bucket along with all of its contents.
 
 .. image:: images/Principal_ProjectDetails.png
 
@@ -484,6 +484,7 @@ Once you click on the project, you can see the budget in the cards and remaining
    2. Events
    3. Available Products
    4. My Products
+   5. All Products
 
 Project Details Tab
 -------------------
@@ -494,7 +495,7 @@ Project Details Tab
 4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed. ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
+7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed. Project Storage can be deleted while archiving a project. You will now be prompted for deletion of the project storage when you archive a project. Select the checkbox if you want to delete the project storage bucket along with all of its contents.
 
 .. image:: images/Principal_ProjectDetails.png 
 
@@ -523,7 +524,7 @@ Available Products Tab
 2. 	You can search based on product name and description. You can filter the products. We have following filter options
       
 	  a. **All** - You can see the all products here.
-	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
+	  b. **Research** - You can see the products related to compute and analytics here. Eg: Amazon EC2
 	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 
 .. image:: images/Principal_Project_AvailableProducts.png	 
@@ -542,12 +543,36 @@ My Products Tab
 .. image:: images/Principal_Project_MyProducts.png
 
 .. note:: 
-
  a. When adding a project we are passing collaborator information. Through this, we are linking researchers to the project. 
  b. The project is independent of the researcher. We can create an empty project and add collaborators later. We can add collaborators through the "Manage" option which is at the project details screen.
  c. **My Projects** page of the Research Gateway will list all the existing projects created along with other details. Clicking on a specific project will lead to a project details page. Click on the specific project you can navigate to the project details page.
  d. The products which are updated in the last 30 minutes will be visible under the active filter.
  e. When the Principal Investigator logs-in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
+
+All Products Tab
+-----------------
+ 
+1. Principal Investigators will now see all the products launched by all the project team members in the All Products tab. They will also be able to perform Stop and Terminate actions on the products using the 3-dotted icon which is available at the right side of the table. 
+
+.. image:: images/Principal_Project_AllProducts.png
+
+.. image:: images/Principal_Project_AllProducts_Actions.png
+
+2. You can search the product name and description of the product. 
+3. You can filter the products. We have the following filter options: 
+    
+    a. All - You can see all the (i.e., active, terminated, stopped and failed) products here. 
+    b. Active - You can see all the active products here. 
+    c. Terminated - You can see all terminated products here. 
+ 
+.. note::
+  a. Products that are in Creating, Transitioning, and Terminating State will not show any actions in the All Products tab. 
+  b. Products that are in the active state will show both Active and Terminate action 
+  c. Products that are in stopped state will show only the Terminate action. 
+  d. Products that are in failed state will show only the Terminate action. 
+  e. Project Storage will not show any actions as it cannot be terminated independent of the project. 
+  f. EFS or FSx file-systems will only show the Terminate action. 
+ 
 
 
 Auto-Stop Resources on Idle
@@ -612,7 +637,7 @@ Fill the following details
    * - Role
      - <Select a role in the drop-down list>
    * - First Name
-     - <Please enter firstname of the user>
+     - <Please enter first name of the user>
    * - Last Name
      - <Please enter last name of the user>
    * - Tags
@@ -629,7 +654,7 @@ Fill the following details
        b. Numerical characters(0-9)
        c. Special characters( @ - + . -)
 
-Click on the “Add User” button. On successsful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
+Click on the “Add User” button. On successful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
 .. image:: images/form1.png
 
@@ -645,10 +670,10 @@ Users can choose a password and click on the “Submit” button.
   
   The password policy should meet the following requirement :
    a. The minimum password length of 8 characters and a maximum of 16 characters.
-   b. It should have atleast one lower case character(a-z).
-   c. It should have atleast one upper case character(A-Z).
-   d. It should have atleast one number(0-9).
-   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
+   b. It should have at least one lower case character(a-z).
+   c. It should have at least one upper case character(A-Z).
+   d. It should have at least one number(0-9).
+   e. It should have at least one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
    
 On successful validation, users will be allowed to login to the Research Gateway.
 
@@ -673,7 +698,7 @@ CSV file should contain following details
    * - email 
      - <Enter an Email ID>
    * - first_name
-     - <Please enter firstname of the user>
+     - <Please enter first name of the user>
    * - last_name
      - <Please enter last name of the user>
    * - role
@@ -703,10 +728,10 @@ Users can choose a password and click on the “Submit” button.
 
  The password policy should meet the following requirement :
    a. The minimum password length of 8 characters and a maximum of 16 characters.
-   b. It should have atleast one lower case character(a-z).
-   c. It should have atleast one upper case character(A-Z).
-   d. It should have atleast one number(0-9).
-   e. It should have atleast one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
+   b. It should have at least one lower case character(a-z).
+   c. It should have at least one upper case character(A-Z).
+   d. It should have at least one number(0-9).
+   e. It should have at least one special character(= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~ ` ).
    
 On successful validation, users will be allowed to login to the Research Gateway.
 
@@ -829,7 +854,7 @@ Click on the "Archive" button which is available on the right side, it was route
 
 .. image:: images/ProjectArchive_FirstCheckboxSelected.png
 
-ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
+Project Storage can be deleted while archiving a project. You will now be prompted for deletion of the project storage when you archive a project. Select the checkbox if you want to delete the project storage bucket along with all of its contents.
 
 .. image:: images/ProjectArchive_BothCheckboxSelected.png
 
@@ -923,7 +948,7 @@ You can use the search field to search for a term in the product name and descri
 
   .. image:: images/filter1.png
  
- b. **Research** :  You can see the products realted to compute and analytics here. Eg: Amazon EC2
+ b. **Research** :  You can see the products related to compute and analytics here. Eg: Amazon EC2
  
    .. image:: images/Research.png
 
@@ -945,7 +970,7 @@ The Key Pairs screen can be used by the Principal Investigator to view keypair d
 
 You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
   
-Click on the "+Create New" button which is available at right side of the page. Fill the deatils in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
+Click on the "+Create New" button which is available at right side of the page. Fill the details in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
 
 .. image:: images/key3.png
 
@@ -1079,7 +1104,7 @@ Fill the following details
    * - Is the Bucket Encrypted?
      - <You can keep it as default value “No" or When you click on checkbox “Yes” it will ask you for KMS Arn (In Study Account) - Enter the ARN for the KMS key>
    * - Prefix
-     - <Please provide a location within the bucket to which access is provided. Only Alphanumeric, underscore, hyphen, dot and forward slash are allowed. spaces and special characters are not allowed. Prefix should end with a forward slash character (/). The prefix should not correspond to an object name in the bucket. If no prefix is provided, the entire bucket will be accessible. Incomplete prefix or non existing prefix will throw error message when you click on “Register Study” button>
+     - <Please provide a location within the bucket to which access is provided. Only Alphanumeric, underscore, hyphen, dot and forward slash are allowed. spaces and special characters are not allowed. Prefix should end with a forward slash character (/). The prefix should not correspond to an object name in the bucket. If no prefix is provided, the entire bucket will be accessible. Incomplete prefix or non-existing prefix will throw error message when you click on “Register Study” button>
 
 .. image:: images/Studies_InternalStudies_BucketDetails.png
 
@@ -1094,11 +1119,11 @@ Fill the following details
    * - Field
      - Details
    * - Project Account 
-     - <Choose the account configured as settings in RG to which you want the study to be mapped to. All the  projects linked to this particular study account will only show up here. You can select any one of the projects from the dropdown. The project account account number and study account should be the same, then only you  can create a study with one account.if not the creation of internal study will not be possible>
+     - <Choose the account configured as settings in RG to which you want the study to be mapped to. All the  projects linked to this particular study account will only show up here. You can select any one of the projects from the dropdown. The project account, account number and study account should be the same, then only you  can create a study with one account. If not the creation of internal study will not be possible>
    * - Study Scope   
      - <Currently only Project level scope is allowed. All the  project members can see the study details. But if any user who is not part of the project , will not be able to see the study details.>
    * - Projects
-     - <Choose the projects to which the study needs to be assigned to. Linux based workspaces in the selected projects will automatically mount this study. Currently only the projects selected at creation of the study will be able to access the study. By default it shows no project is added to the account.Once You select the account then all the  projects which are linked to the selected account settings will  be listed here.>
+     - <Choose the projects to which the study needs to be assigned to. Linux based workspaces in the selected projects will automatically mount this study. Currently only the projects selected at creation of the study will be able to access the study. By default it shows no project is added to the account. Once You select the account then all the  projects which are linked to the selected account settings will  be listed here.>
   
 .. image:: images/Studies_InternalStudies_AccountDetails.png
 
@@ -1239,7 +1264,7 @@ This is the total budget consumed by the researcher who is logged in for that pr
 
 **My Current Month Direct Cost**
 
-This is the current month budget cosumed by the researcher who is logged in for that project.
+This is the current month budget consumed by the researcher who is logged in for that project.
 
 .. image:: images/kpi.png 
 
@@ -1273,7 +1298,7 @@ c. **Keyword search** - You can search products based on product type, product n
 d. **Filter** - We have following filter options:
       
 	  a. **All** - You can see the all products here.
-	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
+	  b. **Research** - You can see the products related to compute and analytics here. Eg: Amazon EC2
 	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 
 .. image:: images/available.png
@@ -1366,7 +1391,7 @@ Through the “View All” button in the panel header, you can see following:
 
 .. image:: images/myproduct2.png
 
-.. note:: When you on click on "View All" option you can see active products defaultly. 
+.. note:: When you on click on "View All" option you can see active products by default. 
 
 While product is in the *Creating* state the details page displays a time limit that provision will take through the “Live in 5/10/15 mins” tag.
 
@@ -1375,8 +1400,7 @@ When you click any action(Start/Stop/Terminate) in a provisioned product, state 
 .. note:: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**The instance-id of the product is not available. Please try after some time**".
 
 .. image:: images/instance.png
-
-
+ 
 Actions available for products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1393,7 +1417,7 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypeEC2linux.png 
 
-3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 4. Reboot action : You can reboot instances through  “Reboot” action.
 
@@ -1441,7 +1465,7 @@ You can see the product related actions in the  Actions menu.
 
 .. image:: images/instancetypeEC2Windows.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 4. Reboot action : You can reboot instances through  “Reboot” action.
 
@@ -1547,12 +1571,12 @@ For a S3 Provisioned Product, you should have a new action item called “Link�
 .. image:: images/linking.png 
 
 
-This action item should be a pop up which will have the list (dropdown) of active sagemakers for that user.
+This action item should be a pop up which will have the list (dropdown) of active sagemaker products for that user.
 
 .. image:: images/linking2.png
 
 You should have an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-You should also see an “Unlink action” to unlink sagemakers from s3 bucket side. You are providing “Copy bucket name” action from sagemaker product side.
+You should also see an “Unlink action” to unlink sagemaker product from s3 bucket side. You are providing “Copy bucket name” action from sagemaker product side.
 
 
 .. image:: images/event.png
@@ -1560,7 +1584,7 @@ You should also see an “Unlink action” to unlink sagemakers from s3 bucket s
 .. image:: images/event2.png
 
 
-If there are no active sagemaker products we are showing the following message to the user “There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first,before linking to an s3 bucket”.
+If there are no active sagemaker products we are showing the following message to the user “There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket”.
 
 .. image:: images/computerresource.png 
 
@@ -1576,7 +1600,7 @@ You can see product related actions in the  Actions menu.
 
 2. Start/Stop action : You can stop the instance through “Start/Stop” action. Based on the instance state, you will see either the Start or the Stop action.
 
-3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 4. Terminate Action: You can terminate the product through “Terminate” action.
 
@@ -1595,7 +1619,7 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypeRstudio.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 4. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
 
@@ -1637,7 +1661,7 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/InstancetypeNextflow.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 4. Reboot action : You can reboot instances through  “Reboot” action.
 
@@ -1681,7 +1705,7 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypecromwell.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 4. Reboot action : You can reboot instances through  “Reboot” action.
 
@@ -1722,7 +1746,7 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypeDocker.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 4. Reboot action : You can reboot instances through  “Reboot” action.
 
@@ -1764,7 +1788,7 @@ You can see product related actions in the  Actions menu.
 
 .. image:: images/instancetypeSQL.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+3. Share action : You can share the product to all the members in the project through “Share” action.  If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 4. Reboot action : You can reboot instances through  “Reboot” action.
 
@@ -1796,13 +1820,13 @@ Click on the “Submit” button.
 PCluster Product
 ----------------
 
-Researchers can login to the Research Gateway and quickly order PCluster products. 
-Find the Provisioned PCluster product in the My Products panel and click on it. 
+Researchers can login to the Research Gateway and quickly order PCluster products. Find the Provisioned PCluster product in the My Products panel and click on it. 
+
 You can see the product related actions in the Actions Menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Share action: You can share the product  with all the members in the Project through “Share” action.If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+2. Share action: You can share the product  with all the members in the Project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 3. Reboot action : You can reboot instances through “Reboot” action.
 
@@ -1850,7 +1874,7 @@ You can see budget details with different KPI cards. You can see the following K
 
 1. **Total Project Direct Cost** : This is the total budget consumed by all the researchers in the project.
 2. **My Total Direct Cost** : This is the total budget consumed by the researcher who is logged in for that project.
-3. **My Current Month Direct Cost** : This is the current month budget cosumed by the researcher who is logged in for that project.
+3. **My Current Month Direct Cost** : This is the current month budget consumed by the researcher who is logged in for that project.
  
  .. image:: images/bud2.png 
  
@@ -1865,7 +1889,7 @@ You can see configured Researcher-wise budget details which are linked to a part
 
  .. image:: images/Researcherbudget.png
 
-You can also see configures Product-wise budget details which are linker to a particular Researcher.
+You can also see configures Product-wise budget details which are linked to a particular Researcher.
 
  .. image:: images/ResearcherProductwisebudget.png
 
@@ -1919,7 +1943,7 @@ Through this action, you can see all the files and folders in the S3 bucket with
 **Link/Unlink Action**
  
 1. A user can link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a 
-   p-up that will have the list (dropdown) of active sagemakers for that user.
+   p-up that will have the list (dropdown) of active sagemaker products for that user.
 2. You will see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
 3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
 4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker 
@@ -1965,7 +1989,7 @@ You can see the files/folders which are  related to the datastore.
 
 **Link/Unlink Action**
 
-1. A user will be able to link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a pop-up that will have the list (dropdown) of active sagemakers for that user.
+1. A user will be able to link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a pop-up that will have the list (dropdown) of active sagemaker products for that user.
 2. You can see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
 3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
 4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
@@ -1989,7 +2013,7 @@ The Key Pairs screen can be used by the Researcher to view keypair details acros
 
 You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
   
-Click on the "+Create New" button which is available at right side of the page. Fill the deatils in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
+Click on the "+Create New" button which is available at right side of the page. Fill the details in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
 
 .. image:: images/key3.png
 
