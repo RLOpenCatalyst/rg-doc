@@ -252,8 +252,9 @@ PCluster ,Description,"PCluster Product of Research Gateway is easy to deploy Hi
 ,CustomAMI,Enter the AMI Id of a custom AMI if you wish to use a non-default AMI. e.g. ami-12345678. The AMI Id entered should exist in this project account and region.
 ,HeadNodeInstanceType,Select Head Node EC2 instance type from the drop-down list
 ,VpcId,Select The VPC to create security groups and deploy AWS Batch or slurm to from drop-down list
-,HeadNodeSubnetId,Select the Subnet you want your Head Node to launch in from the drop-down list. You must select a public subnet.
-,FileSystemId,Enter the File System Id of the FSx for Lustre file system which you want to use. e.g. fs-12345678. Leave this field to default if you do not want to use FSx for Lustre.   
+,HeadNodeSubnetId,Select the Subnet you want your Head Node to launch in from the drop-down list. You must select a public subnet
+,FileSystemType,Choose the fileSystem type EFS/FSxForLustre (provisioned earlier) which you want to mount on headnode leave it as NONE if don't want to mount any filesystem.
+,FileSystemId,Enter the File System Id of the EFS/FSxForLustre file system which you want to use. e.g. fs-12345678. Leave this field to default if you do not want to use any file system
 ,Scheduler,Select a Cluster scheduler from the drop-down list 
 ,WorkerNodeInstanceType,Select the instance types to be used to carry out the computation from the drop-down list
 ,WorkerNodeSubnetId,Select the Subnet you want your Batch or slurm Worker Node to launch in  from the drop-down list. We recommend public subnets.
