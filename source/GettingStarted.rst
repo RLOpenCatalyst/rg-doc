@@ -516,7 +516,7 @@ My Products
 2. You can search the product name and description of the product.
 3. You can filter the products. We have following filter options:
       
-	  a. **All** - You can see the all(i.e., active, terminated, stopped and failed) products here.
+	  a. **All** - You can see all the (i.e., active, terminated, stopped and failed) products here.
 	  b. **Active** - You can see all the active products here.
 	  c. **Terminated** - You can see all terminated products here.
 
