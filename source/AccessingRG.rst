@@ -73,10 +73,10 @@ Click on "Send Reset link" button. If the provided details are valid, the verifi
   
   The password policy should meet the following requirement
    a. The minimum password length of 8 characters and a maximum of 16 characters.
-   b. It should have atleast one lower case character(a-z).
-   c. It should have atleast one upper case character(A-Z).
-   d. It should have atleast one number(0-9).
-   e. It should have atleast one special character (= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~).
+   b. It should have at least one lower case character(a-z).
+   c. It should have at least one upper case character(A-Z).
+   d. It should have at least one number(0-9).
+   e. It should have at least one special character (= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~).
 
 If the password change is successful you can navigate to the verification successful page. Through the "Click here to login button" you can navigate to the login screen. If the password change is unsuccessful you can see the verification error screen.
 

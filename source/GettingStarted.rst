@@ -95,10 +95,10 @@ Click on "Send Resend link" button. If the provided details are valid, you will 
 
  The password policy should meet the following requirement
    a. The minimum password length of 8 characters and a maximum of 16 characters.
-   b. It should have atleast one lower case character(a-z).
-   c. It should have atleast one upper case character(A-Z).
-   d. It should have atleast one number(0-9).
-   e. It should have atleast one special character (= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~).
+   b. It should have at least one lower case character(a-z).
+   c. It should have at least one upper case character(A-Z).
+   d. It should have at least one number(0-9).
+   e. It should have at least one special character (= + - ^ $ * . [ ] { } ( ) ? ! @ # % & / , > < ' : ; | _ ~).
 
 If the password change is successful you can navigate to the verification successful page. Through the "Click here to login button" you can navigate to the login screen.
  
@@ -267,7 +267,7 @@ Fill the following details
      - <Enter an AWS Account Number> [It should be a 12-digit number]
    * - Network Configuration
      -
-   * - Use deafult VPC
+   * - Use default VPC
      - <If you enable this option, Research Gateway will check if a default VPC exists and will create one if it does not exist. If you disable this option, provisioning resources from Standard Catalog may fail.>
    * - Use SSL with ALB
      - <If you enable this option, Research Gateway can set up secure connections to your resources by putting them behind an Application Load Balancer with SSL connections using certificates managed by AWS Certificate Manager. Check this box if you would like to create an ALB for this project. An ALB will incur costs irrespective of traffic passing through it.>	 
@@ -449,7 +449,7 @@ Cost Control
 
 3. You can manually stop/pause/resume/Add Budget/Archive the project through the actions which are available on the project details page.
 
-.. note:: ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
+.. note:: Project Storage can be deleted while archiving a project. You will now be prompted for deletion of the project storage when you archive a project. Select the checkbox if you want to delete the project storage bucket along with all of its contents.
 
 .. image:: images/Principal_ProjectDetails.png
 
@@ -477,7 +477,7 @@ Project Details
 4. Click on the “Resume” button which is available on the right side. The project status changed to “Active”. In the Active state, team members can launch new products from the catalog of Available Products.
 5. Click on the “Stop” button which is available on the right side. In a Stopped state, all underlying resources will be stopped and the user will not be able to perform actions on them but you are able to terminate the product. You need to manually start the resources except for the s3 product.
 6. Click on the “Sync” button which is available on the right side. It should sync the catalog. You can see related events in the events tab.
-7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed. ProjectStorage can be deleted while archiving a project. You will now be prompted for deletion of the projectstorage when you archive a project. Select the checkbox if you want to delete the projectstorage bucket along with all of its contents.
+7. Click on the "Archive" button which is available on the right side, it was routed to my projects page and showed the message “Archiving project started” and later the project card got removed. Project Storage can be deleted while archiving a project. You will now be prompted for deletion of the project storage when you archive a project. Select the checkbox if you want to delete the project storage bucket along with all of its contents.
 8. Click on the “Add Budget” button which is available on the right side, it should show a dialog box where you can add budget value of whole number greater than 0.
 
 .. image:: images/Principal_ProjectDetails.png 
@@ -504,7 +504,7 @@ Available Products
 2. You can search based on product name and description. You can filter the products. We have following filter options:
       
 	  a. **All** - You can see the all products here.
-	  b. **Research** - You can see the products realted to compute and analytics here. Eg: Amazon EC2
+	  b. **Research** - You can see the products related to compute and analytics here. Eg: Amazon EC2
 	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 	  
 .. image:: images/Principal_Project_AvailableProducts.png	 
@@ -516,7 +516,7 @@ My Products
 2. You can search the product name and description of the product.
 3. You can filter the products. We have following filter options:
       
-	  a. **All** - You can see the all(i.e., active,terminated,stopped and failed) products here.
+	  a. **All** - You can see the all(i.e., active, terminated, stopped and failed) products here.
 	  b. **Active** - You can see all the active products here.
 	  c. **Terminated** - You can see all terminated products here.
 
@@ -533,6 +533,30 @@ My Products
 *My Projects* page of the Research Gateway lists all the existing projects created along with other details. Clicking on a specific project shall leads to a project details page.
 
 .. image:: images/Principal_ProjectDetails.png
+
+All Products 
+^^^^^^^^^^^^^
+ 
+1. Principal Investigators will now see all the products launched by all the project team members in the All Products tab. They will also be able to perform Stop and Terminate actions on the products using the 3-dotted icon which is available at the right side of the table. 
+
+.. image:: images/Principal_Project_AllProducts.png
+
+.. image:: images/Principal_Project_AllProducts_Actions.png
+
+2. You can search the product name and description of the product. 
+3. You can filter the products. We have the following filter options: 
+    
+    a. All - You can see all the (i.e., active, terminated, stopped and failed) products here. 
+    b. Active - You can see all the active products here. 
+    c. Terminated - You can see all terminated products here. 
+ 
+.. note::
+  a. Products that are in Creating, Transitioning, and Terminating State will not show any actions in the All Products tab. 
+  b. Products that are in the active state will show both Active and Terminate action 
+  c. Products that are in stopped state will show only the Terminate action. 
+  d. Products that are in failed state will show only the Terminate action. 
+  e. Project Storage will not show any actions as it cannot be terminated independent of the project. 
+  f. EFS or FSx file-systems will only show the Terminate action. 
 
 Assigning Researchers to Projects
 ---------------------------------
