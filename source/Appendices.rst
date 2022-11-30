@@ -82,7 +82,9 @@ Enhancements
    * Account table: This table lists all the accounts in use in your tenant. Each account will show the month-to-date consumption and the forecast value.
    
    * Projects summary table: This table shows each project’s summary including month to date consumption and cumulative consumption (since inception).
-#. Project Details table: This table shows all the Active products per project and the month to date and cumulative cost per project. It also shows a single line item for the cumulative month-to-date and cumulative cost of Terminated products. For each provisioned product User will now be able to see Created on Parameter in Product Details Tab which will indicate the Product Creation Date.
+   
+   * Project Details table: This table shows all the Active products per project and the month to date and cumulative cost per project. It also shows a single line item for the cumulative month-to-date and cumulative cost of Terminated products. 
+#. For each provisioned product User will now be able to see Created on Parameter in Product Details Tab which will indicate the Product Creation Date.
 #. Audit Trail: Filter values should be sorted in Alphabetical order. This will help Users to find the expected values more easily. 
 
 
