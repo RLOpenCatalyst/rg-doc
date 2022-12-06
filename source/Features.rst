@@ -172,6 +172,7 @@ Fill the following details
     a. Alphabetic characters(a-z , A-Z)
     b. Numerical characters(0-9)
     c. Special characters( @ - + . -)
+ 
 
 Click on the “Add User” button. On successful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
@@ -335,7 +336,7 @@ You can see the standard catalog products on the listing page and you can enable
 
 You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
 
-.. image:: images/Admin_Catalog_UpdateToSelectedO.U.png
+.. image:: images/Admin_Catalog_UpdateToSelectedOU.png
 
 .. image:: images/Admin_Catalog_UpdateToSelectedO.U_ToasterMessage.png
 
@@ -845,6 +846,8 @@ The project status changed to “Stopped”. In a Stopped state all underlying r
 .. image:: images/stop2.png
 
 .. image:: images/stop3.png
+
+.. image:: images/stop4.png
 
 **Archive Action**
 

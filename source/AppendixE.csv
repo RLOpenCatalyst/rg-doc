@@ -69,6 +69,11 @@ COST_CONTROL,PROJECT_AUTO_STOPPED,You can see the project was auto stopped statu
 PROJECT_UPDATE,CREATING_SSM_PARAMETER_SUCCESSFUL,You can see SSM parameter creation success information.
 PROJECT_UPDATE,SHARING_AMI_SUCCESSFUL,You can see the shared AMI with ID success information for RStudio and Nextflow-Advanced products.
 COST_CONTROL,EOD_REPORT_GENERATED,You can see the EOD report generated success information with username.
+COST_CONTROL,EOD_REPORT_SENT_SUCCESSFULLY,You can see the EOD report sent success information with username.
+COST_CONTROL,EOD_REPORT_FAILURE,You can see the EOD report sent failed information with username
+COST_CONTROL,PI_EOD_REPORT_GENERATED,You can see the PI EOD report generated success information with username.
+COST_CONTROL,PI_EOD_REPORT_SENT_SUCCESSFULLY,You can see the PI EOD report sent success information with username.
+COST_CONTROL,PI_EOD_REPORT_FAILURE,You can see the PI report sent failed information with username.
 PROJECT,PROJECT_BUDGET_CHANGED,You can see project budget changes success information with triggered user name and the total budget 
 PROJECT,PROJECT_UPDATE_USER,You can see assigned researchers to project update success information with count 
 USER,USER_CREATION_COMPLETE,You can see new user creation success information with triggered new user name

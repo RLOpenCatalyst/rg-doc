@@ -1,41 +1,43 @@
 Standard Catalog Information,,
 Product Type,Required Parameters,Details
-Amazon EC2 Linux,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud.
+Amazon EC2 Linux,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud.
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,AllowedSSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,LatestAmiId,Please enter an  AMI of the EC2 instance.
 ,Instance Type,Choose the instance type for this instance. Eg: t2.small
 ,Expected time to provision,5 minutes
-Amazon EC2 Windows,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed"
-,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud.
+Amazon EC2 Windows,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides resizable compute capacity in the cloud.
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed"
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,AllowedSSHLocation,The IP address range that can be used to SSH to the EC2 instances
 ,LatestAmiID,Please enter an AMI of the EC2 instance
 ,Instance Type,Choose the instance type for this instance. Eg: t2.small
 ,Expected time to provision,5 minutes
-Amazon S3,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed"
-,Description,"Amazon Simple Storage Service (Amazon S3) is an object storage service that offers scalability, data availability, security and performance."
+Amazon S3,Description,"Amazon Simple Storage Service (Amazon S3) is an object storage service that offers scalability, data availability, security and performance."
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed"
 ,Expected time to provision,2 minutes
-Amazon DynamoDB,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,Amazon DynamoDB is a fully managed proprietary NoSQL database of the Amazon Web Services.
+Amazon DynamoDB,Description,Amazon DynamoDB is a fully managed proprietary NoSQL database of the Amazon Web Services.
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Write Capacity Units,Provisioned write throughput
 ,HashKey Element Type,Enter HashType PrimaryKey Type
 ,HashKey Element Name,Enter HashType PrimaryKey Name
 ,Read Capacity Units,Provisioned read throughput
 ,Expected time to provision,30 minutes
-Amazon SageMaker,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,"Amazon SageMaker is a fully managed service that provides the ability to build, train and deploy ML models."
+Amazon SageMaker,Description,"Amazon SageMaker is a fully managed service that provides the ability to build, train and deploy ML models."
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Instance Type,Select Instance type for the SageMaker Notebook. Eg: ml.t2.medium
 ,Expected time to provision,15 minutes
-Amazon RDS,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,Amazon Relational Database Service is a distributed relational database service by AWS.
+Amazon RDS,Description,Amazon Relational Database Service is a distributed relational database service by AWS.
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,DB Password,The database admin account password.
 ,DB Name,The database name. It must begin with a letter and contain only alphanumeric characters.
 ,DB User,The database admin account username. It must begin with a letter and contain only alphanumeric characters.
 ,Expected time to provision,30 minutes
-Amazon EMR,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,Amazon Elastic MapReduce (EMR) is an AWS tool for big data processing and analysis.
+Amazon EMR,Description,Amazon Elastic MapReduce (EMR) is an AWS tool for big data processing and analysis.
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,VPC ID,Vpc Id of your existing Virtual Private Cloud (VPC). Please select VPC ID before selecting Subnet ID and SecurityGroup.
 ,Log Uri,Enter a valid S3 URL.
@@ -49,8 +51,9 @@ Amazon EMR,Product Name,"Provide a name to help you easily identify this instanc
 ,Security Group,Select the security group for EMR Cluster. Please contact your Administrator if they are not available in the dropdown.
 ,Release Label,Enter a valid EMR release version
 ,Expected time to provision,10 Minutes
-AppStream,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,Amazon AppStream is a fully managed non-persistent application and desktop streaming service
+AppStream,Description,Amazon AppStream is a fully managed non-persistent application and desktop streaming service
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,PrivateSubnet1,The SSM parameter containing the subnet to be used
 ,FleetName,The name of the AppStream Fleet.Max Length should be within 20 characters. Example - ChrisFleet
 ,PrivateSubnet2,The SSM parameter containing the subnet to be used
@@ -60,8 +63,8 @@ AppStream,Product Name,"Provide a name to help you easily identify this instance
 ,Stack Name,The name of the AppStream Stack.Max Length should be within 20 characters. Example - ChrisStack
 ,Fleet Instance Type,Enter Fleet Instance Type.
 ,Expected time to provision,30 Minutes
-Moodle,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,Moodle is a Learning Platform or course management system (CMS) - a free Open Source software package designed to help educators
+Moodle,Description,Moodle is a Learning Platform or course management system (CMS) - a free Open Source software package designed to help educators
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Efs Growth,Amount of dummy data (GiB) to add to the file system (max 6144 GiB). Amazon EFS storage  charges apply
 ,DataSubnet3Cidr,CIDR block for data subnet 3 located in Availability Zone 3
 ,DataSubnet2Cidr,CIDR block for data subnet 2 located in Availability Zone 2
@@ -112,8 +115,8 @@ Moodle,Product Name,"Provide a name to help you easily identify this instance of
 ,WebSubnet0Cidr,CIDR block for Web subnet 0 located in Availability Zone 0
 ,PublicSubnet5Cidr,CIDR block for Public subnet 5 located in Availability Zone 5
 ,Expected time to provision,30 Minutes
-WordPress,Product Name,Specify a name for the product that you want to create
-,Description,WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database.
+WordPress,Description,WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database.
+,Product Name,Specify a name for the product that you want to create
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,DB Class,Database instance class
 ,Subnets,The SSM parameter containing the subnet to be used
@@ -127,8 +130,9 @@ WordPress,Product Name,Specify a name for the product that you want to create
 ,MultiAZDatabase,Create a Multi-AZ MySQL Amazon RDS database instance
 ,Instance Type,WebServer EC2 instance type
 ,Expected time to provision,30 Minutes
-Amazon HPC,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,"AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. With virtually unlimited capacity, engineers, researchers, and HPC system owners can innovate beyond the limitations of on-premises HPC infrastructure."
+Amazon HPC,Description,"AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. With virtually unlimited capacity, engineers, researchers, and HPC system owners can innovate beyond the limitations of on-premises HPC infrastructure."
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,CfnClusterInitialQueueSize,"Initial number of EC2 instances to launch as compute nodes within the cluster. MinValue=0,  MaxValue=32"
 ,CfnClusterMasterInstacneType,MasterServer EC2 instance type
 ,Engine Frame Admin Password,"Password for the EnginFrame admin user (efadmin). Must be at least 8 characters with at least three of these attributes: lowercase, uppercase, number and symbols"
@@ -140,15 +144,17 @@ Amazon HPC,Product Name,"Provide a name to help you easily identify this instanc
 ,CfnClusterScheduler,Cluster scheduler
 ,DomainAdminPassword,"Password for the domain admin user. Must be at least 8 characters with at least three of these attributes: lowercase, uppercase, number and symbols"
 ,Expected time to provision,40 minutes
-RStudio,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,"RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management."
+RStudio,Description,"RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management."
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,Initial user,User Name for Rstudio.  Do not use 'root' and 'ec2-user'.
 ,Initial Password,Password for RStudio. Please keep in your records as this will not be echoed in the CloudFormation Console
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,Instance Type,Instance type for RStudio. Choose instance type from the dropdown.  Eg: Default is t2.micro.
 ,Expected time to provision,10 Minutes
-Nextflow-Basic,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,Use an Amazon EC2 instance to run Nextflow workflows locally. This is ideal for small workloads like testing configurations or small amounts of data.
+Nextflow-Basic,Description,Use an Amazon EC2 instance to run Nextflow workflows locally. This is ideal for small workloads like testing configurations or small amounts of data.
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,Nextflow Project Name,Use an Amazon EC2 instance to run Nextflow workflows locally. This is ideal for small workloads like testing configurations or small a.
 ,SSH Location,The IP address range that can be used to SSH to the EC2 instances
@@ -160,8 +166,9 @@ Nextflow-Basic,Product Name,"Provide a name to help you easily identify this ins
 ,Existing S3 Bucket Name,"A S3 bucket name for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens)."
 ,Instance Type,WebServer EC2 instance type. Choose instance type from the dropdown.
 ,Expected time to provision,10 minutes
-Geos-Chem,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Description,The GEOS-Chem model is a global 3-D model of atmospheric composition driven by assimilated meteorological observations.
+Geos-Chem,Description,The GEOS-Chem model is a global 3-D model of atmospheric composition driven by assimilated meteorological observations.
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,SSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,Latest AMI ID,AMI ID of the EC2 instance.
@@ -170,6 +177,7 @@ Geos-Chem,Product Name,"Provide a name to help you easily identify this instance
 Nextflow Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
 Eg: MedicalResearch
 "
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,Nextflow Configuration,
 ,"PipelineName
 ",Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL. The repo should contain the nextflow.config file which specifies the name of the docker container image.
@@ -198,6 +206,7 @@ Eg: 100"
 Cromwell Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
 Eg: MedicalResearch
 "
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,Cromwell Configuration,
 ,"PipelineName
 ",Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL.
@@ -223,6 +232,7 @@ Eg: 100"
 ,Expected time to provision,10 Minutes
 Docker on Amazon EC2 Linux,Description,"Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. The RLCatalyst Research Gateway standard EC2 product is based on Amazon Linux 2, docker is installed and can be used for any general-purpose computer"
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,AllowedSSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,LatestAmiId,Please enter an  AMI of the EC2 instance.
@@ -230,6 +240,7 @@ Docker on Amazon EC2 Linux,Description,"Amazon Elastic Compute Cloud (Amazon EC2
 ,Expected time to provision,10 minutes
 MySQL,Description,"MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, covering the entire range from personal projects and websites, via e-commerce and information services"
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,ConnectFromPort,Provide which Port has to be opened in the Security Group of the EC2 Instance to access MySQL Docker Container Eg: 3306
 ,ConnectToPort,Provide which Port has to be opened in the Security Group of the EC2 Instance to access MySQL Docker Container  Eg: 3306 
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
@@ -239,6 +250,7 @@ MySQL,Description,"MySQL is the world's most popular open source database. With 
 ,Expected time to provision,10 minutes
 Ubuntu 20 04 on Amazon EC2 ,Description,"Use Ubuntu 20.04, on Amazon Elastic Compute Cloud (Amazon EC2)."
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,AllowedSSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,LatestAmiId,Please enter an  AMI of the EC2 instance.
