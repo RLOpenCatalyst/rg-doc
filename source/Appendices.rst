@@ -61,6 +61,63 @@ Appendix F - Audit Trail Events for Principal Investigator
 Appendix G - Release Notes
 ==========================
 
+v1.16.0
+^^^^^^^^
+
+Enhancements
+-------------
+
+1. Attach secondary EBS volumes created via the project catalog to EC2 Linux based instances i.e., EC2 Linux, RStudio, Chenlab, Cromwell Advanced etc. 
+
+2. Amazon EBS volumes can now be created via the Available Products catalog.  
+
+3. PCluster product now offers the user the choice to mount a secondary EBS volume to the head node 
+
+4. Admin and Principal Investigators can edit user Information like the First name, Last name, Organizational Unit (editable only if user was previously not assigned to any Organizational unit) and tags. 
+
+
+Bug-fixes
+----------
+
+1. Admin: Budget Screen: able to see archived projects in organization also budget assigned is divided among archived projects as well. This is inconsistent with the view that PI has. 
+
+2. Alignment issue fixes in Project creation screen Add User form, My Projects, Product Details page, Study Details Page. 
+
+3. UI inconsistency fixes in My Products tab, Project Details page breadcrumb, Project Details page Events tab. 
+
+4. Admin: User: after switching to table view and searching for particular user pagination action is not working. 
+
+5. Add user form is breaking when user click on the add user button from Create project and Create organizations screen. 
+
+6. On the study screen users are not able to search in the tag fields. 
+
+7. Admin: User management: Unable to sort by User Roles. 
+
+8. SSH Window: User Name should be shown in white colour while typing 
+
+9. Admin login: Users Screen: some user cards are showing empty in card and table view 
+
+10. User Screen: Reset filter issue fix. 
+
+11. Audit trail page: Select a value filter: items in the drop down should be sorted in alphabetical order. 
+
+12. Users Screen: Sort by filter: AESC and DESC both are showing same behaviour 
+
+13. Researcher login: My products tab: when we select any filter (All/Research/IT Application) in Available Products tab and enter My Products tab same filter selection is reflected instead of All/Active/Terminated filters. 
+
+14. Studies: Search action: Space is not allowed in between words.  
+
+15. Keyboard Accessibility fixes for My Projects page and Budget KPI cards of Project Details page. 
+
+16. When User role is selected as Admin, the Organizational Unit field will be disabled in Add User form. 
+
+17. Research Gateway now uses distroless container images as the base images for Research Gateway software to reduce the attack surface created by unnecessary software components included in the image. 
+
+18. Budgets: product provisioned time should be shown on basis of logged in user’s time zone 
+
+19. Security fixes. 
+
+
 v1.15.0
 ^^^^^^^^
 
