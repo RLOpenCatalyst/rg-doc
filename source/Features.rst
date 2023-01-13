@@ -1416,19 +1416,35 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Instance Type action : You can change the instance type of the Instance in the stopped state.
+2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+
+.. image:: images/EC2Linux_AttachVolume_1.png
+
+.. image:: images/EC2Linux_AttachVolume_EBS.png
+
+.. image:: images/EC2Linux_AttachVolume_2.png
+
+.. image:: images/EC2Linux_AttachVolume_3.png
+
+.. image:: images/EC2Linux_AttachVolume_4.png
+
+.. image:: images/EC2Linux_AttachVolume_5.png
+
+.. image:: images/EC2Linux_AttachVolume_6.png
+
+3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
 .. image:: images/instancetypeEC2linux.png 
 
-3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Reboot action : You can reboot instances through  “Reboot” action.
+5. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Terminate action : You can terminate the product through “Terminate” action.
+6. Terminate action : You can terminate the product through “Terminate” action.
 
-6. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+7. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
 
-7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+8. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 
@@ -1618,21 +1634,37 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Instance Type action : You can change the instance type of the Instance in the stopped state.
+2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+
+.. image:: images/RStudio_AttachVolume_1.png
+
+.. image:: images/RStudio_AttachVolume_EBS.png
+
+.. image:: images/RStudio_AttachVolume_2.png
+
+.. image:: images/RStudio_AttachVolume_3.png
+
+.. image:: images/RStudio_AttachVolume_4.png
+
+.. image:: images/RStudio_AttachVolume_5.png
+
+.. image:: images/RStudio_AttachVolume_6.png
+
+3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
 .. image:: images/instancetypeRstudio.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
+5. Open link action :  Choose "Open Link" action. It will open RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
 
-5. Reboot action : You can reboot instances through  “Reboot” action.
+6. Reboot action : You can reboot instances through  “Reboot” action.
 
-6. Terminate action : Choose the "Terminate" option to de-provision the product.
+7. Terminate action : Choose the "Terminate" option to de-provision the product.
 
-7. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+8. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
 
-8. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+9. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following Details
 
@@ -1660,23 +1692,39 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Instance Type action : You can change the instance type of the Instance in the stopped state.
+2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+
+.. image:: images/Nextflow_AttachVolume_1.png
+
+.. image:: images/Nextflow_AttachVolume_EBS.png
+
+.. image:: images/Nextflow_AttachVolume_2.png
+
+.. image:: images/Nextflow_AttachVolume_3.png
+
+.. image:: images/Nextflow_AttachVolume_4.png
+
+.. image:: images/Nextflow_AttachVolume_5.png
+
+.. image:: images/Nextflow_AttachVolume_6.png
+
+3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
 .. image:: images/InstancetypeNextflow.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Reboot action : You can reboot instances through  “Reboot” action.
+5. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Terminate action : Choose the "Terminate" option to de-provision the product.
+6. Terminate action : Choose the "Terminate" option to de-provision the product.
 
-6. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+7. SSH to Server action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
 
-7. Monitor Pipeline action : Through this you can monitor the pipeline.
+8. Monitor Pipeline action : Through this you can monitor the pipeline.
 
-8. View Outputs action : Through this you can see the outputs.  
+9. View Outputs action : Through this you can see the outputs.  
 
-9. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+10. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following Details 
 
@@ -1704,19 +1752,35 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Instance Type action : You can change the instance type of the Instance in the stopped state.
+2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+
+.. image:: images/CromwellAdvanced_AttachVolume_1.png
+
+.. image:: images/CromwellAdvanced_AttachVolume_EBS.png
+
+.. image:: images/CromwellAdvanced_AttachVolume_2.png
+
+.. image:: images/CromwellAdvanced_AttachVolume_3.png
+
+.. image:: images/CromwellAdvanced_AttachVolume_4.png
+
+.. image:: images/CromwellAdvanced_AttachVolume_5.png
+
+.. image:: images/CromwellAdvanced_AttachVolume_6.png
+
+3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
 .. image:: images/instancetypecromwell.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Reboot action : You can reboot instances through  “Reboot” action.
+5. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Terminate action : Choose the "Terminate" option to de-provision the product.
+6. Terminate action : Choose the "Terminate" option to de-provision the product.
 
-6. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
+7. SSH/RDP action : Choose the “SSH” action. Through this you can connect to the EC2 instance via SSH in a new browser tab.
 
-7. View Outputs action : Through this you can see the outputs.  
+8. View Outputs action : Through this you can see the outputs.  
 
 Fill the following Details 
 
@@ -1745,19 +1809,35 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Instance Type action : You can change the instance type of the Instance in the stopped state.
+2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+
+.. image:: images/Docker_AttachVolume_1.png
+
+.. image:: images/Docker_AttachVolume_EBS.png
+
+.. image:: images/Docker_AttachVolume_2.png
+
+.. image:: images/Docker_AttachVolume_3.png
+
+.. image:: images/Docker_AttachVolume_4.png
+
+.. image:: images/Docker_AttachVolume_5.png
+
+.. image:: images/Docker_AttachVolume_6.png
+
+3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
 .. image:: images/instancetypeDocker.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Reboot action : You can reboot instances through  “Reboot” action.
+5. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Terminate action : You can terminate the product through “Terminate” action.
+6. Terminate action : You can terminate the product through “Terminate” action.
 
-6. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+7. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
 
-7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+8. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 
@@ -1787,19 +1867,35 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Instance Type action : You can change the instance type of the Instance in the stopped state.
+2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+
+.. image:: images/MySQL_AttachVolume_1.png
+
+.. image:: images/MySQL_AttachVolume_EBS.png
+
+.. image:: images/MySQL_AttachVolume_2.png
+
+.. image:: images/MySQL_AttachVolume_3.png
+
+.. image:: images/MySQL_AttachVolume_4.png
+
+.. image:: images/MySQL_AttachVolume_5.png
+
+.. image:: images/MySQL_AttachVolume_6.png
+
+3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
 .. image:: images/instancetypeSQL.png
 
-3. Share action : You can share the product to all the members in the project through “Share” action.  If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+4. Share action : You can share the product to all the members in the project through “Share” action.  If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
-4. Reboot action : You can reboot instances through  “Reboot” action.
+5. Reboot action : You can reboot instances through  “Reboot” action.
 
-5. Terminate action : You can terminate the product through “Terminate” action.
+6. Terminate action : You can terminate the product through “Terminate” action.
 
-6. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
+7. SSH/RDP action : You can connect to the instance in a new tab through "SSH" action.
 
-7. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+8. Explore action: Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
 
 Fill the following details
 

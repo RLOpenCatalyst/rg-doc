@@ -75,3 +75,5 @@ You can also change the instance type when your instance is in a stopped state u
 You can share the product with all the members of the project using the “Share” button in the product details page of your product. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
 Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
+
+You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab.
