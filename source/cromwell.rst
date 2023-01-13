@@ -107,3 +107,4 @@ You can share the product with all the members of the project using the “Share
 
 Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 
+You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab.
