@@ -20,6 +20,7 @@ Ordering products in Research Gateway
    FSxForLustre
    NiceDCV
    AmazonEFS
+   EBS
 
 
 
