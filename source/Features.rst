@@ -264,7 +264,7 @@ You can perform the following user actions
 
 **Assign O.U.**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Choose the organizational unit in the drop-down list and click on the “Assign” button. You can see a successful toaster message also. Once assigned you can see O.U name under the Email id. 
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Choose the organizational unit in the drop-down list and click on the “Assign” button. You can see a successful toaster message also. Once assigned you can see O.U name under the Email id. 
 
 .. image:: images/Admin_Users_AssignO.U.png
 
@@ -272,23 +272,58 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 **Enable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
 
 .. image:: images/enable.png 
 
 **Disable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
 
 .. image:: images/disable.png 
 
 **Resend verification mail**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
 
 .. image:: images/Admin_Users_ResendVerificationEmail.png
 
 .. note:: The "Resend verification mail" option is available only if the user is inactive.
+
+**Edit**
+
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Through the "Edit" option you can edit User Information. On successful completion, you can see the green color toaster message. 
+
+.. image:: images/Administrator_User_EditUser.png
+
+.. image:: images/Admin_User_EditUserForm.png
+
+Following details are editable
+
+.. list-table::  
+   :widths: 90, 90  
+   :header-rows: 1 
+
+   * - Field 
+     - Details 
+   * - First Name 
+     - <Please enter first name of the user> 
+   * - Last Name 
+     - <Please enter last name of the user>  
+   * - Organizational Unit 
+     - <Select a organizational unit in the drop-down list> 
+   * - Tags 
+     - <Add tags to associate with the user> 
+
+.. note:: 
+   a. If the user is unassigned, Organizational unit field will be enabled and can be assigned to OU. 
+   b. If the user is already assigned Organization unit field will be disabled. 
+   c. Only if any of the First Name, Last Name, Organizational Unit and tags fields are edited Edit User Button will be enabled. 
+
+
+Click on Edit User button and edited user information will be visible on user card. Once user clicks on Edit User button they will be able to see green colour toaster message. 
+
+.. image:: images/Admin_User_EditUser_SuccessMessage.png
 
 Audit Trail
 ^^^^^^^^^^^
@@ -744,23 +779,52 @@ You can perform the following user actions
 
 **Enable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
 
 .. image:: images/enable.png 
 
 **Disable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
 
 .. image:: images/disable.png 
 
 **Resend verification mail**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
 
 .. image:: images/Principal_Users_ResendVerificationEmail.png
 
 .. note:: The "Resend verification mail" option is available only if the user is inactive.
+
+**Edit**
+
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Through the "Edit" option you can edit User Information. On successful completion, you can see the green color toaster message. 
+
+.. image:: images/Principal_Users_EditAction.png
+
+.. image:: images/Principal_Users_EditUserForm.png
+
+Following details are editable
+
+.. list-table::  
+   :widths: 90, 90  
+   :header-rows: 1 
+
+   * - Field 
+     - Details 
+   * - First Name 
+     - <Please enter first name of the user> 
+   * - Last Name 
+     - <Please enter last name of the user>  
+   * - Tags 
+     - <Add tags to associate with the user> 
+
+.. note:: Only if any of the First Name, Last Name and tags fields are edited Edit User Button will be enabled. 
+
+Click on Edit User button and edited user information will be visible on user card. Once user clicks on Edit User button they will be able to see green colour toaster message. 
+
+.. image:: images/Principal_User_EditUser_SuccessMessage.png
 
 How to add researchers to existing project 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
