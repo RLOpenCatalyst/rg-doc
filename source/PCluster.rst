@@ -33,9 +33,9 @@ Parameters
    * - HeadNodeSubnetId
      - Select the Subnet you want your Head Node to launch in from the drop-down list. You must select a public subnet.
    * - FileSystemType
-     - Choose the fileSystem type EFS/FSxForLustre (provisioned earlier) which you want to mount on headnode leave it as NONE if don't want to mount any filesystem.
+     - Choose the fileSystem type EFS/FSxForLustre/EBS (provisioned earlier) which you want to mount on headnode leave it as NONE if don't want to mount any filesystem.
    * - FileSystemId
-     - Enter the File System Id of the EFS/FSxForLustre file system which you want to use. e.g. fs-12345678. Leave this field to default if you do not want to use any file system
+     - Enter the File System Id of the EFS/FSxForLustre/EBS file system which you want to use. e.g. fs-12345678. Leave this field to default if you do not want to use any file system
    * - Scheduler
      - Select a Cluster scheduler from the drop-down list 
    * - ComputeNodeInstanceType 
