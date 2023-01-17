@@ -264,7 +264,7 @@ You can perform the following user actions
 
 **Assign O.U.**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Choose the organizational unit in the drop-down list and click on the “Assign” button. You can see a successful toaster message also. Once assigned you can see O.U name under the Email id. 
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Choose the organizational unit in the drop-down list and click on the “Assign” button. You can see a successful toaster message also. Once assigned you can see O.U name under the Email id. 
 
 .. image:: images/Admin_Users_AssignO.U.png
 
@@ -272,19 +272,19 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 **Enable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
 
 .. image:: images/enable.png 
 
 **Disable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
 
 .. image:: images/disable.png 
 
 **Resend verification mail**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
 
 .. image:: images/Admin_Users_ResendVerificationEmail.png
 
@@ -292,7 +292,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 **Edit**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Edit" option you can edit User Information. On successful completion, you can see the green color toaster message. 
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Through the "Edit" option you can edit User Information. On successful completion, you can see the green color toaster message. 
 
 .. image:: images/Administrator_User_EditUser.png
 
@@ -779,19 +779,19 @@ You can perform the following user actions
 
 **Enable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
 
 .. image:: images/enable.png 
 
 **Disable**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
 
 .. image:: images/disable.png 
 
 **Resend verification mail**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Through the "Resend verification mail" option you can get another verification email to the registered email address. On successful completion, you can see the green color toaster message. Check the verification email delivered to the registered email address and click on the verification link to activate the account.  
 
 .. image:: images/Principal_Users_ResendVerificationEmail.png
 
@@ -799,7 +799,7 @@ There is a contextual menu which is at the right side of the card. Once clicked 
 
 **Edit**
 
-There is a contextual menu which is at the right side of the card. Once clicked on that you can see the actions one by one. Through the "Edit" option you can edit User Information. On successful completion, you can see the green color toaster message. 
+There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. Through the "Edit" option you can edit User Information. On successful completion, you can see the green color toaster message. 
 
 .. image:: images/Principal_Users_EditAction.png
 
