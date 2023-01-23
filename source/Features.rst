@@ -60,7 +60,7 @@ The Administrator user can download the Budget details through the “Export as 
 
 When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification.
 
-.. image:: images/budget1.png
+.. image:: images/Admin_BudgetExceedThreshold_Email.png
 
 **Project-wise budget view**
 
@@ -93,7 +93,7 @@ Cost allocation tags activation
 3. In the services search bar at the top, type "Billing", then click on the search result which says "Billing".
 4. In the Billing screen, click on "Cost Allocation tags" in the left-hand panel.
 
-.. image:: images/billing.png
+.. image:: images/Billing_CostAllocationTagsActivation.png
 
 5. Approve the following tags: project_name, researcher_name and cost_resource. Once completion of this step the tags are activated.
 
@@ -120,7 +120,7 @@ There is a search option which is beside the “+Add New” button. You can sear
 
 If the results are not matched with the searched item it will show a message like “No matching users found”.
 
-.. image:: images/search1.png
+.. image:: images/Admin_User_SearchAction_NoMatchingUserFound.png
 
 You can filter by O.U, Filter by role(Admin/Researcher/Principal Investigator), and sort by username(Asc/Desc), user-role(Asc/Desc), and creation date(Asc/Desc).
 
@@ -176,11 +176,11 @@ Fill the following details
 
 Click on the “Add User” button. On successful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
-.. image:: images/form.png
+.. image:: images/Admin_Users_AddNewUserForm.png
 
 The verification email has been sent. Check the verification email delivered to the registered email address and click on the verification link to activate the account. 
 
-.. image:: images/Verificationmail-1.png
+.. image:: images/User_NewUser_VerificationEmail.png
 
 .. note:: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
@@ -197,7 +197,7 @@ Users can choose a password and click on the “Submit” button.
    
 On successful validation, users will be allowed to login to the Research Gateway.
 
-.. image:: images/password1.png 
+.. image:: images/User_ChangePassword_Window.png 
 
 
 2. Click on "Download CSV format" to download sample csv file which provides all the appropriate columns.
@@ -205,7 +205,7 @@ On successful validation, users will be allowed to login to the Research Gateway
 
 3. Click on "Import Users via CSV" to add multiple users via csv file.
 
-.. image:: images/bulkuserimport.png
+.. image:: images/Admin_Users_ImportUsers_PopUp.png
 
 
 CSV file should contain following details
@@ -239,7 +239,7 @@ The new user creation process will begin when the user clicks the "Open" button 
 
 The verification email has been sent. Check the verification email delivered to the registered email address and click on the verification link to activate the account. 
 
-.. image:: images/Verificationmail-1.png
+.. image:: images/User_NewUser_VerificationEmail.png
 
 .. note:: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
@@ -256,7 +256,7 @@ Users can choose a password and click on the “Submit” button.
    
 On successful validation, users will be allowed to login to the Research Gateway.
 
-.. image:: images/password1.png 
+.. image:: images/User_ChangePassword_Window.png 
 
 
 
@@ -268,19 +268,19 @@ There is a contextual menu which is at the right side of the card. On clicking t
 
 .. image:: images/Admin_Users_AssignO.U.png
 
-.. image:: images/assign1.png 
+.. image:: images/Admin_Users_AssignO.U_PopUp.png 
 
 **Enable**
 
 There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
 
-.. image:: images/enable.png 
+.. image:: images/Admin_Users_EnableAction_PopUp.png 
 
 **Disable**
 
 There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
 
-.. image:: images/disable.png 
+.. image:: images/Admin_Users_DisableAction_PopUp.png 
 
 **Resend verification mail**
 
@@ -340,7 +340,7 @@ You can see the audit event details in the :ref:`Appendix D<Appendix D>`
    
 If you try to search the non-existent word it will display a message like “No matching organizations found". You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
 
-.. image:: images/search2.png
+.. image:: images/Admin_AuditTrail_SearchAction_NoMatchingAuditLogsFound.png
 
 .. image:: images/Admin_AuditTrail_LoginFailedRecords.png
 
@@ -365,9 +365,9 @@ Click on the "Catalog" menu item. Through this, you can navigate to the Catalog 
 
 You can see the standard catalog products on the listing page and you can enable the checkbox which is at the right side of the product and assign to a particular  O.U through the “Assign selected to O.U” button.
 
-.. image:: images/sc.png
+.. image:: images/Admin_Catalog_ProductCheckboxEnabled_AssignSelectedToOU.png
 
-.. image:: images/assign2.png
+.. image:: images/Admin_Catalog_AssignToOU_PopUp.png
 
 You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
 
@@ -379,21 +379,21 @@ You can search  product name and description of the product. We have following f
  
   a. **All** : You can see all products here.
 
-  .. image:: images/filter1.png
+  .. image:: images/Admin_Catalog_AllFilter_DropDown.png
 
 
   b. **Research** : You can see the products related to compute and analytics here. Eg: Amazon EC2.
 
-   .. image:: images/Research1.png
+   .. image:: images/Admin_Catalog_ResearchFilter_DropDown.png
 
 
   c. **IT Applications** : IT Application : You can see application related products here.
 
- .. image:: images/ITApplications1.png
+ .. image:: images/Admin_Catalog_ITApplicationsFilter_DropDown.png
 
 If we could not find any products related to the filter you can see the message like “We could not find any products that matched your search”.
 
-.. image:: images/search3.png
+.. image:: images/Admin_Catalog_SearchAction_NoMatchingProductsFound.png
 
 .. note:: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog products.
 
@@ -404,7 +404,7 @@ As a Principal Investigator, you can create an account and project also. A proje
 
 If Principal Investigator logs as a first time, he can view the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. 
 
-.. image:: images/welcome.png
+.. image:: images/User_WelcomeScreen.png
 
 Use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen.
 
@@ -692,11 +692,11 @@ Fill the following details
 
 Click on the “Add User” button. On successful completion of user creation you can see the green color toaster message. We are not allowing duplication of Email id and username while new user creation.
 
-.. image:: images/form1.png
+.. image:: images/Principal_Users_AddNewUserForm.png
 
 The verification email has been sent. Check the verification email delivered to the registered email address and click on the verification link to activate the account. 
 
-.. image:: images/Verificationmail-1.png
+.. image:: images/User_NewUser_VerificationEmail.png
 
 .. note:: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
@@ -713,14 +713,14 @@ Users can choose a password and click on the “Submit” button.
    
 On successful validation, users will be allowed to login to the Research Gateway.
 
-.. image:: images/password1.png 
+.. image:: images/User_ChangePassword_Window.png 
 
 2. Click on "Download CSV format" to download sample csv file which provides all the appropriate columns.
 
 
 3. Click on “Import Users via CSV” to add multiple users via csv file.
 
-.. image:: images/bulkuserimport.png
+.. image:: images/Principal_Users_ImportUsers_PopUp.png
 
 
 CSV file should contain following details
@@ -754,7 +754,7 @@ The new user creation process will begin when the user clicks the "Open" button 
 
 The verification email has been sent. Check the verification email delivered to the registered email address and click on the verification link to activate the account. 
 
-.. image:: images/Verificationmail-1.png
+.. image:: images/User_NewUser_VerificationEmail.png
 
 .. note:: The verification email will be sent from **"no-reply@verificationemail.com"**. If you don't get the link please check the spam folder.
 
@@ -771,7 +771,7 @@ Users can choose a password and click on the “Submit” button.
    
 On successful validation, users will be allowed to login to the Research Gateway.
 
-.. image:: images/password1.png 
+.. image:: images/User_ChangePassword_Window.png 
 
 
 
@@ -781,13 +781,13 @@ You can perform the following user actions
 
 There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the enable action you can see the message like "A user, once enabled, will be able to log in to the system and carry out activities according to his role. Are you sure you want to proceed?"  in the pop- up with “Enable” button.
 
-.. image:: images/enable.png 
+.. image:: images/Principal_Users_EnableAction_PopUp.png 
 
 **Disable**
 
 There is a contextual menu which is at the right side of the card. On clicking that, you can see the actions that can be performed. When clicking on the disable action you can see the message like "A user, once disabled, will no longer be able to login to the system. Are you sure you want to proceed? in the pop-up with the “Disable” button.
 
-.. image:: images/disable.png 
+.. image:: images/Principal_Users_DisableAction_PopUp.png
 
 **Resend verification mail**
 
@@ -869,7 +869,7 @@ Since Research Gateway supports multiple regions (and hence multiple time-zones)
 
 You will receive a consolidated end of day - Email report(8PM IST) for all your projects with details. You will see the report for active products only.
 
-.. image:: images/EODReport.png
+.. image:: images/Principal_EODReport_Email.png
 
 .. note::
 
@@ -877,7 +877,7 @@ You will receive a consolidated end of day - Email report(8PM IST) for all your 
  b. The Emails shall be sent only to verified users of Research Gateway.
  c. In the project events tab, you can see the EOD report generated information.
 
-.. image:: images/EODReport1.png
+.. image:: images/Principal_Project_Events_EODReportEvents.png
 
 
 Actions on Projects
@@ -893,7 +893,7 @@ The project status changed to “Paused”. All the researchers under this proje
 
 .. image:: images/Principal_ProjectPause_Success.png
 
-.. image:: images/pause2.png
+.. image:: images/Principal_Project_PauseAction_AvailableProducts.png
 
 **Resume Action** 
 
@@ -907,11 +907,11 @@ The project status changed to “Stopped”. In a Stopped state all underlying r
 
 .. image:: images/Principal_Project_Stopped_SuccessMessage.png
 
-.. image:: images/stop2.png
+.. image:: images/Principal_Project_StopAction_AvailableProducts.png
 
-.. image:: images/stop3.png
+.. image:: images/Principal_Project_StopAction_MyProducts.png
 
-.. image:: images/stop4.png
+.. image:: images/Principal_Project_StopAction_ALLProducts.png
 
 **Archive Action**
 
@@ -976,7 +976,7 @@ You can download the budget details through the “Export as CSV”  option.
 
 .. note:: When Consumed Budget exceeds a threshold (say 80%), the budget management screen should show an alert in the UI and the user will also get an email notification.
 
- .. image:: images/budget6.png
+ .. image:: images/Principal_BudgetExceedThreshold_Email.png
  
 You can see researcher budget details which are linked to particular products and you can see configured products information in Researcher-wise Budget details page
 
@@ -991,17 +991,17 @@ Catalog (for Principal Investigator)
 
 As a Principal Investigator, you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. You can see the  following details: 
    
-.. image:: images/cat1.png
+.. image:: images/Principal_Catalog_Navigation.png
 
 Click on the **Catalog** menu item to navigate to the Catalog screen.
 
-.. image:: images/cat2.png
+.. image:: images/Principal_Catalog_DefaultPage.png
 
 You can see the standard catalog products on the listing page. To assign a set of items to an Organizational Unit, select the items by checking the checkbox which is at the right corner of each product card. Then click the  "Assign selected to a project" button.
 
-.. image:: images/assign2.png
+.. image:: images/Principal_Catalog_AssignToProject_PopUp.png
 
-.. image:: images/sc2.png
+.. image:: images/Principal_Catalog_ProductCheckboxEnabled_AssignSelectedToProject.png
 
 You can view and update the products for the particular organization. Enable the checkbox which is at the right side of the product and click on “Update selected to  O.U '' button . After completion of updation you can see the successful toaster message.
 
@@ -1013,19 +1013,19 @@ You can use the search field to search for a term in the product name and descri
   
  a. **All** : You can see all products here.
 
-  .. image:: images/filter1.png
+  .. image:: images/Principal_Catalog_AllFilter_DropDown.png
  
  b. **Research** :  You can see the products related to compute and analytics here. Eg: Amazon EC2
  
-   .. image:: images/Research.png
+   .. image:: images/Principal_Catalog_ResearchFilter_DropDown.png
 
  c. **IT Application** : You can see application related products here.
  
-   .. image:: images/ITApplications.png
+   .. image:: images/Principal_Catalog_ITApplicationsFilter_DropDown.png
 
 If we could not find any products related to the filter you can see the message like “We could not find any products that matched your search”.
 
-.. image:: images/search3.png
+.. image:: images/Principal_Catalog_SearchAction_NoMatchingProductsFound.png
 
 Key Pairs(for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1039,7 +1039,7 @@ You can create new key pairs through our portal. The user will initiate the crea
   
 Click on the "+Create New" button which is available at right side of the page. Fill the details in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
 
-.. image:: images/key3.png
+.. image:: images/Principal_Keypair_CreateKeypair_PopUp.png
 
 
 You can see key Pairs details in table format:
@@ -1291,15 +1291,15 @@ Click on the "Audit Trail" menu item. Through this, you can navigate to the Audi
 
 If you try to search the non-existent word it will display a message like “No matching organizations found”. You can see the login and logout and failed login audits. Here you can search based on user, status, and status reason. If audits are not found through the search you can see messages like “No matching audits found”.
 
-.. image:: images/search2.png
+.. image:: images/Principal_AuditTrail_SearchAction_NoMatchingAuditLogsFound.png
 
 .. image:: images/Principal_AuditTrail_Search.png
 
 You can filter the logs by Principal Investigator, researcher, and Project which will show the details of your own O.U. . You can also filter the logs through the date. 
 
-.. image:: images/AuditTrailPI3.png
+.. image:: images/Principal_AuditTrail_FilterLogsByDropdown.png
 
-.. image:: images/AuditTrailPI4.png
+.. image:: images/Principal_AuditTrail_DateRangeDropdown.png
 
 You can see the audit event details in the :ref:`Appendix F<Appendix F>` 
 
@@ -1308,7 +1308,7 @@ Researcher Features
 
 As a Researcher you can view all your projects when you login to Research Gateway. 
 
-.. image:: images/ResearcherLanding.png
+.. image:: images/Researcher_LandingPage.png
  
 Researcher can view service catalog products available for the project. Click on a project card to navigate to the Project Details page. You can see KPI cards, available products and active products information in the project details page.
 
@@ -1333,7 +1333,7 @@ This is the total budget consumed by the researcher who is logged in for that pr
 
 This is the current month budget consumed by the researcher who is logged in for that project.
 
-.. image:: images/kpi.png 
+.. image:: images/Researcher_Budget_Project-WiseBudgetBreakdown.png 
 
 In project-wise budget details page, you can see below details in a table format
 
@@ -1345,14 +1345,14 @@ In project-wise budget details page, you can see below details in a table format
 
 In researcher-wise details budget page you can see the below details in a table format
 
-.. image:: images/researcherlevel.png
+.. image:: images/Researcher_Budget_ProductWiseBudgetBreakdown.png
 
 Available Products
 ^^^^^^^^^^^^^^^^^^
 
 You can view the service catalog of products available for the project. These items will be organized into Portfolios. Clicking on a portfolio will display all the Products available in it.
 
-.. image:: images/avaiableproduct.png
+.. image:: images/Researcher_Project_AvailableProducts.png
 
 You can see the product information in the card. You can know more information about  the product through the “Know More” link. Through the “View Details” link you can see following :
 
@@ -1368,7 +1368,7 @@ d. **Filter** - We have following filter options:
 	  b. **Research** - You can see the products related to compute and analytics here. Eg: Amazon EC2
 	  c. **IT Applications** - You can see the products related to storage and database here. Eg: Amazon RDS
 
-.. image:: images/available.png
+.. image:: images/Researcher_Project_AvailableProducts_ViewAll.png
 
 .. note:: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog Products.
 
@@ -1378,17 +1378,17 @@ d. **Filter** - We have following filter options:
 2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
    Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
    
- .. image:: images/ssl-alb.png
+ .. image:: images/User_AddAccount_LaunchForm_SSL-ALBCheckbox.png
  
 3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
    Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
 4. Navigate to the available products panel and launch Nextflow-Advanced with required parameters. Once the product is provisioned you can see the outputs through the “View Outputs”. You can monitor the pipeline through “Monitor Pipeline”.
 
-.. image:: images/actions-nf.png 
+.. image:: images/Product_NextflowAdvanced_Actions.png 
 
 5. Navigate to the available products panel and launch RStudio with the required parameters. Once the product is provisioned you can connect to RStudio through the “Open link” action.
    
-.. image:: images/actions-rstudio.png 
+.. image:: images/Product_RStudio_Actions.png 
 
 `Secure connections to resources using ALB and Amazon certificates video <https://www.youtube.com/watch?v=3MkouV33XJw>`_
 
@@ -1400,17 +1400,17 @@ Log into the Research Gateway. Researchers can see the projects in All projects 
 
 Product order form is opened. Input parameters associated with the selected product will be displayed as a form at this point. Once all parameters are filled the user will be able to “Launch Now” the form and the item would then be added to the shopping cart.
 
-.. image:: images/product.png 
+.. image:: images/Product_EC2Linux_LaunchForm.png 
 
 .. note:: You can see VPC, subnets, security groups and keypair names are displaying in the listbox according to related field. Through this user can easily select the keypair and while provisioning the product and use the compute resources.
 
-.. image:: images/product2.png 
+.. image:: images/Product_EC2Linux_LaunchForm_KeypairDropDown.png 
 
 
 Each product conveys the expected amount of time it takes to provision through this user knows how much time that provision will take. Listed keypairs are displayed under Key name Field in the form.
 If you ordered an EC2 product you can see the toaster message like “Amazon EC2 ordered Successfully” and it will display an information message.
 
-.. image:: images/allprojects.png
+.. image:: images/Researcher_ProductLaunch_SuccessToasterMessage.png
 
 
 My Products
@@ -1420,7 +1420,7 @@ You can see the provisioned products details in the My Products Panel.
 
 You can view provisioned product details like product name, product type, consumed budget and product status in the card. Choose one product in the panel and click on the card.
 
-.. image:: images/Researchermyproducts1.png
+.. image:: images/Researcher_MyProducts_EC2Linux_ProductDetails.png
 
 The Product details page will show a tabbed area with the following tabs:
    1. Product Details
@@ -1429,11 +1429,11 @@ The Product details page will show a tabbed area with the following tabs:
 
 The “Product details” tab will show all the details of the product available in the collection. The actions associated with the product will be shown in an actions bar on the right side of the page. The “Events” tab will show the event details of the associated product while creation. The "Outputs" tab will show the CFT output details.
 
-.. image:: images/E2E.png
+.. image:: images/Product_EC2Linux_Actions.png
 
 You can see provisioned product details through “View All” option. You can  see all product details.
 
-.. image:: images/Researchermyproducts2.png
+.. image:: images/Researcher_Project_MyProducts.png
 
 
 Through the “View All” button in the panel header, you can see following:
@@ -1456,7 +1456,7 @@ Through the “View All” button in the panel header, you can see following:
  b. When the Researcher logs in, the user will be able to see the Active filter by default. And if the user selects a filter, the last chosen filter will be stored for the current session. Once the user logs-out and logs-in again the filter value will be reset to  Active.
 
 
-.. image:: images/myproduct2.png
+.. image:: images/Researcher_Project_MyProducts_ViewAll.png
 
 .. note:: When you on click on "View All" option you can see active products by default. 
 
@@ -1466,7 +1466,7 @@ When you click any action(Start/Stop/Terminate) in a provisioned product, state 
 
 .. note:: On successful provision of a product when you click on any action immediately, if instances not created you can see a message "**The instance-id of the product is not available. Please try after some time**".
 
-.. image:: images/instance.png
+.. image:: images/ActiveProduct_TerminateAction_ErrorMessage.png
  
 Actions available for products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1498,7 +1498,7 @@ You can see product related actions in the  Actions menu.
 
 3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-.. image:: images/instancetypeEC2linux.png 
+.. image:: images/Product_EC2Linux_InstanceTypeAction.png 
 
 4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
@@ -1530,9 +1530,9 @@ Click on the “Submit” button.
 .. note:: If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
 
 
-.. image:: images/E2E.png
+.. image:: images/Product_EC2Linux_Actions.png
 
-.. image:: images/E2E2.png
+.. image:: images/Product_EC2Linux_SSHWindow_PopUp.png
 
 
 EC2-Windows Product
@@ -1546,7 +1546,7 @@ You can see the product related actions in the  Actions menu.
 
 2. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-.. image:: images/instancetypeEC2Windows.png
+.. image:: images/Product_EC2Windows_InstanceTypeAction.png
 
 3. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
@@ -1573,13 +1573,13 @@ Fill the following Details
 	 
 Click on the “Submit” button. 
 
-.. image:: images/RDP.png
+.. image:: images/Product_EC2Windows_SSHRDPAction_RDPWindow.png
 
 .. note:: If you pass empty parameter or wrong parameter in the username or pem file field you can see error message accordingly.
  
 It will navigated to the password generation page. Before the downloading the RDP file you should copy/save the password and unhide it and click on the “Download RDP file" button. 
 
-.. image:: images/RDP1.png
+.. image:: images/Product_EC2Windows_SSHRDPAction_RDPWindow_UserNamePasswordWindow.png
 
 Once completed the download right-click on the file and choose the “Connect” option. Enter the username and password in a remote desktop connection window. 
 Due to the nature of self-signed certificates, you might get a warning that the security certificate could not be authenticated. To verify that simply choose [Yes] in the Remote Desktop Connection window. You can connect to the remote desktop successfully.
@@ -1600,20 +1600,20 @@ Choose the “Share” option. Through this you can  share the details to other 
 
 .. note:: If there are no researchers in the list you will see a message like **“No researchers are available. Please add a new researcher to share the s3 bucket"**
 
-.. image:: images/testingevent1.png
+.. image:: images/Product_S3_ProductDetails_ShareAction.png
 
-.. image:: images/testingevent3.png
+.. image:: images/Product_S3_ProductDetails_ShareAction_PopUp.png
 
 
-.. image:: images/testingevent4.png
+.. image:: images/Product_S3_ProductDetails_ShareAction_PopUp_NoProducts.png
 
 **2. Unshare Action**
 
 Choose the "Unshare" option. Through this you can unshare the details from the earlier shared team member.  
 
-.. image:: images/unshare.png
+.. image:: images/Product_S3_ProductDetails_UnShareAction.png
 
-.. image:: images/unshare1.png
+.. image:: images/Product_S3_ProductDetails_UnShareAction_PopUp.png
 
 .. note:: The "Unshare" option is available only when the bucket is shared with other researchers. The owner(i.e.,person who provisioned product) can do the share and unshare. 
 
@@ -1626,22 +1626,22 @@ Choose the "Terminate" option to de-provision the product.
 There is a check to find out whether the file exists in the bucket or not. If exists it will throw an error message **”The bucket is not empty. Please delete all contents from the bucket and try again.”**
 
 
-.. image:: images/action.png
+.. image:: images/Product_S3_TerminateAction.png
 
 
 **4. Explore Action**
 
 a. In the product details screen of the newly created S3 bucket, click the “Explore” action. Through this action you can see all the files and folders in the S3 bucket with actions (download, delete, Copy to clipboard) against each item.
 
-.. image:: images/s3-actions.png 
-.. image:: images/basic.png
+.. image:: images/Product_S3_ProductDetails_ExploreAction.png 
+.. image:: images/Product_S3_Explore_AllFilesAndFolders.png
 
 b. For folders the user will be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
 c. For any deeper level, the user will be able to navigate back to an upper level.
 d. Click on the “Upload” action. Click on "Add files" to upload multiple files. The file size should not be greater than 5 GB. Click on "Add folder" to upload entire folder to S3. Click on the “submit” button and the file will be uploaded to the bucket. 
 
-.. image:: images/multifiles.png 
-.. image:: images/upload2.png
+.. image:: images/Product_S3_Explore_FilesAndFolders.png 
+.. image:: images/Product_S3_Explore_NoFilesAndFolders.png
 
 .. note:: When you try to upload more than 10MB file you will see a message like **"The size of this file is larger than the maximum(10MB) size allowed on this system. Please contact your administrator."**
 
@@ -1651,25 +1651,25 @@ You have to link Sagemaker from the S3 product details page using the provisione
 For a S3 Provisioned Product, you should have a new action item called “Link”
 
 
-.. image:: images/linking.png 
+.. image:: images/Product_S3_ProductDetails_LinkAction.png 
 
 
 This action item should be a pop up which will have the list (dropdown) of active sagemaker products for that user.
 
-.. image:: images/linking2.png
+.. image:: images/Product_S3_Link_PopUpAction.png
 
 You should have an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
 You should also see an “Unlink action” to unlink sagemaker product from s3 bucket side. You are providing “Copy bucket name” action from sagemaker product side.
 
 
-.. image:: images/event.png
+.. image:: images/Product_S3_LinkedProducts_UnlinkResourceAction.png
 
-.. image:: images/event2.png
+.. image:: images/Product_S3_LinkedProducts_CopyBucketNameAction.png
 
 
 If there are no active sagemaker products we are showing the following message to the user “There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket”.
 
-.. image:: images/computerresource.png 
+.. image:: images/Product_S3_LInkAction_NoProductToLink_PopUp.png
 
 
 SageMaker Product
@@ -1687,7 +1687,7 @@ You can see product related actions in the  Actions menu.
 
 4. Terminate Action: You can terminate the product through “Terminate” action.
 
-.. image:: images/sage-ations.png
+.. image:: images/Product_Sagemaker_ProductDetails_Action.png
 
 
 RStudio Product
@@ -1716,7 +1716,7 @@ You can see product related actions in the  Actions menu.
 
 3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-.. image:: images/instancetypeRstudio.png
+.. image:: images/Product_RStudio_InstanceTypeAction.png
 
 4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
@@ -1774,7 +1774,7 @@ You can see product related actions in the  Actions menu.
 
 3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-.. image:: images/InstancetypeNextflow.png
+.. image:: images/Product_NextflowAdvanced_InstanceTypeAction.png
 
 4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
@@ -1834,7 +1834,7 @@ You can see product related actions in the  Actions menu.
 
 3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-.. image:: images/instancetypecromwell.png
+.. image:: images/Product_CromwellAdvanced_InstanceTypeAction.png
 
 4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
@@ -1891,7 +1891,7 @@ You can see product related actions in the  Actions menu.
 
 3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-.. image:: images/instancetypeDocker.png
+.. image:: images/Product_Docker_InstanceTypeAction.png
 
 4. Share action : You can share the product to all the members in the project through “Share” action. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
@@ -1949,7 +1949,7 @@ You can see product related actions in the  Actions menu.
 
 3. Instance Type action : You can change the instance type of the Instance in the stopped state.
 
-.. image:: images/instancetypeSQL.png
+.. image:: images/Product_MySQL_InstanceTypeAction.png
 
 4. Share action : You can share the product to all the members in the project through “Share” action.  If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
 
@@ -1999,7 +1999,7 @@ You can see the product related actions in the Actions Menu.
 
 6. Remote Desktop : Choose the "Remote Desktop" action. The cluster head-node by default has NICE DCV installed which allows you to connect to the head-node via a GUI interface. This is especially useful to visualize results of the jobs that you run on the cluster (e.g. using Paraview to view the results of OpenFOAM jobs).
 
-.. image:: images/PCluster3.png
+.. image:: images/Product_PCluster_ProductDetails_Actions.png
 
 Fill the following details
 
@@ -2031,7 +2031,7 @@ As a researcher you can use the **Budgets** screen to view your individual budge
 
 Login as the Researcher. Click on “☰” Symbol which is available on the left side header. By clicking on the "Budgets" menu item, the user will be navigated to the Budget details page.
 
- .. image:: images/bud1.png 
+ .. image:: images/Researcher_Budgets_Navigation.png
   
 You can see budget details with different KPI cards. You can see the following KPI cards :
 
@@ -2039,7 +2039,7 @@ You can see budget details with different KPI cards. You can see the following K
 2. **My Total Direct Cost** : This is the total budget consumed by the researcher who is logged in for that project.
 3. **My Current Month Direct Cost** : This is the current month budget consumed by the researcher who is logged in for that project.
  
- .. image:: images/bud2.png 
+ .. image:: images/Researcher_Budget_Project-WiseBudgetBreakdown.png 
  
 You can see Project-wise Budget details in the table format:
 
@@ -2050,17 +2050,17 @@ You can see Project-wise Budget details in the table format:
 
 You can see configured Researcher-wise budget details which are linked to a particular project.
 
- .. image:: images/Researcherbudget.png
+ .. image:: images/Researcher_Budget_ResearcherWiseBudgetBreakdown.png
 
 You can also see configures Product-wise budget details which are linked to a particular Researcher.
 
- .. image:: images/ResearcherProductwisebudget.png
+ .. image:: images/Researcher_Budget_ProductWiseBudgetBreakdown.png
 
 Studies (For Researcher)
 ^^^^^^^^^^^^^^^^^^^^^^^^
 In the research field, the ability to use data stores or "Studies" is key. A researcher may have his own data ("My Study"), or a Principal may create a data-store that is shared across researchers in the same project (Project Studies) or the researcher may connect to Open Data like the AWS registry of open data.
 
-.. image:: images/studies.png
+.. image:: images/Researcher_Studies_Navigation.png
 
 A researcher persona will have a menu item that leads to the “Studies” landing page. The “Studies” landing page lists the datasets as cards. 
 
@@ -2072,83 +2072,34 @@ Each card shows the following data:
 4. Bookmark this study.
 5. View Details link(Clicking on the “View details” call-to-action on a study card will lead to a Study details page).
 
-.. image:: images/studies1.png
+.. image:: images/Researcher_Studies_DefaultPage.png
 
 The studies landing page should have a “Filter” feature that allows the user to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies.
 
-.. image:: images/fil1.png
+.. image:: images/Researcher_Studies_AllFilters_DefaultPage.png
 
 The studies landing page has a search bar that allows users to search the collection. (search will be dynamic).
 
-.. image:: images/sea1.png
+.. image:: images/Researcher_Studies_SearchAction.png
 
-Personal Study
---------------
-A researcher may have his own data or a Principal may create a data-store that is shared across researchers in the same project through the “Share” option. The “Study” details page will show a tabbed area with the following tabs:
-   1. Study details
-   2. Product details
-
-The “Study details” tab will show all the details of the study available in the collection. The actions associated with the study will be shown in an actions bar on the right side of the page. The “Product details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
-
- .. image:: images/personal.png
- 
- .. image:: images/sc4.png
-
-**Explore Action**
- 
-Through this action, you can see all the files and folders in the S3 bucket with actions (download, delete) against each item.
-  a. For folders, the user will be able to double-click on the item and drill-down to a deeper level to see the files and folders in that level.
-  b. For any deeper level, the user will be able to navigate back to an upper level.
-  c. You can upload the different files (The file should not contain more than 10MB).
-  
- .. image:: images/ex1.png
- 
-**Link/Unlink Action**
- 
-1. A user can link a study to a compute resource using the “Link” action in the Actions bar. This action item should be a 
-   p-up that will have the list (dropdown) of active sagemaker products for that user.
-2. You will see an icon similar to the shared icon for showing that this S3 bucket is linked with sagemaker.
-3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
-4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker 
-   product from the available products page first, before linking to an s3 bucket**.
-
- .. image:: images/link1.png  
- 
- .. image:: images/unlink.png
-
- .. image:: images/unlink2.png
- 
-**Share Action**
- 
-Choose the option like “Share”. Through this, you can share the details with other team members. If there are no researchers in the list it will show a message like “No researchers are available. Please add a new researcher to share the s3 bucket “
-
- .. image:: images/share1.png
- 
- .. image:: images/share3.png
- 
-**Terminate Action**
-
-You can terminate the study through the “Terminate” option.
-
- .. image:: images/ter1.png
 
 Public Study
 ------------
 
- .. image:: images/public.png
+ .. image:: images/Researcher_Studies_PublicFilter_DefaultPage.png
 
 You can connect to Open Data like the AWS registry of open data. The “Study” details page will show a tabbed area with the following tabs:
 
 	a. Study details : The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page.
 	b. Resource details: The “Resource details” tab will show the details of the associated product (S3 bucket). This will replicate the product details page of the associated S3 bucket and show the same actions associated with the s3 bucket.
 											
- .. image:: images/sc3.png
+ .. image:: images/Researcher_Studies_PublicStudy_StudyDetailsPage.png
   
 **Explore Action**
 
 You can see the files/folders which are  related to the datastore.
 
-.. image:: images/ex1.png
+.. image:: images/Principal_Studies_PublicStudy_ExploreAction.png
 
 **Link/Unlink Action**
 
@@ -2157,28 +2108,28 @@ You can see the files/folders which are  related to the datastore.
 3. You can link the study with multiple sagemaker notebooks.  Through the “unlink resource” you can unlink with compute resources
 4. If there are no active sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
  
- .. image:: images/link2.png
+ .. image:: images/Researcher_PublicStudies_Linkaction_Available.png
  
- .. image:: images/unlink.png
+ .. image:: images/Researcher_Studies_PublicStudy_UnlinkResourceAction.png
  
- .. image:: images/unlink2.png
+ .. image:: images/Researcher_Studies_PublicStudy_Unlink_SucessToasterMessage.png
   
- .. image:: images/link1.png  
+ .. image:: images/Researcher_PublicStudies_Link.png 
  
 
 Key Pairs (For Researcher)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 The Key Pairs screen can be used by the Researcher to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
 
- .. image:: images/Researcherkey1.png
+ .. image:: images/Researcher_Keypair_Navigation.png
 
-.. image:: images/key2.png
+.. image:: images/Researcher_Keypair_DefaultPage.png
 
 You can create new key pairs through our portal. The user will initiate the creation of a keypair and once it is created the user will download the private key. The download is allowed only once post which the screen only lists the keypair by name.
   
 Click on the "+Create New" button which is available at right side of the page. Fill the details in the form and click on the “Create Key Pair” button. New Keypair was created successfully.
 
-.. image:: images/key3.png
+.. image:: images/Researcher_Keypair_CreateKeypair_PopUp.png
 
 
 You can see key Pairs details in table format:
@@ -2190,13 +2141,13 @@ You can see key Pairs details in table format:
 
 The user can delete the keypair. Click the 3-dotted action on the right side of the table. You can see the delete keypair through the “Delete” action.
 
-.. image:: images/deletionkeypair.png
+.. image:: images/Researcher_Keypair_DeleteKeypair_PopUp.png
 
 You can search the keypair through Keypair name and Project name.
 
 Ex: Type “Chiron” in the search area it should display the keypairs which are attached to the Chiron project.
 
-.. image:: images/se1.png
+.. image:: images/Researcher_keypair_SearchAction.png
 
 
 
@@ -2229,11 +2180,11 @@ Configuration steps for Research Gateway application in OKTA
 	c. Choose the Name ID format and application username that must be sent to your application in the SAML response.
 	d. In the **Attribute Statements** section, enter the SAML attributes to be shared with your application. 
 	
-       .. image:: images/statement1.png	
+       .. image:: images/ConfigurationStepsforRGApplicationinOKTA_AttributeStatement.png	
 
    e. For Group Attribute Statement follow the below things. 
    
-       .. image:: images/statement2.png
+       .. image:: images/ConfigurationStepsforRGApplicationinOKTA_GroupAttributeStatement.png
 
 8. Click the “**Next**” button.
 9. Fill the Feedback form and click on the “**Finish**” button.

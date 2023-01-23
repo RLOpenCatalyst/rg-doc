@@ -64,7 +64,7 @@ Fill the following details
 	 
 Click on the “Sign-In“ button. We can log in successfully.
 
-.. image:: images/login.png
+.. image:: images/User_Login_Window.png
 
 .. _`Forgot Password`:
 
@@ -74,7 +74,7 @@ In case you have forgotten your password, you can use the “Forgot Password” 
 
 Click the link to navigate to the reset password screen.  
 
-.. image:: images/forgot.png
+.. image:: images/User_ForgotPassword_Window.png
 
 Fill the following details
 
@@ -89,7 +89,7 @@ Fill the following details
    
 Click on "Send Resend link" button. If the provided details are valid, you will get a verification link on the registered email address to reset the password. On clicking the link in the email, the user is lead to the change password screen.  
 
-.. image:: images/verificationemail.png
+.. image:: images/User_Account_ResentVerificationEmail.png
 
 .. note::
 
@@ -104,9 +104,9 @@ If the password change is successful you can navigate to the verification succes
  
 If the password change is unsuccessful you can see the verification error screen. 
 
-.. image:: images/ChangePassword.png
+.. image:: images/User_ChangePasswordWindow.png
 
-.. image:: images/ChangePassword_Success.png
+.. image:: images/User_ChangePassword_Success.png
 
 
 .. _`Sign-Up process`:
@@ -125,7 +125,7 @@ Sign up with a Google ID
 4. If you are not signed in to your Google account, you will be prompted for your credentials. Enter your Google account email address and password. 
 5. Once logged in to your account, you will land on the Welcome page in Research Gateway.
 
-.. image:: images/registerform.png
+.. image:: images/User_SignUpForNewAccount_Window.png
 
 .. note:: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
 
@@ -136,7 +136,7 @@ Sign up with an Email address
 2. Click on the "Sign up for new account" link which is below the sign-in button. 
 3. A registration form will be opened. 
 
-.. image:: images/registerform.png
+.. image:: images/User_SignUpForNewAccount_Window.png
 
 Fill the following details 
 
@@ -159,13 +159,13 @@ Click on the “Sign Up“ button. If the provided details are valid, you will r
 
 The password needs to confirm to the password policy. 
 
-.. image:: images/verificationemail2.png
+.. image:: images/User_Account_VerificationEmail.png
 
 If the password change is successful you will be navigated to the verification successful page. Through the “Click here to login button” you will be navigated to the Research Gateway login screen.
 
 Once logged in to your account, you will land on the Welcome page in Research Gateway.
 
-.. image:: images/registerform.png
+.. image:: images/User_SignUpForNewAccount_Window.png
 
 .. note:: You can watch the system setup video through the `Click here <https://www.youtube.com/watch?v=zDksIb1n9zI>`_ link in the welcome screen.
 
@@ -245,7 +245,7 @@ AccessPolicies
 
 Click on  the  “+Add New” button in the provider setting page. The Add Provider setting dialog-box is opened.
 
-.. image:: images/AddAccount.png
+.. image:: images/AddAccount_Form.png
    
 Fill the following details
 
@@ -289,7 +289,7 @@ On each line item there is a contextual menu. Through this we can repair the acc
 
 Click on the 3-dotted icon which is available at the right side of the account details page and choose “Delete” option. A confirmation dialog box is opened and enable the check box and click on the "Delink" button, the account will be deleted. You can only delete provider settings that are not linked to any project or organization.
 
-.. image:: images/delete.png
+.. image:: images/Account_DeleteAction_PopUp.png
 
 .. note:: If the account is not linked to project then only you can see the "Delete" option in the contextual menu .
 
@@ -306,7 +306,7 @@ On successful completion of verify you can see the "repair" option, click on the
 
 Click on the contextual menu which is available at the right side of the account name and choose the "Assign O.U" option. One window is opened and all organizational units are listed there. Choose one organization from the list and click on the "Assign" button. On successful completion you can see the green color toaster message.
 
-.. image:: images/Assign123.png
+.. image:: images/Admin_Settings_Account_AssignO.U.png
 
 .. image:: images/Admin_Settings.png
 
@@ -336,7 +336,7 @@ Secure connections to resources using ALB to RStudio and Nextflow-Advanced Produ
 2. When creating an account if you select the “Use SSL with ALB” check box it will create ALB. An ALB will incur costs irrespective of traffic passing through it. 
    Note: Refer :ref:`Adding AWS Accounts <Adding AWS Accounts>` for account creation.
    
- .. image:: images/ssl-alb.png
+ .. image:: images/User_AddAccount_LaunchForm_SSL-ALBCheckbox.png
  
 3. Once project creation is successful you can see the status about certificates and load balancer, target groups, listener, etc.. on the events page.
    Note: Refer :ref:`Adding a new project <Adding a new project>` for project creation.
@@ -367,7 +367,7 @@ Login to the Research Gateway as a Principal Investigator.
 
 If Principal Investigator logs as a first time, you can view the welcome screen. Click on the "Let's get Started" button it will navigate to the "Add Account" screen. 
 
-.. image:: images/welcome.png
+.. image:: images/User_WelcomeScreen.png
 
 Click on the  “+Add New” button in the My Project page or use details from :ref:`Appendix A<Appendix A>`  to create account. Once account creation is successful it will navigate to "Create Project" screen. The project application form is opened. 
 
