@@ -8,7 +8,7 @@ Sign In Process
 
 Access the URL provided to you for your instance of RLCatalyst Research Gateway.
 
-.. image:: images/login.png
+.. image:: images/User_Login_Window.png
 
 Fill the following details
 
@@ -36,22 +36,22 @@ Select “Sign out” option. Through this user logged out from the portal.
    
 If sign out is successful you can navigate to the logout page. Through the "Click here to login" button you can navigate to the login page.
 
-.. image:: images/logout.png
+.. image:: images/User_LogOut_Window.png
 
 If sign out is unsuccessful you can see a message like "**Something went wrong while logging you out, we are working on this**".
 
-.. image:: images/logout1.png
+.. image:: images/User_LogOut_ErrorToasterMessage.png
 
 Forgot Password
 ---------------
 
 In case a user would like to reset his password, the reset password screen can be accessed from the sign in page. Choose the "Forgot Password" link.
 
-.. image:: images/login.png
+.. image:: images/User_Login_Window.png
 
 On clicking the link the user is navigated to the reset password screen.  
 
-.. image:: images/resetpassword.png
+.. image:: images/User_ResetPassword_Window.png
 
 Fill the following details
 
@@ -67,7 +67,7 @@ Fill the following details
    
 Click on "Send Reset link" button. If the provided details are valid, the verification link that has been sent to registered email to reset the password. On clicking the link in the email, the user is prompted to change password screen.  
 
-.. image:: images/verificationemail.png
+.. image:: images/User_Account_ResentVerificationEmail.png
 
 .. note::
   
@@ -80,9 +80,9 @@ Click on "Send Reset link" button. If the provided details are valid, the verifi
 
 If the password change is successful you can navigate to the verification successful page. Through the "Click here to login button" you can navigate to the login screen. If the password change is unsuccessful you can see the verification error screen.
 
-.. image:: images/ChangePassword.png
+.. image:: images/User_ChangePasswordWindow.png
 
-.. image:: images/ChangePassword_Success.png
+.. image:: images/User_ChangePassword_Success.png
 
 .. note:: If a user tries to reset password more than 10 times it will display the message like **“Attempt limit exceeded. Please try again”**
 
@@ -92,4 +92,4 @@ Session Timeout
 
 If the user is idle for more than 15 minutes and then performs any activity on the website, the current session will be logged out with a red toaster message and the user will be routed to the login page. In an enterprise deployment, the duration of the timeout can be customized.
 
-.. image:: images/sessiontimeout.png 
+.. image:: images/User_SessionTimeoutError.png 
