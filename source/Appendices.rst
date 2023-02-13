@@ -61,6 +61,33 @@ Appendix F - Audit Trail Events for Principal Investigator
 Appendix G - Release Notes
 ==========================
 
+v1.17.0
+^^^^^^^^
+
+Enhancements
+-------------
+
+1. Support for mounting Internal Studies to Sagemaker instances. Users can now use the "Study selection" section of the Launch form, to select studies that should be mounted to Sagemaker instances. The studies, so selected, will appear under the $HOME/studies folder.
+
+2. New Billing Accounts screen - All accounts added to an organization will now be visible in the Billing Accounts screen to help the user track their overall spend in the AWS account. This screen shows the current AWS billing for that account (total across all regions including consumption from Research Gateway and externally). This screen also shows the forecast for the current month.
+
+3. Bulk user tag updates. Importing users via CSV now has the capability to update tags for existing users. Tags have to follow the same constraints (maximum of 32 characters, maximum of 5 tags) and are updated in an all or none manner.
+
+
+Bug-fixes
+----------
+
+1. Archived projects that had crossed the budget thresholds were reappearing as Stopped projects when Cost Control feature is on.
+
+2. User edit function was not creating audit trail events.
+
+3. Keypairs created in one project were appearing in another project if the associated account had more than one project linked to it.
+
+4. A user who is not assigned to any organization was getting incorrect message on logging in.
+
+5. Search function in the catalog should show all products - assigned or unassigned.
+
+
 v1.16.0
 ^^^^^^^^
 
