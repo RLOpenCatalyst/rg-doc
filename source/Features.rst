@@ -1188,7 +1188,7 @@ Fill the following details
    * - Study Scope   
      - <Currently only Project level scope is allowed. All the  project members can see the study details. But if any user who is not part of the project , will not be able to see the study details.>
    * - Projects
-     - <Choose the projects to which the study needs to be assigned to. Linux based workspaces and Sagemaker instances in the selected projects will automatically mount this study.user can select the project during study creation also can add or remove projects of the same account using Edit Action available in Study Details page . By default it shows no project is added to the account. Once You select the account then all the  projects which are linked to the selected account settings will  be listed here.>
+     - <Choose the projects to which the study needs to be assigned to. Linux based workspaces and Sagemaker instances in the selected projects will automatically mount this study. User can select the project during study creation also can add or remove projects of the same account using Edit Action available in Study Details page . By default it shows no project is added to the account. Once You select the account then all the  projects which are linked to the selected account settings will  be listed here.>
   
 .. image:: images/Studies_InternalStudies_AccountDetails.png
 
