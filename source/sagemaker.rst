@@ -35,7 +35,7 @@ Estimated time to provision -  15 minutes
 Steps to connect 
 -----------------
 
-1. Click on the “Open Notebook” button under the “Connect” list on the right side of the page. This will open the sageMaker notebook in a new browser tab. Through this sagemaker notebook you will be able to use the studies, that are linked to the project and mounted during launch. Study which are selected will appear under the $HOME/studies folder.
+1. Click on the “Open Notebook” button under the “Connect” list on the right side of the page. This will open the sageMaker notebook in a new browser tab. Through this sagemaker notebook you will be able to use the studies that are linked to the project and mounted during launch. Studies which are selected will appear under the $HOME/studies folder.
 2. You can de-provision the product through the “Terminate” option.
 
 .. image:: images/Sagemaker_ProjectDetails_Action.png
