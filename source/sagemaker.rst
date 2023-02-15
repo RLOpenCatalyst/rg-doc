@@ -16,6 +16,8 @@ Parameters
      - Details
    * - Product Name
      - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch
+   * - Study Selection
+     - Expand the section to select studies to mount to your workspace.Select one or more studies to mount to your workspace from the dropdown list(Maximum of 2)
    * - InstanceType
      - Choose instance type in the drop-down list. Eg: ml.t2.medium
 
@@ -33,10 +35,14 @@ Estimated time to provision -  15 minutes
 Steps to connect 
 -----------------
 
-1. Click on the “Link” button under the “Connect” list on the right side of the page. This will open the sageMaker notebook in a new browser tab. 
+1. Click on the “Open Notebook” button under the “Connect” list on the right side of the page. This will open the sageMaker notebook in a new browser tab. Through this sagemaker notebook you will be able to use the studies that are linked to the project and mounted during launch. Studies which are selected will appear under the $HOME/studies folder.
 2. You can de-provision the product through the “Terminate” option.
 
 .. image:: images/Sagemaker_ProjectDetails_Action.png
+
+.. image:: images/InternalStudyMountingToSagemaker1.png
+
+.. image:: images/InternalStudyMountingToSagemaker2.png
 
 Other considerations
 ---------------------

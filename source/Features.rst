@@ -232,8 +232,6 @@ CSV file should contain following details
  a. If the user role is other than valid values (0 = Researcher, 1 = Principal Investigator, 2 = Administrator ), it will be automatically reset  to 0  (researcher) and the user will be created with the role as researcher.
 
  b. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
-
-
 The new user creation process will begin when the user clicks the "Open" button and a green toaster message will appear. When importing users in bulk, the user creation may take some time. The green toaster message does not imply successful creation of all users. Please check the audit trail to see if any user creation failed.
 
 
@@ -1190,7 +1188,7 @@ Fill the following details
    * - Study Scope   
      - <Currently only Project level scope is allowed. All the  project members can see the study details. But if any user who is not part of the project , will not be able to see the study details.>
    * - Projects
-     - <Choose the projects to which the study needs to be assigned to. Linux based workspaces in the selected projects will automatically mount this study. Currently only the projects selected at creation of the study will be able to access the study. By default it shows no project is added to the account. Once You select the account then all the  projects which are linked to the selected account settings will  be listed here.>
+     - <Choose the projects to which the study needs to be assigned. Linux-based workspaces and Sagemaker instances in the selected projects will automatically mount this study. Users can select the project during study creation and also can add or remove projects of the same account using Edit Action available on the Study Details page. By default, it shows no project is added to the account. Once you select the account, all the projects linked to the selected account settings will be listed here.>
   
 .. image:: images/Studies_InternalStudies_AccountDetails.png
 
