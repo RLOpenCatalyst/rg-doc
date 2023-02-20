@@ -395,6 +395,40 @@ If we could not find any products related to the filter you can see the message 
 
 .. note:: Use details from :ref:`Appendix B<Appendix B>` for Standard Catalog products.
 
+Billing Accounts
+^^^^^^^^^^^^^^^^^
+
+As an administrator, you will be able to view monthly billing data at the Organization Unit level for all the Organizations.  
+
+
+**Navigation to the Billing Accounts** 
+
+Log in as the Administrator user. Click on the "☰" option which is available on the top-left side. Click on the Billing Accounts menu item to navigate to the Billing Accounts page.  
+
+.. image:: images/Administrator_BillingAccounts_Navigation.png
+
+**KPIs**  
+
+At the top of this view, you can see the summary of Billing Accounts across all organizational units in the KPI cards. You can see the following KPI cards:  
+
+ * **Number of Organizations**: This is the number of Organization that have consumed cost.  
+ * **Number of Accounts**: The number of unlinked accounts that are linked to the organisation and have consumed costs is shown here. 
+ * **Current Month Billing**: This is the total Month to Date cost of Accounts across all organizations. 
+ 
+
+The following details are visible in a table format:  
+
+.. csv-table::
+   :file: BillingAccountsTableAdministrator.csv
+   :widths: 10, 15, 10, 10, 55
+   :header-rows: 1
+
+.. image:: images/Administrator_BillingAccounts_DefaultPage.png
+
+.. note::   
+    a. The account will not appear in the table if it is not assigned to any O.U. 
+    b. Forecast value will not be shown if account has less than one full billing cycle of historical data available.
+
 Principal Investigator Features
 +++++++++++++++++++++++++++++++
 
@@ -1300,6 +1334,41 @@ You can filter the logs by Principal Investigator, researcher, and Project which
 .. image:: images/Principal_AuditTrail_DateRangeDropdown.png
 
 You can see the audit event details in the :ref:`Appendix F<Appendix F>` 
+
+
+Billing Accounts (Principal Investigator)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+As a Principal Investigator, you will be able to view monthly billing data on the account level data for the Organization Unit that the user is part of.
+
+**Navigation to the Billing Accounts**
+
+Login as the Principal Investigator user. Click on the "☰" option, which is available on the top-left side. Click on the Billing Accounts menu item to navigate to the Billing Accounts page.
+
+.. image:: images/PrincipalInvestigator_BillingAccounts_Navigation.png
+
+**KPIs**   
+
+At the top of this view, you can see the summary of Billing Accounts across all organizational units in the KPI cards. You can see the following KPI cards: 
+
+*  **Number of Accounts**: This is the total number of accounts in the Organizational Unit that the user is part of.  
+
+* **Current Month Billing**: This is the total month-to-date cost of accounts In Organizational Unit that user is part of.  
+
+* **Total Forecast Value**: This is the total forecast value cost across all accounts in Organizational unit that the user is part of.  
+
+The following details are visible in table format: 
+ 
+.. csv-table::
+   :file: BillingAccountsTablePrincipalInvestigator.csv
+   :widths: 15, 15, 15
+   :header-rows: 1
+
+.. image:: images/PrincipalInvestigator_BillingAccounts_DefaultPage.png
+
+.. note::
+  a. If the Principal Investigator user is not assigned to any Organizational Unit, then they can only see this screen with this message: "You are not assigned to any OU. Contact your administrator." 
+  b. A forecast value will not be shown if account has less than one full billing cycle of historical data available  
+  c. A Researcher user will not be able to navigate and see the Billing Accounts screen  
 
 Researcher Features
 +++++++++++++++++++

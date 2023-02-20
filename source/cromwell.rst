@@ -97,6 +97,8 @@ Steps to connect
 
  .. image:: images/Product_CromwellAdvanced_ProductDetails.png
 
+.. note::  Cromwell Advanced Product does not support mounting of Project Storage.
+
 Other considerations   
 ---------------------
 
