@@ -65,4 +65,22 @@ You can share the product with all the members of the project using the “Share
 
 Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 
-You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab.
+You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page and click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
+
+**Steps to follow to mount the secondary EBS volume to your EC2 instance:**
+
+    1. Create a file system on the newly created EBS volume. Here we selected the device name /dev/sdf at the time of attaching the volume
+		sudo mkfs -t xfs /dev/sdf
+    2. Create a folder
+		sudo mkdir /data
+    3. Mount the volume
+		sudo mount /dev/sdf /data
+
+You can run the following command in the SSH terminal of your EC2 instance to determine if the EBS volume has been successfully mounted: 
+lsblk
+
+The volume will only be displayed in the list if it has been mounted.
+       
+.. note::
+   a. If you have already created the file system on the volume, then skip the command “sudo mkfs -t xfs /dev/sdf”.
+   b. For further details please refer to `the AWS documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html>`_

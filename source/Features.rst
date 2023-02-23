@@ -30,7 +30,7 @@ As an Administrator, you can view the organization-wide budgets from the **Budge
 Login as the Administrator user. Click on “☰” option which is available on the top-left side. Click on the **Budgets** menu item to navigate to the Budgets page.
 
  
-.. image:: images/Admin_Navigation_Action.png
+.. image:: images/Administrator_Budgets_Navigation.png
 
 **Budget KPIs**
 
@@ -104,7 +104,7 @@ As an Administrator you can use the "Users" screen to view all users across Rese
    
 Click on the **Users** menu item to navigate to the Users page.
 
-.. image:: images/Admin_Navigation_Action.png
+.. image:: images/Administrator_Users_Navigation.png
 
 .. image:: images/Admin_Users_DefaultPage.png
 
@@ -232,6 +232,9 @@ CSV file should contain following details
  a. If the user role is other than valid values (0 = Researcher, 1 = Principal Investigator, 2 = Administrator ), it will be automatically reset  to 0  (researcher) and the user will be created with the role as researcher.
 
  b. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
+
+ c. we can edit the tag for the user using the edit user action and Import Users via CSV action by adding the same user Email.
+ 
 The new user creation process will begin when the user clicks the "Open" button and a green toaster message will appear. When importing users in bulk, the user creation may take some time. The green toaster message does not imply successful creation of all users. Please check the audit trail to see if any user creation failed.
 
 
@@ -328,7 +331,7 @@ Audit Trail
 
 As an Administrator you can use the **Audit Trail** screen to view security-related audits. Click on the “☰” option which is available on the left side header.
    
-.. image:: images/Admin_AuditTrail_Navigation.png
+.. image:: images/Adminstrator_Audittrail_Navigation.png
 
 Click on the **Audit Trail** menu item. Through this, you can navigate to the Audit Trail page.
 
@@ -355,7 +358,7 @@ Catalog
 ^^^^^^^
 As an Administrator you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. 
    
-.. image:: images/Administrator_Catalog_Navigation.png
+.. image:: images/Adminstrator_Catalog_Navigation.png
 
 Click on the "Catalog" menu item. Through this, you can navigate to the Catalog details page.
 
@@ -658,7 +661,7 @@ As a Principal Investigator  you can use the "Users" screen to view all users ac
 
 Click on the **Users** menu item to navigate to the Users page.
 
-.. image:: images/Principal_Users_Navigation.png
+.. image:: images/PrincipalInvestigator_Users_Navigation.png
 
 .. image:: images/Principal_Users_ActiveUserToggle.png
 
@@ -780,6 +783,7 @@ CSV file should contain following details
 
  b. Users will see a red-colored toaster with failure message if they have added invalid headers, more than permitted number of user records in a single csv file, or not even one user record.
 
+ c. we can edit the tag for the user using the edit user action and Import Users via CSV action by adding the same user Email.
 
 The new user creation process will begin when the user clicks the "Open" button and a green toaster message will appear. When importing users in bulk, the user creation may take some time. The green toaster message does not imply successful creation of all users. Please check the audit trail to see if any user creation failed.
 
@@ -985,7 +989,7 @@ As a Principal Investigator, you can view the organization-wide budgets from the
 
 Sign in as the Principal Investigator. Click on the “☰” Symbol which is available on left side header. Click on the "Budgets" menu item through this, you can navigate to the Budget Details page.  
 
-.. image:: images/Principal_Budgets_Navigation.png
+.. image:: images/PrincipalInvestigator_Budgets_Navigation.png
 
 .. image:: images/Principal_Budget_Project-WiseBudgetBreakdown.png
 
@@ -1023,7 +1027,7 @@ Catalog (for Principal Investigator)
 
 As a Principal Investigator, you can use the “Catalog” screen to view all catalog products across Research Gateway. Click on the “☰” option which is available on the left side header. You can see the  following details: 
    
-.. image:: images/Principal_Catalog_Navigation.png
+.. image:: images/PrincipalInvestigator_Catalog_Navigation.png
 
 Click on the **Catalog** menu item to navigate to the Catalog screen.
 
@@ -1063,7 +1067,7 @@ Key Pairs(for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 The Key Pairs screen can be used by the Principal Investigator to view keypair details across projects. Click on “☰” Symbol which is available on the left side header. By clicking on the "Key Pairs" menu item, the user will be navigated to the Key Pairs details page.
 
-.. image:: images/Principal_Keypairs_Navigation.png
+.. image:: images/PrincipalInvestigator_Keypairs_Navigation.png
   
 .. image:: images/Principal_Keypair_DefaultPage.png
 
@@ -1095,6 +1099,8 @@ Ex: Type “Chiron” in the search area it should display the keypairs which ar
 Studies(for Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 As a Principal Investigator, You can view the studies in the Research Gateway. Click on “☰” Symbol which is available on the left side header. By clicking on the "Studies" menu item, the user will be navigated to the studies details page.
+
+.. image:: images/PrincipalInvestigator_Studies_Navigation.png
 
 The “Studies” landing page lists the datasets as cards. 
 
@@ -1158,6 +1164,8 @@ As a Principal Investigator you can bring an existing S3 bucket in your AWS proj
 **Navigation to Studies screen**
 
 To create an Internal Study, Click on “☰” Symbol which is available on the left side header. By clicking on the “Studies” menu item, you will be navigated to the studies details page.
+
+.. image:: images/PrincipalInvestigator_Studies_Navigation.png
 
 Click on “Create Study” Button to open up the create study form 
 
@@ -1315,7 +1323,7 @@ Audit Trail(For Principal Investigator)
 
 As a Principal Investigator  you can use the Audit Trail screen to view security-related audits. Click on the “☰” option which is available on the left side header.
 
-.. image:: images/Principal_AuditTrail_Navigation.png
+.. image:: images/PrincipalInvestigator_AuditTrail_Navigation.png
 
 Click on the "Audit Trail" menu item. Through this, you can navigate to the Audit Trail page.
 
@@ -1547,7 +1555,25 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+2. Attach Volume/Detach Volume action : You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page and click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
+
+**Steps to follow to mount the secondary EBS volume to your EC2 instance:**
+
+    1. Create a file system on the newly created EBS volume. Here we selected the device name /dev/sdf at the time of attaching the volume
+		sudo mkfs -t xfs /dev/sdf
+    2. Create a folder
+		sudo mkdir /data
+    3. Mount the volume
+		sudo mount /dev/sdf /data
+
+You can run the following command in the SSH terminal of your EC2 instance to determine if the EBS volume has been successfully mounted: 
+lsblk
+
+The volume will only be displayed in the list if it has been mounted.
+       
+.. note::
+   a. If you have already created the file system on the volume, then skip the command “sudo mkfs -t xfs /dev/sdf”.
+   b. For further details please refer to `the AWS documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html>`_
 
 .. image:: images/EC2Linux_AttachVolume_1.png
 
@@ -1765,7 +1791,25 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+2. Attach Volume/Detach Volume action : You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page and click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
+
+**Steps to follow to mount the secondary EBS volume to your EC2 instance:**
+
+    1. Create a file system on the newly created EBS volume. Here we selected the device name /dev/sdf at the time of attaching the volume
+		sudo mkfs -t xfs /dev/sdf
+    2. Create a folder
+		sudo mkdir /data
+    3. Mount the volume
+		sudo mount /dev/sdf /data
+
+You can run the following command in the SSH terminal of your EC2 instance to determine if the EBS volume has been successfully mounted: 
+lsblk
+
+The volume will only be displayed in the list if it has been mounted.
+       
+.. note::
+   a. If you have already created the file system on the volume, then skip the command “sudo mkfs -t xfs /dev/sdf”.
+   b. For further details please refer to `the AWS documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html>`_
 
 .. image:: images/RStudio_AttachVolume_1.png
 
@@ -1823,7 +1867,25 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+2. Attach Volume/Detach Volume action : You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page and click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
+
+**Steps to follow to mount the secondary EBS volume to your EC2 instance:**
+
+    1. Create a file system on the newly created EBS volume. Here we selected the device name /dev/sdf at the time of attaching the volume
+		sudo mkfs -t xfs /dev/sdf
+    2. Create a folder
+		sudo mkdir /data
+    3. Mount the volume
+		sudo mount /dev/sdf /data
+
+You can run the following command in the SSH terminal of your EC2 instance to determine if the EBS volume has been successfully mounted: 
+lsblk
+
+The volume will only be displayed in the list if it has been mounted.
+       
+.. note::
+   a. If you have already created the file system on the volume, then skip the command “sudo mkfs -t xfs /dev/sdf”.
+   b. For further details please refer to `the AWS documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html>`_
 
 .. image:: images/Nextflow_AttachVolume_1.png
 
@@ -1883,7 +1945,25 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+2. Attach Volume/Detach Volume action : You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page and click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
+
+**Steps to follow to mount the secondary EBS volume to your EC2 instance:**
+
+    1. Create a file system on the newly created EBS volume. Here we selected the device name /dev/sdf at the time of attaching the volume
+		sudo mkfs -t xfs /dev/sdf
+    2. Create a folder
+		sudo mkdir /data
+    3. Mount the volume
+		sudo mount /dev/sdf /data
+
+You can run the following command in the SSH terminal of your EC2 instance to determine if the EBS volume has been successfully mounted: 
+lsblk
+
+The volume will only be displayed in the list if it has been mounted.
+       
+.. note::
+   a. If you have already created the file system on the volume, then skip the command “sudo mkfs -t xfs /dev/sdf”.
+   b. For further details please refer to `the AWS documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html>`_
 
 .. image:: images/CromwellAdvanced_AttachVolume_1.png
 
@@ -1940,7 +2020,25 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+2. Attach Volume/Detach Volume action : You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page and click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
+
+**Steps to follow to mount the secondary EBS volume to your EC2 instance:**
+
+    1. Create a file system on the newly created EBS volume. Here we selected the device name /dev/sdf at the time of attaching the volume
+		sudo mkfs -t xfs /dev/sdf
+    2. Create a folder
+		sudo mkdir /data
+    3. Mount the volume
+		sudo mount /dev/sdf /data
+
+You can run the following command in the SSH terminal of your EC2 instance to determine if the EBS volume has been successfully mounted: 
+lsblk
+
+The volume will only be displayed in the list if it has been mounted.
+       
+.. note::
+   a. If you have already created the file system on the volume, then skip the command “sudo mkfs -t xfs /dev/sdf”.
+   b. For further details please refer to `the AWS documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html>`_
 
 .. image:: images/Docker_AttachVolume_1.png
 
@@ -1998,7 +2096,25 @@ You can see product related actions in the  Actions menu.
 
 1. Start/Stop action : You can start or stop the instance through “Start/Stop” action.
 
-2. Attach Volume/Detach Volume action : You can attach an external EBS volume that is available in the project with matching AvailabilityZones by clicking the "Attach Volume" button. Conversely, you can also detach it by clicking the "Detach Volume" button in the Kebab menu on the Product Details tab. 
+2. Attach Volume/Detach Volume action : You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page and click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
+
+**Steps to follow to mount the secondary EBS volume to your EC2 instance:**
+
+    1. Create a file system on the newly created EBS volume. Here we selected the device name /dev/sdf at the time of attaching the volume
+		sudo mkfs -t xfs /dev/sdf
+    2. Create a folder
+		sudo mkdir /data
+    3. Mount the volume
+		sudo mount /dev/sdf /data
+
+You can run the following command in the SSH terminal of your EC2 instance to determine if the EBS volume has been successfully mounted: 
+lsblk
+
+The volume will only be displayed in the list if it has been mounted.
+       
+.. note::
+   a. If you have already created the file system on the volume, then skip the command “sudo mkfs -t xfs /dev/sdf”.
+   b. For further details please refer to `the AWS documentation <https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-using-volumes.html>`_
 
 .. image:: images/MySQL_AttachVolume_1.png
 
