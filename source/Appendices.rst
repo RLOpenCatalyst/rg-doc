@@ -61,6 +61,94 @@ Appendix F - Audit Trail Events for Principal Investigator
 Appendix G - Release Notes
 ==========================
 
+v1.18.0
+^^^^^^^^
+
+Features
+--------
+
+1. Secure Research Linux Desktop. This product operates in a custom-created VPC with no internet access. It is accessed through a browser via a secure NICE DCV-based connection which provides access to a MATE desktop environment. It allows for Trusted Research environments to be created which are isolated from external access. The Secure Research Linux Desktop comes with a Chrome browser, docker engine, and miniconda pre-installed on the machine.
+
+2. Encrypted S3 buckets. The S3 product in the standard catalog now allows for data to be encrypted using either an AWS-managed key or a customer-managed KMS key. This enables data at rest to be encrypted to meet security and regulatory needs.
+
+3. Public studies can be mounted to workspaces. The studies available from the Registry of Open Data on AWS (RODA), can now be assigned to projects from the study details page. Once assigned to a project, the study appears in the Study Selection pane in the launch form for a researcher to select during the creation of a workspace. The selected study is then mounted to the workspace and can be used.
+
+4. Internal studies can be created in read-write mode. This allows the PI to create studies that can be updated by researchers generating new data or when they want to share outputs with other researchers using the same study.
+
+5. Internal studies can be deleted. 
+
+6. Project labels are editable. This feature has been a long-standing customer request. The name of a project can now be edited and changed to suit the customer's needs.
+
+7. Support for SPAC in PCluster product. The user now has the option to install SPAC during the provisioning of a PCluster workspace. This provides an easy method to install other software like GROMACS or Open FOAM used in High-Performance Computing.
+
+8. Subscription Renewal Date is enforced. Users can no longer log in beyond the subscription renewal date.
+
+9. New IGV Viewer product in the catalog. IGV Viewer is an important open-source tool in genomics analysis and this was a demand from some of the customers who want to perform genomics analysis.
+
+10. Updated NICE DCV standard catalog item. The NICE DCV product in the standard catalog has been updated with a newer version of the NICE DCV server. The workspace now comes with Chrome browser, docker engine, and miniconda pre-installed and the User interface uses the MATE desktop environment.
+
+11. Keyboard accessibility improvements
+
+12. Security improvements
+
+Bug-fixes
+---------
+
+1. Admin: My Organizations: Organization Name Alignment issue.
+
+2. In the login screen after entering a username and password and clicking on enter it is viewing the password, instead of logging in.
+
+3. Create appropriate audit message and status for "delete setting" and "project storage terminate".
+
+4. Navigating from the Product launch form to the Create study section, if there is no Internal Study for the user, gives an error.
+
+5. Error in updateBudgetForAccount.
+
+6. Error in terminateProvisionedProduct - Provisioned product not found.
+
+7. When the EBS product terminates getting the following error "This bucket is shared with other researchers, please check with them and disconnect any Sagemaker notebooks connected to it before terminating."  but there is no Sagemaker product in the project.
+
+8. Error handling in login with an appropriate message. And add a logger during reset-password with the user name.
+
+9. Added audit events for PROJECT_CREATION_STARTED and PROJECT_CREATION_COMPLETED. 
+
+10. In the PCluster product switch the Parameter Names based on the Scheduler type.
+
+11. During project creation, if the S3 templates bucket is inaccessible, the user should see an error on the project events page. 
+
+12. On the Study s3 explore page, the "Actions" drop-down button should not be visible if the user selected one or more than one folder. Also, it should handle duplicate folder prefixes.
+
+13. Project creation throws an error that the S3 bucket quota is reached even when the project storage requirement has been unchecked.
+
+14. In the Catalog page, if the stack creation fails, the existing product check mark should not be shown.
+
+15. During Project Sync, Keypairs should be Inserted only if they have a valid project tag.
+
+16. When a project is being deleted, all the keypairs for that project in the Research Gateway database should be deleted.
+
+17. In the Catalog page, if we click "Assign product to project" twice, the stack is created twice. So duplicate products getting created.
+
+18. During Project Creation, if multiple copies are created, Project Storage creation fails because of duplicate namespace values passed to the different stacks.
+
+19. In the internal study, when I try to link compute resources and check assigned projects in study details, the same project name appears three times. It happens the same with unlinking as well.
+
+20. In the Catalog page, show all existing tags in the dropdown.
+
+21. Users with the Researcher role shall only be able to view studies that are assigned to the projects they are a part of.
+
+22. Store created_on and updated_on in accounts collection. Add column "Last Updated" in the billing accounts table
+
+23. If an Internal Study has no project assigned, we have to be able to delete it.
+
+24. Upgrade Mongoose to 6.10.1
+
+25. EC2-NICE-DCV: NiICE DCV-based products should be accessible through a one-time-usable URL.
+
+26. Prevent users who are not assigned to any organization from performing any actions.
+
+27. Notifications should be handled gracefully during post-provisioning when public IP is not found.
+
+
 v1.17.0
 ^^^^^^^^
 
