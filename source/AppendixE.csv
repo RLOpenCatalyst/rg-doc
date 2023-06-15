@@ -1,6 +1,6 @@
 Project-Related Events
 Logical ID,Status,Status Reason
-CATALOG,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project initiated information.
+CATALOG,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project-initiated information.
 CATALOG,ASSIGN_TO_PROJECT_FAILED,You can see the reason for the failure.
 CATALOG,ASSIGN_TO_PROJECT_COMPLETED,You can see the assigned products to the related project completion information.
 CATALOG,STACK_CREATION_STARTED,"You can see the assigned products to the related project information(i.e.,which user started and assigned products to the project)"
@@ -9,23 +9,23 @@ CATALOG,STACK_CREATION_FAILED,You can see reason for stack creation failure.
 CATALOG,PRODUCT_DETAILS_SYNC_STARTED,You can see the product sync initiated information.
 CATALOG,PRODUCT_DETAILS_SYNC_COMPLETED,You can see the product sync completed information
 CATALOG,PRODUCT_DETAILS_SYNC_FAILED,You can see the product sync failed information with reason.
-CATALOG,SYNC_STARTED,"You can see the sync started information (i.e, which user started and related account name)"
-CATALOG,SYNC_COMPLETED,"You can see the sync completed information (i.e.. which user started, related account name with products count information)."
-CATALOG,SYNC_FAILED,"You can see the sync failed information(i.e., which user started, related account name and error information)."
+CATALOG,SYNC_STARTED,"You can see the sync started information (i.e,which user started and related account name)"
+CATALOG,SYNC_COMPLETED,"You can see the sync completed information (i.e..which user started, related account name with products count information)."
+CATALOG,SYNC_FAILED,"You can see the sync failed information(i.e.,which user started, related account name and error information)."
 PROJECT CREATE,SHARING_AMI_SUCCESSFUL,You can see the shared AMI ID success information for RStudio and Nextflow-Advanced products.
 PROJECT CREATE,CREATING_SSM_PARAMETER_SUCCESSFUL,You can see SSM parameter creation success information.
 PROJECT CREATE,SHARING_AMI_FAILED,You can see the AMI failed information with reason.
-SECURITY_GROUP,SECURITY_GROUP_SYNC_STARTED,"You can see the Security Groups sync completed information (i.e., which user started and related account name. It will show security groups count in that region)."
+SECURITY_GROUP,SECURITY_GROUP_SYNC_STARTED,"You can see the Security Groups sync completed information (i.e.,which user started and related account name. It will show security groups count in that region)."
 SECURITY_GROUP,SECURITY_GROUP_SYNC_COMPLETED,You can see the Security Groups sync failed information with the error and it will show the solution to resolve the problem.
 SECURITY_GROUP,SECURITY_GROUP_SYNC_FAILED,You can see the Security Groups sync failed information with the error and it will show the solution to resolve the problem.
-SUBNETS,SUBNETS_SYNC_STARTED,"You can view the details about subnets sync (i.e., which user started)."
-SUBNETS,SUBNETS_SYNC_COMPLETED,"You can see subnets sync completed information (i.e., which user started and related account name. It will show subnets count in that region)."
+SUBNETS,SUBNETS_SYNC_STARTED,"You can view the details about subnets sync (i.e.,which user started)."
+SUBNETS,SUBNETS_SYNC_COMPLETED,"You can see subnets sync completed information (i.e.,which user started and related account name. It will show subnets count in that region)."
 SUBNETS,SUBNETS_SYNC_FAILED,You can see subnets sync failed information with the error and it will show the solution to resolve the problem.
 VPC,VPC_SYNC_STARTED,"You can view the details about VPC sync (i.e., which user started)."
-VPC,VPC_SYNC_COMPLETED,"You can see VPC sync completed information (i.e., which user started and related account name. It will show VPC count in that region)."
+VPC,VPC_SYNC_COMPLETED,"You can see VPC sync completed information (i.e.,which user started and related account name. It will show VPC count in that region)."
 VPC,VPC_SYNC_FAILED,You can see VPC sync failed information with the error and it will show the solution to resolve the problem.
-KEY_PAIRS,KEY_PAIRS_SYNC_STARTED,"You can view the details about KeyPairs sync (i.e., which user started)."
-KEY_PAIRS,KEY_PAIRS_SYNC_COMPLETED,"You can see KeyPairs sync completed information (i.e., which user started and related account name. It will show KeyPairs count in that region)."
+KEY_PAIRS,KEY_PAIRS_SYNC_STARTED,"You can view the details about KeyPairs sync (i.e.,which user started)."
+KEY_PAIRS,KEY_PAIRS_SYNC_COMPLETED,"You can see KeyPairs sync completed information (i.e.,which user started and related account name. It will show KeyPairs count in that region)."
 KEY_PAIRS,KEY_PAIRS_SYNC_FAILED,You can see KeyPairs sync failed information with the error and it will show the solution to resolve the problem.
 ENABLE_SSL,ENABLE_SSL_STARTED,You can see SSL_Enable started information
 ENABLE_SSL,ENABLE_SSL_COMPLETED,You can see the SSL_Enable completion information
@@ -37,8 +37,8 @@ ENABLE_SSL,ALB_CREATE_STARTED,You can see ALB creation started  information
 ENABLE_SSL,ALB_CREATE_COMPLETED,You can see ALB creation completion information
 ENABLE_SSL,SG_CREATE_STARTED,You can see the security group creation started information
 ENABLE_SSL,SG_CREATE_COMPLETED,You can see the security group creation completion information
-ENABLE_SSL,LISTENER_CREATE_STARTED,You can see the listerner creation started information
-ENABLE_SSL,LISTENER_CREATE_COMPLETED,You can see the listerner creation completed information
+ENABLE_SSL,LISTENER_CREATE_STARTED,You can see the listener creation started information
+ENABLE_SSL,LISTENER_CREATE_COMPLETED,You can see the listener creation completed information
 PROJECT REPAIR ,REPAIR_STARTED,You can see the repair started information
 PROJECT REPAIR ,REPAIRING_CATALOG,You can see the repairing catalog information
 PROJECT_STORAGE,PROJECT_STORAGE_CREATION_STARTED,You can see the project storage creation started information
@@ -54,30 +54,35 @@ PROJECT_STORAGE,S3_CREATE_COMPLETED,You can see the S3 bucket creation completed
 PROJECT_STORAGE,S3_CREATE_STARTED,You can see the S3 bucket creation information
 PROJECT_STORAGE,S3_TERMINATE_STARTED,You can see the S3 terminate initiated information
 PROJECT_STORAGE,S3_TERMINATE_COMPLETED,You can see the S3 termination completed information
+PROJECT_STORAGE,PROJECT_STORAGE_DELETE_STARTED,You can see project storage deletion started information with username or email id.
+PROJECT_STORAGE,PROJECT_STORAGE_DELETE_FAILED,You can see project storage deletion failed information reason for failure.
+PROJECT_STORAGE,PROJECT_STORAGE_DELETE_COMPLETED,You can see project storage delete completion information with username or email id.
 BYOC,BYOC_STARTED,You can see the BYOC sync initiated information
 BYOC,BYOC_COMPLETED,You can see BYOC sync completed information.
 PROJECT REPAIR,BUDGET_REPAIR_SUCCESSFUL,You can see the  budget repair success information 
 PROJECT REPAIR,REPAIRING_BUDGET_STARTED,You can see the budget repair initiated information
 PROJECT REPAIR,CATALOG_REPAIR_SUCCESSFUL,You can see the catalog repair success information
-PROJECT REPAIR,REPAIR_ACTION_COMPLETED_SUCCESSFULLY,You can see the repair action coompletion status.
+PROJECT REPAIR,REPAIR_ACTION_COMPLETED_SUCCESSFULLY,You can see the repair action completion status.
 PROJECT CREATE,PROJECT_CREATION_FAILED,You can see the project creation failed information with reason.
-PROJECT CREATE,PROJECT_CREATION_SUCCESSFULL,You can see the project creation success information
+PROJECT CREATE,PROJECT_CREATION_COMPLETED,You can see the project creation success information
+PROJECT CREATE,PROJECT_CREATION_STARTED,You can see the project creation started information with the project name and username or email
 COST_CONTROL,PROJECT_RESUMED,You can see the project name with status and triggered user name
 COST_CONTROL,PROJECT_STOPPED,You can see the project name with status and triggered user name
 COST_CONTROL,PROJECT_PAUSED,You can see the project name with status and triggered user name
-COST_CONTROL,PROJECT_AUTO_STOPPED,You can see the project was auto stopped status with budget threshold crossed value
+COST_CONTROL,PROJECT_AUTO_STOPPED,You can see the project was the auto-stopped status with budget threshold crossed value
 PROJECT_UPDATE,CREATING_SSM_PARAMETER_SUCCESSFUL,You can see SSM parameter creation success information.
 PROJECT_UPDATE,SHARING_AMI_SUCCESSFUL,You can see the shared AMI with ID success information for RStudio and Nextflow-Advanced products.
-COST_CONTROL,EOD_REPORT_GENERATED,You can see the EOD report generated success information with username.
-COST_CONTROL,EOD_REPORT_SENT_SUCCESSFULLY,You can see the EOD report sent success information with username.
+COST_CONTROL,EOD_REPORT_GENERATED,You can see the EOD report generated success information with a username.
+COST_CONTROL,EOD_REPORT_SENT_SUCCESSFULLY,You can see the EOD report sent success information with the username.
 COST_CONTROL,EOD_REPORT_FAILURE,You can see the EOD report sent failed information with username
-COST_CONTROL,PI_EOD_REPORT_GENERATED,You can see the PI EOD report generated success information with username.
-COST_CONTROL,PI_EOD_REPORT_SENT_SUCCESSFULLY,You can see the PI EOD report sent success information with username.
-COST_CONTROL,PI_EOD_REPORT_FAILURE,You can see the PI report sent failed information with username.
+COST_CONTROL,PI_EOD_REPORT_GENERATED,You can see the PI EOD report generated success information with the username.
+COST_CONTROL,PI_EOD_REPORT_SENT_SUCCESSFULLY,You can see the PI EOD report sent success information with the username.
+COST_CONTROL,PI_EOD_REPORT_FAILURE,You can see the PI report sent failed information with the username.
 PROJECT,PROJECT_BUDGET_CHANGED,You can see project budget changes success information with triggered user name and the total budget 
-PROJECT,PROJECT_UPDATE_USER,You can see assigned researchers to project update success information with count 
+PROJECT,PROJECT_UPDATE_USER,You can see assigned researchers project update success information with count 
+PROJECT,PROJECT_NAME_UPDATED,You can see the updated Project name along with the older name and username or email
 USER,USER_CREATION_COMPLETE,You can see new user creation success information with triggered new user name
-USER,USER_CREATION_FAILED,You can see new user creation failed information with new user name and reason 
+USER,USER_CREATION_FAILED,You can see new user creation failed information with a new user name and reason 
 PROVISIONED_PRODUCT_ACTION,PROVISIONING_STARTED,"You can see product provision start information with product name, product id and project name"
 PROVISIONED_PRODUCT_ACTION,PROVISIONING_COMPLETE,"You can see product provision completion information with product name, product id and project name"
 PROVISIONED_PRODUCT_ACTION,PROVISIONING_FAILED,"You can see product provision failed information with product name, product id and project name"

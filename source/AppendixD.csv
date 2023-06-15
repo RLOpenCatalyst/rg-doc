@@ -1,70 +1,70 @@
 Audit Trail Events for Administrator
 Logical ID,Status,Status Reason
-AUTHENTICATION,LOGIN_SUCCESSFUL,You can see the login success information with session ID .
+AUTHENTICATION,LOGIN_SUCCESSFUL,You can see the login success information with the session ID.
 AUTHENTICATION,LOGIN_FAILED,You can see the reason for login failure. 
-AUTHENTICATION,LOGOUT_SUCCESSFUL,You can see the logout success information with session ID.
-DATA_SECURITY,SHARE_S3 BUCKET_COMPLETED,You can see the shared products information.
-DATA_SECURITY,UNSHARE_S3 BUCKET_COMPLETED,You can see the unshared products information.
+AUTHENTICATION,LOGOUT_SUCCESSFUL,You can see the logout success information with the session ID.
+DATA_SECURITY,SHARE_S3 BUCKET_COMPLETED,You can see the shared product information.
+DATA_SECURITY,UNSHARE_S3 BUCKET_COMPLETED,You can see the unshared product information.
 CATALOG,ASSIGN_TO_PROJECT_STARTED,You can see the assigned products to the related project information.
-CATALOG,STACK_CREATION_STARTED,You can see the assigned products  to the related project information.
-CATALOG,STACK_CREATION_FAILED,You can see the  assigned products failed information which is related to the project.
+CATALOG,STACK_CREATION_STARTED,You can see the assigned products to the related project information.
+CATALOG,STACK_CREATION_FAILED,You can see the assigned products failed information which is related to the project.
 CATALOG,ASSIGN_TO_PROJECT_COMPLETED,You can see the assigned products to the related project completion information.
-CATALOG,ASSIGN_TO_PROJECT_FAILED,You can see the assigned products  failed information which related to the project.
-CATALOG,UPDATE_TO_PROJECT_STARTED,You can see the updated products started information which is related to the project.
+CATALOG,ASSIGN_TO_PROJECT_FAILED,You can see the assigned products failed information related to the project.
+CATALOG,UPDATE_TO_PROJECT_STARTED,You can see the updated products started information that is related to the project.
 CATALOG,UPDATE_TO_PROJECT_COMPLETED,You can see the updated products to the related project completion information.
-CATALOG,UPDATE_TO_PROJECT_FAILED,You can see the updated produts to the related project failed information.
-CATALOG,UPDATE_TO_OU_COMPLETED,You can see the updated products to the related oragnizataional unit  updation information.
-CATALOG,ASSIGN_TO_OU_COMPLETED,You can see the assigned products to the related organizational unit  completion information.
-CATALOG,ROLLBACK_COMPLETE,You can see the  assigned products failed information  which related to the project.
-CATALOG,SYNC_STARTED,"You can see the  sync started information (i.e, which  user  started and related account name)"
-CATALOG,SYNC_COMPLETED,"You can see the  sync completed  information (i.e.. which user  started, related account name with  products count information)."
-CATALOG,SYNC_FAILED,"You can see the sync failed information(i.e., which user started, related account name and error information).
+CATALOG,UPDATE_TO_PROJECT_FAILED,You can see the updated products to the related project failed information.
+CATALOG,UPDATE_TO_OU_COMPLETED,You can see the updated products to the related organizational unit updation information.
+CATALOG,ASSIGN_TO_OU_COMPLETED,You can see the assigned products to the related organizational unit completion information.
+CATALOG,ROLLBACK_COMPLETE,You can see the assigned products failed information related to the project.
+CATALOG,SYNC_STARTED,"You can see the  sync started information (i.e,which  user  started and related account name)"
+CATALOG,SYNC_COMPLETED,"You can see the  sync completed  information (i.e.which user  started, related account name with  products count information)."
+CATALOG,SYNC_FAILED,"You can see the sync failed information(i.e.,which user started, related account name and error information).
 "
-CATALOG,PRODUCT_DETAILS_SYNC_COMPLETED,"You can see the sync completed information (i.e., which user started and related account name. It will show products count).
+CATALOG,PRODUCT_DETAILS_SYNC_COMPLETED,"You can see the sync completed information (i.e.,which user started and related account name. It will show product count).
 "
-KEY_PAIRS,KEY_PAIRS_SYNC_STARTED,"You can view the details about  KeyPairs sync (i.e., which user started)."
-KEY_PAIRS,KEY_PAIRS_SYNC_COMPLETED,"You can see KeyPairs sync completed information (i.e., which user started and related account name. It will show KeyPairs count in that region)."
-KEY_PAIRS,KEY_PAIRS_SYNC_FAILED,You can see KeyPairs sync failed information with the error  and it will show the solution to resolve the problem.
-VPC,VPC_SYNC_STARTED,"You can view the details about  VPC sync (i.e., which user started)."
-VPC,VPC_SYNC_COMPLETED,"You can see VPC sync completed information (i.e., which user started and related account name. It will show VPC count in that region)."
-VPC,VPC_SYNC_FAILED,You can see VPC sync failed information with the error  and it will show the solution to resolve the problem.
-SECURITY_GROUP,SECURITY_GROUP_SYNC_STARTED,"You can view the details about  security group sync (i.e., which user started)."
-SECURITY_GROUP,SECURITY_GROUP_SYNC_COMPLETED,"You can see Security Groups sync completed information (i.e., which user started and related account name. It will show security groups count in that region)."
-SECURITY_GROUP,SECURITY_GROUP_SYNC_FAILED,You can see Security Groups  sync failed information with the error  and it will show the solution to resolve the problem.
-SUBNETS,SUBNETS_SYNC_STARTED,"You can view the details about  subnets sync (i.e., which user started)."
-SUBNETS,SUBNETS_SYNC_COMPLETED,"You can see subnets sync completed information (i.e., which user started and related account name. It will show subnets count in that region)."
-SUBNETS,SUBNETS_SYNC_FAILED,You can see ubnets sync failed information with the error  and it will show the solution to resolve the problem.
-SETTINGS,VERIFY_SETTING_SUCCESSFUL,You can see the setting verification successful information with account number and account name.
-SETTINGS,VERIFY_SETTING_FAILED,You can see the setting verification failed information with account number.
+KEY_PAIRS,KEY_PAIRS_SYNC_STARTED,"You can view the details about  KeyPairs sync (i.e.,which user started)."
+KEY_PAIRS,KEY_PAIRS_SYNC_COMPLETED,"You can see KeyPairs sync completed information (i.e.,which user started and related account name. It will show KeyPairs count in that region)."
+KEY_PAIRS,KEY_PAIRS_SYNC_FAILED,You can see KeyPairs sync failed information with the error and it will show the solution to resolve the problem.
+VPC,VPC_SYNC_STARTED,"You can view the details about  VPC sync (i.e.,which user started)."
+VPC,VPC_SYNC_COMPLETED,"You can see VPC sync completed information (i.e.,which user started and related account name. It will show VPC count in that region)."
+VPC,VPC_SYNC_FAILED,You can see VPC sync failed information with the error and it will show the solution to resolve the problem.
+SECURITY_GROUP,SECURITY_GROUP_SYNC_STARTED,"You can view the details about  security group sync (i.e.,which user started)."
+SECURITY_GROUP,SECURITY_GROUP_SYNC_COMPLETED,"You can see Security Groups sync completed information (i.e.,which user started and related account name. It will show security groups count in that region)."
+SECURITY_GROUP,SECURITY_GROUP_SYNC_FAILED,You can see Security Groups sync failed information with the error and it will show the solution to resolve the problem.
+SUBNETS,SUBNETS_SYNC_STARTED,"You can view the details about  subnets sync (i.e.,which user started)."
+SUBNETS,SUBNETS_SYNC_COMPLETED,"You can see subnets sync completed information (i.e.,which user started and related account name. It will show subnets count in that region)."
+SUBNETS,SUBNETS_SYNC_FAILED,You can see subnets sync failed information with the error and it will show the solution to resolve the problem.
+SETTINGS,VERIFY_SETTING_SUCCESSFUL,You can see the setting verification successful information with the account number and account name.
+SETTINGS,VERIFY_SETTING_FAILED,You can see the setting verification failed information with the account number.
 SETTINGS,"ADD_SETTING_SUCCESSFUL
-",You can see the setting creation successful information with account number.
-SETTINGS,ADD_SETTING_FAILED,You can see the setting addition failed information with error.
-SETTINGS,DELETE_SETTING_STARTED,You can see the details about  setting deletion started by which user. 
+",You can see the setting creation successful information with the account number.
+SETTINGS,ADD_SETTING_FAILED,You can see the setting addition failed information with an error.
+SETTINGS,DELETE_SETTING_STARTED,You can see the details about setting deletion started by which user. 
 SETTINGS,DELETE_SETTING_SUCCESS,You can see the setting deletion success information.
 SETTINGS,"DELETE_SETTING_FAILED
 ",You can see setting deletion failed  information 
-SETTINGS,SNS_TOPIC_SUBSCRIPTION_CREATION,You can see the SNS topic  subscription status information. 
+SETTINGS,SNS_TOPIC_SUBSCRIPTION_CREATION,You can see the SNS topic subscription status information. 
 SETTINGS,SNS_TOPIC_CREATION,You can see the SNS topic creation status information. 
-SETTINGS,REPAIR_SETTING_STARTED,You can view the details about  setting repair started by which user. 
-SETTINGS,REPAIR_SETTING_SUCCESSFUL,You can  see  setting repair successful information. 
-SETTINGS,VERIFYING_POLICY_SUCCESSFUL,You can see the policy verification successful information  with account number.
-SETTINGS,DETACHING_POLICY_FAILED,You can see policy deletion failed information with account number
-SETTINGS,DETACHING_POLICY_SUCCESSFUL,You can see policy deletion successful information with account number
+SETTINGS,REPAIR_SETTING_STARTED,You can view the details about setting repair started by which user. 
+SETTINGS,REPAIR_SETTING_SUCCESSFUL,You can see setting repair successful information. 
+SETTINGS,VERIFYING_POLICY_SUCCESSFUL,You can see the policy verification successful information with the account number.
+SETTINGS,DETACHING_POLICY_FAILED,You can see policy deletion failed information with the account number
+SETTINGS,DETACHING_POLICY_SUCCESSFUL,You can see policy deletion successful information with the account number
 SETTINGS,DELETING_POLICY_SUCCESSFUL,You can see the policy deletion successful information.
-SETTINGS,DELETING_POLICY_FAILED,You can see the policy deletion failed information with error.
+SETTINGS,DELETING_POLICY_FAILED,You can see the policy deletion failed information with an error.
 SETTINGS,CREATING_POLICY_SUCCESSFUL,You can see the policy creation successful information.
-SETTINGS,ROLE_NOT_FOUND,You can the role status with error in the related account. 
-SETTINGS,ROLE_CREATION_SUCCESSFUL,You can see the role creationsuccessful information. 
-SETTINGS,ATTACH_POLICY_TO_ROLE_SUCCESSFUL,You can see status about related policy attached to the role.
-SETTINGS,NETWORK_CONFIGURATION,You can see the network configuration status information with related account name.
-SETTINGS,ADDING_CROSS_ACCOUNT_SUCCESSFUL,You can see details about  cross account added to the base account properly or not.
-SETTINGS,REPAIR_SETTING_SUCCESSFUL,You can see repair setting successful information with  account number.
+SETTINGS,ROLE_NOT_FOUND,You can the role status with an error in the related account. 
+SETTINGS,ROLE_CREATION_SUCCESSFUL,You can see the role creation successful information. 
+SETTINGS,ATTACH_POLICY_TO_ROLE_SUCCESSFUL,You can see the status of the related policy attached to the role.
+SETTINGS,NETWORK_CONFIGURATION,You can see the network configuration status information with the related account name.
+SETTINGS,ADDING_CROSS_ACCOUNT_SUCCESSFUL,You can see details about whether the cross-account was added to the base account properly or not.
+SETTINGS,REPAIR_SETTING_SUCCESSFUL,You can see repair setting successful information with the account number.
 REGISTRATION,ORGANIZATION_CREATED_SUCCESSFULLY,You can see the organization creation successful information with username or email id.
 REGISTRATION,ORGANIZATION_CREATED_FAILED,You can see the organization creation failed information with username or email id.
 REGISTRATION,REGISTRATION_INITIATED,You can see the registration started information with username or email id.
 REGISTRATION,REGISTRATION_SUCCESSFUL,You can see the registration successful information with username or email id.
 REGISTRATION,REGISTRATION_ERROR,You can see the registration failed information with username or email id.
-REGISTRATION,VERIFICATION_LINK_EXPIRED,You can see the verification link  information with username or email id.
+REGISTRATION,VERIFICATION_LINK_EXPIRED,You can see the verification link information with username or email id.
 REGISTRATION,CATALOG_ASSIGNMENT_SUCCESSFUL,You can see the catalog assignment successful information with username or email id.
 REGISTRATION,CATALOG_ASSIGNMENT_FAILED,You can see the catalog assignment failed information with username or email id.
 ENABLE_SSL,ENABLE_SSL_STARTED,You can see SSL_Enable started information with username or email id.
@@ -83,8 +83,8 @@ DISABLE_SSL,DELETE_ALB_COMPLETED,You can see the Application load balancer delet
 DISABLE_SSL,DELETE_SG_STARTED,You can see the Security group deletion started information
 DISABLE_SSL,DELETE_SG_COMPLETED,You can see the Security group deletion started information
 DISABLE_SSL,DISABLE_SSL_FAILED,You can see the SSL_Disable completed information
-ENABLE_SSL,LISTENER_CREATE_STARTED,You can see the listerner creation started information
-ENABLE_SSL,LISTENER_CREATE_COMPLETED,You can see the listerner creation completed information
+ENABLE_SSL,LISTENER_CREATE_STARTED,You can see the listener creation started information
+ENABLE_SSL,LISTENER_CREATE_COMPLETED,You can see the listener creation completed information
 PROJECT REPAIR,REPAIR_STARTED,You can see the repair started information
 PROJECT REPAIR,REPAIRING_CATALOG,You can see the repairing catalog information
 SETTINGS,PROJECT_CLEANUP_STARTED,You can see the project cleanup initiated information
@@ -104,39 +104,44 @@ PROJECT_STORAGE,S3_TERMINATE_COMPLETED,You can see the S3 terminate completed in
 PROJECT_STORAGE,S3_CREATE_COMPLETED,You can see the S3 bucket creation completed information
 PROJECT_STORAGE,PROJECT_STORAGE_REPAIR_STARTED,You can see the project storage repair started information.
 PROJECT_STORAGE,PROJECT_STORAGE_REPAIR_COMPLETED,You can see the project storage repair completed information.
+PROJECT_STORAGE,PROJECT_STORAGE_DELETE_STARTED,You can see project storage deletion started information with username or email id.
+PROJECT_STORAGE,PROJECT_STORAGE_DELETE_FAILED,You can see project storage deletion failed information reason for failure.
+PROJECT_STORAGE,PROJECT_STORAGE_DELETE_COMPLETED,You can see project storage delete completion information with username or email id.
 BYOC(BRING YOUR OWN CATALOG),BYOC_STARTED,You can see the BYOC sync initiated information
 BYOC(BRING YOUR OWN CATALOG),BYOC_COMPLETED,You can see BYOC sync completed information.
 PROJECT REPAIR,BUDGET_REPAIR_SUCCESSFUL,You can see the budget repair success information
 PROJECT REPAIR,REPAIRING_BUDGET_STARTED,You can see the budget repair initiated information
 PROJECT REPAIR,CATALOG_REPAIR_SUCCESSFUL,You can see the catalog repair success information
-PROJECT REPAIR,REPAIR_ACTION_COMPLETED_SUCCESSFULLY,You can see the repair action coompletion status.
+PROJECT REPAIR,REPAIR_ACTION_COMPLETED_SUCCESSFULLY,You can see the repair action completion status.
 PROJECT CREATE,PROJECT_CREATION_FAILED,You can see the project creation failed information with reason.
-PROJECT CREATE,PROJECT_CREATION_SUCCESSFULL,You can see the project creation success information
+PROJECT CREATE,PROJECT_CREATION_COMPLETED,You can see the project creation success information
+PROJECT CREATE,PROJECT_CREATION_STARTED,You can see the project creation started information with the project name and username or email
 COST_CONTROL,PROJECT_RESUMED,"You can see the project name with status
  and triggered user name"
 COST_CONTROL,PROJECT_STOPPED,"You can see the project name with status
  and triggered user name"
 COST_CONTROL,PROJECT_PAUSED,"You can see the project name with status
  and triggered user name"
-COST_CONTROL,PROJECT_AUTO_STOPPED,"You can see the project was auto stopped status
+COST_CONTROL,PROJECT_AUTO_STOPPED,"You can see the project was the auto-stopped status
  with budget threshold crossed value"
 PROJECT_UPDATE,CREATING_SSM_PARAMETER_SUCCESSFUL,You can see SSM parameter creation success information.
 PROJECT_UPDATE,SHARING_AMI_SUCCESSFUL,"You can see the shared AMI with ID success information for RStudio and 
 Nextflow-Advanced products."
-COST_CONTROL,EOD_REPORT_GENERATED,You can see the EOD report generated success information with username.
-COST_CONTROL,EOD_REPORT_SENT_SUCCESSFULLY,You can see the EOD report sent success information with username.
+COST_CONTROL,EOD_REPORT_GENERATED,You can see the EOD report generated success information with the username.
+COST_CONTROL,EOD_REPORT_SENT_SUCCESSFULLY,You can see the EOD report sent success information with the username.
 COST_CONTROL,EOD_REPORT_FAILURE,You can see the EOD report sent failed information with username
-COST_CONTROL,PI_EOD_REPORT_GENERATED,You can see the PI EOD report generated success information with username.
-COST_CONTROL,PI_EOD_REPORT_SENT_SUCCESSFULLY,You can see the PI EOD report sent success information with username.
-COST_CONTROL,PI_EOD_REPORT_FAILURE,You can see the PI report sent failed information with username.
-ARCHIVE_PROJECT,PROJECT_CLEANUP_STARTED,You can see project clean up initiated information with triggered user name
-ARCHIVE_PROJECT,PROJECT_CLEANUP_COMPLETED,You can see project clean up completed information with triggered user name
-ARCHIVE_PROJECT,PROJECT_BUDGET_CLEANUP_COMPLETED,You can see project budget clean up completed information with triggered user name
-ARCHIVE_PROJECT,PRODUCT_STACK_CLEANUP_COMPLETED,You can see product stack clean up completed information with triggered user name
+COST_CONTROL,PI_EOD_REPORT_GENERATED,You can see the PI EOD report generated success information with the username.
+COST_CONTROL,PI_EOD_REPORT_SENT_SUCCESSFULLY,You can see the PI EOD report sent success information with the username.
+COST_CONTROL,PI_EOD_REPORT_FAILURE,You can see the PI report sent failed information with the username.
+ARCHIVE_PROJECT,PROJECT_CLEANUP_STARTED,You can see project clean-up initiated information with triggered user name
+ARCHIVE_PROJECT,PROJECT_CLEANUP_COMPLETED,You can see project clean-up completed information with triggered user name
+ARCHIVE_PROJECT,PROJECT_BUDGET_CLEANUP_COMPLETED,You can see project budget clean-up completed information with the triggered user name
+ARCHIVE_PROJECT,PRODUCT_STACK_CLEANUP_COMPLETED,You can see product stack clean-up completed information with triggered user name
 PROJECT,PROJECT_BUDGET_CHANGED,You can see project budget changes success information with triggered user name and the total budget 
-PROJECT,PROJECT_UPDATE_USER,You can see assigned researchers to project update success information with count 
+PROJECT,PROJECT_UPDATE_USER,You can see assigned researchers project update success information with count
+PROJECT,PROJECT_NAME_UPDATED,You can see updated Project name along with the older name and username or email
 USER,USER_CREATION_COMPLETE,You can see new user creation success information with triggered new user name
-USER,USER_CREATION_FAILED,You can see new user creation failed information with new user name and reason 
+USER,USER_CREATION_FAILED,You can see new user creation failed information with a new user name and reason 
 PROVISIONED_PRODUCT_ACTION,PROVISIONING_STARTED,"You can see product provision start information with product name, product id and project name"
 PROVISIONED_PRODUCT_ACTION,PROVISIONING_COMPLETE,"You can see product provision completion information with product name, product id and project name"
 PROVISIONED_PRODUCT_ACTION,PROVISIONING_FAILED,"You can see product provision failed information with product name, product id and project name"
