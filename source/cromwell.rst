@@ -15,7 +15,7 @@ Parameters
    * - Product Name
      - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch 
    * - Study Selection
-     - Expand the section to select studies to mount to your workspace.Select one or more studies to mount to your workspace from the dropdown list(Maximum of 2)
+     - Expand the section to select studies to mount to your workspace. Select one or more studies to mount to your workspace from the dropdown list(Maximum of 2)
    * - Cromwell Configuration
      -
    * - PipelineName
@@ -41,13 +41,13 @@ Parameters
    * - WorkerNodeSubnetId
      - Choose Subnet Id in the drop-down list. Subnet you want your batch compute environment to launch in. We recommend public subnets.
    * - ComputeEnvMinvCpus
-     - The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost. Eg: 0
+     - The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in a running state always and you may incur higher costs. Eg: 0
    * - ComputeEnvMaxvCpus
      - The maximum number of CPUs for the default Batch Compute Environment. Eg: 100
    * - SpotBidPercentage
      - The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage. Eg: 100
    * - WorkerNodeInstanceType
-     - Specify the instance types to be used to carry out the computation. You can specify one or more family or instance type. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal 
+     - Specify the instance types to be used to carry out the computation. You can specify one or more family or instance types. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal 
    * - WorkerNodeEBSVolumeSize
      - The initial size of the volume (in GBs) Worker Node EBS will use for storage.  Eg: 100
 
@@ -56,26 +56,26 @@ Steps to launch
 
 1. Click on the project on the “My Projects” page.
 2. Navigate to the available products tab.
-3. Click the “Launch Now” button on the  “Cromwell Advanced” product card. A product order form will open. Fill the details in the form .
+3. Click the “Launch Now” button on the  “Cromwell Advanced” product card. A product order form will open. Fill the details in the form.
 
 .. note::
 
 	* PipelineName 
-		a.  You can see the drop down option which is on the right side of the PipelineName field.
-		b.  You can search the pipeline. If you type the correct pipeline you can see the info (ie.,”i”) icon which is at the right side of the field. If you click  the info icon it will be routed to the `gatk-workflows/seq-format-validation <https://github.com/gatk-workflows/seq-format-validation>`_ repository. If you type the wrong characters it will throw an error message accordingly.
+		a.  You can see the drop-down option which is on the right side of the PipelineName field.
+		b.  You can search the pipeline. If you type the correct pipeline you can see the info (ie.,” i”) icon which is on the right side of the field. If you click the info icon it will be routed to the `gatk-workflows/seq-format-validation <https://github.com/gatk-workflows/seq-format-validation>`_ repository. If you type the wrong characters it will throw an error message accordingly.
 
 	* InputDataLocation
 		a.  You can see the filter options like All/Studies/Shared/ProjectStorage/Study in the Second part of the InputDataLocation field.
 		b.  You can see the default option like “**All**“ in the filter.
-		c.  You can see the product names with  realted paths when you search in the InputDataLocation field. You need to select the S3 bucket name from the available list.
+		c.  You can see the product names with related paths when you search in the InputDataLocation field. You need to select the S3 bucket name from the available list.
 		d.  If you type the invalid characters it will throw an error message accordingly.
 		
 	* OutputDataLocation
 		a.  Defaultly you can see the output path in the field.
-		b.  You can see the product names with  realted paths when you search in  the OutputDataLocation field. 
+		b.  You can see the product names with related paths when you search in the OutputDataLocation field. 
 		c.  You can see the filter options like All/Studies/Shared/ProjectStorage/Study.
 		d.  You can see the default option like “**All**” in the filter.
-		e.  If you type the invaliad characters it will throw an error message accordingly.
+		e.  If you type the invalid characters it will throw an error message accordingly.
   
 4. Click on the “Launch Now” button. You will see a  “Cromwell Advanced” being created. In a few minutes, that product should appear in the “Active” state.
 
@@ -89,10 +89,10 @@ Steps to connect
   
    $ curl -X POST "http://localhost:8000/api/workflows/v1" \ -H "accept: application/json" \ -F "workflowSource=@filename.wdl" \ -F "workflowInputs=@filename.json"
 	  
-   Note: You will receive a response accordingly
+ .. note:: You will receive a response accordingly
 	
 3. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
-4. You can view the outputs through “View Outputs” option.
+4. You can view the outputs through the “View Outputs” option.
 5. You can de-provision the product through the “Terminate” option.
 
  .. image:: images/Product_CromwellAdvanced_ProductDetails.png
@@ -102,10 +102,10 @@ Steps to connect
 Other considerations   
 ---------------------
 
-You can stop your instance using the “Stop” button in the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. 
-You can also change the instance type when your instance is in a stopped state using the “Instance Type” button in the product details page of your instance.
+You can stop your instance using the “Stop” button on the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. 
+You can also change the instance type when your instance is in a stopped state using the “Instance Type” button on the product details page of your instance.
 
-You can share the product with all the members of the project using the “Share” button in the product details page of your product. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+You can share the product with all the members of the project using the “Share” button on the product details page of your product. If you share the product with the project, you will have to share the PEM key file outside of Research Gateway.
 
 Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 

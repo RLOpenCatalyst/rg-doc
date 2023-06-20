@@ -21,10 +21,8 @@ Ordering products in Research Gateway
    NiceDCV
    AmazonEFS
    EBS
-
-
-
-
+   SecureResearchLinuxDesktop
+   IGV
 
    
    

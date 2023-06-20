@@ -19,7 +19,7 @@ Amazon EC2 Windows,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a we
 Amazon S3,Description,"Amazon Simple Storage Service (Amazon S3) is an object storage service that offers scalability, data availability, security and performance."
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed"
 ,Expected time to provision,2 minutes
-Amazon DynamoDB,Description,Amazon DynamoDB is a fully managed proprietary NoSQL database of the Amazon Web Services.
+Amazon DynamoDB,Description,Amazon DynamoDB is a fully managed proprietary NoSQL database of Amazon Web Services.
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Write Capacity Units,Provisioned write throughput
 ,HashKey Element Type,Enter HashType PrimaryKey Type
@@ -45,7 +45,7 @@ Amazon EMR,Description,Amazon Elastic MapReduce (EMR) is an AWS tool for big dat
 ,Core Instance Type,Instance type to be used for core instances.
 ,EMR Cluster Name,Enter a name of the cluster.
 ,Number of core Instances,Must be a valid number
-,Subnet ID,Select target subnet for EMR Cluster. Please contact your Administrator if they are not available  in the dropdown.
+,Subnet ID,Select target subnet for EMR Cluster. Please contact your Administrator if they are not available in the dropdown.
 ,S3 Data Uri,Enter valid S3 bucket URL
 ,Master Instance Type,Instance type to be used for the master instance.
 ,Security Group,Select the security group for EMR Cluster. Please contact your Administrator if they are not available in the dropdown.
@@ -71,7 +71,7 @@ Moodle,Description,Moodle is a Learning Platform or course management system (CM
 ,DatabaseInstanceType,The Amazon RDS database instance class.
 ,DataSubnet4Cidr,CIDR block for data subnet 4 located in Availability Zone 4
 ,UseApplicationCacheBoolean,Specifies whether an ElastiCache Cache Cluster should be created to cache application content.
-,EfsEncryptedBoolean,Create an encrypted Amazon EFS file system. Choose booleanvalue in the dropdown.
+,EfsEncryptedBoolean,Create an encrypted Amazon EFS file system. Choose boolean value in the dropdown.
 ,DataSubnet1Cidr,CIDR block for data subnet 1 located in Availability Zone 1
 ,EfsCmk,The AWS KMS customer-managed CMK ARN to encrypt & decrypt the EFS file system[ Optional ] .
 ,DataSubnet5Cidr,CIDR block for data subnet 5 located in Availability Zone 5
@@ -89,10 +89,10 @@ Moodle,Description,Moodle is a Learning Platform or course management system (CM
 ,PublicSubnet1Cidr,CIDR block for Public subnet 1 located in Availability Zone 1
 ,DatabaseMaster Username,The Amazon RDS master username.
 ,WebSubnet3Cidr,CIDR block for Web subnet 3 located in Availability Zone 3
-,NumberOfAZs,Number of Availability Zones to use in the VPC. This must match your selections in the list of Availability Zones parameter.
+,NumberOfAZs,Number of Availability Zones to use in the VPC. This must match your selections in the list of Availability Zones parameters.
 ,UseSessionCacheBoolean,Specifies whether an Elastic Cache Cluster should be created for sessions. Do not create a session cache during he inital deploy. You should update the stack to use session cache after completing the installation wizard.
 ,PublicSubnet0Cidr,CIDR block for Public subnet 0 located in Availability Zone 0
-,Web Instance Type,The Amazon EC2 instance type for your web instances. Choose Instance type from the dropdown.
+,Web Instance Type,The Amazon EC2 instance type for your web instances. Choose the Instance type from the dropdown.
 ,SessionCacheNodeType,The Amazon ElastiCache cluster node type.
 ,WebSubnet2Cidr,CIDR block for Web subnet 2 located in Availability Zone 2
 ,PublicSubnet2Cidr,CIDR block for Public subnet 2 located in Availability Zone 2
@@ -100,7 +100,7 @@ Moodle,Description,Moodle is a Learning Platform or course management system (CM
 ,DatabaseEncryptedBoolean,Indicates whether the DB instances in the cluster are encrypted.
 ,WebAsgMin,Specifies the minimum number of EC2 instances in the Web Autoscaling Group.
 ,EfsPerformanceMode,Select the performance mode of the file system.
-,EC2Keyname,Name of an EC2 KeyPair. Your bastion & Web instances will launch with this KeyPair. Please contact Administartor if they are not available in dropdown.
+,EC2Keyname,Name of an EC2 KeyPair. Your bastion & Web instances will launch with this KeyPair. Please contact administrator if they are not available in the dropdown.
 ,PublicSubnet3Cidr,CIDR block for Public subnet 3 located in Availability Zone 3
 ,Websubnet1Cidr,CIDR block for Web subnet 1 located in Availability Zone 1
 ,HostedZoneName,The Route 53 hosted zone to create the domain in (e.g. example.edu).
@@ -148,9 +148,9 @@ RStudio,Description,"RStudio is an integrated development environment (IDE) for 
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
 ,Initial user,User Name for Rstudio.  Do not use 'root' and 'ec2-user'.
-,Initial Password,Password for RStudio. Please keep in your records as this will not be echoed in the CloudFormation Console
+,Initial Password,Password for RStudio. Please keep this in your records as this will not be echoed in the CloudFormation Console
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
-,Instance Type,Instance type for RStudio. Choose instance type from the dropdown.  Eg: Default is t2.micro.
+,Instance Type,Instance type for RStudio. Choose the instance type from the dropdown.  Eg: The default is t2.micro.
 ,Expected time to provision,10 Minutes
 Nextflow-Basic,Description,Use an Amazon EC2 instance to run Nextflow workflows locally. This is ideal for small workloads like testing configurations or small amounts of data.
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
@@ -160,11 +160,11 @@ Nextflow-Basic,Description,Use an Amazon EC2 instance to run Nextflow workflows 
 ,SSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,Latest AMI ID,Please enter an AMI of the EC2 instance
 ,Size,Size of volume in GiB. You can use the size from 4-30.
-,NextflowProject Git URL,The URL of the Nextflow github project
+,NextflowProject Git URL,The URL of the Nextflow GitHub project
 ,AWS Region,Enter an AWS region.
 ,Availability Zone,Availability zone of the EC2 instance
 ,Existing S3 Bucket Name,"A S3 bucket name for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens)."
-,Instance Type,WebServer EC2 instance type. Choose instance type from the dropdown.
+,Instance Type,WebServer EC2 instance type. Choose the instance type from the dropdown.
 ,Expected time to provision,10 minutes
 Geos-Chem,Description,The GEOS-Chem model is a global 3-D model of atmospheric composition driven by assimilated meteorological observations.
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
@@ -172,7 +172,7 @@ Geos-Chem,Description,The GEOS-Chem model is a global 3-D model of atmospheric c
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,SSH Location,The IP address range that can be used to SSH to the EC2 instances
 ,Latest AMI ID,AMI ID of the EC2 instance.
-,Instance Type,GEOS-CHEM EC2 instance type. Choose instance type from the dropdown.
+,Instance Type,GEOS-CHEM EC2 instance type. Choose the instance type from the dropdown.
 ,Expected time to provision,15 Minutes
 Nextflow Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
 Eg: MedicalResearch
@@ -182,8 +182,8 @@ Eg: MedicalResearch
 ,"PipelineName
 ",Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL. The repo should contain the nextflow.config file which specifies the name of the docker container image.
 ,PipelineContainer,"Public Docker container image of the pipeline to be executed. If you are using a custom pipeline, ensure that the custom container image is publicly available on Docker Hub. Eg: nextflow/rnaseq-nf:latest"
-,InputDataLocation,"An S3 bucket which holds input data for the Nextflow pipeline. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens)."
-,InputDataPattern,"The pattern to match samples to be processed as inputs to the pipeline. E.g. <data/ggal/*_{1,2}.fq>. It can also point to a csv or tsv file that contains details of the files to be processed."
+,InputDataLocation,"An S3 bucket that holds input data for the Nextflow pipeline. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens)."
+,InputDataPattern,"The pattern to match samples to be processed as inputs to the pipeline. E.g. <data/ggal/*_{1,2}.fq>. It can also point to a CSV or tsv file that contains details of the files to be processed."
 ,OutputDataLocation,"The full path on the local disk where outputs of the pipeline should be stored. The default path above will enable you to view the outputs via the browser. The path should be accessible to the user ec2-user. Alternately, provide an S3 bucket for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens). Eg: s3://<BucketName>"
 ,Head Node Configuration,
 ,InstanceType,"Head Node EC2 instance type
@@ -195,12 +195,12 @@ Eg: 16 "
 ,Batch Configuration,
 ,VPCId,Choose VPC Id in the drop-down list. The VPC to create security groups and deploy AWS Batch to.
 ,WorkerNodeSubnetId,Subnet you want your Batch Worker Node to launch in  We recommend public subnets.
-,ComputeEnvMinvCpus,"The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost. Eg: 0"
+,ComputeEnvMinvCpus,"The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in a running state always and you may incur higher costs. Eg: 0"
 ,ComputeEnvMaxvCpus,"The maximum number of CPUs for the default Batch Compute Environment
 Eg: 100"
 ,SpotBidPercentage,"The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage.
 Eg: 100"
-,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation. You can specify one or more family or instance type. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal "
+,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation. You can specify one or more family or instance types. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal "
 ,WorkerNodeEBSVolumeSize,The initial size of the volume (in GBs) Worker Node EBS will use for storage. Eg: 100
 ,Expected time to provision,10 Minutes
 Cromwell Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
@@ -210,8 +210,8 @@ Eg: MedicalResearch
 ,Cromwell Configuration,
 ,"PipelineName
 ",Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL.
-,InputDataLocation,An S3 bucket path which holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
-,OutputDataLocation,An S3 bucket path which holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
+,InputDataLocation,An S3 bucket path that holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
+,OutputDataLocation,An S3 bucket path that holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
 ,Head Node Configuration,
 ,InstanceType,"Head Node EC2 instance type
 Eg: t2.small"
@@ -222,12 +222,12 @@ Eg: 16 "
 ,Batch Configuration,
 ,VPCId,Choose VPC Id in the drop-down list. The VPC to create security groups and deploy AWS Batch to. NOTE: Must be the same VPC as the provided subnet IDs.
 ,WorkerNodeSubnetId,Subnet you want your Batch Worker Node to launch in  We recommend public subnets.
-,ComputeEnvMinvCpus,"The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost. Eg: 0"
+,ComputeEnvMinvCpus,"The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in a running state always and you may incur higher costs. Eg: 0"
 ,ComputeEnvMaxvCpus,"The maximum number of CPUs for the default Batch Compute Environment
 Eg: 100"
 ,SpotBidPercentage,"The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage.
 Eg: 100"
-,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation. You can specify one or more family or instance type. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal "
+,WorkerNodeInstanceType,"Specify the instance types to be used to carry out the computation. You can specify one or more family or instance types. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal "
 ,WorkerNodeEBSVolumeSize,The initial size of the volume (in GBs) Worker Node EBS will use for storage. Eg: 100
 ,Expected time to provision,10 Minutes
 Docker on Amazon EC2 Linux,Description,"Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides secure, resizable compute capacity in the cloud. The RLCatalyst Research Gateway standard EC2 product is based on Amazon Linux 2, docker is installed and can be used for any general-purpose computer"
@@ -256,21 +256,27 @@ Ubuntu 20 04 on Amazon EC2 ,Description,"Use Ubuntu 20.04, on Amazon Elastic Com
 ,LatestAmiId,Please enter an  AMI of the EC2 instance.
 ,Instance Type,Choose the instance type for this instance. Eg: t2.small
 ,Expected time to provision,10 minutes
-PCluster ,Description,"PCluster Product of Research Gateway is easy to deploy High Performance Computing based on AWS ParallelCluster 3.0 which supports AWS Batch and Slurm schedulers"
+PCluster ,Description,"PCluster Product of Research Gateway is easy to deploy High-Performance Computing based on AWS ParallelCluster 3.0 which supports AWS Batch and Slurm schedulers"
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Instance Type,Choose the instance type for this instance. Eg: t2.small
 ,SSHLocation,The IP address range that can be used to SSH to the EC2 instances
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,CustomAMI,Enter the AMI Id of a custom AMI if you wish to use a non-default AMI. e.g. ami-12345678. The AMI Id entered should exist in this project account and region.
 ,HeadNodeInstanceType,Select Head Node EC2 instance type from the drop-down list
-,VpcId,Select The VPC to create security groups and deploy AWS Batch or slurm to from drop-down list
+,VpcId,Select The VPC to create security groups and deploy AWS Batch or slurm to from the drop-down list
 ,HeadNodeSubnetId,Select the Subnet you want your Head Node to launch in from the drop-down list. You must select a public subnet
-,FileSystemType,Choose the fileSystem type EFS/FSxForLustre (provisioned earlier) which you want to mount on headnode leave it as NONE if don't want to mount any filesystem.
+,FileSystemType,Choose the fileSystem type EFS/FSxForLustre (provisioned earlier) that you want to mount on headnode leave it as NONE if don't want to mount any filesystem.
 ,FileSystemId,Enter the File System Id of the EFS/FSxForLustre file system which you want to use. e.g. fs-12345678. Leave this field to default if you do not want to use any file system
 ,Scheduler,Select a Cluster scheduler from the drop-down list 
 ,WorkerNodeInstanceType,Select the instance types to be used to carry out the computation from the drop-down list
-,WorkerNodeSubnetId,Select the Subnet you want your Batch or slurm Worker Node to launch in  from the drop-down list. We recommend public subnets.
-,ComputeEnvMinvCpus,"Enter The minimum number of CPUs to be kept in running state for the Batch/slurm Worker Nodes. If you give a non-zero value, some worker nodes may stay in running state always and you may incur higher cost."
+,WorkerNodeSubnetId,Select the Subnet you want your Batch or slurm Worker Node to launch in from the drop-down list. We recommend public subnets.
+,ComputeEnvMinvCpus,"Enter The minimum number of CPUs to be kept in running state for the Batch/slurm Worker Nodes. If you give a non-zero value, some worker nodes may stay in a running state always and you may incur higher cost."
 ,ComputeEnvMaxvCpus,Enter The maximum number of CPUs for the default Batch or slurm Compute Environment
 ,ComputeEnvDesiredvCpus,Enter The Desired number of CPUs for the default Batch Compute Environment
 ,SpotBidPercentage,Enter The maximum percentage of On-Demand pricing you want to pay for Spot resources. You will always pay the lowest Spot market price and never more than your maximum percentage
+Integrated Genomics Viewer ,Description,Integrative Genomics Viewer (IGV) is a lightweight visualization tool that enables intuitive real-time exploration of diverse and large-scale genomic datasets on standard desktop computers.
+,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens, and underscores are allowed. Spaces and special characters are not allowed."
+,Study Selection,"Expand the section to select studies to mount to your workspace. Select one or more studies to mount to your workspace from the dropdown list (Maximum of 2)"
+,KeyPair,"Choose a Keypair in the dropdown list. Note: If Keypair is not available in the drop-down, click on the "" +"" button. A Keypair creation form is opened. Fill the details in the form and click on the ""Create Keypair"" button. Now that Keypair is available in the list. Remember to save the private key file securely for future use. Do not share this file with others for the security of your account."
+,AllowedIpAddress,"Please enter the IP address range that is allowed to Connect to the instance via SSH"
+,InstanceType,"Choose instance type in the drop-down list. E.g.: t3.medium"

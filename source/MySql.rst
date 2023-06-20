@@ -1,7 +1,7 @@
 MySQL
 ======
 
-MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, covering the entire range from personal projects and websites, via e-commerce and information services. 
+MySQL is the world's most popular open-source database. With its proven performance, reliability and ease of use, MySQL has become the leading database choice for web-based applications, covering the entire range from personal projects and websites to e-commerce and information services. 
 We have greatly simplified the parameters that you have to enter to create a product so that you can get started very quickly. The product launches in a matter of a few minutes and is ready to go.
 
 Parameters
@@ -16,7 +16,7 @@ Parameters
    * - Product Name
      - Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed. Eg: MedicalResearch
    * - Study Selection
-     - Expand the section to select studies to mount to your workspace.Select one or more studies to mount to your workspace from the dropdown list(Maximum of 2)
+     - Expand the section to select studies to mount to your workspace. Select one or more studies to mount to your workspace from the dropdown list(Maximum of 2)
    * - ConnectFromPort
      - Provide which Port has to be opened in the Security Group of the EC2 Instance to access MySQL Docker Container Eg: 3306
    * - KeyPair
@@ -58,21 +58,23 @@ If you are connecting from a Windows box you can use an SSH client like `PuTTY <
 1. Click on the project on the “My Projects” page.
 2. Navigate to the “My Products” tab
 3. Click on your instance in the My Products view. 
-4. In the product details page, you will find the SSH/RDP button in the Connect pane on the right side. Click on the button to launch the SSH Launcher window in a separate tab of your browser. 
+4. On the product details page, you will find the SSH/RDP button in the Connect pane on the right side. Click on the button to launch the SSH Launcher window in a separate tab of your browser. 
 5. Select the Key file and click submit. The SSH window should open.
 6. Confirm with Docker version (running) and Running MySQL Containers
 7. Login to the MySQL shell using the command:  mysql -h<privateip-of-mysql-server-instance> -u root -p<MasterPassword>
-8. Through the Explore action you can see the shared files with 1-click. Note: If project storage is not mounted you can’t see the explore action in the product details page.
+8. Through the Explore action you can see the shared files with 1 click. 
+
+.. note:: If project storage is not mounted you can’t see the explore action in the product details page.
 
 If you are unable to connect, check your current IP address against the “AllowedSSHLocation” parameter provided at provisioning time.
 
 Other considerations
 ---------------------
 
-You can stop your instance using the “Stop” button in the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. 
-You can also change the instance type when your instance is in a stopped state using the “Instance Type” button in the product details page of your instance.
+You can stop your instance using the “Stop” button on the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. 
+You can also change the instance type when your instance is in a stopped state using the “Instance Type” button on the product details page of your instance.
 
-You can share the product with all the members of the project using the “Share” button in the product details page of your product. If you share the product to project, you will have to share the PEM key file outside of Research Gateway.
+You can share the product with all the members of the project using the “Share” button on the product details page of your product. If you share the product with the project, you will have to share the PEM key file outside of Research Gateway.
 
 Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 
