@@ -61,6 +61,67 @@ Appendix F - Audit Trail Events for Principal Investigator
 Appendix G - Release Notes
 ==========================
 
+
+v1.19.0
+^^^^^^^^
+
+Features: 
+----------
+
+1. Ingress Gateway Project. This is a new project type that can be created against an account enabled for Secure Research Environments. This project is meant for researchers to be provided a storage area where they can upload files that they want to bring into a secure project. An Ingress Storage s3 product will be automatically created as part of project creation. The researchers can upload files via the UI and then submit an ingress request. After approval, these files are made available in the IngressStore folder that is mounted to their workspaces. 
+
+2. New additions to the catalog: JupyterLab and VS Code products. JupyterLab is a popular open-source software package that provides a highly extensible notebook authoring and editing environment. It offers advanced features and customization options compared to Jupyter Notebook. VS Code is a lightweight yet powerful open-source code editor on Linux. It provides built-in support for JavaScript, TypeScript, and Node.js, along with an extensive range of extensions for various languages and runtimes like C++, C#, Java, Python, PHP, Go, and .NET. 
+
+3. Integration with Egress application. With this integration, researchers will have an EgressStore folder automatically mounted to their workspaces. They can copy files that they want to extract from the SRE into this folder and submit an Egress Request. The request must be approved via the Egress Application and can be downloaded by the Information Governance lead after approvals. 
+
+4. Secure Research: Users will be able to add Secure Research Environment accounts and Secure Research Projects from the 'Add Accounts' and 'Add Projects' screens, provided they meet the preset requirements in their Organizational Unit (OU) and upon login. 
+
+5. Keypairs: Keypairs will be fetched based on the ProjectID.  
+
+6. Name Modification: Users will now encounter the term 'Secure Research Environment' instead of 'Trusted Research Environment.' 
+
+7. RStudio product: The Authentication screen will be removed from the product. 
+
+8. Add project Screen: If all the required input parameters are not set, users will receive an error toaster message. For example, if a user tries to create a Secure Research Project or Data Library Project after creating a Secure Research Environment account without meeting all requirements, they will be restricted and see an error toaster message on the 'Add Project' screen.  
+
+9. Secure Research Linux product: Users should be able to view the 'Instance Type' action on the Product Details page for the Secure Research Linux product. Additionally, Load Balancers will be created during the Secure Research Project creation. 
+
+10. A confirmation dialog box will be displayed for the 'stop' action in the PCluster Product. 
+
+11. Enhanced Nice DCV product: Users can now view the 'Instance Type' action on the Product Details page for the Nice DCV product. 
+
+12. IGV-Viewer product: VPC and Subnet will no longer appear as input parameters in the product launch form. 
+
+13. Keyboard Accessibility fixes. 
+
+14. Security fixes. 
+
+  
+Bug-fixes: 
+----------
+  
+
+1. Internal Studies: When a user attempts to assign or create two studies with the same name for the same project, they shall receive an error toaster message. 
+
+2. Users can delink an account even if the account is linked to an internal study. 
+
+3. Assign product to project: If the stack is created twice during the assign action on the catalog page, duplicate products were being assigned to the project and were visible in the available products tab. 
+
+4. Events page: Users were unable to see the respective project name under the 'project creation started' event. 
+
+5. Project status: The 'Active' status for a project will now be updated after the completion of all steps. 
+
+6. Researcher login: If a user is assigned to an OU without a project, they should see an appropriate message on the Budgets screen. 
+
+7. When a user creates and deletes a project with an ALB (Application Load Balancer) simultaneously, it should not cause conflicts during the creation and deletion of the ALB. 
+
+8. Screen refresh count: The screen refresh count will be minimized during multiple project creation. 
+
+9. Storage creation issue: If a user unchecks the 'Project Storage' checkbox, selects an account in the project creation form, and clicks on the 'Create Project' action, the project will still be created with storage. 
+
+10. SAML Login: After successful authentication, users will be redirected to the home page without any issues. 
+
+ 
 v1.18.0
 ^^^^^^^^
 
