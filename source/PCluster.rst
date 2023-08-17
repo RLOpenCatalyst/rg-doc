@@ -214,6 +214,12 @@ Steps to connect
 Other considerations
 ---------------------
 
-You can stop your instance using the “Stop” button on the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
+You can stop your instance using the “Stop” button on the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. 
+
+.. note:: This action will only stop the head node. If the ComputeMinvCPUs (in case of AWSBatch scheduler) or MinimumInstances (in case of Slurm scheduler) is set to a non-zero value, the compute nodes will continue to run in the background and accrue costs.
+
+.. image:: images/Product_Pcluster_StopAction_Dialogbox.png
+
+Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 
 You can share the product with all the members of the project using the “Share” button on the product details page of your product. If you share the product with the project, you will have to share the PEM key file outside of Research Gateway.

@@ -23,6 +23,6 @@ Ordering products in Research Gateway
    EBS
    SecureResearchLinuxDesktop
    IGV
-
-   
+   JupyterLab
+   VSCode
    

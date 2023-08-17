@@ -1926,7 +1926,7 @@ The volume will only be displayed in the list if it has been mounted.
 
 4. Share action: You can share the product with all the members of the project through the “Share” action. If you share the product with the project, you will have to share the PEM key file outside of Research Gateway.
 
-5. Open link action:  Choose the "Open Link" action. It will open the RStudio application in a new browser tab. Enter the user name and password details in the form, through this you can connect to the application. 
+5. Open link action:  Choose the "Open Link" action. It will open the RStudio application in a new browser tab.Through this you can connect to the application. 
 
 6. Reboot action: You can reboot instances through the “Reboot” action.
 
