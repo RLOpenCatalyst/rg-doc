@@ -31,6 +31,8 @@ Parameters
 
  .. image:: images/Principal_Product_RStudio_LaunchForm1.png
 
+..
+
  .. image:: images/Principal_Product_RStudio_LaunchForm2.png
  
  

@@ -7,67 +7,31 @@ The Secure Research Linux Desktop only works in a project enabled for secure res
 
 1. Create a Setting in RG using your AWS account. 
 
-2. Create a stack and Secure VPC using the cft provided (rg-tre-account-onboarding.yaml which is available in bucket “ rg-prodenvironment-instancefiles-london" of eu-west-2 region of 977461429431 account) in the project account in the same region where the setting is created. 
+2. Create a stack and Secure VPC using the cft in the project account in the same region where the setting is created, click on this `link <https://secureproduct-networkcfts-dontdelete.s3.eu-west-2.amazonaws.com/vpc-squid.yml>`_ it will download cft in your system.  
 
-.. note:: secure VPC will be created as part of stack creation. 
+.. note:: secure VPC will be created as part of stack creation. ALB will be created as part of Secure Research Project creation 
 
-3. Create an ALB in the VPC created above using the following steps: 
-
-  a. Log in to your AWS console for the account you are using as a project account.  
-
-  b. Navigate to the EC2 services page and choose Load Balancers in the left pane. 
-
-  c. Choose the "Create new load balancer" button. 
-
-  d. In the form that opens add the name of the load balancer in the “Load balancer name” field 
-
-  e. select the IP address type of the VPC created 
-
-  f. enter the VPC Id (output of step 2) in the VPCId field.  
-
-  g. Mappings: Select the Availability Zones which will be shown in the section based on VPC selected. 
-
-  h. Search for the “EntryPointSecurityGroup” which will be available in the Outputs tab of Stack created in Step number 2 in the Security groups field and select the value 
-
-  i. Select HTTPS port 443 as Listener and select forward to the target group which you have created using the VPC id in the same region where VPC is created. 
-
-  j. Secure listener settings: select the recommended “Security Policy” and select “Default SSL/TLS certificate”: “Select the certificate for your domain” example: *.rlcatalyst.com
-
-   .. note:: If you are not able to see any certificate please contact the support
-
-  k. Once you complete filling all the necessary parameters in the form click on the “Create Load Balancer” button which is available at the end of the form.  
-
-  l. This will successfully create the ALB using the VPC id provided  
-
-4. Provide the below details of the CFT outputs to the RG support team to enable secure research. 
+3. Provide the below details of the CFT outputs to the RG support team to enable secure research. 
 
 .. list-table:: 
-   :widths: 50, 50
+   :widths: 50
    :header-rows: 1
 
-   * - ALB Details 
-     - Network Details
-   * - loadBalancerArn
-     - vpc
-   * - dnsName 
-     - publicSubnet1
-   * - listenerArn
-     - publicSubnet2
-   * - securityGroupId
-     - privateSubnet
-   * - certificateArn
-     - entryPointSG
-   * -
-     - workspaceSG
-   * -
-     - interfaceEndpointSG
+   * - Network Details
+   * - vpc
+   * - publicSubnet1
+   * - publicSubnet2
+   * - privateSubnet
+   * - entryPointSG
+   * - workspaceSG
+   * - interfaceEndpointSG
 
 
-5. Create a project from the UI. Ensure no products are created in the catalog. Also, uncheck the option to create a project storage as this is not supported in secure research projects. 
+4. Create a project from the UI using Secure Research account in project creation form you will not be able to see Add product and Project storage enabling checkbox option.
 
-6. Provide the details of the project to RG support team to enable secure research in the project. 
+5. Provide the details of the project to RG support team to enable secure research in the project. 
 
-7. Assign the Secure Research Linux Desktop product to the secure research project. 
+6. Assign the Secure Research Linux Desktop product to the secure research project. 
 
 A project enabled for secure research only uses Secure Research Linux Desktop product in the catalog. To provision this workspace, launch the product using the following parameters. 
 
@@ -115,6 +79,66 @@ Steps to connect
 
 1. Click on “Remote Desktop” under the “Connect” list on the right side of the page. You will be able to see a colored theme. 
 
+   We have conda and Google Chrome installed by default based on AMI. Users can also install RStudio and Jupyterlab and access it from instance
+
+   Once product comes to active click on Remote Desktop action and follow below instructions:
+
+   a. To install and run conda:
+
+   - Click on Applications-System Tools-MATE Terminal in /home/ec2-user path you will be able to find **conda.sh** file, run the below command 
+
+     **./conda.sh**
+
+   - Check for the conda version using below command
+
+     **conda --version**
+
+   .. note:: once conda installs successfully it will restart the machine automatically user will not be able to access machine for around one minute
+
+   You can access Google Chrome by performing below steps
+
+   - Click on Applications-Internet-Google Chrome
+
+   You can also install and access RStudio and Jupyterlab in your machine optionally by following steps below:
+
+   a. To install and access RStudio:
+
+   - Click on Applications-System Tools-MATE Terminal in /home/ec2-user path run below command
+
+     **docker run -d --restart always -e PASSWORD=<Enter-password> -v /home/ec2-user:/home/ec2-user -p 8787:8787 relevancelab/rstudio_4.2.1:1.0.3**
+
+   .. note:: you can use password of your choice in above command and use same password during authentication
+
+   - Once it is installed successfully run below command and check if its installed
+
+     **docker ps**
+
+   - Click on Applications-Internet-Google Chrome and access **localhost:8787** URL
+
+   - once connection is successful it will open up RStudio authentication window you can access it using below credentials
+   
+     **Username**: ec2-user
+   
+     **Password**: You can enter the password which you added in command **docker run -d --restart always -e PASSWORD=<Enter-password> -v /home/ec2-user:/home/ec2-user -p 8787:8787 relevancelab/rstudio_4.2.1:1.0.3**
+
+   b. To install and access JupyterLab:
+
+   - Click on Applications-System Tools-MATE Terminal in /home/ec2-user path run below command
+
+     **docker run -d --restart always --name jupyterlab -p 8888:8888 -v /home/ec2-user:/home/ec2-user relevancelab/jupiterlab_3.5.0:1.0.3**
+
+   - Once it is installed successfully run below command and check if its installed
+
+     **docker ps**
+
+   - To generate URL for accessing JupyterLab run below command 
+
+     **echo "http://127.0.0.1:8888/lab?token"$(docker exec jupyterlab  /bin/bash -c "jupyter server list" 2>&1 | grep token | awk '{print $2}' | sed 's/.*=//')**
+
+     above command will generate URL for example: **http://127.0.0.1:8888/lab?token052fac3fc6c0b2b7f01ece6c5abd55258fde0c3d4d2950f5**
+
+   - Click on Applications-Internet-Google Chrome and access generated URL, once connection is successful it will open up Token Authentication window and add password from URL for example: if this is generated URL  **http://127.0.0.1:8888/lab?token052fac3fc6c0b2b7f01ece6c5abd55258fde0c3d4d2950f5** this will be Password or Token to be added in it 052fac3fc6c0b2b7f01ece6c5abd55258fde0c3d4d2950f5
+
 2. You can de-provision the product through the “Terminate” option. 
 
  
@@ -124,3 +148,5 @@ Other considerations
 You can stop your instance using the “Stop” button on the product details page of your instance. The instance will incur lower costs when it is stopped than when it is running. Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”. 
 
 You can share the product with all the members of the project using the “Share” button on the product details page of your product. If you share the product with the project, you will have to share the PEM key file outside of Research Gateway. 
+
+You can also change the instance type when your instance is in a stopped state using the “Instance Type” button on the product details page of your instance.
