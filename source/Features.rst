@@ -168,7 +168,7 @@ Fill in the following details
   a. Users can add a maximum of 5 tags. Or A user may add up to five tags.
   b. Each tag should have a minimum of 3 characters and a maximum of 32.
   c. Users cannot duplicate tags for one user.
-  d. Each tag can include :
+  d. Each tag can include:
     a. Alphabetic characters(a-z , A-Z)
     b. Numerical characters(0-9)
     c. Special characters( @ - + . -)
@@ -881,6 +881,8 @@ Click on the Edit User button and edited user information will be visible on the
 
 .. image:: images/Principal_User_EditUser_SuccessMessage.png
 
+.. _add-researchers-existing-project:
+
 How to add researchers to existing project 
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 There is an edit functionality for the project entity. The project is independent of the researcher. A user can create an empty project and add researchers later also. Click on “Manage (i.e., Pencil icon)” which is in the "Assigned researchers" field in the Project Details tab.
@@ -1168,10 +1170,16 @@ You can see the files/folders which are related to the datastore.
  
  .. image:: images/Principal_Studies_Linkaction_Available.png
 
+..
+
  .. image:: images/Principal_Studies_UnlinkResource.png
 
+..
+
  .. image:: images/Principal_Studies_UnlinkResource_Success.png
-  
+
+..
+
  .. image:: images/Principal_Studies_Link.png  
 
 **Assign To Projects**
@@ -1209,6 +1217,8 @@ Lastly, when studies appear in the "Study Selection" pane while launching a prod
 .. image:: images/PrincipalInvestigator_PublicStudy_AssignSuccess_ProjectDetails.png
 
 .. image:: images/Product_Launchform_StudySelection_PublicStudy.png
+
+.. _internal-study:  
 
 Internal Study(for Principal Investigator)
 ------------------------------------------
@@ -2387,11 +2397,17 @@ You can see the files/folders which are related to the datastore.
 4. If there are no active Sagemaker products we are showing the following message to the user **There is no provisioned Sagemaker product. Please Launch a sagemaker product from the available products page first, before linking to an s3 bucket**.
  
  .. image:: images/Researcher_PublicStudies_Linkaction_Available.png
- 
+
+..
+
  .. image:: images/Researcher_Studies_PublicStudy_UnlinkResourceAction.png
- 
+
+..
+
  .. image:: images/Researcher_Studies_PublicStudy_Unlink_SucessToasterMessage.png
-  
+
+..
+    
  .. image:: images/Researcher_PublicStudies_Link.png 
  
 

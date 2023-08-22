@@ -30,11 +30,8 @@ Indices and tables
    AccessingRG
    OrderingProducts
    Features
-   Appendices 
-
-
-
-
+   SecureResearchEnvironment
+   Appendices
 
 
 
