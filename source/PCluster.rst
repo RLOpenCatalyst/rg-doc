@@ -223,3 +223,13 @@ You can stop your instance using the “Stop” button on the product details pa
 Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 
 You can share the product with all the members of the project using the “Share” button on the product details page of your product. If you share the product with the project, you will have to share the PEM key file outside of Research Gateway.
+
+For configuring your AWS ParallelCluster instance with Amazon EFS or FSx for Lustre, follow these steps: copy the FileSystemId from the Outputs tab of Amazon EFS or FSx for Lustre, choose the appropriate FileSystemType and add the FileSystemId when launching through the PCluster product's launch form. After product comes to active perform SSH Terminal, execute the **df -h** command to verify mounting and ensure the successful setup of your chosen file system.
+
+.. image:: images/EFS_Outputs_filesystemid.png
+
+.. image:: images/AmazonEFS_PClusterMounting.png
+
+.. image:: images/FSx_Outputs_filesystemid.png
+
+.. image:: images/FSx_PClusterMounting.png
