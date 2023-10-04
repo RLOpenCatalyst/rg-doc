@@ -1250,7 +1250,7 @@ Fill in the following details
    * - Description   
      - <Please provide a description of the contents of the study. This description will be displayed on the Study card.>
    * - Study Type
-     - <Currently only Internal Study is supported.>
+     - <Select Study Type as Internal Study>
    * - Access Level
      - <Select Access Level - (required)> note: read-write or read-only study is supported
    * - Tags for this study
@@ -1330,13 +1330,12 @@ When you click on the Internal Study card you will be able to see  The “Study�
 2. Resource details: In the “Resource details” tab you can see the Bucket information.
 
 .. image:: images/InternalStudy_ResourceDetails.png
+
 **Explore Action**
 
 When you click on the Explore button which is available at the right side of the page below Connect tab you will be able to see the files/folders which are related to the datastore. You can do root and back action but you will not be able to 'back' any further than the prefix specified.
 
-
 .. image:: images/InternalStudy_Connect_ExploreAction.png
-
 
 **Link/Unlink Action**
 
@@ -1414,11 +1413,245 @@ If the study is linked to any Sagemaker product, and if the user clicks on the t
 
 .. image:: images/InternalStudy_SagemakerLinked_Terminateaction_toastermessage.png
 
-When any project that is linked to an internal study is archived without unassigning a study and you try to delete the account which is linked to it, you get the below error toaster message 
-
-.. note:: In this case, you need to terminate that linked internal study first then only you can delete the account 
-
+When any project that is linked to an internal study is archived without unassigning a study and you try to delete the account which is linked to it, you will get the  below dialog box
+ 
 .. image:: images/InternalStudy_linkedtoaccount_AccountDelete_Errormessage.png
+
+External Study(for Principal Investigator)
+------------------------------------------
+As a Principal Investigator, you can bring an existing S3 bucket in any AWS (Amazon Web Services) account apart as an external study and the same can be mounted to the workspaces launched in the projects to which the study has been assigned. An External study can be used in projects that use a different account than the Project Account 
+
+To be able to create an External study and use it in a Project you need to first Add the Study Account from the Settings Page 
+
+**Adding an AWS Study account to create an External Study** 
+
+Login into the Research Gateway. Click on the dropdown bar which is above the header. Choose the “Settings” option 
+
+Click on the “Settings” menu item. The Project Accounts page is opened.
+
+.. image:: images/Principal_Settings_StudyAcountTabNavidation.png
+
+On this page you will see the Study Accounts tab once you navigate to this tab you will be able to see the below screen if you do not have any study account added to your login  
+
+.. image:: images/Principal_Settings_StudyAccountsTab_withNoAccount.png
+
+.. note::
+  a. Study account creation is restricted to the Principal Investigator role. 
+  b. Only a user who is the Account Owner can see and access the Study Account and create an external study using that account. 
+
+Click on the “+Add New” button on the Study Accounts page. This will open the Add Account form. 
+
+.. image:: images/Principal_Settings_StudyAccountForm.png
+
+Fill in the following details 
+
+.. list-table:: 
+   :widths: 50, 50
+   :header-rows: 1
+
+   * - Attribute
+     - Details
+   * - Account Name
+     - <Account Name>
+   * - Account Key
+     - <Account Key> [It should be a minimum of 16 characters and a maximum of 128 characters]
+   * - Secret Key
+     - <Secret Key> [It should be a minimum of 40 characters and a maximum of 128 characters]
+   * - Region
+     - <Select a region from the drop-down list> 
+   * - Account Number
+     - <Enter an AWS Account Number> [It should be a 12-digit number]
+
+Click on the “Verify” button, it will check whether the provided details are valid or not. If details are valid, it will show a verified account message with a green color tick mark below the header otherwise it will throw an error message accordingly. 
+
+.. image:: images/Principal_StudyAccountDetails.png
+
+.. image:: images/Principal_StudyAccount_Verified.png
+
+.. image:: images/Principal_StudyAccount.png
+
+Once a study account is added successfully, you will be able to see the study account added and will be able to see a 3-dotted icon which is available on the right side of the account  
+
+.. note:: The 3 dotted icons will be only visible if there are no external studies linked with the study account 
+
+.. image:: images/Principal_StudyAccount_AddedSuccessfully.png
+
+Click on the 3 dotted icon which is available on the right side of the study account you will be able to see the Delete Option  
+
+.. image:: images/Principal_StudyAccount_DeleteButton.png
+
+**How to add external study** 
+
+To be able to create an External study and use it in Project you need to first Add the Study Account from the Settings Page.  
+
+If you try to add External Study without a Study Account, you will see a red color error toaster message 
+
+.. image:: images/Principal_StudyCreationForm_NoStudyAccount.png
+
+Navigation to the Studies screen 
+
+To create an External Study, click on “☰” Symbol which is available on the left side header. By clicking on the “Studies” menu item, you will be navigated to the Studies details page. 
+
+.. image:: images/Principal_StudiesPage_Navigation.png
+
+Click on the “Create Study” Button to open the Create Study form 
+
+Fill in the following details 
+
+1. Study Details 
+
+.. list-table:: 
+   :widths: 100, 100 
+   :header-rows: 1
+
+   * - Field 
+     - Details 
+   * - Study Name 
+     - <Please provide a name to help you easily identify the study. Only alphanumeric characters, hyphens and underscores are allowed. Spaces and special characters are not allowed. The study name is not unique, you can create different studies with the same study name> 
+   * - Description 
+     - <Please provide a description of the contents of the study. This description will be displayed on the Study card.> 
+   * - Study Type 
+     - <Select Study Type as External Study> 
+   * - Access Level 
+     - <Select Access Level - (required)> note: read-write or read-only study is supported 
+   * - Tags for this study 
+     - <Enter a value (optional) You can add up to 15 unique tags. You can give any value and click on the arrow button the tags are added to the study. You can add the alphabet and special characters like hyphens. You cannot add numbers or special characters as tags. You can add only add 15 tags or fewer. Once you add 15 tags then the tag field will disappear. You can not duplicate the tags.>
+
+.. image:: images/Principal_ExternalStudyCreation_form1.png
+
+.. image:: images/Principal_ExternalStudyCreation_form2.png
+
+2. Bucket Details 
+   
+.. list-table:: 
+   :widths: 100, 100 
+   :header-rows: 1
+
+   * - Field 
+     - Details 
+   * - Bucket Name 
+     - <Please provide a bucket name that hosts the data. The bucket should already exist in AWS. Only lowercase letters, numbers, dots, and hyphens are allowed. Spaces and special characters are not allowed. If the bucket is not available in AWS, then You cannot register that bucket as a study and you will be able to see an error message when you click on the “Register Study” button> 
+   * - Bucket Region 
+     - <Choose the region in which the bucket resides.> 
+   * - Is the Bucket Encrypted? 
+     - <You can keep it as default value “No” or when you click on the checkbox “Yes” it will ask you for KMS Arn (In Study Account) - Enter the ARN for the KMS key> 
+   * - Prefix 
+     - <Please provide a location within the bucket to which access is provided. Only Alphanumeric, underscore, hyphen, dot, and forward slash are allowed. spaces and special characters are not allowed. The prefix should end with a forward slash character (/). The prefix should not correspond to an object name in the bucket. If no prefix is provided, the entire bucket will be accessible. An incomplete prefix or non-existing prefix will throw an error message when you click on the “Register Study” button> 
+
+.. image:: images/Principal_ExternalStudyCreation_form3.png
+
+3. Account Details 
+
+.. list-table:: 
+   :widths: 100, 100 
+   :header-rows: 1
+
+   * - Field 
+     - Details 
+   * - Study Account 
+     - <Choose the study account configured as settings in RG (Research Gateway) to which you want the study to be mapped.> 
+   * - Study Scope 
+     - <Currently only Project level scope is allowed. All the project members can see the study details. But if any user who is not part of the project, will not be able to see the study details.> 
+   * - Projects 
+     - <Choose the projects to which the study needs to be assigned. Linux-based workspaces and Sagemaker instances in the selected projects will automatically mount this study. Users can select the project during study creation. Once you select the account, all the projects that you have access to under your organizational unit will be listed here.> 
+
+.. image:: images/Principal_ExternalStudyCreation_form4.png
+
+After filling in the details click on the Register Study button below the form, your study will be registered successfully 
+
+.. image:: images/Principal_ExternalStudy_CreatingToastermessage.png
+
+The studies landing page should have a “Filter” feature that allows you to filter the listing by predetermined criteria. You can see options like Public/Private/Bookmarked/All Studies/Internal/External. You will be able to see your registered External Study using the “External” filter 
+
+.. image:: images/Principal_Studies_AllFilters.png
+
+.. image:: images/Principal_Studies_ExternalFilters.png
+
+Each card shows the following data: 
+
+1. Name 
+2. Description 
+3. Study Type 
+4. Bookmark this study. 
+
+Immediately after you click on Register Study it will automatically navigate to the Studies page with an external study filter with a green colour toaster message 
+
+.. image:: images/Principal_Studies_ExternalStudy_successtoaster.png
+
+Click on External Study card you will be able to see the study in creating State 
+
+.. image:: images/Principal_ExternalStudy_CreatingState.png
+
+Once the study is successfully created you can see the status as Active, and you will be able to view the Delete action in the Study Details page 
+
+.. image:: images/Principal_ExternalStudy_ActiveState.png
+
+The “Study” details page which will show a tabbed area with the following tabs: 
+
+1. Study details: The “Study details” tab will show all the details of the study available in the collection. Actions associated with the study will be shown in an actions bar on the right side of the page. 
+
+.. image:: images/Principal_ExternalStudy_StudyDetails.png
+
+2. Resource details: In the “Resource details” tab you can see the Bucket information. 
+
+.. image:: images/Principal_ExternalStudy_ResourceDetails.png
+
+.. note::
+  a. When your External Study creation fails due to an invalid/unavailable KMS ARN value you will be able to see the following error toaster message  
+
+     .. image:: images/Principal_ExternalStudyCreation_Errormessage.png  
+
+  b. Only Principal Investigator users can create an External Study. Researcher users cannot create external studies.
+  c. Study account is restricted to Principal Investigator user, User who is the Account Owner can only see and access the Study Account and create an external study for that account. 
+  d. If the user onboards one AWS account as a project account, they cannot onboard the same account as a study account.  
+  e. If the user onboarded one AWS account as a study account, any other user (irrespective of the Organizational Unit) cannot onboard the same AWS account as the study account. 
+  f. User can create an external study with the same bucket name and prefix in the same org.  
+  g. User cannot register study with an empty bucket. It should have some data. 
+  h. In the study creation form user adds a bucket name below they can choose the region that should be the exact region of the bucket in the AWS console. Otherwise mounting will not work.  
+
+**Delete Action**
+
+The “Delete” action allows you to delete a study. This action is available on the right side of the page, below the Actions tab. When you click on the “Terminate” action, a confirmation dialog box will appear. 
+
+.. image:: images/Principal_ExternalStudy_Deletebutton.png
+
+.. image:: images/Principal_ExternalStudy_DeleteDialogBox_Checkbox.png
+
+In the confirmation dialog box, you will see one checkbox. To proceed with the deletion, you need to select the checkbox. This ensures that you are aware of the consequences and are ready to proceed with the deletion. 
+
+.. image:: images/Principal_ExternalStudy_DeleteDialogBox_Delete.png
+
+After selecting the checkbox, the “Delete” action will become enabled. Clicking on the “Delete” action will unassign the study from the project and delete the study. A success toaster message will be displayed, confirming the successful termination and deletion of the study. 
+
+.. image:: images/Principal_ExternalStudy_DeleteToasterMessage.png
+
+You can see the study in the Deleting state by clicking on Study which you deleted  
+
+.. image:: images/Principal_ExternalStudy_Deletng.png
+
+Once the study is deleted permanently you cannot further see the study card 
+
+**Delete study account** 
+
+Click on the dropdown bar which is above the header. Choose the “Settings” option 
+
+Click on the “Settings” menu item. The Project Accounts page is opened. Navigate to the Study Accounts page you will be able to see Study Account added 
+
+Click on the 3 dotted icon which is available on the right side of the study account you will be able to see the Delete Option  
+
+.. note:: the 3 dotted icon will be only visible if there are no external studies linked with the study account 
+
+.. image:: images/Principal_StudyAccountstab.png
+
+.. image:: images/Principal_StudyAccountstab_Delete.png
+
+Click on the delete action this will open a confirmation dialog box is opened and enable the check box and click on the “Delink” button, the study account will be deleted, and a green colour success toaster message will be visible. You can only delete a Study account which is not linked to any external study 
+
+.. image:: images/Principal_StudyAccountstab_DeleteDialogBox.png
+
+.. image:: images/Principal_StudyAccountstab_DeleteDialogBox_Checkbox.png
+
+.. image:: images/Principal_StudyAccountstab_StudyAccount_Deleted.png
 
 Audit Trail(For Principal Investigator)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

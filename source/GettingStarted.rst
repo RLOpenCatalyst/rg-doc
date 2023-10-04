@@ -8,7 +8,7 @@ You can access this product either as a `hosted Silo model`_ or as a hosted Shar
 .. _hosted Silo model: https://relevancelab.com/2021/02/11/8-steps-to-set-up-rlcatalyst-research-gateway/
 
 If you are using the hosted Silo model, you will be provided a public URL to which you can navigate using your browser. 
-You will also be provided with the credentials for the Administrator user.
+You will also be provided with the credentials of the Administrator user.
 
 1. The Administrator can add Organizational Units and AWS Accounts, create Users, assign them to the OUs and assign catalog items to the OUs.
 2. If you are using the hosted Shared model, you can sign up with your details. Use details from :ref:`Sign-Up <Sign-Up process>` to create a new tenant.
@@ -232,7 +232,7 @@ Login into the Research Gateway. Click on the dropdown bar which is above the he
 
 .. image:: images/Principal_LandingPage_SettingsMenu.png 
 
-Click on the  “Settings” menu item. The provider settings page is opened.
+Click on the  “Settings” menu item. The Project Accounts page is opened.
 
 .. image:: images/Principal_Settings_ProviderSettings.png 
    :name: Provider Settings Page

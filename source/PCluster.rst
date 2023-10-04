@@ -86,7 +86,7 @@ Steps to connect
 
 1. Click on “SSH Terminal” under the “Connect” list on the right side of the page. This will open the SSH Terminal in a new browser tab.
 
-.. note:: if you have selected "SpackSetup" as true during launch then you will be able to install spack packages. Click on “SSH Terminal” under the “Connect” list on the right side of the page and run the below commands in SSH Window
+.. note:: If you have selected "SpackSetup" as true during launch then you will be able to install spack packages. Click on “SSH Terminal” under the “Connect” list on the right side of the page and run the below commands in SSH Window
   
   a. **ls**  - run this command in the home directory folder and check if you find "spack" in the folder.
   
@@ -100,7 +100,7 @@ Steps to connect
 
 .. note:: 
   
- 1. if you have selected "Scheduler" as **slurm** during launch if you want to submit a job and get the output you can follow the below steps and run the below commands in SSH Window
+ 1. If you have selected "Scheduler" as **slurm** during launch if you want to submit a job and get the output you can follow the below steps and run the below commands in SSH Window
 
   a. Create a job script file:
 
@@ -153,7 +153,7 @@ Steps to connect
 
     Replace `JOBID` with the actual job ID. This command displays the output of your job, which should include the "Hello World" message along with the hostname.
 
- 2. if you have selected "Scheduler" as **awsbatch** during launch if you want to submit a job and get the output you can follow the below steps and run the below commands in SSH Window
+ 2. If you have selected "Scheduler" as **awsbatch** during launch if you want to submit a job and get the output you can follow the below steps and run the below commands in SSH Window
 
   a. Create a job script file:
 

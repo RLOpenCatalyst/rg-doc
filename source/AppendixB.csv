@@ -19,131 +19,10 @@ Amazon EC2 Windows,Description,Amazon Elastic Compute Cloud (Amazon EC2) is a we
 Amazon S3,Description,"Amazon Simple Storage Service (Amazon S3) is an object storage service that offers scalability, data availability, security and performance."
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed"
 ,Expected time to provision,2 minutes
-Amazon DynamoDB,Description,Amazon DynamoDB is a fully managed proprietary NoSQL database of Amazon Web Services.
-,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Write Capacity Units,Provisioned write throughput
-,HashKey Element Type,Enter HashType PrimaryKey Type
-,HashKey Element Name,Enter HashType PrimaryKey Name
-,Read Capacity Units,Provisioned read throughput
-,Expected time to provision,30 minutes
 Amazon SageMaker,Description,"Amazon SageMaker is a fully managed service that provides the ability to build, train and deploy ML models."
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Instance Type,Select Instance type for the SageMaker Notebook. Eg: ml.t2.medium
 ,Expected time to provision,15 minutes
-Amazon RDS,Description,Amazon Relational Database Service is a distributed relational database service by AWS.
-,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,DB Password,The database admin account password.
-,DB Name,The database name. It must begin with a letter and contain only alphanumeric characters.
-,DB User,The database admin account username. It must begin with a letter and contain only alphanumeric characters.
-,Expected time to provision,30 minutes
-Amazon EMR,Description,Amazon Elastic MapReduce (EMR) is an AWS tool for big data processing and analysis.
-,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
-,VPC ID,Vpc Id of your existing Virtual Private Cloud (VPC). Please select VPC ID before selecting Subnet ID and SecurityGroup.
-,Log Uri,Enter a valid S3 URL.
-,Applications,"Please select which application will be installed on the cluster. This would be either Ganglia and spark, or Ganglia and s3 backed Hbase"
-,Core Instance Type,Instance type to be used for core instances.
-,EMR Cluster Name,Enter a name of the cluster.
-,Number of core Instances,Must be a valid number
-,Subnet ID,Select target subnet for EMR Cluster. Please contact your Administrator if they are not available in the dropdown.
-,S3 Data Uri,Enter valid S3 bucket URL
-,Master Instance Type,Instance type to be used for the master instance.
-,Security Group,Select the security group for EMR Cluster. Please contact your Administrator if they are not available in the dropdown.
-,Release Label,Enter a valid EMR release version
-,Expected time to provision,10 Minutes
-AppStream,Description,Amazon AppStream is a fully managed non-persistent application and desktop streaming service
-,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
-,PrivateSubnet1,The SSM parameter containing the subnet to be used
-,FleetName,The name of the AppStream Fleet.Max Length should be within 20 characters. Example - ChrisFleet
-,PrivateSubnet2,The SSM parameter containing the subnet to be used
-,AppStreamSecurityGroup,The SSM parameter containing the subnet to be used
-,SourceImageName,The name of the AppStream ImageBuilder
-,MyEmail,Enter an Email ID for notifications
-,Stack Name,The name of the AppStream Stack.Max Length should be within 20 characters. Example - ChrisStack
-,Fleet Instance Type,Enter Fleet Instance Type.
-,Expected time to provision,30 Minutes
-Moodle,Description,Moodle is a Learning Platform or course management system (CMS) - a free Open Source software package designed to help educators
-,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Efs Growth,Amount of dummy data (GiB) to add to the file system (max 6144 GiB). Amazon EFS storage  charges apply
-,DataSubnet3Cidr,CIDR block for data subnet 3 located in Availability Zone 3
-,DataSubnet2Cidr,CIDR block for data subnet 2 located in Availability Zone 2
-,DatabaseInstanceType,The Amazon RDS database instance class.
-,DataSubnet4Cidr,CIDR block for data subnet 4 located in Availability Zone 4
-,UseApplicationCacheBoolean,Specifies whether an ElastiCache Cache Cluster should be created to cache application content.
-,EfsEncryptedBoolean,Create an encrypted Amazon EFS file system. Choose boolean value in the dropdown.
-,DataSubnet1Cidr,CIDR block for data subnet 1 located in Availability Zone 1
-,EfsCmk,The AWS KMS customer-managed CMK ARN to encrypt & decrypt the EFS file system[ Optional ] .
-,DataSubnet5Cidr,CIDR block for data subnet 5 located in Availability Zone 5
-,Domain Name,The main domain name of the Moodle site (e.g. moodle.example.edu)[ Optional ]
-,UserCloudFrontBoolean,Specifies whether a CloudFront Distribution should be created to serve the Moodle website content.
-,VPC Tenancy,The allowed tenancy of instances launched into the VPC
-,Database Name,The Amazon RDS master database name.
-,WebAsgMax,Specifies the maximum number of EC2 instances in the Web Autoscaling Group.
-,PublicAlbAcmCertificate,The AWS Certification Manager certificate ARN for the ALB certificate - this certificate should be created in the region you wish to run the ALB and must reference the domain name you use below.[Optional]
-,MoodleLocale,"The main language of the Moodle site, during initial configuration."
-,DatabaseCmk,AWS KMS Customer Master Key (CMK) to encrypt database cluster
-,WebSubnet4Cidr,CIDR block for Web subnet 4 located in Availability Zone 4
-,WebSubnet5Cidr,CIDR block for Web subnet 5 located in Availability Zone 5
-,ApplicationCacheNodeType,The Amazon ElastiCache cluster node type.
-,PublicSubnet1Cidr,CIDR block for Public subnet 1 located in Availability Zone 1
-,DatabaseMaster Username,The Amazon RDS master username.
-,WebSubnet3Cidr,CIDR block for Web subnet 3 located in Availability Zone 3
-,NumberOfAZs,Number of Availability Zones to use in the VPC. This must match your selections in the list of Availability Zones parameters.
-,UseSessionCacheBoolean,Specifies whether an Elastic Cache Cluster should be created for sessions. Do not create a session cache during he inital deploy. You should update the stack to use session cache after completing the installation wizard.
-,PublicSubnet0Cidr,CIDR block for Public subnet 0 located in Availability Zone 0
-,Web Instance Type,The Amazon EC2 instance type for your web instances. Choose the Instance type from the dropdown.
-,SessionCacheNodeType,The Amazon ElastiCache cluster node type.
-,WebSubnet2Cidr,CIDR block for Web subnet 2 located in Availability Zone 2
-,PublicSubnet2Cidr,CIDR block for Public subnet 2 located in Availability Zone 2
-,VpcCidr,CIDR block for the VPC
-,DatabaseEncryptedBoolean,Indicates whether the DB instances in the cluster are encrypted.
-,WebAsgMin,Specifies the minimum number of EC2 instances in the Web Autoscaling Group.
-,EfsPerformanceMode,Select the performance mode of the file system.
-,EC2Keyname,Name of an EC2 KeyPair. Your bastion & Web instances will launch with this KeyPair. Please contact administrator if they are not available in the dropdown.
-,PublicSubnet3Cidr,CIDR block for Public subnet 3 located in Availability Zone 3
-,Websubnet1Cidr,CIDR block for Web subnet 1 located in Availability Zone 1
-,HostedZoneName,The Route 53 hosted zone to create the domain in (e.g. example.edu).
-,AvailabilityZones,List of Availability Zones to use for the subnets in the VPC. Note: The logical order is preserved.
-,CloudFrontAcmCertificate,The AWS Certification Manager certificate ARN for the CloudFront distribution certificate - this certificate should be created in the us-east-1 (N. Virginia) region and must reference the Moodle domain name you use below.[Optional]
-,SSHAccessCidr,The CIDR IP range that is permitted to SSH to bastion instance. Note - a value of 0.0.0.0/0 will allow access from any IP address.
-,DataSubnet0Cidr,CIDR block for data subnet 0 located in Availability Zone 0
-,PublicSubnet4Cidr,CIDR block for Public subnet 4 located in Availability Zone 4
-,EfsGrowthInstanceType,The Amazon EC2 instance type that adds data to the file system.
-,BastionInstanceType,Bastion EC2 instance type.
-,UseRoute53Boolean,Specifies whether a record set should be created in Route 53 for your Moodle domain name.
-,WebSubnet0Cidr,CIDR block for Web subnet 0 located in Availability Zone 0
-,PublicSubnet5Cidr,CIDR block for Public subnet 5 located in Availability Zone 5
-,Expected time to provision,30 Minutes
-WordPress,Description,WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database.
-,Product Name,Specify a name for the product that you want to create
-,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
-,DB Class,Database instance class
-,Subnets,The SSM parameter containing the subnet to be used
-,SSH Location,The IP address range that can be used to SSH to the EC2 instances
-,DB Password,The WordPress database admin account password
-,VPC ID,Vpc Id of your existing Virtual Private Cloud (VPC)
-,DB AllocatedStorage,The size of the database (Gb)
-,DB Name,The WordPress database name
-,WebServer Capacity,The initial number of WebServer instances
-,DB User,The WordPress database admin account username
-,MultiAZDatabase,Create a Multi-AZ MySQL Amazon RDS database instance
-,Instance Type,WebServer EC2 instance type
-,Expected time to provision,30 Minutes
-Amazon HPC,Description,"AWS provides the most elastic and scalable cloud infrastructure to run your HPC applications. With virtually unlimited capacity, engineers, researchers, and HPC system owners can innovate beyond the limitations of on-premises HPC infrastructure."
-,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
-,CfnClusterInitialQueueSize,"Initial number of EC2 instances to launch as compute nodes within the cluster. MinValue=0,  MaxValue=32"
-,CfnClusterMasterInstacneType,MasterServer EC2 instance type
-,Engine Frame Admin Password,"Password for the EnginFrame admin user (efadmin). Must be at least 8 characters with at least three of these attributes: lowercase, uppercase, number and symbols"
-,Access from Cidr,Lockdown SSH and HTTPS access (default can be accessed from anywhere)
-,CfnClusterComputeInstanceType,ComputeFleet EC2 instance type
-,CfnClusterMaintainInitialSize,Boolean flag to set autoscaling group to maintain initial size and scale back.
-,CfnClusterKeyName,Name of an existing EC2 KeyPair to enable SSH access to the instances using the default cluster user.
-,CfnClusterMaxQueueSize,"Maximum number of EC2 compute instances that can be launched in the cluster. MinValue=0, MaxValue=32"
-,CfnClusterScheduler,Cluster scheduler
-,DomainAdminPassword,"Password for the domain admin user. Must be at least 8 characters with at least three of these attributes: lowercase, uppercase, number and symbols"
-,Expected time to provision,40 minutes
 RStudio,Description,"RStudio is an integrated development environment (IDE) for R. It includes a console, syntax-highlighting editor that supports direct code execution, as well as tools for plotting, history, debugging and workspace management."
 ,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
 ,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
@@ -152,28 +31,6 @@ RStudio,Description,"RStudio is an integrated development environment (IDE) for 
 ,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
 ,Instance Type,Instance type for RStudio. Choose the instance type from the dropdown.  Eg: The default is t2.micro.
 ,Expected time to provision,10 Minutes
-Nextflow-Basic,Description,Use an Amazon EC2 instance to run Nextflow workflows locally. This is ideal for small workloads like testing configurations or small amounts of data.
-,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
-,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
-,Nextflow Project Name,Use an Amazon EC2 instance to run Nextflow workflows locally. This is ideal for small workloads like testing configurations or small a.
-,SSH Location,The IP address range that can be used to SSH to the EC2 instances
-,Latest AMI ID,Please enter an AMI of the EC2 instance
-,Size,Size of volume in GiB. You can use the size from 4-30.
-,NextflowProject Git URL,The URL of the Nextflow GitHub project
-,AWS Region,Enter an AWS region.
-,Availability Zone,Availability zone of the EC2 instance
-,Existing S3 Bucket Name,"A S3 bucket name for storing analysis results. The bucket name must respect the S3 bucket naming conventions (can contain lowercase letters, numbers, periods and hyphens)."
-,Instance Type,WebServer EC2 instance type. Choose the instance type from the dropdown.
-,Expected time to provision,10 minutes
-Geos-Chem,Description,The GEOS-Chem model is a global 3-D model of atmospheric composition driven by assimilated meteorological observations.
-,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed."
-,Study Selection,"Select one or more studies to mount to your workspace (Maximum of 2)"
-,KeyPair,"Name of an existing EC2 KeyPair to enable SSH access to the instance.  If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one."
-,SSH Location,The IP address range that can be used to SSH to the EC2 instances
-,Latest AMI ID,AMI ID of the EC2 instance.
-,Instance Type,GEOS-CHEM EC2 instance type. Choose the instance type from the dropdown.
-,Expected time to provision,15 Minutes
 Nextflow Advanced,Product Name,"Provide a name to help you easily identify this instance of the product. Only alphanumeric characters, dots, hyphens and underscores are allowed. Spaces and special characters are not allowed
 Eg: MedicalResearch
 "

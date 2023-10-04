@@ -8,5 +8,5 @@ this solution with minimal upfront investments. It is available in both SaaS and
   * This is a cost-effective pre-built solution and packaged service offerings built on AWS.
   * It supports both self hosting(Enterprise) and managed hosting(SaaS) options.
   * It is easy to deploy, consume, manage and extend.  
-  * It provides easy budget and cost governance.
+  * It provides an easy budget and cost governance.
   * It provides in-built security, based on AWS Best Practices.

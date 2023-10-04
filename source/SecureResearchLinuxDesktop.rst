@@ -9,7 +9,7 @@ The Secure Research Linux Desktop only works in a project enabled for secure res
 
 2. Create a stack and Secure VPC using the cft in the project account in the same region where the setting is created, click on this `link <https://secureproduct-networkcfts-dontdelete.s3.eu-west-2.amazonaws.com/vpc-squid.yml>`_ it will download cft in your system.  
 
-.. note:: secure VPC will be created as part of stack creation. ALB will be created as part of Secure Research Project creation 
+.. note:: Secure VPC will be created as part of stack creation. ALB will be created as part of Secure Research Project creation 
 
 3. Provide the below details of the CFT outputs to the RG support team to enable secure research. 
 
@@ -93,7 +93,7 @@ Steps to connect
 
      **conda --version**
 
-   .. note:: once conda installs successfully it will restart the machine automatically user will not be able to access machine for around one minute
+   .. note:: Once conda installs successfully it will restart the machine automatically user will not be able to access machine for around one minute
 
    You can access Google Chrome by performing below steps
 
@@ -107,7 +107,7 @@ Steps to connect
 
      **docker run -d --restart always -e PASSWORD=<Enter-password> -v /home/ec2-user:/home/ec2-user -p 8787:8787 relevancelab/rstudio_4.2.1:1.0.3**
 
-   .. note:: you can use password of your choice in above command and use same password during authentication
+   .. note:: You can use password of your choice in above command and use same password during authentication
 
    - Once it is installed successfully run below command and check if its installed
 
