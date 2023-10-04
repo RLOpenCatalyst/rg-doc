@@ -61,6 +61,31 @@ Appendix F - Audit Trail Events for Principal Investigator
 Appendix G - Release Notes
 ==========================
 
+v1.20.0
+^^^^^^^^
+
+Features: 
+----------
+
+1. External Study: Support to add your external studies and link them to projects. A new study type called external study has been introduced. This allows you to bring in any existing bucket in any other account apart from the Project account as a study even if the bucket was not provisioned via the Research Gateway interface (e.g., you can bring in existing data). External buckets can be linked to projects and mounted to workspaces in the project just like Project Storage. 
+
+2. Azure AD (Active Directory) Integration with Research Gateway. 
+
+Bug-fixes: 
+----------
+ 
+1. Internal study: If the study is created with root as a prefix, we can see behavior proper but if it is created with a specific prefix, we can see one empty file at the top after doing explore 
+
+2. Project Landing page: On load more button click, duplicate projects are shown. 
+
+3. Product-details page: On the refresh button click, send an event to the notification sink to get the latest product status. 
+
+4. Enterprise fix: If a user is a part of one OU (Organization Unit) has 1 project and has internal and external studies linked to it later, he is removed from that OU and added to new, Old OU Internal and External Studies should not be visible 
+
+5. On Org Card if one Org is attached to a single or multiple accounts the account id is not visible 
+
+6. In the project creation form if we click on the cost control enabled checkbox it deselects project storage check and vice versa 
+
 
 v1.19.0
 ^^^^^^^^

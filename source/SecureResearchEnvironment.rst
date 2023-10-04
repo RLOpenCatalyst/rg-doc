@@ -1,5 +1,5 @@
-Creating Secure Research Environment 
-====================================
+Creating a Secure Research Environment 
+========================================
  
 This is a premium feature and available only to customer who are subscribed to that feature. 
 
@@ -10,7 +10,7 @@ This is a premium feature and available only to customer who are subscribed to t
 
  b. Create a stack and Secure VPC using the cft in the project account in the same region where the setting is created, click on this `link <https://secureproduct-networkcfts-dontdelete.s3.eu-west-2.amazonaws.com/vpc-squid.yml>`_ it will download cft in your system.  
 
- .. note:: secure VPC will be created as part of stack creation. ALB will be created as part of Secure Research Project creation in step 3. 
+ .. note:: Secure VPC will be created as part of stack creation. ALB will be created as part of Secure Research Project creation in step 3. 
 
  c. Provide the below details of the CFT outputs to the RG support team to enable secure research.  
 
@@ -37,7 +37,7 @@ This is a premium feature and available only to customer who are subscribed to t
 
  The Data Library project is used to host sensitive datasets which are then shared to secure research projects as Internal Studies. The Data Library project also hosts Ingress buckets used by Researchers to bring in their own data/code. 
 
- .. note::  for this project only Amazon S3 product of Research Gateway will be assigned, and Project storage will not be created as part of project creation. 
+ .. note::  For this project only Amazon S3 product of Research Gateway will be assigned, and Project storage will not be created as part of project creation. 
 
  .. image:: images/Datalibrary_AddProject_form1.png 
 
@@ -60,7 +60,7 @@ This is a premium feature and available only to customer who are subscribed to t
 
  c. Create another S3 bucket in same project this bucket can be shared with Assigned Researcher (You can add users to the project while project creation or existing project using Manage action from project details page use details from :ref:`How to Add Researchers to an Existing Project<add-researchers-existing-project>`   
 
- .. note:: without following all steps of Step 1 If you try to create Data Library project you will see below toaster  
+ .. note:: Without following all steps of Step 1 If you try to create Data Library project you will see below toaster  
 
  .. image:: images/DatalibraryProject_incompleteSetup_errormessage.png
 
@@ -73,7 +73,7 @@ This is a premium feature and available only to customer who are subscribed to t
 
  You can add users to the project while project creation or existing project using Manage action from project details page use details from :ref:`How to Add Researchers to an Existing Project<add-researchers-existing-project>`  
 
- .. note::  for this project only Secure Research Linux Desktop product of Research Gateway will be assigned, and Project storage will not be created as part of project creation. 
+ .. note::  For this project only Secure Research Linux Desktop product of Research Gateway will be assigned, and Project storage will not be created as part of project creation. 
 
  .. image:: images/Secure_AddProject_form1.png
 
@@ -87,7 +87,7 @@ This is a premium feature and available only to customer who are subscribed to t
 
 ..
 
- .. note:: without following all steps of Step 1 If you try to create Secure Research project you will see below toaster 
+ .. note:: Without following all steps of Step 1 If you try to create Secure Research project you will see below toaster 
 
  .. image:: images/SecureResearchProject_incompleteSetup_errormessage.png 
 
@@ -179,7 +179,7 @@ This is a premium feature and available only to customer who are subscribed to t
 
  This project is meant for researchers to be provided a storage area where they can upload files that they want to bring into a secure project.  
 
- .. note::  for this project only Amazon S3 product of Research Gateway will be assigned, An Ingress Storage s3 product will be automatically created as part of project creation.  
+ .. note::  For this project only Amazon S3 product of Research Gateway will be assigned, An Ingress Storage s3 product will be automatically created as part of project creation.  
 
  .. image:: images/IngressGatewayProject_IngressStore.png
 

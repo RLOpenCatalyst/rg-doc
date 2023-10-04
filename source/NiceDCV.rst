@@ -45,7 +45,7 @@ Steps to connect
 2. Enter “ec2-user” as the username. Select “Pem file” as the Authentication type. Upload the pem file in the “Pem file” field. Click Submit. You should now be connected to the EC2 instance via SSH. Scroll to the top of the Terminal screen and click the “Terminate” button to end the session. Alternatively, type exit and hit enter in the terminal.
 3. Click on “Remote Desktop” under the “Connect” list on the right side of the page. This action will open the NICE DCV window in another tab. Your username is ec2-user and your Password is your Instance ID. To get your Instance ID to go to the Outputs tab of the provisioned product and scroll down to get the Instance ID parameter.
 
-.. note::  when you click on "Remote Desktop" you can see Nice DCV window with Chrome browser, docker engine, and miniconda pre-installed and the User interface uses the MATE desktop environment.
+.. note::  When you click on "Remote Desktop" you can see Nice DCV window with Chrome browser, docker engine, and miniconda pre-installed and the User interface uses the MATE desktop environment.
 
 4. You can de-provision the product through the “Terminate” option.
 

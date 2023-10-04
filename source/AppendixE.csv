@@ -97,3 +97,7 @@ INGRESS_STORAGE,INGRESS_STORAGE_REQUEST_CREATED,"You can see ingress store reque
 INGRESS_STORAGE,INGRESS_STORAGE_REQUEST_APPROVED,"You can see ingress store request approved information with requestid and  username"
 INGRESS_STORAGE,INGRESS_STORAGE_DELETE_STARTED,"You can see Ingress Project storage termination started information with username and account name"
 INGRESS_STORAGE,INGRESS_STORAGE_DELETE_COMPLETED,"You can see Ingress Project storage termination completion information with username and account name"
+EXTERNALSTUDY,ADD_STUDY_STARTED,"You can see External study registration with study name, study account name, account number and region"
+EXTERNALSTUDY,ADD_STUDY_SUCCESSFUL,"You can see External study registration success with study name, study account name, account number and region"
+EXTERNALSTUDY,DELETE_STUDY_STARTED,"You can see External study deletion with study name, study account name, account number and region"
+EXTERNALSTUDY,DELETE_STUDY_SUCCESSFUL,"You can see External study deletion success with study name, study account name, account number and region"
