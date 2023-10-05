@@ -1421,6 +1421,8 @@ External Study(for Principal Investigator)
 ------------------------------------------
 As a Principal Investigator, you can bring an existing S3 bucket in any AWS (Amazon Web Services) account apart as an external study and the same can be mounted to the workspaces launched in the projects to which the study has been assigned. An External study can be used in projects that use a different account than the Project Account 
 
+`Watch a video on how to create an external study and mount it to an instance <https://youtu.be/TfJCmH5AM1o>`_
+
 To be able to create an External study and use it in a Project you need to first Add the Study Account from the Settings Page 
 
 **Adding an AWS Study account to create an External Study** 
