@@ -2678,48 +2678,291 @@ Ex: Type “Chiron” in the search area it should display the keypairs which ar
 
 .. image:: images/Researcher_keypair_SearchAction.png
 
-
-
 Instance-wide Features
 ++++++++++++++++++++++
 
-SAML Integration using OKTA as an example
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-SAML stands for Security Assertion Markup Language, an open standard that passes authorization credentials from identity providers (IdPs) to service providers (SPs). SAML is the link between the authentication of a user’s identity and the authorization to use a service. It’s the language that helps IdPs and SPs communicate. 
+Integration with 3rd Party Identity Providers
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Within the SAML workflow, OKTA can act as both the IdP and SP. When a user requests access to a third-party application registered with OKTA, they are redirected to the OKTA dashboard. SAML is most frequently used to enable single sign-on (SSO), which authenticates accredited users between an identity provider and a service provider.
+In today's interconnected digital landscape, businesses and organizations often need to collaborate with third-party identity providers to ensure secure access to their services and applications. This integration is crucial for a seamless and user-friendly experience, as users can use their existing credentials from trusted identity providers to access various services. 
 
-As an example, We can do it with OKTA. You can follow the below SAML integration steps with OKTA.
+.. image:: images/Integration.png
+
+**Integration Options** 
+
+To facilitate this integration, we offer versatile integration options, allowing you to connect seamlessly with third-party identity providers. Two primary methods we support are: 
+
+- **SAML 2.0 Integration**: Security Assertion Markup Language (SAML) 2.0 is a widely adopted standard for exchanging authentication and authorization data between parties. With SAML 2.0 integration, you can establish a secure single sign-on (SSO) experience for your users. This means that users can log in once with their identity provider credentials and gain access to multiple applications and services without the need to re-enter their credentials. 
+
+- **Azure Active Directory (Azure AD) Integration**: If your organization relies on Microsoft's Azure Active Directory for identity and access management, our system seamlessly integrates with Azure AD. This allows you to leverage the existing Azure AD infrastructure for user authentication and access control, simplifying the user experience and ensuring security. 
+
+Now, let's delve into the specifics of these integration options and how they work. Below, we'll provide detailed information on SAML 2.0 integration and Azure AD integration 
+
+Integrating Research Gateway with a SAML 2.0 compliant Identity Provider using OKTA as an example
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SAML stands for Security Assertion Markup Language, an open standard that passes authorization credentials from identity providers (IdPs) to service providers (SPs). SAML is the link between the authentication of a user’s identity and the authorization to use a service. It is the language that helps IdPs, and SPs communicate. 
+
+Within the SAML workflow, OKTA can act as both the IdP (Identity provider) and SP. When a user requests access to a third-party application registered with OKTA, they are redirected to the OKTA dashboard. SAML is most frequently used to enable single sign-on (SSO), which authenticates accredited users between an identity provider and a service provider. 
+
+As an example, we can do it with OKTA. You can follow the below SAML integration steps with OKTA. 
 
 Configuration steps for Research Gateway application in OKTA
-------------------------------------------------------------
+--------------------------------------------------------------
 
-1. Sign in to your OKTA tenant as an administrator.
-2. In the Admin Console, navigate to **Applications-->Applications**.
-3. Click on the “**Add Application**” button.
-4. Click on the “**Create New App**”  button.
-5. In the Create a New Application dialog
-	a. Select the platform as “Web”.
-	b. Select SAML 2.0 in the Sign-on method section.
-	c. Click on the “**Create**” button.
-6. On the General Settings tab, enter an application name for your integration and upload a logo and click on the “**Next**” button. 
-7. On the Configure SAML tab, configure the following things.
-    a. In the Single Sign-on URL, enter the Assertion Consumer Service (ACS) URL
-	b. Enter the Audience URI into the Audience URI (SP Entity ID) field.
-	c. Choose the Name ID format and application username that must be sent to your application in the SAML response.
-	d. In the **Attribute Statements** section, enter the SAML attributes to be shared with your application. 
-	
-       .. image:: images/ConfigurationStepsforRGApplicationinOKTA_AttributeStatement.png	
+1. Sign into your OKTA tenant as an administrator. 
 
-   e. For Group Attribute Statement follow the below things. 
+2. In the Admin Console, navigate to Applications–>Applications. 
+
+3. Click on the “Create App Integration” button. 
+
+4. In the Create a New Application dialog 
+
+   a. Select SAML 2.0 in the Sign-on method section. 
+
+   b. Click on the “Next” button. 
+
+5. On the General Settings tab, enter an application name for your integration and upload a logo and click on the “Next” button. 
+
+6. On the Configure SAML tab, configure the following things 
+
+   a. In the Single Sign-on URL, enter the Assertion Consumer Service (ACS) URL (example: https://enterprise-test1.rlcatalyst.com/samllogin) 
+
+   b. Enter the Audience URI into the Audience URI (SP Entity ID) field. (example: https://enterprise-test1.rlcatalyst.com/) 
+
+   c. Choose the Name ID format as EmailAddress and application username that must be sent to your application in the SAML response. 
+
+   d. In the Attribute Statements section, enter the SAML attributes to be shared with your application.
+
+   .. list-table::
+      :widths: 25 25 50
+      :header-rows: 1
+
+      * - Name
+        - Name Format
+        - Value
+      * - firstName
+        - Basic
+        - user.firstName
+      * - lastName
+        - Basic
+        - user.lastName
+      * - email
+        - Basic
+        - user.email
+      * - login
+        - Basic
+        - user.login
+      * - name
+        - Basic
+        - user.email
+
+   e. For Group Attribute Statement follow the below things.
    
-       .. image:: images/ConfigurationStepsforRGApplicationinOKTA_GroupAttributeStatement.png
+   .. list-table::
+      :widths: 25 25 50
+      :header-rows: 1
+    
+      * - Name
+        - Name Format
+        - Filter
+      * - group 
+        - Basic 
+        - Matches regex: [a-zA-Z]+ 
 
-8. Click the “**Next**” button.
-9. Fill out the Feedback form and click on the “**Finish**” button.
+7. Click the “Next” button.
+   
+8. Fill out the Feedback form and click on the “Finish” button.
+
+Research Gateway supports integration with Identity Providers that support SAML 2.0. If you need your instance of the gateway integrated with your IDP please contact us. 
+
+**Create a group** 
+
+To create a group: 
+
+1. Navigate to Directory -> Groups 
+
+2. Click Groups. 
+
+3. Click Add Group. 
+
+4. From the Add Group window, enter a group name in the Name parameter. (this should be the Active Linked Directory Group name which was added in UI (User Interface)) 
+
+.. image:: images/OKTA_CreateGroup_1.png
+
+.. image:: images/OKTA_CreateGroup_2.png
+
+5. Optional. Add any Description to the group in the Description parameter. 
+
+6. Click Save. 
+
+If you need your instance of the gateway integrated with your IDP please contact us.	
+
+AZURE AD INTEGRATION WITH RESEARCH GATEWAY 
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ 
+Register a new application 
+---------------------------
+
+a. In the Azure portal, select Azure Active Directory. 
+
+b. Select App registrations.
+
+.. image:: images/AZURE_AppRegistration_1.png
+
+c. Select New registration. 
+
+d. For Supported account types, select Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant). Leave the other options as is.  
+
+.. image:: images/AZURE_AppRegistration_2.png
+
+e. Select Register. 
+
+ 
+**Application ID (client ID)** 
+
+After registering a new application, you can find the application (client) ID and Directory (tenant) ID from the overview menu option. Make a note of the values for use later. 
+
+.. image:: images/Azure_AppRegistration_ApplicationId_1.png
+
+.. image:: images/Azure_AppRegistration_ApplicationId_2.png
+
+**Authentication setting: confidential vs. public** 
+
+Select Authentication to review the settings. The default value for Allow public client flows is "No". 
+If you keep this default value, the application registration is a confidential client application, and a certificate or secret is required. 
+ 
+.. image:: images/Azure_AppRegistration_AuthenticationSetting_1.png
+
+If you change the default value to "Yes" for the "Allow public client flows" option in the advanced setting, the application registration is a public client application, and a certificate or secret is not required. The "Yes" value is useful when you want to use the client application in your mobile app or a JavaScript app where you do not want to store any secrets. 
+
+For tools that require a redirect URL, select Add a platform to configure the platform. 
+
+.. image:: images/Azure_AppRegistration_AuthenticationSetting_2.png
+
+Select Web in Web Applications  
+
+It redirects to Configure Web page here enter the redirect URI of the application for example: https://enterprise-test1.rlcatalyst.com/auth/callback 
+
+Once you add the URI click on the Configure button on the page 
+
+**Certificates & secrets** 
+
+Select Certificates & Secrets and select New Client Secret. Select Recommended 6 months in the Expires field. This new secret will be valid for six months. You can also choose different values such as: 
+
+- 03 months 
+
+- 12 months 
+
+- 24 months 
+
+- Custom start date and end date. 
+
+.. note:: It is important that you save the secret value, not the secret ID. 
+
+.. image:: images/AZURE_APP_Secrets.png
+
+Optionally, you can upload a certificate (public key) and use the Certificate ID, a GUID value associated with the certificate. For testing purposes, you can create a self-signed certificate using tools such as the PowerShell command line, New-SelfSignedCertificate, and then export the certificate from the certificate store. 
+
+**API permissions** 
+
+- Select the API permissions blade.
+
+.. image:: images/AZURE_APIPermissions_1.png
+
+- Select Add a permission. 
+
+.. image:: images/AZURE_APIPermissions_2.png
+
+- Select the Microsoft APIs tab on this page and select Microsoft Graph 
+
+- On Selecting Microsoft Graph you will be redirected to the permissions page 
+
+.. image:: images/AZURE_APIPermissions_3.png
+
+- Select the Delegated permissions option you will be able to see the Select Permissions division 
+
+.. image:: images/AZURE_APIPermissions_4.png
+
+- In this section, you should be able to see the below permission and select, once you select all the permissions click on the Add permissions button 
+
+    .. list-table::
+       :widths: 100
+       :header-rows: 1
+
+       * - Delegated Permissions
+       * - email
+       * - offline_access
+       * - openid
+       * - profile
+       * - Group.Read.All
+       * - GroupMember.Read.All
+       * - User.Read
 
 
-Research Gateway supports integration with Identity Providers that support SAML 2.0. If you need your instance of the gateway integrated with your IdP please contact us.	
+- Select the Application permissions option you will be able to see the Select Permissions division 
+
+.. image:: images/AZURE_APIPermissions_5.png
+
+- In this section, you should be able to see the below permission and select, once you select all the permissions click on the Add permissions button 
+
+   .. list-table::
+      :widths: 100
+      :header-rows: 1
+
+      * - Application Permissions
+      * - Group.Read.All
+      * - Group.ReadWrite.All
+      * - GroupMember.Read.All
+      * - GroupMember.ReadWrite.All
+      * - User.Read.All
+
+Your application registration is now complete. 
+
+**Create an Azure Group and Add Members**  
+
+Create the Group:   
+
+1. Sign in to your Azure Portal using a Global Admin account for the directory. 
+
+2. Search for and select Azure Active Directory. 
+
+3. On the Active Directory page, select Groups > + New group. 
+
+Fill out the New Group form: 
+
+.. list-table::
+   :widths: 40 60
+   :header-rows: 1
+
+   * - Group type
+     - Security
+   * - Group name
+     - Enter a name for your Group that you have added in the Linked Active Directory group parameter in UI. A check will be performed to determine if the name is already in use by another
+   * - Group description
+     - Enter a description for your Group such as "Group name SAML settings"
+   * - Azure AD roles can be assigned to the group (Preview)
+     - No
+   * - Membership type
+     - Assigned
+
+4. Click Create. Your Group is created and ready for you to add members. 
+
+.. note:: Group name should be the same which you added in the Linked Active Directory group 
+ 
+.. image:: images/AZURE_AddGroup_1.png
+
+.. image:: images/AZURE_AddGroup_2.png
+
+**Add Members**  
+
+1. From your Group, under Manage, select Members. 
+
+2. Click + Add members, and search for members to add to your Group. 
+
+3. When you have finished adding members, click Select. 
+   
+.. image:: images/AZURE_Group_AddMembers.png   
 
 Research Gateway as SaaS solution on AWS Marketplace
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
