@@ -3,35 +3,7 @@ Secure Research Linux Desktop
 
 The Secure Research Linux Desktop is a product offered by Research Gateway, that provides authenticated and authorized users access to workspaces that handle sensitive datasets for processing and analysis while minimizing the risk of exposing sensitive data.   
 
-The Secure Research Linux Desktop only works in a project enabled for secure research. Follow these steps to enable secure research projects. 
-
-1. Create a Setting in RG using your AWS account. 
-
-2. Create a stack and Secure VPC using the cft in the project account in the same region where the setting is created, click on this `link <https://secureproduct-networkcfts-dontdelete.s3.eu-west-2.amazonaws.com/vpc-squid.yml>`_ it will download cft in your system.  
-
-.. note:: Secure VPC will be created as part of stack creation. ALB will be created as part of Secure Research Project creation 
-
-3. Provide the below details of the CFT outputs to the RG support team to enable secure research. 
-
-.. list-table:: 
-   :widths: 50
-   :header-rows: 1
-
-   * - Network Details
-   * - vpc
-   * - publicSubnet1
-   * - publicSubnet2
-   * - privateSubnet
-   * - entryPointSG
-   * - workspaceSG
-   * - interfaceEndpointSG
-
-
-4. Create a project from the UI using Secure Research account in project creation form you will not be able to see Add product and Project storage enabling checkbox option.
-
-5. Provide the details of the project to RG support team to enable secure research in the project. 
-
-6. Assign the Secure Research Linux Desktop product to the secure research project. 
+The Secure Research Linux Desktop only works in a project enabled for secure research. Follow these :ref:`steps <create secure research project>` to enable secure research projects. 
 
 A project enabled for secure research only uses Secure Research Linux Desktop product in the catalog. To provision this workspace, launch the product using the following parameters. 
 

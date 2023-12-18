@@ -25,4 +25,5 @@ Ordering products in Research Gateway
    IGV
    JupyterLab
    VSCode
+   WindowsDesktopForSecureResearch
    

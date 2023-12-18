@@ -1270,8 +1270,6 @@ Fill in the following details
      - Details
    * - Bucket Name 
      - <Please provide a bucket name that hosts the data. The bucket should already exist in AWS. Only lowercase letters, numbers, dots, and hyphens are allowed. Spaces and special characters are not allowed. If the bucket is not available in AWS, then You cannot register that bucket as a study and you will be able to  see an error message when you click on the “Register Study” button>
-   * - Bucket Region   
-     - <Choose the region in which the bucket resides.>
    * - Is the Bucket Encrypted?
      - <You can keep it as default value “No" or When you click on the checkbox “Yes” it will ask you for KMS Arn (In Study Account) - Enter the ARN for the KMS key>
    * - Prefix
@@ -1439,7 +1437,9 @@ On this page you will see the Study Accounts tab once you navigate to this tab y
 
 .. note::
   a. Study account creation is restricted to the Principal Investigator role. 
-  b. Only a user who is the Account Owner can see and access the Study Account and create an external study using that account. 
+  b. Only a user who is the Unshared Account Owner can see and access the Study Account, delete the study account and create an external study using that account. 
+  c. If it is a shared account then all principal investigator users in the organization can see and access the Study Account and create an external study using that account.
+  d. Only a user who is the Shared Account Owner can delete the study account.
 
 Click on the “+Add New” button on the Study Accounts page. This will open the Add Account form. 
 
@@ -1463,6 +1463,15 @@ Fill in the following details
      - <Select a region from the drop-down list> 
    * - Account Number
      - <Enter an AWS Account Number> [It should be a 12-digit number]
+   * - **Share account**
+     - 
+   * - Allow all Principals in this OU to use this study account.
+     - <Select this option if you want other principals in this OU to be able to create external studies using this setting.>
+
+
+If you want to share account with other principals in your OU to be able to create external studies using this setting then select the "Allow all Principals in this OU to use this study account." checkbox
+
+.. image:: images/Principal_Settings_StudyAccountForm_Shared.png
 
 Click on the “Verify” button, it will check whether the provided details are valid or not. If details are valid, it will show a verified account message with a green color tick mark below the header otherwise it will throw an error message accordingly. 
 
@@ -1533,8 +1542,6 @@ Fill in the following details
      - Details 
    * - Bucket Name 
      - <Please provide a bucket name that hosts the data. The bucket should already exist in AWS. Only lowercase letters, numbers, dots, and hyphens are allowed. Spaces and special characters are not allowed. If the bucket is not available in AWS, then You cannot register that bucket as a study and you will be able to see an error message when you click on the “Register Study” button> 
-   * - Bucket Region 
-     - <Choose the region in which the bucket resides.> 
    * - Is the Bucket Encrypted? 
      - <You can keep it as default value “No” or when you click on the checkbox “Yes” it will ask you for KMS Arn (In Study Account) - Enter the ARN for the KMS key> 
    * - Prefix 
@@ -1584,7 +1591,7 @@ Click on External Study card you will be able to see the study in creating State
 
 .. image:: images/Principal_ExternalStudy_CreatingState.png
 
-Once the study is successfully created you can see the status as Active, and you will be able to view the Delete action in the Study Details page 
+Once the study is successfully created you can see the status as Active, and you will be able to view the Delete action and Edit action in the Study Details page 
 
 .. image:: images/Principal_ExternalStudy_ActiveState.png
 
@@ -1632,6 +1639,43 @@ You can see the study in the Deleting state by clicking on Study which you delet
 .. image:: images/Principal_ExternalStudy_Deletng.png
 
 Once the study is deleted permanently you cannot further see the study card 
+
+**Edit Action**
+
+1. You can edit the study through the "Edit" action.
+
+.. image:: images/ExternalStudy_EditAction.png
+
+.. image:: images/ExternalStudy_Edit_StudyDetails.png
+
+.. image:: images/ExternallStudy_Edit_BucketDetails.png
+
+.. image:: images/ExternalStudy_Edit_AccountDetails.png
+
+.. csv-table::
+   :file: EditExternalStudyParameters.csv
+   :widths: 10, 15
+   :header-rows: 1
+
+.. image:: images/ExternalStudy_EditAction_SuccessMessage.png
+
+.. note::
+   1. Users can create both a project account and a study account within the same AWS account.
+   2. Users from different organizations can register the same AWS account, designating it solely as a study account.
+   3. Users can create a shared study account, and individuals from the same organization should be able to utilize that shared study account.
+   4. If a user has data admin privileges, they can create an external study with a project to which they do not have access.
+   5. Enable the repair option for a study account when the account status is in error.
+   6. When a user onboards an external study or deletes an external study, validate that the study account stack, role, and policy are available in the study account database entry. If available, check if they exist in the corresponding AWS account. If they are not present, throw an error message and update the study account status to error.
+   7. Users are not allowed to create an external study with the same bucket name and prefix within the same organization. If user uses used bucket name and prefix then he can see below error message.
+
+      .. image:: images/ExternalStudy_DuplicateBucketAndPrefixError.png
+
+   8. When a user clicks on the 'Register Study' button, and if the user add bucket name in different region then selected study account region then he will be able to see below error message.
+
+      .. image:: images/ExternalStudy_StudyAccountAndBucketRegionValidationError.png
+
+   9.  Edit external study. This allows users to reuse the studies they create by assigning new projects to the same study. A classic use-case is when a professor wants to use a dataset for a semester project by his students. Each semester the project and students would change but the dataset created as a study would remain the same.
+   10. Users should be able to create an external study without choosing any project.
 
 **Delete study account** 
 

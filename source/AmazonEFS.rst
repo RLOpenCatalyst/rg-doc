@@ -26,7 +26,7 @@ Parameters
    * - TransitionIntoIA
      - Please select the value in the dropdown. This Migrates files that have not been accessed for a set period of time to the EFS Standard?Infrequent Access (Standard-IA) or One Zone?Infrequent Access (One Zone-IA) storage class, depending on your file system.
    * - TransitionToPrimaryStorageClass
-     - Please select the value in the dropdown. This  will Automatically move files back to the EFS Standard or EFS One Zone storage classes when the TransitionToPrimaryStorageClass lifecycle policy is set to On first access. This helps to eliminate the risk of unbounded access charges, while providing consistent low latencies.
+     - Please select the value in the dropdown. This will Automatically move files back to the EFS Standard or EFS One Zone storage classes when the TransitionToPrimaryStorageClass lifecycle policy is set to On first access. This helps to eliminate the risk of unbounded access charges, while providing consistent low latencies.
    * - PerformanceMode
      - Please select the value in the dropdown. Amazon EFS delivers more than 10 gibibytes per second (GiBps) of throughput over 500,000 IOPS, and sub-millisecond or low single digit millisecond latencies. General Purpose mode supports up to 35,000 IOPS and has the lowest per-operation latency. File systems with EFS One Zone storage classes always use General Purpose performance mode. Max I/O mode supports 500,000+ IOPS and has higher per-operation latencies when compared to General Purpose mode.
    * - ThroughputMode
@@ -65,7 +65,7 @@ Steps to connect
 
 .. image:: images/Product_AmazonEFS_ProductDetails.png
 
-`Refer this link to understand how to mount Amazon EFS to an EC2 instance`_
+`Refer to this link to understand how to mount Amazon EFS to an EC2 instance`_
 
-.. _Refer this link to understand how to mount Amazon EFS to an EC2 instance: https://aws.amazon.com/getting-started/hands-on/create-mount-amazon-efs-file-system-on-amazon-ec2-using-launch-wizard/
+.. _Refer to this link to understand how to mount Amazon EFS to an EC2 instance: https://aws.amazon.com/getting-started/hands-on/create-mount-amazon-efs-file-system-on-amazon-ec2-using-launch-wizard/
 
