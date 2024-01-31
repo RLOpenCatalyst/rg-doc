@@ -2,7 +2,7 @@ Fields,Details
 Study Details
 Study Name,"Users can edit the name of the study."
 Description,"Users can edit the description of the study."
-Study Type,"Users cannot edit the Study Type,it will be Internal Study by default."
+Study Type,"Users cannot edit the Study Type,it will be External by default."
 Access Level,"Users cannot edit the Access Level,it will be Read only by default."
 Tags for this study,"Users can add or remove the tags for the study."
 Bucket Details
@@ -10,6 +10,6 @@ Bucket Name,"Users cannot edit the Bucket Name,it will have the same bucket name
 Is the Bucket Encrypted?,"Users cannot edit this field,it will have the same value as the one used for study creation."
 Prefix,"Users cannot edit the Prefix,it will have the same prefix as the one used for study creation."
 Account Details
-Project Account,"Users cannot edit the Project Account,it will have the same project account as the one used for study creation."
+Study Account,"Users cannot edit the Study Account,it will have the same project account as the one used for study creation."
 Study Scope,"Users cannot edit the Study Scope,it will have the same study scope as the one used for study creation."
 Projects,"Users can add or remove the project."

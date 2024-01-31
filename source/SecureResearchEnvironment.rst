@@ -64,6 +64,7 @@ This is a premium feature and available only to customer who are subscribed to t
 
  .. image:: images/DatalibraryProject_incompleteSetup_errormessage.png
 
+.. _create secure research project:
 
 **3. Setting up a Secure Research Project** 
 

@@ -53,7 +53,7 @@ On clicking the link the user is navigated to the reset password screen.
 
 .. image:: images/User_ResetPassword_Window.png
 
-Fill the following details
+Fill in the following details
 
 .. list-table:: 
    :widths: 50, 50

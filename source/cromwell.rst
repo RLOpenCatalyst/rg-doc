@@ -1,7 +1,7 @@
 Cromwell Advanced
 ==================
 
-Use the scalability of AWS Batch to run Cromwell workflows. This is ideal for large workloads and larger data-sets.
+Use the scalability of AWS Batch to run Cromwell workflows. This is ideal for large workloads and larger data sets.
 
 Parameters
 -----------
@@ -21,15 +21,15 @@ Parameters
    * - PipelineName
      - Search and select the pipeline git repository URL. If not found please enter the custom pipeline URL.
    * - InputDataLocation
-     - An S3 bucket path which holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
+     - An S3 bucket path that holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
    * - OutputDataLocation
-     - An S3 bucket path which holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
+     - An S3 bucket path that holds input data for the Cromwell pipeline. Eg: bucket-name/prefix
    * - Head Node Configuration
      -
    * - InstanceType
      - Head Node EC2 instance type. Eg: t2.micro
    * - HeadNodeEBSVolumeSize
-     - The initial size of the volume (in GBs) Head Node EBS will use for storage. Eg: 16 
+     - The initial size of the volume (in GBs) Head Node EBS will be used for storage. Eg: 16 
    * - KeyPair
      - Name of an existing EC2 KeyPair to enable SSH access to the Head Node. If no key pairs exist, please create one from the button next to the dropdown. Please contact your Administrator if you are unable to create one.
    * - AllowedSSHLocation
@@ -37,9 +37,9 @@ Parameters
    * - Batch Configuration
      - 
    * - VPCId
-     - Choose VPC Id in the drop-down list. The VPC to create security groups and deploy AWS Batch to. NOTE: Must be the same VPC as the provided subnet IDs.
+     - Choose VPC ID in the drop-down list. The VPC to create security groups and deploy AWS Batch to. NOTE: Must be the same VPC as the provided subnet IDs.
    * - WorkerNodeSubnetId
-     - Choose Subnet Id in the drop-down list. Subnet you want your batch compute environment to launch in. We recommend public subnets.
+     - Choose Subnet ID in the drop-down list. Subnet you want your batch compute environment to launch in. We recommend public subnets.
    * - ComputeEnvMinvCpus
      - The minimum number of CPUs to be kept in running state for the Batch Worker Nodes. If you give a non-zero value, some worker nodes may stay in a running state always and you may incur higher costs. Eg: 0
    * - ComputeEnvMaxvCpus
@@ -49,7 +49,7 @@ Parameters
    * - WorkerNodeInstanceType
      - Specify the instance types to be used to carry out the computation. You can specify one or more family or instance types. The option 'optimal' chooses the best fit of M4, C4, and R4 instance types available in the region. Eg: Optimal 
    * - WorkerNodeEBSVolumeSize
-     - The initial size of the volume (in GBs) Worker Node EBS will use for storage.  Eg: 100
+     - The initial size of the volume (in GBs) Worker Node EBS will be used for storage.  Eg: 100
 
 Steps to launch
 ----------------
@@ -65,7 +65,7 @@ Steps to launch
 		b.  You can search the pipeline. If you type the correct pipeline you can see the info (ie.,” i”) icon which is on the right side of the field. If you click the info icon it will be routed to the `gatk-workflows/seq-format-validation <https://github.com/gatk-workflows/seq-format-validation>`_ repository. If you type the wrong characters it will throw an error message accordingly.
 
 	* InputDataLocation
-		a.  You can see the filter options like All/Studies/Shared/ProjectStorage/Study in the Second part of the InputDataLocation field.
+		a.  You can see filter options like All/Studies/Shared/ProjectStorage/Study in the Second part of the InputDataLocation field.
 		b.  You can see the default option like “**All**“ in the filter.
 		c.  You can see the product names with related paths when you search in the InputDataLocation field. You need to select the S3 bucket name from the available list.
 		d.  If you type the invalid characters it will throw an error message accordingly.
@@ -109,7 +109,7 @@ You can share the product with all the members of the project using the “Share
 
 Conversely, if the instance is stopped, use the “Start” button to get the instance “Running”.
 
-You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page and click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
+You can attach a secondary EBS volume to your EC2 instance. First, create the EBS volume from the available products tab. While launching the EBS product, choose the same availability zone as your EC2 instance (find it in the Outputs tab). Once the EBS volume has been created, go to your EC2 Instance product details page click the “Attach Volume” button and select the volume from the dropdown. Conversely, you can also detach it by clicking the “Detach Volume” button in the kebab menu on the Product Details tab.
 
 **Steps to follow to mount the secondary EBS volume to your EC2 instance:**
 
