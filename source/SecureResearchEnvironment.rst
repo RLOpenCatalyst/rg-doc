@@ -8,30 +8,49 @@ This is a premium feature and available only to customer who are subscribed to t
 
  a. Create a Setting in RG using your AWS account.  
 
- b. Create a stack and Secure VPC using the cft in the project account in the same region where the setting is created, click on this `link <https://secureproduct-networkcfts-dontdelete.s3.eu-west-2.amazonaws.com/vpc-squid.yml>`_ it will download cft in your system.  
+ .. image:: images/SecureAccount_form1.png
+
+ .. image:: images/SecureAccount_form2.png 
+
+b. Create a stack and Secure VPC using the cft in the project account in the same region where the setting is created, click the `link <https://github.com/RLOpenCatalyst/rgdeploy/blob/main/SRE/Network-CFTS/vpc-squid.yml>`_ to download the CloudFormation template (CFT) file from the GitHub repository.
+ Please save the file with a friendly and identifiable name for future reference. 
 
  .. note:: Secure VPC will be created as part of stack creation. ALB will be created as part of Secure Research Project creation in step 3. 
 
- c. Provide the below details of the CFT outputs to the RG support team to enable secure research.  
+c. Please note down the following output values from your CloudFormation stack outputs.
 
-.. list-table:: 
-   :widths: 50
-   :header-rows: 1
+ .. list-table:: 
+    :widths: 50
+    :header-rows: 1
 
-   * - Network Details
-   * - vpc
-   * - publicSubnet1
-   * - publicSubnet2
-   * - privateSubnet
-   * - entryPointSG
-   * - workspaceSG
-   * - interfaceEndpointSG
+    * - Network Details
+    * - vpc
+    * - publicSubnet1
+    * - publicSubnet2
+    * - privateSubnet
+    * - entryPointSG
+    * - workspaceSG
+    * - interfaceEndpointSG
 
-.. image:: images/SecureAccount_form1.png
+d. Login to Research Gateway, Navigate to Settings > Project Accounts, click the three-dot menu (⋮) next to the appropriate account, select "Update network details", and enter the noted values in the corresponding fields.
 
-.. image:: images/SecureAccount_form2.png  
+ .. image:: images/Principal_settings_update-Networkdetails.png
+
+..
+
+ .. image:: images/Principal_Setting_Network_details_form.png
+
+..
+
+ .. note:: The ALB Access Logging Bucket Name and S3 Access Logging Bucket Name fields are optional. However, if values are provided in the UI but not supported by the s3.yaml CloudFormation template, the ingress project creation will fail. Please ensure compatibility before entering these details.
+
+..
 
 **2. Setting up a Data Library project**
+
+ .. note:: Without following all steps of Step 1 If you try to create Data Library project you will see below toaster  
+
+ .. image:: images/DatalibraryProject_incompleteSetup_errormessage.png
 
  You can create Data Library project for the Secure Research Environment account from Create Project form by selecting Project Type as Data Library. 
 
@@ -60,9 +79,7 @@ This is a premium feature and available only to customer who are subscribed to t
 
  c. Create another S3 bucket in same project this bucket can be shared with Assigned Researcher (You can add users to the project while project creation or existing project using Manage action from project details page use details from :ref:`How to Add Researchers to an Existing Project<add-researchers-existing-project>`   
 
- .. note:: Without following all steps of Step 1 If you try to create Data Library project you will see below toaster  
 
- .. image:: images/DatalibraryProject_incompleteSetup_errormessage.png
 
 .. _create secure research project:
 
